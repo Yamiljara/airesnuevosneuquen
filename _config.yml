@@ -7,20 +7,20 @@ description: La nueva voz de la noticia en Neuquén.
 # La URL de Netlify debe ser la que Netlify te asignó (o tu dominio personalizado cuando lo tengas)
 # baseurl debe estar vacío si el sitio está en la raíz del dominio
 baseurl: ""
-url: "https://tangerine-biscochitos-e8df8e.netlify.app" # <--- ¡CAMBIA ESTA LÍNEA!
+url: "https://parfait-efimero-2fffa0.netlify.app" # ¡ESTA ES LA URL CORRECTA PARA TU SITIO ACTUAL!
 
 markdown: kramdown
 
 plugins:
-  - jekyll-feed
-  - jekyll-sass-converter # Es CRÍTICO que este plugin esté para que procese style.scss
+  - jekyll-feed
+  - jekyll-sass-converter # Es CRÍTICO que este plugin esté para que procese style.scss
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - .idea/
-  - .vscode/
-  - node_modules/
-  - .sass-cache/
-  - .jekyll-cache/
-  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .vscode/
+  - node_modules/
+  - .sass-cache/
+  - .jekyll-cache/
+  - vendor/
