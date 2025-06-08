@@ -86,7 +86,7 @@ layout: default
                     {% if temp_horizontal_posts.size >= 3 %}{% break %}{% endif %}
                 {% endfor %}
                 {% assign portada_horizontal_posts = temp_horizontal_posts %}
-                
+
                 {% for post in portada_horizontal_posts %}
                 <a href="{{ post.url | relative_url }}" class="horizontal-news-card">
                     <h3>{{ post.title }}</h3>
@@ -141,7 +141,7 @@ layout: default
                 {% assign column_index = i | minus: 1 | modulo: 3 %} 
                 {% assign row_index = i | minus: 1 | divided_by: 3 %} 
                 {% assign is_ad_slot = false %}
-                
+
                 {% assign row_is_odd_check = row_index | divided_by: 2.0 | modulo: 1.0 %}
                 {% assign row_is_odd = false %}
                 {% if row_is_odd_check != 0.0 %}
@@ -153,7 +153,7 @@ layout: default
                 {% if row_is_even_check == 0.0 %}
                     {% assign row_is_even = true %}
                 {% endif %}
-                
+
                 {% if column_index == 0 and row_is_odd %}
                     {% assign is_ad_slot = true %}
                 {% endif %}
