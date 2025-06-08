@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<div class="container main-content-wrapper single-post-page">
+    <div class="post-article-wrapper">
+
+        <p class="post-meta author-date-line">
+            <span class="post-author">Por Redacciones AiresNuevosNQN</span>
+            <span class="post-date">{{ page.date | date: "%d de %B de %Y" }}</span>
+        </p>
+
+        {% if page.antetitulo %}
+        <h3 class="post-antetitulo">{{ page.antetitulo }}</h3>
+        {% endif %}
+
+        <h1 class="post-title">{{ page.title }}</h1>
+
+        {% if page.image %}
+        <div class="post-image-container">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}"
+                class="post-featured-image">
+            {% if page.image_caption %}<span class="post-featured-image-caption">{{ page.image_caption }}</span>{% endif
+            %}
+        </div>
+        {% endif %}
+
+        {% if page.copete %}
+        <p class="post-copete">{{ page.copete }}</p>
+        {% endif %}
+
+        <div class="post-body">
+            {{ content }}
+        </div>
+
+        <div class="advertising-block-large single-post-ad">
+            PUBLICITA AQUÍ 2996371067<br>
+            AIRESNUEVOSNQN@HOTMAIL.COM
+        </div>
+
+        <div class="advertising-block-large single-post-ad">
+            PUBLICITA AQUÍ 2996371067<br>
+            AIRESNUEVOSNQN@HOTMAIL.COM
+        </div>
+
+        <div class="advertising-block-large single-post-ad">
+            PUBLICITA AQUÍ 2996371067<br>
+            AIRESNUEVOSNQN@HOTMAIL.COM
+        </div>
+
+        <div class="related-news-section">
+            <h3 class="section-subtitle">Noticias Relacionadas</h3>
+            {% assign current_post_categories = page.categories %}
+
+            {% comment %}
+            Solo filtra por categoría si el post actual tiene al menos una categoría.
+            Esto previene el error 'no implicit conversion of nil into String'.
+            {% endcomment %}
+            {% assign filtered_posts = site.posts | where_exp:"post", "post.url != page.url" %}
+            {% if current_post_categories.size > 0 %}
+                {% assign related_posts = filtered_posts | where_exp:"post", "post.categories contains current_post_categories[0]" | sample: 3 %}
+            {% else %}
+                {% assign related_posts = filtered_posts | sample: 3 %}
+            {% endif %}
+
+            {% if related_posts.size > 0 %}
+            <ul class="related-posts-list">
+                {% for post in related_posts %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No hay noticias relacionadas para mostrar en este momento.</p>
+            {% endif %}
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="container main-content-wrapper">
+    <section class="latest-news-intercalated-section">
+        <h2 class="section-title">{{ page.title }}</h2>
+        <div class="news-and-ads-grid">
+            {% assign posts_to_show = site.posts | where_exp:"post", "post.categories contains page.category_filter" | reverse %}
+            {% assign current_post_index = 0 %}
+            {% for i in (1..12) %} 
+                {% assign is_ad = false %}
+                {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}{% assign is_ad = true %}{% endif %}
+
+                {% if is_ad %}
+                    <div class="advertising-block-vertical">
+                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                    </div>
+                {% else %}
+                    {% assign current_post = posts_to_show[current_post_index] %}
+                    {% if current_post %}
+                        <a href="{{ current_post.url | relative_url }}" class="latest-news-card">
+                            {% if current_post.image %}<img src="{{ current_post.image | relative_url }}" alt="{{ current_post.image_alt | default: current_post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
+                            <div class="article-content">
+                                <span class="category-tag">{{ current_post.categories | first }}</span>
+                                <h3>{{ current_post.title }}</h3>
+                                <p class="article-copete">{{ current_post.copete }}</p>
+                                <span class="article-date">{{ current_post.date | date: "%d de %B de %Y" }}</span>
+                            </div>
+                        </a>
+                        {% assign current_post_index = current_post_index | plus: 1 %}
+                    {% else %}
+                        <a href="#" class="latest-news-card placeholder-card">
+                            <img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente">
+                            <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
+                        </a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+</div>

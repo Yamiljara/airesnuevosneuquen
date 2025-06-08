@@ -1,0 +1,26 @@
+# Site settings
+title: Aires Nuevos NQN
+email: airesnuevosnqn@hotmail.com
+description: La nueva voz de la noticia en Neuquén.
+
+# Configuración para despliegue en Netlify
+# La URL de Netlify debe ser la que Netlify te asignó (o tu dominio personalizado cuando lo tengas)
+# baseurl debe estar vacío si el sitio está en la raíz del dominio
+baseurl: ""
+url: "https://tangerine-biscochitos-e8df8e.netlify.app" # <--- ¡CAMBIA ESTA LÍNEA!
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-sass-converter # Es CRÍTICO que este plugin esté para que procese style.scss
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .vscode/
+  - node_modules/
+  - .sass-cache/
+  - .jekyll-cache/
+  - vendor/

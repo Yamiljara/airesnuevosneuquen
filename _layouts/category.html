@@ -1,0 +1,140 @@
+```liquid
+---
+layout: default
+---
+
+<div class="container main-content-wrapper">
+    <div class="advertising-block-large">
+        <span class="typewriter-text">Anuncio específico para {{ page.title }}</span><span
+            class="typewriter-cursor"></span>
+        <img src="{{ '/assets/images/ad-placeholder-large.jpg' | relative_url }}" alt="Anuncio grande en categoría">
+    </div>
+
+</div>
+```
+2.3. C:/Periodico/index.html (CONTENIDO COMPLETO)
+
+Este es el archivo de tu portada. He quitado todos los comentarios de Liquid que se estaban mostrando y he quitado la
+sección de "Deportes" duplicada/no deseada. He asegurado que las imágenes por defecto tengan las rutas correctas
+(default-main-image.jpg y default-small-image.jpg).
+```liquid
+---
+layout: default
+title: Inicio
+---
+
+<div class="container main-content-wrapper">
+
+    <div class="advertising-block-large">
+        <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span><span
+            class="typewriter-cursor"></span>
+        <img src="{{ '/assets/images/ad-placeholder-large.jpg' | relative_url }}" alt="Anuncio grande">
+    </div>
+
+    <section class="latest-news-section">
+        <h2 class="section-title">Portada</h2>
+    </section>
+
+    <section class="highlighted-section">
+        {% assign all_posts_sorted_by_date = site.posts | sort: "date" | reverse %}
+        {% assign homepage_posts_collection = "" | split: "" %}
+
+        {% for post in all_posts_sorted_by_date %}
+        {% if post.url contains "/noticia-ejemplo-" %}
+        {% continue %}
+        {% endif %}
+
+        {% assign is_in_portada = false %}
+        {% if post.categories contains 'Portada' or post.category == 'Portada' %}
+        {% assign is_in_portada = true %}
+        {% endif %}
+
+        {% assign is_in_ultimas_noticias = false %}
+        {% if post.categories contains 'Últimas Noticias' or post.category == 'Últimas Noticias' %}
+        {% assign is_in_ultimas_noticias = true %}
+        {% endif %}
+
+        {% if is_in_portada == true %}
+        {% if is_in_ultimas_noticias == false %}
+        {% assign homepage_posts_collection = homepage_posts_collection | push: post %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+        {% assign main_featured_article = homepage_posts_collection[0] %}
+
+        {% if main_featured_article %}
+        <div class="main-featured-article-wrapper">
+            <a href="{{ main_featured_article.url | relative_url }}" class="main-featured-article">
+                {% if main_featured_article.image %}
+                <img src="{{ main_featured_article.image | relative_url }}"
+                    alt="{{ main_featured_article.image_alt | default: main_featured_article.title }}">
+                {% else %}
+                <img src="{{ '/assets/images/default-main-image.jpg' | relative_url }}"
+                    alt="Imagen por defecto de la noticia principal">
+                {% endif %}
+                <div class="article-info">
+                    {% if main_featured_article.category %}
+                    <span class="category-tag">{{ main_featured_article.category }}</span>
+                    {% elsif main_featured_article.categories %}
+                    <span class="category-tag">{{ main_featured_article.categories | first }}</span>
+                    {% endif %}
+                    <h2>{{ main_featured_article.title }}</h2>
+                    <p>{{ main_featured_article.copete }}</p>
+                    <span class="article-date">{{ main_featured_article.date | date: "%d de %B de %Y" }}</span>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+
+        <div class="secondary-featured-articles-grid-wrapper">
+            <div class="secondary-featured-articles-grid">
+                {% assign secondary_posts_with_image = homepage_posts_collection | slice: 1, 2 %}
+                {% for post in secondary_posts_with_image %}
+                <a href="{{ post.url | relative_url }}" class="small-article-card">
+                    {% if post.image %}
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}">
+                    {% else %}
+                    <img src="{{ '/assets/images/default-small-image.jpg' | relative_url }}"
+                        alt="Imagen por defecto de la noticia secundaria">
+                    {% endif %}
+                    <div class="article-content">
+                        {% if post.category %}
+                        <span class="category-tag">{{ post.category }}</span>
+                        {% elsif post.categories %}
+                        <span class="category-tag">{{ post.categories | first }}</span>
+                        {% endif %}
+                        <h3>{{ post.title }}</h3>
+                        <span class="article-date">{{ post.date | date: "%d de %B de %Y" }}</span>
+                    </div>
+                </a>
+                {% endfor %}
+
+                {% assign text_only_posts_for_sidebar = homepage_posts_collection | slice: 3, 3 %}
+                {% for post in text_only_posts_for_sidebar %}
+                <a href="{{ post.url | relative_url }}" class="small-article-card text-only-card">
+                    <div class="article-content">
+                        {% if post.category %}
+                        <span class="category-tag">{{ post.category }}</span>
+                        {% elsif post.categories %}
+                        <span class="category-tag">{{ post.categories | first }}</span>
+                        {% endif %}
+                        <h3>{{ post.title }}</h3>
+                        <p class="article-copete">{{ post.copete | strip_html | truncatewords: 15 }}</p>
+                        <span class="article-date">{{ post.date | date: "%d de %B de %Y" }}</span>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <div class="advertising-block-large mt-4">
+        <span class="typewriter-text">PUBLICIDAD INTERMEDIA</span><span class="typewriter-cursor"></span>
+        <img src="{{ '/assets/images/ad-placeholder-intermediate.jpg' | relative_url }}" alt="Anuncio intermedio">
+    </div>
+
+    {% include category_news_display.html section_title="Últimas Noticias" category="Últimas Noticias" %}
+
+</div>
+```
