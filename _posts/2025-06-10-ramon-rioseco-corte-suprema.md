@@ -4,10 +4,11 @@ antetitulo: "La dura reacción del intendente de Cutral Có"
 title: "No cayó un fallo, cayó un velo: Rioseco apuntó duramente contra la corte suprema por la confirmación de la condena a Cristina Kirchner"
 author: "airesnuevosNQN"
 date: 2025-06-10 22:45:00 -0300
-categories: ["Política", "Últimas Noticias", "Regionales"] # AÑADE LAS CATEGORÍAS "Últimas Noticias" y "Regionales"
-image: /assets/images/ramon-rioseco.jpg # Asumiendo que tienes una imagen de Ramón Rioseco
+categories: [Portada]
+image: /assets/images/ramon-rioseco.jpg 
 image_alt: "Ramón Solano Rioseco, intendente de Cutral Co"
 copete: "A través de un comunicado de prensa que rápidamente comenzó a circular en redes sociales, Ramón Solano Rioseco, intendente de Cutral Co y ex candidato a gobernador, denunció hoy que la Corte Suprema de Justicia de la Nación 'consagró la proscripción política' de Cristina Fernández de Kirchner. El referente neuquino calificó la decisión como 'lawfare puro' y un ataque directo a la democracia."
+featured_secondary: true
 ---
 
 La confirmación de la condena a la expresidenta Cristina Fernández de Kirchner por parte de la Corte Suprema de Justicia de la Nación desató una ola de reacciones en todo el país, y la provincia de Neuquén no fue la excepción. Uno de los primeros y más contundentes pronunciamientos provino de Ramón Solano Rioseco, actual intendente de Cutral Co y ex candidato a gobernador por el Frente y la Participación Neuquina, quien difundió su posición a través de un comunicado de prensa que rápidamente comenzó a circular en las redes sociales. En dicho texto, Rioseco no dudó en denunciar una "proscripción política" y un acto de "lawfare puro".
