@@ -2,7 +2,7 @@
 layout: post
 title: "Novedades en la Causa y Clamor Social"
 date: 2025-06-03 21:15:00 -0300 # Fecha y hora actual, importante para que sea la más reciente.
-image: "/assets/images/luciana-munoz.jpg" # O la ruta real de tu imagen para esta noticia.
+image: "/assets/images/luciana-munoz.jpg 
 image_alt: "Familiares y organizaciones exigiendo justicia por Luciana Muñoz."
 copete: "Femicidio de Luciana Muñoz: La Investigación Avanza y Familiares Exigen Celeridad Judicial en Neuquén"
 categories:
