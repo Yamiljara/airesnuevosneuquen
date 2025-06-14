@@ -2,8 +2,8 @@
 layout: post
 title: "Cutral Co apuesta a la energía solar: acuerdo con la UTN para instalar paneles en edificios públicos"
 antetitulo: "Energía limpia en la comarca petrolera"
-date: 2024-06-02 11:00:00 -0300
-categories: [Ultimas noticias, Regionales]
+date: 2025-06-10 20:30:00 -0300
+categories: [Política]
 image: /assets/images/cutral-co-energia-solar-portada.jpg # O la ruta real de tu imagen
 image_alt: "Paneles solares en Cutral Co o firma de convenio entre Municipalidad y UTN"
 image_caption: "El intendente Ramón Rioseco, el decano de la UTN Neuquén, Ing. Pablo Liscovsky, y el jefe de Gabinete y Gobierno del municipio, Ing. Walter Mardones, durante la firma del convenio."

@@ -140,3 +140,24 @@ document.addEventListener('DOMContentLoaded', function() {
         timeouts.forEach(timeout => clearTimeout(timeout));
     });
 });
+
+// Código para actualizar la fecha y hora en tiempo real
+document.addEventListener('DOMContentLoaded', function() {
+    const datetimeSpan = document.getElementById('current-datetime');
+
+    function updateDateTime() {
+        const now = new Date();
+        const optionsDate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const optionsTime = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+
+        const dateString = now.toLocaleDateString('es-ES', optionsDate);
+        const timeString = now.toLocaleTimeString('es-ES', optionsTime);
+
+        datetimeSpan.textContent = `Edición: ${dateString.charAt(0).toUpperCase() + dateString.slice(1)} Hora ${timeString}`;
+    }
+
+    if (datetimeSpan) {
+        updateDateTime(); // Actualiza al cargar la página
+        setInterval(updateDateTime, 1000); // Actualiza cada segundo
+    }
+});

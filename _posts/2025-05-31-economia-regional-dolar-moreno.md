@@ -1,11 +1,13 @@
 ---
 layout: post
+antetitulo: "Alerta del ex Secretario de Comercio" # Añadido para seguir la estructura de Rioseco. Puedes modificarlo.
 title: "Economía regional bajo la lupa: Guillermo Moreno advirtió por la suba del dólar mayorista"
+author: "Redacción AIRESNUEVOSNQN" # Asumo esta autoría, puedes ajustarla si es diferente.
 date: 2025-05-31 10:00:00 -0300
-categories: [Ultimas noticias, Política]
+categories: ["Política", "Últimas Noticias", "Regionales"] # Aseguradas estas categorías para que aparezca donde lo necesitas
+image: /assets/images/moreno-dolar.jpg
+image_alt: "Guillermo Moreno en una conferencia"
 copete: "El dirigente peronista alertó sobre el incremento sostenido del dólar mayorista en las últimas dos semanas, que pasó de 1134 a 1195 pesos. 'Es un dato que marca el rumbo de la economía', señaló."
-image: /assets/images/moreno-dolar.jpg # <-- Asegúrate de que esta imagen exista en esa ruta
-image_alt: "Guillermo Moreno en una conferencia" # <-- Texto alternativo descriptivo
 ---
 
 A través de sus redes sociales, el economista y dirigente peronista Guillermo Moreno compartió un gráfico con la evolución del dólar mayorista durante los últimos 15 días. Según indicó, la cotización pasó de 1134 a 1195 pesos, lo que representa una suba del 5,40%.

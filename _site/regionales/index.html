@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regionales</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="icon" href="http://localhost:4000/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regionales | AIRESNUEVOSNQN</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="site-wrapper">
-        <header class="site-header">
+    <div class="site-wrapper">
+        <header class="site-header">
     <div class="top-bar">
         <div class="container">
-            <span class="edition-info">Edición: Sunday 08 de June de 2025 Hora 16:08:22</span>
+            <span class="edition-info" id="current-datetime"></span>
             <div class="social-icons">
                 <a href="https://facebook.com/airesnuevosnqn" target="_blank" aria-label="Facebook">Facebook</a>
                 <a href="https://instagram.com/airesnuevosnqn" target="_blank" aria-label="Instagram">Instagram</a>
@@ -45,14 +46,11 @@
         <div class="container">
             <ul class="nav-list">
                 <li class="nav-item"><a href="/" class="nav-link">Portada</a></li>
-                <li class="nav-item"><a href="/#ultimas-noticias" {# <-- CORREGIDO AQUÍ #}
-                        class="nav-link">Últimas Noticias</a></li>
+                <li class="nav-item"><a href="/#ultimas-noticias" class="nav-link">Últimas Noticias</a></li>
                 <li class="nav-item"><a href="/regionales/" class="nav-link">Regionales</a></li>
-                <li class="nav-item"><a href="/provinciales/" class="nav-link">Provinciales</a>
-                </li>
+                <li class="nav-item"><a href="/provinciales/" class="nav-link">Provinciales</a></li>
                 <li class="nav-item"><a href="/nacionales/" class="nav-link">Nacionales</a></li>
-                <li class="nav-item"><a href="/internacionales/"
-                        class="nav-link">Internacionales</a></li>
+                <li class="nav-item"><a href="/internacionales/" class="nav-link">Internacionales</a></li>
                 <li class="nav-item"><a href="/deportes/" class="nav-link">Deportes</a></li>
                 <li class="nav-item"><a href="/cultura/" class="nav-link">Cultura</a></li>
                 <li class="nav-item"><a href="/politica/" class="nav-link">Política</a></li>
@@ -67,180 +65,217 @@
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
         <ul class="mobile-nav-list">
             <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Portada</a></li>
-            <li class="mobile-nav-item"><a href="/#ultimas-noticias"
-                    class="mobile-nav-link">Últimas Noticias</a></li> 
-            <li class="mobile-nav-item"><a href="/regionales/"
-                    class="mobile-nav-link">Regionales</a></li>
-            <li class="mobile-nav-item"><a href="/provinciales/"
-                    class="mobile-nav-link">Provinciales</a></li>
-            <li class="mobile-nav-item"><a href="/nacionales/"
-                    class="mobile-nav-link">Nacionales</a></li>
-            <li class="mobile-nav-item"><a href="/internacionales/"
-                    class="mobile-nav-link">Internacionales</a></li>
-            <li class="mobile-nav-item"><a href="/deportes/" class="mobile-nav-link">Deportes</a>
-            </li>
-            <li class="mobile-nav-item"><a href="/cultura/" class="mobile-nav-link">Cultura</a>
-            </li>
-            <li class="mobile-nav-item"><a href="/politica/" class="mobile-nav-link">Política</a>
-            </li>
-            <li class="mobile-nav-item"><a href="/sociedad/" class="mobile-nav-link">Sociedad</a>
-            </li>
+            <li class="mobile-nav-item"><a href="/#ultimas-noticias" class="mobile-nav-link">Últimas Noticias</a></li>
+            <li class="mobile-nav-item"><a href="/regionales/" class="mobile-nav-link">Regionales</a></li>
+            <li class="mobile-nav-item"><a href="/provinciales/" class="mobile-nav-link">Provinciales</a></li>
+            <li class="mobile-nav-item"><a href="/nacionales/" class="mobile-nav-link">Nacionales</a></li>
+            <li class="mobile-nav-item"><a href="/internacionales/" class="mobile-nav-link">Internacionales</a></li>
+            <li class="mobile-nav-item"><a href="/deportes/" class="mobile-nav-link">Deportes</a></li>
+            <li class="mobile-nav-item"><a href="/cultura/" class="mobile-nav-link">Cultura</a></li>
+            <li class="mobile-nav-item"><a href="/politica/" class="mobile-nav-link">Política</a></li>
+            <li class="mobile-nav-item"><a href="/sociedad/" class="mobile-nav-link">Sociedad</a></li>
         </ul>
     </div>
 </div>
 
-        <main class="site-content">
-            <div class="container main-content-wrapper">
-    <section class="latest-news-intercalated-section">
-        <h2 class="section-title">Regionales</h2>
-        <div class="news-and-ads-grid">
+        <main class="site-content">
+            <div class="container main-content-wrapper">
+                <div class="container main-content-wrapper category-page">
+    <h2 class="section-title">Regionales</h2>
+
+    <div class="news-and-ads-grid">
+        
+        
+        
+        
             
             
-             
-                
-                
 
+            
                 
+                
+                    <a href="/sociedad/%C3%BAltimas%20noticias/regionales/clase-derecho-ambiental-unco/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/guagliardo-derecho-ambiental-unco.jpg" alt="Emanuel Guagliardo en una clase de Derecho Ambiental">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Sociedad</span>
+                            <h3>El Abogado Emanuel Guagliardo ofrecerá una clase abierta este jueves sobre Derecho Ambiental en la UNCo</h3>
+                            <p class="article-copete">El Defensor Adjunto del Pueblo de la Ciudad de Neuquén, Abogado Emanuel Guagliardo, dictará este jueves 12 de junio una clase abierta sobre aspectos jurídicos e institucionales del planeamiento ambiental en la Universidad Nacional del Comahue. La actividad se enmarca en el paro nacional docente y busca debatir sobre los desafíos ambientales de la ciudad y el rol de la universidad pública.</p>
+                            <span class="article-date">12 de June de 2025</span>
+                        </div>
+                    </a>
                     
-                    
-                        <a href="/ultimas%20noticias/regionales/2024/06/02/cutral-co-energia-solar.html" class="latest-news-card">
-                            <img src="/assets/images/cutral-co-energia-solar-portada.jpg" alt="Paneles solares en Cutral Co o firma de convenio entre Municipalidad y UTN">
-                            <div class="article-content">
-                                <span class="category-tag">Ultimas noticias</span>
-                                <h3>Cutral Co apuesta a la energía solar: acuerdo con la UTN para instalar paneles en edificios públicos</h3>
-                                <p class="article-copete">La Municipalidad de Cutral Co y la Facultad Regional del Neuquén de la UTN firmaron un convenio para instalar sistemas de energía solar de autoconsumo en edificios públicos, promoviendo la generación limpia y la eficiencia energética.</p>
-                                <span class="article-date">02 de June de 2024</span>
-                            </div>
-                        </a>
-                        
-                    
-                
-             
-                
-                
-
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
-
-                
-                    
-                    
-                        <a href="#" class="latest-news-card placeholder-card">
-                            <img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente">
-                            <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
-                        </a>
-                    
-                
-             
-                
-                
-
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
-
-                
-                    
-                    
-                        <a href="#" class="latest-news-card placeholder-card">
-                            <img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente">
-                            <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
-                        </a>
-                    
-                
-             
-                
-                
-
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
-
-                
-                    
-                    
-                        <a href="#" class="latest-news-card placeholder-card">
-                            <img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente">
-                            <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
-                        </a>
-                    
-                
-             
-                
-                
-
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
-
-                
-                    
-                    
-                        <a href="#" class="latest-news-card placeholder-card">
-                            <img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente">
-                            <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
-                        </a>
-                    
-                
-             
-                
-                
-
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
-
-                
-                    
-                    
-                        <a href="#" class="latest-news-card placeholder-card">
-                            <img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente">
-                            <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
-                        </a>
-                    
-                
-             
-                
-                
-
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
                 
             
-        </div>
-    </section>
+        
+            
+            
+
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
+
+            
+                
+                
+                    <a href="/pol%C3%ADtica/%C3%BAltimas%20noticias/regionales/ram%C3%B3n-rioseco-fpyn/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/ramon-rioseco.jpg" alt="Ramón Solano Rioseco, intendente de Cutral Co">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Política</span>
+                            <h3>No cayó un fallo, cayó un velo: Rioseco apuntó duramente contra la corte suprema por la confirmación de la condena a Cristina Kirchner</h3>
+                            <p class="article-copete">A través de un comunicado de prensa que rápidamente comenzó a circular en redes sociales, Ramón Solano Rioseco, intendente de Cutral Co y ex candidato a gobernador, denunció hoy que la Corte Suprema de Justicia de la Nación 'consagró la proscripción política' de Cristina Fernández de Kirchner. El referente neuquino calificó la decisión como 'lawfare puro' y un ataque directo a la democracia.</p>
+                            <span class="article-date">10 de June de 2025</span>
+                        </div>
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
+
+            
+                
+                
+                    <a href="/regionales/%C3%BAltimas%20noticias/gallardo-critico-river/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/gallardo-critico-river.jpg" alt="Marcelo Gallardo, ex director técnico de River Plate, haciendo declaraciones.">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Regionales</span>
+                            <h3>GALLARDO, CRÍTICO EN SU REGRESO: “NO NOS GUSTÓ LA MANERA EN QUE TERMINAMOS”</h3>
+                            <p class="article-copete">River Plate consiguió su clasificación a los octavos de final de la Copa Libertadores como líder del Grupo B, pero el empate ante Universitario dejó un sabor amargo.</p>
+                            <span class="article-date">10 de June de 2025</span>
+                        </div>
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
+
+            
+                
+                
+                    <a href="/regionales/aregentina-vs-colombia-victoria-chile/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/argentina-%20colombia.jpg" alt="Desafío en Barranquilla: Argentina ya piensa en Colombia tras la victoria en Chile">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Regionales</span>
+                            <h3>Desafío en Barranquilla: Argentina ya piensa en Colombia tras la victoria en Chile</h3>
+                            <p class="article-copete">Luego de superar un tenso encuentro en Santiago con una victoria por la mínima, la Selección Argentina de Lionel Scaloni ya puso la mira en su próximo rival por las Eliminatorias al Mundial 2026: Colombia, en un partido que se prevé de alta intensidad y con el objetivo de consolidar el liderato.</p>
+                            <span class="article-date">10 de June de 2025</span>
+                        </div>
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
+
+            
+                
+                
+                    <a href="/portada/regionales/grietas-ruta-39/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/ruta-39-grietas.jpg" alt="Grietas en el asfalto de la Ruta Provincial 39">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Portada</span>
+                            <h3>A un mes de su inauguración, el asfalto de la Ruta 39 presenta grietas preocupantes</h3>
+                            <p class="article-copete">Vecinos de Andacollo y Huinganco denuncian fisuras en la Ruta Provincial 39, recientemente asfaltada. Las autoridades aún no han emitido declaraciones al respecto.</p>
+                            <span class="article-date">10 de June de 2025</span>
+                        </div>
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
+
+            
+                
+                
+                    <a href="/deportes/nacional/%C3%BAltimas%20noticias/regionales/seleccion-argentina-convocatoria-eliminatorias/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/seleccion-argentina.jpg" alt="Lionel Scaloni en conferencia de prensa de la Selección Argentina">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Deportes</span>
+                            <h3>Eliminatorias Sudamericanas rumbo a 2026: Vuelve Messi y debuta Mastantuono en la lista de Scaloni</h3>
+                            <p class="article-copete">La Selección Argentina ya tiene a sus 28 elegidos para enfrentar a Chile y Colombia. El regreso de Lionel Messi y la irrupción del juvenil Franco Mastantuono son los grandes focos de atención.</p>
+                            <span class="article-date">03 de June de 2025</span>
+                        </div>
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+    </div>
+
+    
 </div>
-        </main>
+            </div>
+        </main>
 
-        <footer class="site-footer">
+        <footer class="site-footer">
     <div class="container">
         <div class="site-branding">
             <p>AIRESNUEVOSNQN</p>
@@ -273,8 +308,71 @@
         </p>
     </div>
 </footer>
-    </div>
+    </div>
 
-    <script src="http://localhost:4000/assets/js/main.js"></script>
+    <script>
+    function updateDateTime() {
+        const now = new Date();
+        const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+
+        // Formato para Argentina/Neuquén
+        const formattedDate = now.toLocaleDateString('es-AR', dateOptions);
+        const formattedTime = now.toLocaleTimeString('es-AR', timeOptions);
+
+        const currentDateElement = document.getElementById('current-date');
+        const currentTimeElement = document.getElementById('current-time');
+
+        if (currentDateElement) {
+            currentDateElement.textContent = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+        }
+        if (currentTimeElement) {
+            currentTimeElement.textContent = formattedTime;
+        }
+    }
+
+    // Actualizar cada segundo
+    setInterval(updateDateTime, 1000);
+    // Actualizar al cargar la página
+    updateDateTime();
+
+    // Lógica para el sticky header y menú móvil (basada en el index.html)
+    const siteHeader = document.querySelector('.site-header');
+    const hamburgerMenuToggle = document.querySelector('.hamburger-menu-toggle');
+    const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+    const closeMenuBtn = document.querySelector('.close-menu-btn');
+
+    if (hamburgerMenuToggle && mobileNavOverlay && closeMenuBtn) {
+        hamburgerMenuToggle.addEventListener('click', () => {
+            mobileNavOverlay.classList.toggle('active');
+            document.body.classList.toggle('no-scroll'); // Para evitar scroll en el body
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileNavOverlay.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        });
+
+        // Cerrar menú si se hace clic en un enlace (dentro del overlay)
+        mobileNavOverlay.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNavOverlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    }
+
+    // Lógica para el sticky header (ajustado a .site-header)
+    window.addEventListener('scroll', () => {
+        if (siteHeader) { // Asegurarse de que el header exista antes de manipularlo
+            if (window.scrollY > 0) {
+                siteHeader.classList.add('scrolled');
+            } else {
+                siteHeader.classList.remove('scrolled');
+            }
+        }
+    });
+</script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

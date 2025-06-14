@@ -1,15 +1,13 @@
 ---
 layout: post
+antetitulo: "Infraestructura vial en el norte neuquino" # He dejado este antetítulo, pero revísalo para confirmar que es el correcto.
 title: "GALLARDO, CRÍTICO EN SU REGRESO: “NO NOS GUSTÓ LA MANERA EN QUE TERMINAMOS”"
-antetitulo: "Infraestructura vial en el norte neuquino" # Este antetítulo parece ser de otro post, revisa si es correcto para este.
 author: "Redacción AIRESNUEVOSNQN"
-date: 2025-05-28 00:38:00 -0300
-categories: [Portada] # CAMBIADO: 'category' a 'categories' y agregadas más relevantes
-tipo_portada: secundaria # ¡IMPORTANTE! Para que sea la segunda noticia lateral derecha
-image: /assets/images/gallardo-critico-river.jpg # Ruta ajustada a la convención /assets/images/
+date: 2025-06-10 21:05:00 -0300
+categories: ["Regionales", "Últimas Noticias"] #  Corregido y reordenado para coincidir con Rioseco
+image: /assets/images/gallardo-critico-river.jpg # Ruta ajustada
 image_alt: "Marcelo Gallardo, ex director técnico de River Plate, haciendo declaraciones."
-image_caption: "Gallardo, siempre con el ojo crítico sobre el rendimiento de River."
-tags: [Fútbol, River Plate, Copa Libertadores, Gallardo, Universitario]
+copete: "River Plate consiguió su clasificación a los octavos de final de la Copa Libertadores como líder del Grupo B, pero el empate ante Universitario dejó un sabor amargo." # He tomado la primera frase del cuerpo del post como copete.
 ---
 
 River Plate consiguió su clasificación a los octavos de final de la Copa Libertadores como líder del Grupo B, pero el empate ante Universitario dejó un sabor amargo. En el Monumental, con estadio lleno y un gol de Facundo Colidio a los 36 minutos, el equipo de Martín Demichelis parecía encaminado. Sin embargo, un error defensivo permitió el empate del conjunto peruano, que resistió hasta el final.

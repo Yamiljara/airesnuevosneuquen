@@ -1,31 +1,64 @@
 # Site settings
-title: Aires Nuevos NQN
-email: airesnuevosnqn@hotmail.com
-description: La nueva voz de la noticia en Neuquén.
+title: AIRESNUEVOSNQN
+description: LA NUEVA VOZ DE LA NOTICIA
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Configuración para despliegue en Netlify
-# La URL de Netlify debe ser la que Netlify te asignó (o tu dominio personalizado cuando lo tengas)
-# baseurl debe estar vacío si el sitio está en la raíz del dominio
-baseurl: ""
-url: "https://parfait-efimero-2fffa0.netlify.app" # Deja SOLO esta URL, es la de tu sitio actual
+lang: es # <--- ¡Aquí está la línea añadida!
 
+# Build settings
 markdown: kramdown
-
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
-  - jekyll-sass-converter # Es CRÍTICO que este plugin esté para que procese style.scss
+  - jekyll-paginate-v2 # Plugin para paginación avanzada
 
+# Paginación (jekyll-paginate-v2)
+pagination:
+  enabled: true
+  per_page: 6 # Número de posts por página en las grillas de noticias
+  permalink: '/page/:num/'
+  title: ':title - Página :num'
+  limit: 0
+  offset: 0
+  category: ':name'
+  tag: ':name'
+  locale: 'es' # Para que la paginación use texto en español
+  sort_field: 'date'
+  sort_reverse: true
+
+# Colecciones
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/ # Estructura de URL para los posts
+
+# Defaults para los posts (útil para campos comunes)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post" # Layout por defecto para todos los posts
+      author: "Redacciones AIRESNUEVOSNQN" # Autor por defecto
+      image_description: "" # Descripción de imagen por defecto
+      show_related_posts: true # Mostrar noticias relacionadas por defecto
+
+# Configuración de categorías (opcional, Jekyll las genera automáticamente)
+# Esto puede ser útil si quieres definir URLs amigables para categorías específicas
+# Por ahora, Jekyll las maneja bien por defecto con la configuración de permalink de posts
+
+# Configuración de fecha y hora
+# timezone: America/Buenos_Aires # Comentada para evitar problemas en Windows
+
+# Excluir archivos/carpetas de la compilación
 exclude:
   - Gemfile
   - Gemfile.lock
-  - .idea/
-  - .vscode/
-  - node_modules/
-  - .sass-cache/
-  - .jekyll-cache/
-  - vendor/
+  - node_modules
+  - vendor
 
-# Sass/CSS settings
-sass:
-  sass_dir: _sass
-  style: compressed
+# Archivos de inclusión (si tienes custom includes)
+include:
+  - _includes

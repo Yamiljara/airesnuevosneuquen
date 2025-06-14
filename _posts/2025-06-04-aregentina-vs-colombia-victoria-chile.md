@@ -2,8 +2,8 @@
 layout: post
 title: "Desafío en Barranquilla: Argentina ya piensa en Colombia tras la victoria en Chile"
 antetitulo: "Futbol internacional."
-date: 2024-06-05 09:00:00 -0300
-categories: [Deportes, Internacionales]
+date: 2025-06-10 21:00:00 -0300
+categories: [Regionales]
 image: /assets/images/argentina- colombia.jpg
 image_alt: 
 image_caption: "selección argentina y colombiana en encuentros anteriores."

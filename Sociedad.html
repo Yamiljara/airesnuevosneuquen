@@ -1,6 +1,92 @@
 ---
-layout: category_grid
+layout: default
 title: Sociedad
 category_filter: Sociedad
 permalink: /sociedad/
+pagination:
+  enabled: true
+  collection: posts
+  per_page: 6
+  sort_field: date
+  sort_reverse: true
+  filter:
+    categories: Sociedad
 ---
+
+<div class="container main-content-wrapper category-page">
+    <h2 class="section-title">{{ page.title }}</h2>
+
+    <div class="news-and-ads-grid">
+        {% assign category_posts = site.posts | where_exp:"post","post.categories contains page.category_filter" | sort: "date" | reverse %}
+        
+        {% comment %} Filtramos posts de la categoría 'Portada' de esta colección {% endcomment %}
+        {% assign filtered_category_posts = "" | split: "" %}
+        {% for post in category_posts %}
+            {% unless post.categories contains 'Portada' %}
+                {% assign filtered_category_posts = filtered_category_posts | push: post %}
+            {% endunless %}
+        {% endfor %}
+
+        {% assign current_post_index = 0 %}
+        {% for i in (1..12) %}
+            {% assign is_ad = false %}
+            {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}{% assign is_ad = true %}{% endif %}
+
+            {% if is_ad %}
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            {% else %}
+                {% assign current_post = filtered_category_posts[current_post_index] %}
+                {% if current_post %}
+                    <a href="{{ current_post.url | relative_url }}" class="latest-news-card">
+                        <div class="image-wrapper">
+                            {% if current_post.image %}<img src="{{ current_post.image | relative_url }}" alt="{{ current_post.image_alt | default: current_post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">{% if current_post.categories %}{{ current_post.categories | first }}{% else %}Noticia{% endif %}</span>
+                            <h3>{{ current_post.title }}</h3>
+                            <p class="article-copete">{{ current_post.copete }}</p>
+                            <span class="article-date">{{ current_post.date | date: "%d de %B de %Y" }}</span>
+                        </div>
+                    </a>
+                    {% assign current_post_index = current_post_index | plus: 1 %}
+                {% else %}
+                    <a href="#" class="latest-news-card placeholder-card">
+                        <div class="image-wrapper"><img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente"></div>
+                        <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
+                    </a>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% comment %} Paginación {% endcomment %}
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link">&laquo; Anterior</a>
+        {% else %}
+        <span class="pagination-link disabled">&laquo; Anterior</span>
+        {% endif %}
+
+        {% for page_num in (1..paginator.total_pages) %}
+            {% if page_num == paginator.page %}
+            <span class="pagination-link current">{{ page_num }}</span>
+            {% else %}
+            {% assign page_path = paginator.per_page_path | relative_url | replace: ':num', page_num %}
+            {% if page_num == 1 %}
+                {% assign page_path = page.permalink | relative_url %}
+            {% endif %}
+            <a href="{{ page_path }}" class="pagination-link">{{ page_num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link">Siguiente &raquo;</a>
+        {% else %}
+        <span class="pagination-link disabled">Siguiente &raquo;</span>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>

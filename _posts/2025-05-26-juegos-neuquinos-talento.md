@@ -1,10 +1,10 @@
 ---
 layout: post
+antetitulo: "Promesas deportivas en la provincia" # Añadido para seguir la estructura de Rioseco. Puedes modificarlo.
 title: "Juegos Neuquinos: Talento Joven Brilla en el Deporte Regional"
 author: "Martín Vázquez"
 date: 2025-05-26 22:10:00 -0300
-categories: [Portada, Deportes, Neuquén] # CAMBIADO: 'category' a 'categories' y agregado 'Deportes' y 'Neuquén'
-tipo_portada: horizontal # ¡IMPORTANTE! Para que sea una de las noticias horizontales
+categories: ["Deportes", "Neuquén", "Últimas Noticias", "Regionales"] # Agregadas "Últimas Noticias" y "Regionales"
 image: /assets/images/deportes-regionales.jpg
 image_alt: "Jóvenes atletas compitiendo"
 copete: "La nueva edición de los Juegos Neuquinos ha revelado promesas deportivas en diversas disciplinas, consolidando a la provincia como semillero de atletas."

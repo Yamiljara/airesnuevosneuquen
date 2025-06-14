@@ -7,6 +7,13 @@
 /* ==========================================================================
    Variables CSS
    ========================================================================== */
+   
+.section-title {
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--medium-gray); /* <--- Así, incluyendo 'solid var(--medium-gray);' */
+    padding-bottom: 10px;
+}
+
 :root {
     /* Colores */
     --primary-red: #0c0000; /* Un rojo más vibrante para acentos y hover */
@@ -1137,69 +1144,69 @@ img {
     margin-top: 10px; /* Margen superior si lo necesitas separado del copyright */
     font-weight: 600; /* Puedes hacerlo más prominente */
 }
-
-
 /* ==========================================================================
    Responsive Design (Media Queries)
    ========================================================================== */
 @media (max-width: 992px) {
-
-    body {
-        padding-top: 200px;
-    }
-
-    .top-bar {
-        padding: 5px 0;
-    }
-
-    .masthead {
-        padding: 10px 0;
-    }
-
-    .site-title {
-        font-size: 2.8em;
-    }
-
-    .site-description {
-        margin-top: 5px;
-    }
-
-    .main-nav {
-        display: none;
-    }
-
-    .main-content-wrapper {
-        padding-top: 15px;
-    }
+    /* ... otros estilos ... */
 
     .highlighted-section {
-        grid-template-columns: 1fr;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Asegura que se apilen verticalmente */
         gap: 20px;
         margin-bottom: 40px;
+        /* Eliminar si existe: grid-template-columns: 1fr; */
     }
 
     .main-featured-article-wrapper {
-        order: 1;
-        grid-column: unset;
-        grid-row: unset;
-        margin-top: 0;
-        margin-bottom: 0;
+        order: 1; /* Noticia principal primero */
+        /* ... otros estilos ... */
     }
 
     .secondary-featured-articles-grid-wrapper {
-        order: 2;
-        grid-column: unset;
-        grid-row: unset;
-        display: flex;
-        flex-direction: column;
+        order: 2; /* Noticias secundarias con imagen segundo */
+        display: flex; /* Añadido para asegurar que las sub-tarjetas se apilen */
+        flex-direction: column; /* Añadido para apilar las sub-tarjetas */
         gap: 20px;
     }
 
     .no-image-articles-grid-wrapper {
-        display: none;
+        order: 3; /* <--- ¡Esta es la modificación clave! */
+        display: block;
+        margin-top: 20px;
+        padding: 0 15px;
     }
+
+    /* INICIO DE MODIFICACIONES: Mostrar y estilizar noticias sin imagen */
+    .no-image-articles-grid-wrapper {
+        display: block; /* Muestra el bloque de noticias sin imagen */
+        margin-top: 20px; /* Espacio superior para separarlo visualmente */
+        padding: 0 15px; /* Añade padding lateral para que no toque los bordes de la pantalla */
+    }
+
+    .no-image-articles-grid {
+        display: flex; /* Asegura que las tarjetas se apilen correctamente */
+        flex-direction: column;
+        gap: 15px; /* Espacio entre las tarjetas de noticias sin imagen */
+    }
+
+    .horizontal-news-card {
+        padding: 15px; /* Ajusta el padding interno de las tarjetas sin imagen en móvil */
+    }
+
+    .horizontal-news-card h3 {
+        font-size: 1.1em; /* Ajusta el tamaño del título */
+        margin-bottom: 5px; /* Reduce el margen inferior del título */
+    }
+
+    .horizontal-news-card p {
+        font-size: 0.85em; /* Ajusta el tamaño del copete */
+        -webkit-line-clamp: 3; /* Limita el número de líneas para el copete */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    /* FIN DE MODIFICACIONES */
 
     .text-block-right-column {
         padding: 15px;
@@ -1400,6 +1407,8 @@ img {
 
     .main-content-wrapper {
         padding-top: 15px;
+        padding-left: 3px;
+    padding-right: 3px;
     }
 
     .main-featured-article img {
@@ -1539,6 +1548,7 @@ img {
 
     .main-content-wrapper {
         padding-top: 10px;
+        /* Se asume que el .container ya maneja el padding lateral adecuado */
     }
 
     .advertising-block-large {

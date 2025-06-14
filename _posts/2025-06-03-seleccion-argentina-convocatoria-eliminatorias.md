@@ -1,15 +1,13 @@
 ---
 layout: post
+antetitulo: "" # Este campo estaba ausente en tu ejemplo, lo añado para coincidir con Rioseco. Puedes poner un antetítulo o dejarlo vacío si no aplica.
 title: "Eliminatorias Sudamericanas rumbo a 2026: Vuelve Messi y debuta Mastantuono en la lista de Scaloni"
-date: 2025-06-03 22:09:00 -0300 # He ajustado la hora para que sea la más reciente ahora.
-image: "/assets/images/seleccion-argentina.jpg" # Asegúrate de que esta imagen exista en /assets/images/
+author: "Redacción AIRESNUEVOSNQN" # Asumo esta autoría, si es diferente, ajustala.
+date: 2025-06-03 22:09:00 -0300
+categories: ["Deportes", "Nacional", "Últimas Noticias", "Regionales"] # Agregadas "Últimas Noticias" y "Regionales"
+image: "/assets/images/seleccion-argentina.jpg"
 image_alt: "Lionel Scaloni en conferencia de prensa de la Selección Argentina"
 copete: "La Selección Argentina ya tiene a sus 28 elegidos para enfrentar a Chile y Colombia. El regreso de Lionel Messi y la irrupción del juvenil Franco Mastantuono son los grandes focos de atención."
-categories:
-  - Deportes
-  - Nacional
-  - Portada
-tipo_portada: horizontal
 ---
 
 Con la mirada puesta en el Mundial de 2026, el técnico Lionel Scaloni oficializó la lista de convocados para la próxima doble fecha de las Eliminatorias Sudamericanas, donde Argentina se medirá ante Chile y Colombia. Entre los nombres confirmados, el regreso de Lionel Messi tras su recuperación física aporta jerarquía y liderazgo, mientras que la novedad más resonante es el debut del joven talento de River Plate, Franco Mastantuono, de apenas 17 años.

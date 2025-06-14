@@ -2,11 +2,8 @@
 layout: post
 title: "Se Espera un Invierno con Temperaturas Bajas y Nevadas en la Cordillera"
 author: "Servicio Meteorológico"
-date: 2025-05-26 21:50:00 -0300
+date: 2025-06-10 21:50:00 -0300
 categories: [Portada, Clima, Neuquén] # Mantenido: 'categories' como array
-tipo_portada: horizontal # ¡IMPORTANTE CORRECCIÓN! Cambiado de 'principal' a 'horizontal'
-image: /assets/images/nieve_cordillera.jpg # Ruta a la imagen
-image_alt: "Paisaje nevado en la cordillera de Neuquén" # Texto alternativo para la imagen
 copete: "Las proyecciones climáticas para los próximos meses indican condiciones frías, ideales para la temporada de deportes invernales."
 ---
 

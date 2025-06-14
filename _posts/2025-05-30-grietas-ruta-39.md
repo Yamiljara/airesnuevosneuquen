@@ -3,8 +3,8 @@ layout: post
 title: "A un mes de su inauguración, el asfalto de la Ruta 39 presenta grietas preocupantes"
 antetitulo: "Infraestructura vial en el norte neuquino"
 author: "Redacción"
-date: 2025-05-30 09:00:00 -0300
-categories: [Portada] # Manteniendo las categorías que definiste y asegurando que sea un array
+date: 2025-06-10 21:00:00 -0300
+categories: [Portada, Regionales] # Manteniendo las categorías que definiste y asegurando que sea un array
 tipo_portada: secundaria # ¡IMPORTANTE! Para que sea una de las noticias laterales derechas
 image: /assets/images/ruta-39-grietas.jpg # Nombre sugerido para la imagen
 image_alt: "Grietas en el asfalto de la Ruta Provincial 39"

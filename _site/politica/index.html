@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="icon" href="http://localhost:4000/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política | AIRESNUEVOSNQN</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="site-wrapper">
-        <header class="site-header">
+    <div class="site-wrapper">
+        <header class="site-header">
     <div class="top-bar">
         <div class="container">
-            <span class="edition-info">Edición: Sunday 08 de June de 2025 Hora 16:08:22</span>
+            <span class="edition-info" id="current-datetime"></span>
             <div class="social-icons">
                 <a href="https://facebook.com/airesnuevosnqn" target="_blank" aria-label="Facebook">Facebook</a>
                 <a href="https://instagram.com/airesnuevosnqn" target="_blank" aria-label="Instagram">Instagram</a>
@@ -45,14 +46,11 @@
         <div class="container">
             <ul class="nav-list">
                 <li class="nav-item"><a href="/" class="nav-link">Portada</a></li>
-                <li class="nav-item"><a href="/#ultimas-noticias" {# <-- CORREGIDO AQUÍ #}
-                        class="nav-link">Últimas Noticias</a></li>
+                <li class="nav-item"><a href="/#ultimas-noticias" class="nav-link">Últimas Noticias</a></li>
                 <li class="nav-item"><a href="/regionales/" class="nav-link">Regionales</a></li>
-                <li class="nav-item"><a href="/provinciales/" class="nav-link">Provinciales</a>
-                </li>
+                <li class="nav-item"><a href="/provinciales/" class="nav-link">Provinciales</a></li>
                 <li class="nav-item"><a href="/nacionales/" class="nav-link">Nacionales</a></li>
-                <li class="nav-item"><a href="/internacionales/"
-                        class="nav-link">Internacionales</a></li>
+                <li class="nav-item"><a href="/internacionales/" class="nav-link">Internacionales</a></li>
                 <li class="nav-item"><a href="/deportes/" class="nav-link">Deportes</a></li>
                 <li class="nav-item"><a href="/cultura/" class="nav-link">Cultura</a></li>
                 <li class="nav-item"><a href="/politica/" class="nav-link">Política</a></li>
@@ -67,210 +65,222 @@
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
         <ul class="mobile-nav-list">
             <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Portada</a></li>
-            <li class="mobile-nav-item"><a href="/#ultimas-noticias"
-                    class="mobile-nav-link">Últimas Noticias</a></li> 
-            <li class="mobile-nav-item"><a href="/regionales/"
-                    class="mobile-nav-link">Regionales</a></li>
-            <li class="mobile-nav-item"><a href="/provinciales/"
-                    class="mobile-nav-link">Provinciales</a></li>
-            <li class="mobile-nav-item"><a href="/nacionales/"
-                    class="mobile-nav-link">Nacionales</a></li>
-            <li class="mobile-nav-item"><a href="/internacionales/"
-                    class="mobile-nav-link">Internacionales</a></li>
-            <li class="mobile-nav-item"><a href="/deportes/" class="mobile-nav-link">Deportes</a>
-            </li>
-            <li class="mobile-nav-item"><a href="/cultura/" class="mobile-nav-link">Cultura</a>
-            </li>
-            <li class="mobile-nav-item"><a href="/politica/" class="mobile-nav-link">Política</a>
-            </li>
-            <li class="mobile-nav-item"><a href="/sociedad/" class="mobile-nav-link">Sociedad</a>
-            </li>
+            <li class="mobile-nav-item"><a href="/#ultimas-noticias" class="mobile-nav-link">Últimas Noticias</a></li>
+            <li class="mobile-nav-item"><a href="/regionales/" class="mobile-nav-link">Regionales</a></li>
+            <li class="mobile-nav-item"><a href="/provinciales/" class="mobile-nav-link">Provinciales</a></li>
+            <li class="mobile-nav-item"><a href="/nacionales/" class="mobile-nav-link">Nacionales</a></li>
+            <li class="mobile-nav-item"><a href="/internacionales/" class="mobile-nav-link">Internacionales</a></li>
+            <li class="mobile-nav-item"><a href="/deportes/" class="mobile-nav-link">Deportes</a></li>
+            <li class="mobile-nav-item"><a href="/cultura/" class="mobile-nav-link">Cultura</a></li>
+            <li class="mobile-nav-item"><a href="/politica/" class="mobile-nav-link">Política</a></li>
+            <li class="mobile-nav-item"><a href="/sociedad/" class="mobile-nav-link">Sociedad</a></li>
         </ul>
     </div>
 </div>
 
-        <main class="site-content">
-            <div class="container main-content-wrapper">
-    <section class="latest-news-intercalated-section">
-        <h2 class="section-title">Política</h2>
-        <div class="news-and-ads-grid">
+        <main class="site-content">
+            <div class="container main-content-wrapper">
+                <div class="container main-content-wrapper category-page">
+    <h2 class="section-title">Política</h2>
+
+    <div class="news-and-ads-grid">
+        
+        
+        
+        
+        
+
+        
+        
             
             
-             
-                
-                
 
+            
                 
+                
+                    <a href="/pol%C3%ADtica/%C3%BAltimas%20noticias/regionales/ram%C3%B3n-rioseco-fpyn/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/ramon-rioseco.jpg" alt="Ramón Solano Rioseco, intendente de Cutral Co">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Política</span>
+                            <h3>No cayó un fallo, cayó un velo: Rioseco apuntó duramente contra la corte suprema por la confirmación de la condena a Cristina Kirchner</h3>
+                            <p class="article-copete">A través de un comunicado de prensa que rápidamente comenzó a circular en redes sociales, Ramón Solano Rioseco, intendente de Cutral Co y ex candidato a gobernador, denunció hoy que la Corte Suprema de Justicia de la Nación 'consagró la proscripción política' de Cristina Fernández de Kirchner. El referente neuquino calificó la decisión como 'lawfare puro' y un ataque directo a la democracia.</p>
+                            <span class="article-date">10 de June de 2025</span>
+                        </div>
+                    </a>
                     
-                    
-                        <a href="/portada/pol%C3%ADtica/2025/05/29/aten-victoria-elecciones.html" class="latest-news-card">
-                            <img src="/assets/images/aten-elecciones.jpg" alt="Miembros de ATEN celebrando la victoria en elecciones">
-                            <div class="article-content">
-                                <span class="category-tag">Portada</span>
-                                <h3>ATEN logra contundente victoria en las elecciones del Consejo Provincial de Educación</h3>
-                                <p class="article-copete">Con una participación superior al 75%, la lista del gremio docente ATEN obtuvo cerca del 80% de los votos, consolidando su liderazgo en el ámbito educativo neuquino.</p>
-                                <span class="article-date">29 de May de 2025</span>
-                            </div>
-                        </a>
-                        
-                    
                 
-             
-                
-                
+            
+        
+            
+            
 
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
 
+            
                 
+                
+                    <a href="/pol%C3%ADtica/cutral-co-energia-solar/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/cutral-co-energia-solar-portada.jpg" alt="Paneles solares en Cutral Co o firma de convenio entre Municipalidad y UTN">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Política</span>
+                            <h3>Cutral Co apuesta a la energía solar: acuerdo con la UTN para instalar paneles en edificios públicos</h3>
+                            <p class="article-copete">La Municipalidad de Cutral Co y la Facultad Regional del Neuquén de la UTN firmaron un convenio para instalar sistemas de energía solar de autoconsumo en edificios públicos, promoviendo la generación limpia y la eficiencia energética.</p>
+                            <span class="article-date">10 de June de 2025</span>
+                        </div>
+                    </a>
                     
-                    
-                        <a href="/ultimas%20noticias/pol%C3%ADtica/2025/05/31/economia-regional-dolar-moreno.html" class="latest-news-card">
-                            <img src="/assets/images/moreno-dolar.jpg" alt="Guillermo Moreno en una conferencia">
-                            <div class="article-content">
-                                <span class="category-tag">Ultimas noticias</span>
-                                <h3>Economía regional bajo la lupa: Guillermo Moreno advirtió por la suba del dólar mayorista</h3>
-                                <p class="article-copete">El dirigente peronista alertó sobre el incremento sostenido del dólar mayorista en las últimas dos semanas, que pasó de 1134 a 1195 pesos. 'Es un dato que marca el rumbo de la economía', señaló.</p>
-                                <span class="article-date">31 de May de 2025</span>
-                            </div>
-                        </a>
-                        
-                    
                 
-             
-                
-                
+            
+        
+            
+            
 
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
 
+            
                 
+                
+                    <a href="/pol%C3%ADtica/carlos-beto-vivero-giro-ideologico/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/vivero-funcionario.jpg" alt=" Carlos Beto Vivero, de ácido crítico a funcionario de Figueroa: El giro ideológico del ex funcionario kirchnerista.">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Política</span>
+                            <h3> Carlos Beto Vivero, de ácido crítico a funcionario de Figueroa: El giro ideológico del ex funcionario kirchnerista.</h3>
+                            <p class="article-copete">El ex legislador del Frente de Todos, Carlos Beto Vivero, conocido por sus duras críticas a Rolando Figueroa, ha sido designado como Coordinador de Enlace Territorial. Su nombramiento, oficializado en el Decreto 626/2025, expone una notable mutación ideológica que no pasa desapercibida en el ambiente político provincial.</p>
+                            <span class="article-date">10 de June de 2025</span>
+                        </div>
+                    </a>
                     
-                    
-                        <a href="/pol%C3%ADtica/2025/06/02/cristina-kirchner-diputada-bonaerense.html" class="latest-news-card">
-                            <img src="/assets/images/cristina-kirchner-candidata.jpg" alt="Cristina Fernández de Kirchner en una entrevista televisiva">
-                            <div class="article-content">
-                                <span class="category-tag">Política</span>
-                                <h3>Cristina Kirchner confirmó su candidatura a diputada provincial por la Tercera Sección Electoral</h3>
-                                <p class="article-copete">En una entrevista televisiva, la expresidenta anunció que competirá en las elecciones legislativas del 7 de septiembre, buscando fortalecer al peronismo en su bastión bonaerense.</p>
-                                <span class="article-date">02 de June de 2025</span>
-                            </div>
-                        </a>
-                        
-                    
                 
-             
-                
-                
+            
+        
+            
+            
 
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
 
-                
-                    
-                    
-                        <a href="/%C3%BAltimas%20noticias/pol%C3%ADtica/2025/06/02/reordenamientos-tensiones-peronismo-neuquino.html" class="latest-news-card">
-                            <img src="/assets/images/godoy-peronismo-neuquino.jpg" alt="César Godoy, líder sindical de la UOCRA, hablando en un acto político.">
-                            <div class="article-content">
-                                <span class="category-tag">Últimas Noticias</span>
-                                <h3>César Godoy crece como figura destacada de cara a las legislativas de 2025.</h3>
-                                <p class="article-copete">Con origen sindical, discurso firme y fuerte presencia territorial, el joven dirigente peronista se perfila como uno de los nombres más resonantes en el armado opositor. En paralelo, mientras sectores kirchneristas se suman al oficialismo provincial, La Libertad Avanza enfrenta una investigación por afiliaciones falsas.</p>
-                                <span class="article-date">02 de June de 2025</span>
-                            </div>
-                        </a>
-                        
-                    
-                
-             
+            
                 
                 
-
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
-
-                
-                    
-                    
-                        <a href="/pol%C3%ADtica/nacional/portada/2025/06/03/moreno-cristina-lider-peronismo.html" class="latest-news-card">
-                            <img src="/assets/images/imagen-kirchnerismo-elecciones.jpg" alt="Cristina Kirchner y Moreno en un acto político, durante su gobierno.">
-                            <div class="article-content">
-                                <span class="category-tag">Política</span>
-                                <h3>Guillermo Moreno: "Cristina Kirchner tiene la autoridad para juntar al peronismo en una herramienta nacional"</h3>
-                                <p class="article-copete">La decisión de la ex Presidenta de postularse como diputada nacional sacude el escenario preelectoral y genera diversas reacciones en el peronismo, buscando reagrupar fuerzas.</p>
-                                <span class="article-date">03 de June de 2025</span>
-                            </div>
-                        </a>
-                        
-                    
-                
-             
-                
-                
-
-                
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
-                
-             
-                
-                
-
-                
-                    
-                    
-                        <a href="/%C3%BAltimas%20noticias/pol%C3%ADtica/2025/06/04/confusion-santillan-canasta-basica.html" class="latest-news-card">
+                    <a href="/%C3%BAltimas%20noticias/pol%C3%ADtica/confusion-santillan-canasta-basica/" class="latest-news-card">
+                        <div class="image-wrapper">
                             <img src="/assets/images/santillan-pobreza.jpg" alt="Grafico de inflación del indec.">
-                            <div class="article-content">
-                                <span class="category-tag">Últimas Noticias</span>
-                                <h3>Confusión de Santillán sobre la canasta básica reaviva el debate económico.</h3>
-                                <p class="article-copete">La diputada de La Libertad Avanza afirmó que una familia necesitaba $360.000 para no ser pobre, pero la cifra real supera el millón de pesos. El error generó fuertes críticas y encendió el debate sobre la correcta lectura de datos del INDEC.</p>
-                                <span class="article-date">04 de June de 2025</span>
-                            </div>
-                        </a>
-                        
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Últimas Noticias</span>
+                            <h3>Confusión de Santillán sobre la canasta básica reaviva el debate económico.</h3>
+                            <p class="article-copete">La diputada de La Libertad Avanza afirmó que una familia necesitaba $360.000 para no ser pobre, pero la cifra real supera el millón de pesos. El error generó fuertes críticas y encendió el debate sobre la correcta lectura de datos del INDEC.</p>
+                            <span class="article-date">04 de June de 2025</span>
+                        </div>
+                    </a>
                     
                 
-             
-                
-                
+            
+        
+            
+            
 
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
+
+            
                 
-                    <div class="advertising-block-vertical">
-                        <span class="typewriter-text">PUBLICITA AQUÍ<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                    </div>
+                
+                    <a href="/pol%C3%ADtica/reuni%C3%B3n-peronismo-cutralco/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/Peronismo-Cutral-C%C3%B3.jpg" alt="César Godoy reafirma la convocatoria a internas del PJ en Neuquén ante la instancia de la Justicia Electoral.">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Política</span>
+                            <h3>César Godoy reafirma la convocatoria a internas del PJ en Neuquén ante la instancia de la Justicia Electoral.</h3>
+                            <p class="article-copete"> El Partido Justicialista de Neuquén congregó a una nutrida cantidad de referentes y militantes en Cutral Có. Allí, el dirigente César Godoy confirmó la intención de definir sus candidaturas mediante internas, en respuesta a la intimación de la justicia electoral para que los partidos fijen su proceso de selección.</p>
+                            <span class="article-date">02 de June de 2025</span>
+                        </div>
+                    </a>
+                    
                 
             
-        </div>
-    </section>
-</div>
-        </main>
+        
+            
+            
 
-        <footer class="site-footer">
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+            
+            
+
+            
+                
+                
+                    <a href="/pol%C3%ADtica/nacionales/cristina-kirchner-peronismo/" class="latest-news-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/Cristina%20-%20Acto.jpg" alt="Cristina Kirchner encabezó acto del PJ y se plantó frente a la corte Suprema: "Yo estaré presa, pero la gente estará cada día peor".">
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">Política</span>
+                            <h3>Cristina Kirchner encabezó acto del PJ y se plantó frente a la corte Suprema: "Yo estaré presa, pero la gente estará cada día peor".</h3>
+                            <p class="article-copete"> La expresidenta Cristina Fernández de Kirchner lideró este lunes un masivo acto en la sede del Partido Justicialista, en un contexto de alta tensión por el inminente fallo de la Corte Suprema en la causa Vialidad. En su discurso, advirtió sobre las consecuencias del rumbo económico y denunció lo que considera una persecución judicial.</p>
+                            <span class="article-date">02 de June de 2025</span>
+                        </div>
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            
+        
+    </div>
+
+    
+    
+</div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
     <div class="container">
         <div class="site-branding">
             <p>AIRESNUEVOSNQN</p>
@@ -303,8 +313,71 @@
         </p>
     </div>
 </footer>
-    </div>
+    </div>
 
-    <script src="http://localhost:4000/assets/js/main.js"></script>
+    <script>
+    function updateDateTime() {
+        const now = new Date();
+        const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+
+        // Formato para Argentina/Neuquén
+        const formattedDate = now.toLocaleDateString('es-AR', dateOptions);
+        const formattedTime = now.toLocaleTimeString('es-AR', timeOptions);
+
+        const currentDateElement = document.getElementById('current-date');
+        const currentTimeElement = document.getElementById('current-time');
+
+        if (currentDateElement) {
+            currentDateElement.textContent = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+        }
+        if (currentTimeElement) {
+            currentTimeElement.textContent = formattedTime;
+        }
+    }
+
+    // Actualizar cada segundo
+    setInterval(updateDateTime, 1000);
+    // Actualizar al cargar la página
+    updateDateTime();
+
+    // Lógica para el sticky header y menú móvil (basada en el index.html)
+    const siteHeader = document.querySelector('.site-header');
+    const hamburgerMenuToggle = document.querySelector('.hamburger-menu-toggle');
+    const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+    const closeMenuBtn = document.querySelector('.close-menu-btn');
+
+    if (hamburgerMenuToggle && mobileNavOverlay && closeMenuBtn) {
+        hamburgerMenuToggle.addEventListener('click', () => {
+            mobileNavOverlay.classList.toggle('active');
+            document.body.classList.toggle('no-scroll'); // Para evitar scroll en el body
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileNavOverlay.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        });
+
+        // Cerrar menú si se hace clic en un enlace (dentro del overlay)
+        mobileNavOverlay.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNavOverlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    }
+
+    // Lógica para el sticky header (ajustado a .site-header)
+    window.addEventListener('scroll', () => {
+        if (siteHeader) { // Asegurarse de que el header exista antes de manipularlo
+            if (window.scrollY > 0) {
+                siteHeader.classList.add('scrolled');
+            } else {
+                siteHeader.classList.remove('scrolled');
+            }
+        }
+    });
+</script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
