@@ -15,9 +15,48 @@ permalink: /
 <section class="highlighted-section">
     {% assign all_portada_posts = site.posts | where_exp:"post","post.categories contains 'Portada'" | sort: "date" | reverse %}
 
-    {% assign main_featured_article = all_portada_posts | first %}
-    {% assign secondary_featured_articles_with_image = all_portada_posts | where_exp:"post","post.image" | slice: 1, 2 %}
-    {% assign no_image_articles_for_portada = all_portada_posts | where_exp:"post","post.image == nil" | slice: 0, 3 %}
+    {# Lógica mejorada para seleccionar los 6 posts de portada #}
+    {% assign main_featured_article = null %}
+    {% assign temp_secondary_with_image = "" | split: "" %}
+    {% assign temp_no_image = "" | split: "" %}
+    {% assign used_posts_urls = "" | split: "" %} {# Para evitar duplicados #}
+
+    {% comment %} 1. Seleccionar el Post Principal (featured: true o el más reciente de Portada) {% endcomment %}
+    {% for post in all_portada_posts %}
+        {% if post.featured and main_featured_article == null %}
+            {% assign main_featured_article = post %}
+            {% assign used_posts_urls = used_posts_urls | push: post.url %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    {% if main_featured_article == null %} {# Si no se encontró un post con featured: true, toma el más reciente de Portada #}
+        {% assign main_featured_article = all_portada_posts | first %}
+        {% assign used_posts_urls = used_posts_urls | push: main_featured_article.url %}
+    {% endif %}
+
+
+    {% comment %} 2. Seleccionar los dos Posts Secundarios con Imagen (featured_secondary: true y con imagen) {% endcomment %}
+    {% for post in all_portada_posts %}
+        {% unless used_posts_urls contains post.url %} {# Asegura que no sea el post principal #}
+            {% if post.featured_secondary and post.image and temp_secondary_with_image.size < 2 %}
+                {% assign temp_secondary_with_image = temp_secondary_with_image | push: post %}
+                {% assign used_posts_urls = used_posts_urls | push: post.url %}
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
+
+    {% comment %} 3. Seleccionar los tres Posts "Sin Imagen" (el resto más reciente de Portada) {% endcomment %}
+    {% for post in all_portada_posts %}
+        {% unless used_posts_urls contains post.url %} {# Asegura que no sea ya usado #}
+            {% if post.copete and temp_no_image.size < 3 %} {# Que tenga copete para el display #}
+                {% assign temp_no_image = temp_no_image | push: post %}
+                {% assign used_posts_urls = used_posts_urls | push: post.url %}
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
+
+    {% assign secondary_featured_articles_with_image = temp_secondary_with_image %}
+    {% assign no_image_articles_for_portada = temp_no_image %}
 
     <div class="main-featured-article-wrapper">
         {% if main_featured_article %}
