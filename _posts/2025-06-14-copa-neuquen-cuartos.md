@@ -3,7 +3,7 @@ layout: post
 title: Copa Neuquén: Definidos los cruces de Cuartos de Final
 antetitulo: La emoción del fútbol provincial entra en su etapa decisiva.
 copete: Los ocho mejores equipos de la Copa Neuquén se enfrentarán en partidos únicos, con favoritos y sorpresas buscando el título provincial.
-date: 2025-06-14 15:25:00 -0300 # Fecha y hora posterior a Ruta 39 (15:40:00)
+date: 2025-06-14 15:55:00 -0300 # ¡FECHA Y HORA ACTUALIZADA PARA SER LA MÁS RECIENTE!
 categories: [Portada]
 # NO INCLUIR 'image:' ni 'featured: true' ni 'featured_secondary: true' para este tipo de post
 ---
