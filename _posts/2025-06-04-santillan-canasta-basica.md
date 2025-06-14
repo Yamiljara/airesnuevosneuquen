@@ -4,10 +4,11 @@ title: Confusión de Santillán sobre la canasta básica reaviva el debate econ�
 antetitulo: Polémica por datos erróneos sobre pobreza.
 copete: La diputada de La Libertad Avanza afirmó que una familia necesitaba $360.000 para no ser pobre, pero la cifra real supera el millón de pesos. El error generó fuertes críticas y encendió el debate sobre la correcta lectura de datos del INDEC.
 date: 2025-06-04 22:40:00 -0300
-categories: ["Últimas Noticias", "Política"]
-image: /assets/images/santillan-pobreza.jpg
+categories: [Portada] # <-- CORREGIDO: AHORA SÓLO 'Portada' según tu instrucción
+image: /assets/images/santillan-pobreza.jpg # Asegúrate que esta imagen exista y sea 400px x 300px (4:3)
 image_alt: Grafico de inflación del indec.
-image_caption: 
+# image_caption:  # Este campo no lo necesitamos si no lo usas en la plantilla
+featured_secondary: true # <--- AGREGADO: MARCADO COMO NOTICIA SECUNDARIA CON IMAGEN
 ---
 
 La diputada nacional Juliana Santillán, representante de La Libertad Avanza, desató una fuerte polémica tras asegurar en televisión que una familia tipo necesitaba $360.000 mensuales para no ser considerada pobre. La afirmación, basada en datos del INDEC pero mal interpretada, fue rápidamente desmentida por economistas y medios especializados.
