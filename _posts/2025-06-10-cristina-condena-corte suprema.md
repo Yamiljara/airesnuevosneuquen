@@ -4,7 +4,7 @@ antetitulo: "El Poder Judicial al servicio de un Proyecto Político" # Nuevo cam
 title: "La corte suprema,guardianes de la proscripción: Confirmaron la condena a Cristina Kirchner y cerraron un capítulo de Lawfare."
 author: "airesnuevosNQN"
 date: 2025-06-10 22:00:00 -0300
-categories: [Portada] # Simplifiqué 'Categoría Principal' ya que 'Política' ya es una categoría principal.
+categories: [Portada]
 image: /assets/images/Cristina-Kirchner.jpg
 image_alt: "En la imagen la ex presidenta Cristina Fernandez de Kirchner"
 copete: "Con un fallo largamente cocinado en los pasillos del poder, la Corte Suprema de Justicia de la Nación ratificó hoy la condena a seis años de prisión e inhabilitación perpetua contra la expresidenta Cristina Fernández de Kirchner en la Causa Vialidad. La decisión, esperada por los grandes poderes fácticos, consolida una proscripción política que el kirchnerismo denunciaba desde hace años.."
