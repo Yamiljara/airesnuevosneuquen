@@ -5,175 +5,190 @@ permalink: /
 ---
 
 <div class="advertising-block-large">
-    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span><span class="typewriter-cursor"></span>
+    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span><span class="typewriter-cursor"></span>
 </div>
 
 <section class="latest-news-section">
-    <h2 class="section-title">Portada</h2>
+    <h2 class="section-title">Portada</h2>
 </section>
 
 <section class="highlighted-section">
-    {% assign all_portada_posts = site.posts | where_exp:"post","post.categories contains 'Portada'" | sort: "date" | reverse %}
+    {% assign all_portada_posts = site.posts | where_exp:"post","post.categories contains 'Portada'" | sort: "date" | reverse %}
 
-    {% assign main_featured_article = null %}
-    {% assign temp_secondary_with_image = "" | split: "" %}
-    {% assign temp_no_image = "" | split: "" %}
-    {% assign used_posts_urls = "" | split: "" %}
+    {% assign main_featured_article = null %}
+    {% assign temp_secondary_with_image = "" | split: "" %}
+    {% assign temp_no_image = "" | split: "" %}
+    {% assign used_posts_urls = "" | split: "" %}
 
-    {% for post in all_portada_posts %}
-        {% if post.featured and main_featured_article == null %}
-            {% assign main_featured_article = post %}
-            {% assign used_posts_urls = used_posts_urls | push: post.url %}
-            {% break %}
-        {% endif %}
-    {% endfor %}
-    {% if main_featured_article == null %}
-        {% assign main_featured_article = all_portada_posts | first %}
-        {% assign used_posts_urls = used_posts_urls | push: main_featured_article.url %}
-    {% endif %}
+    {% for post in all_portada_posts %}
+        {% if post.featured and main_featured_article == null %}
+            {% assign main_featured_article = post %}
+            {% assign used_posts_urls = used_posts_urls | push: post.url %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    {% if main_featured_article == null %}
+        {% assign main_featured_article = all_portada_posts | first %}
+        {% assign used_posts_urls = used_posts_urls | push: main_featured_article.url %}
+    {% endif %}
 
-    {% for post in all_portada_posts %}
-        {% unless used_posts_urls contains post.url %}
-            {% if post.featured_secondary and post.image and temp_secondary_with_image.size < 2 %}
-                {% assign temp_secondary_with_image = temp_secondary_with_image | push: post %}
-                {% assign used_posts_urls = used_posts_urls | push: post.url %}
-            {% endif %}
-        {% endunless %}
-    {% endfor %}
+    {% for post in all_portada_posts %}
+        {% unless used_posts_urls contains post.url %}
+            {% if post.featured_secondary and post.image and temp_secondary_with_image.size < 2 %}
+                {% assign temp_secondary_with_image = temp_secondary_with_image | push: post %}
+                {% assign used_posts_urls = used_posts_urls | push: post.url %}
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
 
-    {% for post in all_portada_posts %}
-        {% unless used_posts_urls contains post.url %}
-            {% if post.copete and temp_no_image.size < 3 %}
-                {% assign temp_no_image = temp_no_image | push: post %}
-                {% assign used_posts_urls = used_posts_urls | push: post.url %}
-            {% endif %}
-        {% endunless %}
-    {% endfor %}
+    {% for post in all_portada_posts %}
+        {% unless used_posts_urls contains post.url %}
+            {% if post.copete and temp_no_image.size < 3 %}
+                {% assign temp_no_image = temp_no_image | push: post %}
+                {% assign used_posts_urls = used_posts_urls | push: post.url %}
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
 
-    {% assign secondary_featured_articles_with_image = temp_secondary_with_image %}
-    {% assign no_image_articles_for_portada = temp_no_image %}
+    {% assign secondary_featured_articles_with_image = temp_secondary_with_image %}
+    {% assign no_image_articles_for_portada = temp_no_image %}
 
-    <div class="main-featured-article-wrapper">
-        {% if main_featured_article %}
-            <a href="{{ main_featured_article.url | relative_url }}" class="main-featured-article">
-                {% if main_featured_article.image %}<img src="{{ main_featured_article.image | relative_url }}" alt="{{ main_featured_article.image_alt | default: main_featured_article.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
-                <div class="article-info">
-                    <span class="category-tag">Portada</span>
-                    <h2>{{ main_featured_article.title }}</h2>
-                    <p>{{ main_featured_article.copete }}</p>
-                    <span class="article-date">{{ main_featured_article.date | date: "%d de %B de %Y" }}</span>
-                </div>
-            </a>
-        {% else %}
-            <a href="#" class="main-featured-article placeholder-card">
-                <img src="/assets/images/placeholder-news.jpg" alt="Noticia Principal Pendiente">
-                <div class="article-info"><span class="category-tag">Portada</span><h2>Noticia Principal Pendiente</h2><p>Contenido principal pendiente.</p><span class="article-date">Próximamente</span></div>
-            </a>
-        {% endif %}
-    </div>
+    <div class="main-featured-article-wrapper">
+        {% if main_featured_article %}
+            <a href="{{ main_featured_article.url | relative_url }}" class="main-featured-article">
+                {% if main_featured_article.image %}<img src="{{ main_featured_article.image | relative_url }}" alt="{{ main_featured_article.image_alt | default: main_featured_article.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
+                <div class="article-info">
+                    <span class="category-tag">Portada</span>
+                    <h2>{{ main_featured_article.title }}</h2>
+                    <p>{{ main_featured_article.copete }}</p>
+                    <span class="article-date">{{ main_featured_article.date | date: "%d de %B de %Y" }}</span>
+                </div>
+            </a>
+        {% else %}
+            <a href="#" class="main-featured-article placeholder-card">
+                <img src="/assets/images/placeholder-news.jpg" alt="Noticia Principal Pendiente">
+                <div class="article-info"><span class="category-tag">Portada</span><h2>Noticia Principal Pendiente</h2><p>Contenido principal pendiente.</p><span class="article-date">Próximamente</span></div>
+            </a>
+        {% endif %}
+    </div>
 
-    <div class="secondary-featured-articles-grid-wrapper">
-        <div class="secondary-featured-articles-grid">
-            {% for post in secondary_featured_articles_with_image %}
-                <a href="{{ post.url | relative_url }}" class="small-article-card">
-                    {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
-                    <div class="article-content">
-                        <span class="category-tag">Portada</span>
-                        <h3>{{ post.title }}</h3>
-                        <span class="article-date">{{ post.date | date: "%d de %B de %Y" }}</span>
-                    </div>
-                </a>
-            {% endfor %}
-            {% assign filled_secondary = secondary_featured_articles_with_image.size %}
-            {% assign remaining_secondary = 2 | minus: filled_secondary %}
-            {% for i in (1..remaining_secondary) %}
-                <a href="#" class="small-article-card placeholder-card">
-                    <img src="/assets/images/placeholder-news.jpg" alt="Noticia Secundaria Pendiente">
-                    <div class="article-content"><span class="category-tag">Portada</span><h3>Noticia Secundaria Pendiente</h3><span class="article-date">Próximamente</span></div>
-                </a>
-            {% endfor %}
-        </div>
-    </div>
+    <div class="secondary-featured-articles-grid-wrapper">
+        <div class="secondary-featured-articles-grid">
+            {% for post in secondary_featured_articles_with_image %}
+                <a href="{{ post.url | relative_url }}" class="small-article-card">
+                    {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
+                    <div class="article-content">
+                        <span class="category-tag">Portada</span>
+                        <h3>{{ post.title }}</h3>
+                        <span class="article-date">{{ post.date | date: "%d de %B de %Y" }}</span>
+                    </div>
+                </a>
+            {% endfor %}
+            {% assign filled_secondary = secondary_featured_articles_with_image.size %}
+            {% assign remaining_secondary = 2 | minus: filled_secondary %}
+            {% for i in (1..remaining_secondary) %}
+                <a href="#" class="small-article-card placeholder-card">
+                    <img src="/assets/images/placeholder-news.jpg" alt="Noticia Secundaria Pendiente">
+                    <div class="article-content"><span class="category-tag">Portada</span><h3>Noticia Secundaria Pendiente</h3><span class="article-date">Próximamente</span></div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
 
-    <div class="no-image-articles-grid-wrapper">
-        <div class="no-image-articles-grid">
-            {% for post in no_image_articles_for_portada %}
-                <a href="{{ post.url | relative_url }}" class="horizontal-news-card">
-                    <h3>{{ post.title }}</h3>
-                    <p>{{ post.copete }}</p>
-                </a>
-            {% endfor %}
-            {% assign filled_no_image = no_image_articles_for_portada.size %}
-            {% assign remaining_no_image = 3 | minus: filled_no_image %}
-            {% for i in (1..remaining_no_image) %}
-                <a href="#" class="horizontal-news-card placeholder-card">
-                    <h3>Noticia Sin Imagen Pendiente</h3>
-                    <p>Contenido pendiente.</p>
-                </a>
-            {% endfor %}
-        </div>
-    </div>
+    <div class="no-image-articles-grid-wrapper">
+        <div class="no-image-articles-grid">
+            <h3>DEBUG: Posts sin imagen en Portada</h3>
+            <ul>
+                {% for debug_post in no_image_articles_for_portada %}
+                    <li>{{ debug_post.title }} ({{ debug_post.date | date: "%Y-%m-%d %H:%M:%S" }})</li>
+                {% endfor %}
+                <li>Total: {{ no_image_articles_for_portada.size }}</li>
+            </ul>
+
+            <hr>
+            <h3>DEBUG: TODOS los Posts de Portada (ordenados por fecha)</h3>
+            <ul>
+                {% for debug_all_post in all_portada_posts %}
+                    <li>{{ debug_all_post.title }} ({{ debug_all_post.date | date: "%Y-%m-%d %H:%M:%S" }}) - Principal: {{ debug_all_post.featured | default: "false" }} - Secundaria: {{ debug_all_post.featured_secondary | default: "false" }} - Con Imagen: {{ debug_all_post.image | default: "false" }}</li>
+                {% endfor %}
+            </ul>
+                        {% for post in no_image_articles_for_portada %}
+                <a href="{{ post.url | relative_url }}" class="horizontal-news-card">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.copete }}</p>
+                </a>
+            {% endfor %}
+            {% assign filled_no_image = no_image_articles_for_portada.size %}
+            {% assign remaining_no_image = 3 | minus: filled_no_image %}
+            {% for i in (1..remaining_no_image) %}
+                <a href="#" class="horizontal-news-card placeholder-card">
+                    <h3>Noticia Sin Imagen Pendiente</h3>
+                    <p>Contenido pendiente.</p>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
 </section>
 
 <div class="advertising-block-large">
-    <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
+    <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
 </div>
 
 <div class="advertising-blocks-small">
-    <div class="advertising-block-small">
-        <span class="typewriter-text">Publicidad pequeña.</span><span class="typewriter-cursor"></span>
-    </div>
-    <div class="advertising-block-small">
-        <span class="typewriter-text">Otro anuncio corto.</span><span class="typewriter-cursor"></span>
-    </div>
-    <div class="advertising-block-small">
-        <span class="typewriter-text">Espacio disponible.</span><span class="typewriter-cursor"></span>
-    </div>
+    <div class="advertising-block-small">
+        <span class="typewriter-text">Publicidad pequeña.</span><span class="typewriter-cursor"></span>
+    </div>
+    <div class="advertising-block-small">
+        <span class="typewriter-text">Otro anuncio corto.</span><span class="typewriter-cursor"></span>
+    </div>
+    <div class="advertising-block-small">
+        <span class="typewriter-text">Espacio disponible.</span><span class="typewriter-cursor"></span>
+    </div>
 </div>
 
 <section class="latest-news-intercalated-section" id="ultimas-noticias">
-    <h2 class="section-title">Últimas Noticias</h2>
-    <div class="news-and-ads-grid">
-        {% assign temp_all_posts = site.posts | sort: "date" | reverse %}
-        {% assign filtered_ultimas_noticias_posts = "" | split: "" %}
+    <h2 class="section-title">Últimas Noticias</h2>
+    <div class="news-and-ads-grid">
+        {% assign temp_all_posts = site.posts | sort: "date" | reverse %}
+        {% assign filtered_ultimas_noticias_posts = "" | split: "" %}
 
-        {% for post in temp_all_posts %}
-          {% unless post.categories contains 'Portada' %}
-            {% assign filtered_ultimas_noticias_posts = filtered_ultimas_noticias_posts | push: post %}
-          {% endunless %}
-        {% endfor %}
+        {% for post in temp_all_posts %}
+          {% unless post.categories contains 'Portada' %}
+            {% assign filtered_ultimas_noticias_posts = filtered_ultimas_noticias_posts | push: post %}
+          {% endunless %}
+        {% endfor %}
 
-        {% assign current_post_index = 0 %}
-        {% for i in (1..12) %}
-            {% assign is_ad = false %}
-            {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}{% assign is_ad = true %}{% endif %}
+        {% assign current_post_index = 0 %}
+        {% for i in (1..12) %}
+            {% assign is_ad = false %}
+            {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}{% assign is_ad = true %}{% endif %}
 
-            {% if is_ad %}
-                <div class="advertising-block-vertical">
-                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                </div>
-            {% else %}
-                {% assign current_post = filtered_ultimas_noticias_posts[current_post_index] %}
-                {% if current_post %}
-                    <a href="{{ current_post.url | relative_url }}" class="latest-news-card">
-                        <div class="image-wrapper">
-                            {% if current_post.image %}<img src="{{ current_post.image | relative_url }}" alt="{{ current_post.image_alt | default: current_post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
-                        </div>
-                        <div class="article-content">
-                            <span class="category-tag">{% if current_post.categories %}{{ current_post.categories | first }}{% else %}Noticia{% endif %}</span>
-                            <h3>{{ current_post.title }}</h3>
-                            <p class="article-copete">{{ current_post.copete }}</p>
-                            <span class="article-date">{{ current_post.date | date: "%d de %B de %Y" }}</span>
-                        </div>
-                    </a>
-                    {% assign current_post_index = current_post_index | plus: 1 %}
-                {% else %}
-                    <a href="#" class="latest-news-card placeholder-card">
-                        <div class="image-wrapper"><img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente"></div>
-                        <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
-                    </a>
-                {% endif %}
-            {% endif %}
-        {% endfor %}
-    </div>
+            {% if is_ad %}
+                <div class="advertising-block-vertical">
+                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+            {% else %}
+                {% assign current_post = filtered_ultimas_noticias_posts[current_post_index] %}
+                {% if current_post %}
+                    <a href="{{ current_post.url | relative_url }}" class="latest-news-card">
+                        <div class="image-wrapper">
+                            {% if current_post.image %}<img src="{{ current_post.image | relative_url }}" alt="{{ current_post.image_alt | default: current_post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
+                        </div>
+                        <div class="article-content">
+                            <span class="category-tag">{% if current_post.categories %}{{ current_post.categories | first }}{% else %}Noticia{% endif %}</span>
+                            <h3>{{ current_post.title }}</h3>
+                            <p class="article-copete">{{ current_post.copete }}</p>
+                            <span class="article-date">{{ current_post.date | date: "%d de %B de %Y" }}</span>
+                        </div>
+                    </a>
+                    {% assign current_post_index = current_post_index | plus: 1 %}
+                {% else %}
+                    <a href="#" class="latest-news-card placeholder-card">
+                        <div class="image-wrapper"><img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente"></div>
+                        <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
+                    </a>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
 </section>
