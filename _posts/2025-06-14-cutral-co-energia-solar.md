@@ -3,7 +3,7 @@ layout: post
 title: Cutral Co avanza en transición energética con energía solar en edificios públicos
 antetitulo: Convenio con la UTN para instalar paneles solares.
 copete: La Municipalidad de Cutral Co y la UTN firmaron un acuerdo para la instalación de 64 paneles solares en el edificio municipal y el Colegio Preuniversitario Técnico, buscando reducir el consumo eléctrico y promover la energía limpia.
-date: 2025-06-14 14:28:00 -0300 # Ajusta la hora si quieres que sea más reciente que Santillán
+date: 2025-06-14 14:28:00 -0300 
 categories: [Portada]
 image: /assets/images/cutral-co-energia-solar-portada.jpg
 image_alt: Paneles solares en un edificio.
