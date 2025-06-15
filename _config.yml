@@ -4,7 +4,7 @@ description: LA NUEVA VOZ DE LA NOTICIA
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-lang: es # <--- ¡Aquí está la línea añadida!
+lang: es
 
 # Build settings
 markdown: kramdown
@@ -27,12 +27,6 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
-# Colecciones
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:title/ # Estructura de URL para los posts
-
 # Defaults para los posts (útil para campos comunes)
 defaults:
   -
@@ -44,10 +38,6 @@ defaults:
       author: "Redacciones AIRESNUEVOSNQN" # Autor por defecto
       image_description: "" # Descripción de imagen por defecto
       show_related_posts: true # Mostrar noticias relacionadas por defecto
-
-# Configuración de categorías (opcional, Jekyll las genera automáticamente)
-# Esto puede ser útil si quieres definir URLs amigables para categorías específicas
-# Por ahora, Jekyll las maneja bien por defecto con la configuración de permalink de posts
 
 # Configuración de fecha y hora
 # timezone: America/Buenos_Aires # Comentada para evitar problemas en Windows
