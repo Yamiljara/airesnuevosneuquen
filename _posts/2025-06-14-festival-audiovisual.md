@@ -5,6 +5,9 @@ antetitulo: El evento promueve el cine y las artes audiovisuales en la Norpatago
 copete: La ciudad de Neuquén se prepara para una nueva edición de su Festival Audiovisual (FAN), el evento que busca promover el cine y las artes audiovisuales en la Norpatagonia.
 date: 2025-06-14 15:45:00 -0300
 categories: [Portada]
+image: /assets/images/Festival-FAN-2025.jpg # ¡IMPORTANTE! Reemplaza esto con la ruta real de tu imagen. Ejemplo: /assets/img/festival-audiovisual-neuquen.jpg
+image_alt: "Festival Audiovisual de Neuquén, personas viendo una pantalla de cine." # ¡IMPORTANTE! Reemplaza esto con una descripción concisa de la imagen.
+image_caption: "Crédito de la foto: [Nombre del fotógrafo/Fuente]. Pie de foto descriptivo del evento." # ¡IMPORTANTE! Reemplaza esto con el pie de foto de la imagen.
 ---
 
 La ciudad de Neuquén se prepara para una nueva edición de su Festival Audiovisual (FAN), el evento que busca promover el cine y las artes audiovisuales en la Norpatagonia. La organización ha abierto la convocatoria para la recepción de obras, invitando a cineastas y creadores de todo el país a participar en este importante encuentro que se desarrollará del 15 al 19 de octubre de 2025. Las inscripciones estarán abiertas hasta el 31 de julio, y los interesados podrán competir en diversas categorías que abarcan desde largometrajes de ficción y documentales hasta cortometrajes patagónicos y animaciones, según detalla el cronograma publicado en el sitio oficial del festival.

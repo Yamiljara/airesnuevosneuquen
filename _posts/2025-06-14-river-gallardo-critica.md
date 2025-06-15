@@ -5,6 +5,9 @@ antetitulo: El "Muñeco" no perdonó el bajo rendimiento millonario.
 copete: A pesar de clasificar a octavos de final como líder de grupo, el empate de River Plate ante Universitario generó la dura reacción de Marcelo Gallardo, quien señaló falta de dinámica y errores defensivos.
 date: 2025-06-14 15:30:00 -0300
 categories: [Portada]
+image: /assets/images/gallardo-critico-river.jpg # ¡IMPORTANTE! Reemplaza esto con el nombre real de tu archivo de imagen. Ejemplo: /assets/images/gallardo-critica-river.jpg
+image_alt: "Marcelo Gallardo, ex entrenador de River Plate, haciendo un gesto de desaprobación." # ¡IMPORTANTE! Reemplaza esto con una descripción concisa de la imagen.
+image_caption: "Crédito de la foto: [Nombre del fotógrafo/Fuente]. Pie de foto sobre la crítica de Gallardo." # ¡IMPORTANTE! Reemplaza esto con el pie de foto de la imagen.
 ---
 
 River Plate consiguió su clasificación a los octavos de final de la Copa Libertadores como líder del Grupo B, pero el empate ante Universitario dejó un sabor amargo. En el Monumental, con estadio lleno y un gol de Facundo Colidio a los 36 minutos, el equipo de Martín Demichelis parecía encaminado. Sin embargo, un error defensivo permitió el empate del conjunto peruano, que resistió hasta el final.
