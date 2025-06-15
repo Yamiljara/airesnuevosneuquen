@@ -3,7 +3,7 @@ layout: post
 title: Frío Polar, Vientos y Nevadas Persistentes Alerta Naranja para el Norte Neuquino
 antetitulo: Alerta Meteorológica y Condiciones Invernales
 copete: La región del Norte Neuquino se prepara para un inicio de semana con condiciones invernales extremas, marcadas por un continuo ingreso de aire frío, vientos intensos, lluvias y nevadas. El Servicio Meteorológico Nacional (SMN) y la Autoridad Interjurisdiccional de Cuencas (AIC) mantienen alertas, especialmente para la zona cordillerana, donde se esperan importantes acumulaciones de nieve.
-date: 2025-06-16 09:00:00 -0300
+date: 2025-06-15 19:30:00 -0300
 categories: [Regionales]
 image: /assets/images/clima-norte-neuquino.jpg
 image_alt: "Paisaje nevado en el norte neuquino con montañas cubiertas de nieve."
