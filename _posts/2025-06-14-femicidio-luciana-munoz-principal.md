@@ -1,14 +1,15 @@
 ---
 layout: post
-antetitulo: "Caso Luciana Muñoz" 
-title: "Femicidio de Luciana Muñoz: Novedades en la Causa y Clamor Social en el Centro de la Agenda Neuquina" 
+antetitulo: "Caso Luciana Muñoz"
+title: "Femicidio de Luciana Muñoz: Novedades en la Causa y Clamor Social en el Centro de la Agenda Neuquina"
 author: "Redacción AIRESNUEVOSNQN"
-date: 2025-06-14 12:49:14 -0300 
-categories: [Portada] 
-image: "/assets/images/luciana-munoz.jpg" 
+date: 2025-06-14 12:49:14 -0300
+categories: [Portada]
+image: "/assets/images/luciana-munoz.jpg"
 image_alt: "Familiares y organizaciones exigiendo justicia por Luciana Muñoz."
+image_caption: "Marcha pidiendo justicia por Luciana Muñoz en las calles de Neuquén." # <-- ¡Aquí está la corrección!
 copete: "El trágico femicidio de Luciana Muñoz en Neuquén Capital sigue siendo una causa activa en la justicia provincial, con la Fiscalía trabajando en nuevas líneas de investigación. Familiares y organizaciones de mujeres han intensificado sus acciones, exigiendo celeridad en el proceso y la pronta elevación a juicio para esclarecer el crimen y obtener justicia."
-featured: true 
+featured: true
 ---
 
 El trágico femicidio de Luciana Muñoz en Neuquén Capital sigue siendo una causa activa en la justicia provincial, con la Fiscalía trabajando en nuevas líneas de investigación. Familiares y organizaciones de mujeres han intensificado sus acciones, exigiendo celeridad en el proceso y la pronta elevación a juicio para esclarecer el crimen y obtener justicia.

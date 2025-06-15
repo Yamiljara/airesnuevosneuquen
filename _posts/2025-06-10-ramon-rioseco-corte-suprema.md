@@ -5,8 +5,9 @@ title: "No cayó un fallo, cayó un velo: Rioseco apuntó duramente contra la co
 author: "airesnuevosNQN"
 date: 2025-06-10 22:45:00 -0300
 categories: [Portada]
-image: /assets/images/ramon-rioseco.jpg 
+image: /assets/images/ramon-rioseco.jpg
 image_alt: "Ramón Solano Rioseco, intendente de Cutral Co"
+image_caption: "El intendente Ramón Rioseco junto a la expresidenta Cristina Kirchner."
 copete: "A través de un comunicado de prensa que rápidamente comenzó a circular en redes sociales, Ramón Solano Rioseco, intendente de Cutral Co y ex candidato a gobernador, denunció hoy que la Corte Suprema de Justicia de la Nación 'consagró la proscripción política' de Cristina Fernández de Kirchner. El referente neuquino calificó la decisión como 'lawfare puro' y un ataque directo a la democracia."
 featured_secondary: true
 ---
