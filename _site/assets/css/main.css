@@ -1148,8 +1148,8 @@ img {
 }
 
 /* ==========================================================================
-    Responsive Design (Media Queries)
-    ========================================================================== */
+   Responsive Design (Media Queries)
+   ========================================================================== */
 @media (max-width: 992px) {
     /* ... otros estilos ... */
 
@@ -1494,13 +1494,6 @@ img {
         margin-bottom: 0px; /* Eliminar el margen inferior de la imagen */
     }
 
-    /* AJUSTE CLAVE: PARA EL CUERPO DEL TEXTO DEL POST EN MÓVILES */
-    .post-body p {
-        text-align: left; /* Alinea el texto a la izquierda en lugar de justificado */
-        word-break: break-word; /* Asegura que las palabras largas se rompan si es necesario */
-        hyphens: auto; /* Permite la división de palabras para mejor justificación (opcional) */
-    }
-
     /* Noticias adicionales en móviles */
     .additional-news-after-main-section .articles-grid {
         grid-template-columns: 1fr;
@@ -1609,13 +1602,6 @@ img {
         margin-bottom: 0px; /* Eliminar el margen inferior de la imagen */
     }
 
-    /* AJUSTE CLAVE: PARA EL CUERPO DEL TEXTO DEL POST EN MÓVILES */
-    .post-body p {
-        text-align: left; /* Alinea el texto a la izquierda en lugar de justificado */
-        word-break: break-word; /* Asegura que las palabras largas se rompan si es necesario */
-        hyphens: auto; /* Permite la división de palabras para mejor justificación (opcional) */
-    }
-
     /* Noticias adicionales en móviles muy pequeñas */
     .additional-news-after-main-section .articles-grid {
         gap: 15px;
@@ -1638,8 +1624,8 @@ img {
 }
 
 /* ==========================================================================
-    Estilos para el efecto de máquina de escribir y Menú Hamburguesa
-    ========================================================================== */
+   Estilos para el efecto de máquina de escribir y Menú Hamburguesa
+   ========================================================================== */
 .typewriter-text {
     font-family: var(--font-monospace);
     overflow: hidden;
@@ -1865,8 +1851,8 @@ img {
 }
 
 /* ==========================================================================
-    Nuevos Estilos para la Página de Suscripción (actualizados)
-    ========================================================================== */
+   Nuevos Estilos para la Página de Suscripción (actualizados)
+   ========================================================================== */
 
 /* Colores y Fuentes (asegúrate que estas variables están definidas en la parte superior de tu main.css, en :root) */
 /* Si no las tienes, podrías definirlas así, o usar los colores directos en los estilos de abajo:
