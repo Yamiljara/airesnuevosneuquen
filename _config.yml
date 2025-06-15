@@ -26,12 +26,6 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
-# Colecciones
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:title/ # Estructura de URL para los posts
-
 # Defaults para los posts (útil para campos comunes)
 defaults:
   -
