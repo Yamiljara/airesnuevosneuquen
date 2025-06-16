@@ -3,7 +3,7 @@ title: AIRESNUEVOSNQN
 description: LA NUEVA VOZ DE LA NOTICIA
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-lang: es # <--- ¡Aquí está la línea añadida!
+lang: es
 
 # Build settings
 markdown: kramdown
@@ -11,6 +11,7 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2 # Plugin para paginación avanzada
+  - jekyll-sitemap # <-- ¡Esta es la línea que agregamos!
 
 # Paginación (jekyll-paginate-v2)
 pagination:
