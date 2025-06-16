@@ -1,7 +1,7 @@
 ---
 layout: post
 title: El intendente Ramón Rioseco participó de una reunión nacional de intendentes en respaldo a Cristina Kirchner
-date: 2025-06-16 20:30:00 -0300
+date: 2025-06-16 20:10:00 -0300
 author: Redacciones AIRESNUEVOSNQN
 categories: Provinciales
 antetitulo: Encuentro en Buenos Aires
