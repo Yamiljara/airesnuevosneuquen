@@ -6,7 +6,7 @@ author: Redacciones AIRESNUEVOSNQN
 categories: Nacionales
 antetitulo: A siete décadas de un ataque sin precedentes.
 copete: Se cumplen 70 años de uno de los episodios más trágicos y oscuros de la historia reciente de Argentina: el bombardeo a Plaza de Mayo del 16 de junio de 1955. Aquel día, aviones de la Armada y la Fuerza Aérea arrojaron casi 10.000 kilos de bombas sobre la multitud congregada frente a la Casa Rosada, dejando un saldo de más de 300 muertos y un millar de heridos, un hecho que inauguró un ciclo de violencia política cuyas consecuencias se sintieron en todo el país, incluida la provincia de Neuquén.
-image: /assets/images/70-años-bombareo-1.jpg 
+image: /assets/images/70-años-bombareo-2 (3).jpg
 image_alt: Bombardeo a Plaza de Mayo en 1955
 ---
 
