@@ -17,10 +17,8 @@ Los atacantes, que buscaban asesinar a Perón y derrocar su gobierno, utilizaron
 
 Este trágico suceso, si bien tuvo su epicentro en la capital federal, tuvo repercusiones en todas las provincias, incluida Neuquén. Aunque no hay registros de ataques directos en la región Confluencia o en el resto del territorio neuquino durante ese día específico, el bombardeo a Plaza de Mayo fue un catalizador para la polarización política que se acentuaría en los meses siguientes y desembocaría en la llamada "Revolución Libertadora" en septiembre de ese mismo año. En Neuquén, como en otras provincias, se vivía un clima de creciente tensión política, con la lealtad al gobierno peronista y la efervescencia opositora marcando la agenda social y política.
 
-<figure>
-  <img src="/assets/images/70-años-bomabardeo-2.jpg" alt="Plaza de Mayo durante el bombardeo de 1955 con edificios en llamas">
-  <figcaption>Imagen de la Plaza de Mayo durante el trágico bombardeo del 16 de junio de 1955.</figcaption>
-</figure>
+![Plaza de Mayo durante el bombardeo de 1955 con edificios en llamas](/assets/images/70-años-bomabardeo-2.jpg) 
+*Imagen de la Plaza de Mayo durante el trágico bombardeo del 16 de junio de 1955.*
 
 Historiadores y analistas coinciden en que el 16 de junio de 1955 marcó un antes y un después en la historia argentina, inaugurando un período de inestabilidad institucional y violencia política que se prolongaría por décadas. Aquel día sentó un precedente nefasto para la democracia, demostrando la voluntad de algunos sectores de recurrir a la fuerza extrema para dirimir conflictos políticos. La masacre de civiles en plena Plaza de Mayo, un símbolo de la soberanía popular, es un recordatorio constante de los peligros que acechan cuando se quiebran los consensos democráticos.
 
