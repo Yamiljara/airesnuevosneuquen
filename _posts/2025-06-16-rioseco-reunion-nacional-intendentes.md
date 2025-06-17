@@ -6,8 +6,9 @@ author: Redacciones AIRESNUEVOSNQN
 categories: Provinciales
 antetitulo: Encuentro en Buenos Aires
 copete: El jefe comunal de Cutral Co, Ramón Rioseco, fue parte de un encuentro que congregó a más de 250 intendentes de todo el país en la sede del Partido Justicialista en Buenos Aires, con el objetivo de organizar una movilización en apoyo a la expresidenta.
-image: /assets/images/rioseco-reunión-apoyo-ckf.jpg # Opcional: Ruta a tu imagen principal (idealmente 400px x 225px)
+image: /assets/images/rioseco-reunión-apoyo-ckf.jpg 
 image_alt: Ramón Rioseco en reunión de intendentes
+image_caption: "El intendente Ramón Rioseco en el encuentro nacional de intendentes en Buenos Aires." # <-- NUEVO CAMPO PARA EL PIE DE FOTO
 ---
 
 El intendente de Cutral Co, Ramón Rioseco, viajó a la capital federal para sumarse a la "reunión nacional de intendentes" organizada en la sede central del Partido Justicialista. Este encuentro, que reunió a más de 250 jefes comunales de diversas provincias, tuvo como eje central la definición de acciones en respaldo a la vicepresidenta Cristina Fernández de Kirchner, en el marco de la causa Vialidad.
