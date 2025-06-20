@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Gobernador Figueroa resalta el avance clave en la remediación del cerro de la virgen en Chos Malal."
-antetitulo: "Gestión provincial y obras estratégicas."
-copete: El Gobernador de Neuquén, Rolando Figueroa, destacó los significativos progresos en las obras de remediación del Cerro de la Virgen en Chos Malal, una iniciativa crucial para la estabilidad geológica y la seguridad de la localidad. Los trabajos, ejecutados por el Batallón de Ingenieros de Montaña VI del Ejército Argentino en conjunto con Vialidad Provincial, buscan mitigar riesgos y proteger a la comunidad en el Norte neuquino.
-date: 2025-06-20 09:50:00 -0300
-categories: [Regionales]
-tags: [Obras en el norte de la provincia del neuquén]
-image: /assets/images/cerro-de-la-virgen.jpg
-image_alt: "Cerro de la virgen, chosmalal."
-image_caption: "Cerro de la virgen, Chosmalal."
+title: "Causa Cristina Kirchner: El fallo de esta Corte Suprema va a ser anulada, aseguró Gregorio Dalbón"
+antetitulo: "Repercusiones en la esfera judicial y política nacional."
+copete:  En un giro que promete generar fuerte repercusión en el ámbito judicial y político nacional, el abogado de la expresidenta Cristina Fernández de Kirchner, Gregorio Dalbón, ha expresado públicamente que el "fallo de esta Corte Suprema va a ser anulada", enviando un mensaje de tranquilidad a la ciudadanía. La contundente declaración, difundida a través de redes sociales, reaviva el debate sobre la situación judicial de la exmandataria y la independencia de poderes en Argentina.
+date: 2025-06-20 11:15:00 -0300
+categories: [Nacionales]
+tags: [Declaraciones del agobado de Cristina Kirchnar]
+image: /assets/images/dalbón-abogado.jpg
+image_alt: "Abogado de Cristina Kirchner."
+image_caption: "Gregorio Dálbon en declaraciones a la prensa."
 author: "Redacción Aires Nuevos NQN"
 ---
 
