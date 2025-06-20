@@ -1,12 +1,15 @@
 ---
 layout: post
-title: 20 de junio: Argentina conmemora el Día de la Bandera, un símbolo de unidad e identidad forjado por Belgrano.
-antetitulo:  Este 20 de junio, la República Argentina celebra el Día de la Bandera en honor al General Manuel Belgrano, su creador, en el 205º aniversario de su paso a la inmortalidad. Desde Ushuaia hasta La Quiaca, y con especial fervor en la provincia de Neuquén, miles de ciudadanos, estudiantes y autoridades rinden homenaje a uno de los padres fundadores de nuestra nación, reafirmando el compromiso con los valores de libertad, independencia y educación que él encarnó.
-date: 2025-06-20 00:30:00 -0300
+title: "20 de junio: Argentina conmemora el Día de la Bandera, un símbolo de unidad e identidad forjado por Belgrano."
+antetitulo: "El Legado de Belgrano y la Nación que Construimos."
+copete: Este 20 de junio, la República Argentina celebra el Día de la Bandera, honrando el legado del General Manuel Belgrano en el 205º aniversario de su paso a la inmortalidad. Un repaso por la figura del creador de nuestro emblema patrio y su visión para una nación justa e independiente.
+date: 2025-06-20 01:00:00 -0300
 categories: [Nacionales]
+tags: [dia de la bandera, manuel belgrano, efemeride, historia argentina, unidad nacional, educacion]
 image: /assets/images/bandera-dia-nacional.jpg
-image_alt: "Día nacional de la bandera argentina."
-image_caption: "Bandera Argentina, flameando en los Andes."
+image_alt: "Estudiantes realizando la promesa a la bandera argentina."
+image_caption: "Bandera Argentina flameando en los Andes."
+author: "Redacción Aires Nuevos NQN"
 ---
 
 La figura de Manuel Belgrano trasciende los manuales de historia para posicionarse como un pilar fundamental en la construcción de la identidad argentina. Abogado, economista, periodista, militar y político, Belgrano fue un intelectual ilustrado que comprendió la necesidad de dotar a la joven nación de símbolos propios que unificaran a sus habitantes. Fue así como, a orillas del río Paraná en 1812, en lo que hoy es la ciudad de Rosario, en la región Centro de Argentina, izó por primera vez la bandera celeste y blanca, un estandarte que se convertiría en el emblema de nuestra soberanía.
@@ -18,4 +21,3 @@ En la provincia de Neuquén, este 20 de junio adquiere una significancia particu
 Asimismo, en otras regiones de Neuquén, como el Norte Neuquino en localidades como Chos Malal o en la Comarca Petrolera en Cutral Co y Plaza Huincul, también se replican las ceremonias. Allí, comunidades enteras, con sus banderas en alto, participan de desfiles y homenajes que resaltan la importancia de Belgrano en la forja de la nación. Es un día para recordar que la Bandera nos representa a todos, sin importar nuestras diferencias, y que su legado nos convoca a trabajar unidos por una Argentina más justa y próspera.
 
 El Día de la Bandera es, en esencia, una invitación a reflexionar sobre nuestro pasado, a valorar los sacrificios de aquellos que nos precedieron y a proyectar un futuro en el que los ideales de Belgrano sigan iluminando el camino de la República Argentina. La bandera, con sus colores, no es solo un trozo de tela, sino la materialización de nuestra historia, nuestra diversidad y nuestra inquebrantable vocación de libertad.
-
