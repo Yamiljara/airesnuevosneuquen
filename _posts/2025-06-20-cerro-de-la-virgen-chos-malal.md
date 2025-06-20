@@ -8,7 +8,7 @@ categories: [Regionales]
 tags: [Obras en el norte de la provincia del neuquén]
 image: /assets/images/cerro-de-la-virgen.jpg
 image_alt: "Cerro de la virgen, chosmalal."
-image_caption:
+image_caption: "Cerro de la virgen, Chosmalal."
 author: "Redacción Aires Nuevos NQN"
 ---
 
