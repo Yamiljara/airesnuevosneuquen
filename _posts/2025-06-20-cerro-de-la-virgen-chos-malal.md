@@ -3,9 +3,9 @@ layout: post
 title: "Gobernador Figueroa resalta el avance clave en la remediación del cerro de la virgen en Chos Malal."
 antetitulo: " Gestión Provincial y Obras Estratégicas."
 copete:  El Gobernador de Neuquén, Rolando Figueroa, destacó los significativos progresos en las obras de remediación del Cerro de la Virgen en Chos Malal, una iniciativa crucial para la estabilidad geológica y la seguridad de la localidad. Los trabajos, ejecutados por el Batallón de Ingenieros de Montaña VI del Ejército Argentino en conjunto con Vialidad Provincial, buscan mitigar riesgos y proteger a la comunidad en el Norte neuquino.
-date: 2025-06-20 11:15:00 -0300
-categories: [Nacionales]
-tags: [Norte neuquino, cerro de la virgen]
+date: 2025-06-20 11:50:00 -0300
+categories: [Regionales]
+tags: [Norte neuquino cerro de la virgen]
 image: /assets/images/cerro-de-la-virgen.jpg
 image_alt: "Cerro de la virgen Chosmalal."
 image_caption: "Remodelación del cerro de la virgen."
