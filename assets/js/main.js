@@ -131,8 +131,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // MODIFICACIÓN CLAVE: Iterar sobre todos los elementos '.typewriter-text'
+    // Pero solo aplicar el efecto de máquina de escribir si NO están dentro de un '.advertising-block-small'
     typewriterTexts.forEach(element => {
-        startTypingLoop(element);
+        // 'closest()' busca el ancestro más cercano con la clase especificada.
+        // Si element.closest('.advertising-block-small') devuelve null, significa que no está dentro de uno.
+        if (element.closest('.advertising-block-small')) {
+            // Si el elemento '.typewriter-text' está dentro de '.advertising-block-small',
+            // establecemos el texto completo de inmediato y sin animación.
+            element.innerHTML = adText;
+            // Opcional: Asegúrate de que el cursor CSS no se muestre en estos bloques.
+            // Esto se hace con CSS: .advertising-block-small .typewriter-cursor { display: none; }
+        } else {
+            // Si el elemento '.typewriter-text' NO está dentro de '.advertising-block-small',
+            // se aplica el efecto normal de máquina de escribir.
+            startTypingLoop(element);
+        }
     });
 
     // Limpiar timeouts al salir de la página

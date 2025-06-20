@@ -32,18 +32,18 @@ checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
 creating Makefile
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20250615-4420-rdf3fl sitelibdir\=./.gem.20250615-4420-rdf3fl clean
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-8mhwvw sitelibdir\=./.gem.20250617-23576-8mhwvw clean
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20250615-4420-rdf3fl sitelibdir\=./.gem.20250615-4420-rdf3fl
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-8mhwvw sitelibdir\=./.gem.20250617-23576-8mhwvw
 generating bigdecimal-x64-mingw-ucrt.def
 compiling bigdecimal.c
 compiling missing.c
 linking shared-object bigdecimal.so
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20250615-4420-rdf3fl sitelibdir\=./.gem.20250615-4420-rdf3fl install
-/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20250615-4420-rdf3fl
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-8mhwvw sitelibdir\=./.gem.20250617-23576-8mhwvw install
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20250617-23576-8mhwvw
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20250615-4420-rdf3fl sitelibdir\=./.gem.20250615-4420-rdf3fl clean
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-8mhwvw sitelibdir\=./.gem.20250617-23576-8mhwvw clean

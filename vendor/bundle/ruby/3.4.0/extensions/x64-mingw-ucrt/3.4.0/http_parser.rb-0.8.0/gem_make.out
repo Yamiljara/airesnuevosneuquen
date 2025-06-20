@@ -3,10 +3,10 @@ C:/Ruby34-x64/bin/ruby.exe extconf.rb
 creating Makefile
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-lfta51 sitelibdir\=./.gem.20250602-24096-lfta51 clean
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-acfdkr sitelibdir\=./.gem.20250617-23576-acfdkr clean
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-lfta51 sitelibdir\=./.gem.20250602-24096-lfta51
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-acfdkr sitelibdir\=./.gem.20250617-23576-acfdkr
 generating ruby_http_parser-x64-mingw-ucrt.def
 compiling ruby_http_parser.c
 ruby_http_parser.c: In function 'Parser_alloc_by_type':
@@ -164,8 +164,8 @@ compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.so
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-lfta51 sitelibdir\=./.gem.20250602-24096-lfta51 install
-/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20250602-24096-lfta51
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-acfdkr sitelibdir\=./.gem.20250617-23576-acfdkr install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20250617-23576-acfdkr
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-lfta51 sitelibdir\=./.gem.20250602-24096-lfta51 clean
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-acfdkr sitelibdir\=./.gem.20250617-23576-acfdkr clean

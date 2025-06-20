@@ -3,10 +3,10 @@ C:/Ruby34-x64/bin/ruby.exe extconf.rb
 creating Makefile
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-1rpst6 sitelibdir\=./.gem.20250602-24096-1rpst6 clean
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-f15ndc sitelibdir\=./.gem.20250617-23576-f15ndc clean
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-1rpst6 sitelibdir\=./.gem.20250602-24096-1rpst6
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-f15ndc sitelibdir\=./.gem.20250617-23576-f15ndc
 generating commonmarker-x64-mingw-ucrt.def
 compiling arena.c
 compiling autolink.c
@@ -370,8 +370,8 @@ compiling xml.c
 linking shared-object commonmarker/commonmarker.so
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-1rpst6 sitelibdir\=./.gem.20250602-24096-1rpst6 install
-/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20250602-24096-1rpst6/commonmarker
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-f15ndc sitelibdir\=./.gem.20250617-23576-f15ndc install
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20250617-23576-f15ndc/commonmarker
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-1rpst6 sitelibdir\=./.gem.20250602-24096-1rpst6 clean
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-f15ndc sitelibdir\=./.gem.20250617-23576-f15ndc clean

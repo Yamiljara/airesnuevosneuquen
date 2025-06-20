@@ -15,32 +15,58 @@ layout: default
         {% assign posts_in_category = site.posts | where: "categories", page.category %}
         {% assign sorted_posts = posts_in_category | sort: "date" | reverse %}
 
-        {% for post in paginator.posts %}
-            <div class="news-item">
-                <a href="{{ post.url | relative_url }}" class="news-item-image">
-                    {% if post.image %}
-                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-                    {% else %}
-                        <div class="no-image-placeholder">No Image Available</div>
-                    {% endif %}
-                    <span class="news-item-category">{{ post.categories | first | capitalize }}</span>
-                </a>
-                <div class="news-item-content">
-                    <div>
-                        <h2 class="news-item-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                        <p class="news-item-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-                    </div>
-                    <p class="news-item-date">{{ post.date | date: "%d %b %Y" }}</p>
-                </div>
-            </div>
+        {% assign current_post_index = 0 %}
+        {% for i in (1..paginator.posts.size) %} {# Iteramos por el tamaño del paginator para intercalar #}
+            {% assign post = paginator.posts[current_post_index] %}
 
-            {% comment %} Inserta publicidad después de cada 2 posts {% endcomment %}
-            {% assign loop_index = forloop.index | modulo: 2 %}
-            {% if loop_index == 0 and forloop.last != true %}
-                <div class="advertising-block-small-intercalated">
-                    <p><span class="typewriter-text">PUBLICIDAD</span></p>
+            {% comment %} Inserta publicidad después de cada 2 posts (índices 2, 4, 6...) {% endcomment %}
+            {% assign ad_position = i | modulo: 2 %} {# Verificamos cada 2 elementos en la cuadrícula #}
+
+            {% if ad_position == 0 and forloop.last != true %}
+                {# Bloque de publicidad vertical intercalado, similar a Ultimas Noticias en la Portada #}
+                {% include ad_block.html
+                    size_class="ad-size-vertical"
+                    placeholder_text="PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM"
+                    link_url="https://www.instagram.com/airesnuevosnqn/"
+                %}
+            {% endif %}
+
+            {% if post %}
+                <div class="news-item">
+                    <a href="{{ post.url | relative_url }}" class="news-item-image">
+                        {% if post.image %}
+                            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                        {% else %}
+                            <div class="no-image-placeholder">No Image Available</div>
+                        {% endif %}
+                        <span class="news-item-category">{{ post.categories | first | capitalize }}</span>
+                    </a>
+                    <div class="news-item-content">
+                        <div>
+                            <h2 class="news-item-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                            <p class="news-item-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+                        </div>
+                        <p class="news-item-date">{{ post.date | date: "%d %b %Y" }}</p>
+                    </div>
+                </div>
+                {% assign current_post_index = current_post_index | plus: 1 %}
+            {% else %}
+                {# Si no hay más posts, pero el bucle aún no termina (por la lógica de intercalado), muestra un placeholder #}
+                <div class="news-item placeholder-card">
+                    <a href="#" class="news-item-image">
+                        <img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente">
+                        <span class="news-item-category">Pendiente</span>
+                    </a>
+                    <div class="news-item-content">
+                        <div>
+                            <h2 class="news-item-title"><a href="#">Noticia Pendiente</a></h2>
+                            <p class="news-item-excerpt">Contenido pendiente para esta sección.</p>
+                        </div>
+                        <p class="news-item-date">Próximamente</p>
+                    </div>
                 </div>
             {% endif %}
+
         {% endfor %}
     </div>
 

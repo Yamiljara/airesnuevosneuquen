@@ -19,17 +19,27 @@ pagination:
     <div class="news-and-ads-grid">
         {% assign category_posts = site.posts | where_exp:"post","post.categories contains page.category_filter" | sort: "date" | reverse %}
         
+        {% comment %} Filtramos posts de la categoría 'Portada' de esta colección {% endcomment %}
+        {% assign filtered_category_posts = "" | split: "" %}
+        {% for post in category_posts %}
+            {% unless post.categories contains 'Portada' %}
+                {% assign filtered_category_posts = filtered_category_posts | push: post %}
+            {% endunless %}
+        {% endfor %}
+
         {% assign current_post_index = 0 %}
         {% for i in (1..12) %}
             {% assign is_ad = false %}
             {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}{% assign is_ad = true %}{% endif %}
 
             {% if is_ad %}
-                <div class="advertising-block-vertical">
-                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                </div>
+                <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                    <div class="advertising-block-vertical">
+                        <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                    </div>
+                </a>
             {% else %}
-                {% assign current_post = category_posts[current_post_index] %}
+                {% assign current_post = filtered_category_posts[current_post_index] %}
                 {% if current_post %}
                     <a href="{{ current_post.url | relative_url }}" class="latest-news-card">
                         <div class="image-wrapper">
@@ -53,6 +63,7 @@ pagination:
         {% endfor %}
     </div>
 
+    {% comment %} Paginación {% endcomment %}
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
         {% if paginator.previous_page %}
@@ -65,7 +76,11 @@ pagination:
             {% if page_num == paginator.page %}
             <span class="pagination-link current">{{ page_num }}</span>
             {% else %}
-            <a href="{{ paginator.per_page_path | relative_url | replace: ':num', page_num }}" class="pagination-link">{{ page_num }}</a>
+            {% assign page_path = paginator.per_page_path | relative_url | replace: ':num', page_num %}
+            {% if page_num == 1 %}
+                {% assign page_path = page.permalink | relative_url %}
+            {% endif %}
+            <a href="{{ page_path }}" class="pagination-link">{{ page_num }}</a>
             {% endif %}
         {% endfor %}
 

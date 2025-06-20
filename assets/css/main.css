@@ -2286,7 +2286,8 @@ img {
     ========================================================================== */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 (altura / ancho = 9 / 16 = 0.5625) */
+    /* Relación de aspecto 1160x130 (altura / ancho = 130 / 1160 = 0.11206) */
+    padding-bottom: 11.21%; /* Este es el valor clave para la proporción 1160x130 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -2303,4 +2304,146 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.video-container iframe {
+    pointer-events: none;
+}
+
+/* --- Estilos para los bloques de publicidad adicionales --- */
+
+/* Bloque pequeño horizontal (los de 3 al final del index) */
+.advertising-blocks-small {
+    display: flex;
+    justify-content: space-around; /* O space-between, según cómo quieras el espaciado */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los bloques se envuelvan en pantallas más pequeñas */
+    margin: 20px auto; /* Centra el contenedor y añade margen vertical */
+    max-width: 1160px; /* Máximo ancho del contenedor para alineación */
+    gap: 20px; /* Espacio entre los bloques pequeños */
+}
+
+.advertising-block-small {
+    width: 370px; /* Ancho fijo para cada bloque individual, para que quepan 3 en 1160px con espacio */
+    height: 100px; /* Alto fijo: 100px de tu captura */
+    background-color: #D0D0D0; /* Fondo gris claro como placeholder, de tu captura */
+    color: #000000; /* Color de texto, de tu captura */
+    font-size: 16px; /* Tamaño de fuente, de tu captura */
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente, de tu captura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px; /* Padding interno, de tu captura */
+    box-sizing: border-box; /* Para incluir padding y border en width/height */
+    text-align: center;
+}
+
+/* Bloque vertical (el que se intercala con noticias) */
+.advertising-block-vertical {
+    width: 353.33px; /* Ancho exacto de tu última captura */
+    height: 350px; /* Alto exacto de tu última captura */
+    background-color: #D0D0D0; /* Fondo gris claro como placeholder, de tu captura */
+    color: #000000; /* Color de texto */
+    font-size: 16px; /* Ajusta si es necesario */
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding interno, de tu captura */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* --- Estilos para los bloques de publicidad adicionales --- */
+
+/* Bloque pequeño horizontal (los de 3 al final del index) */
+.advertising-blocks-small {
+    display: flex;
+    justify-content: space-around; /* O space-between, según cómo quieras el espaciado */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los bloques se envuelvan en pantallas más pequeñas */
+    margin: 20px auto; /* Centra el contenedor y añade margen vertical */
+    max-width: 1160px; /* Máximo ancho del contenedor para alineación */
+    gap: 20px; /* Espacio entre los bloques pequeños */
+}
+
+.advertising-block-small {
+    width: 370px; /* Ancho fijo para cada bloque individual, para que quepan 3 en 1160px con espacio */
+    height: 100px; /* Alto fijo: 100px de tu captura */
+    background-color: #D0D0D0; /* Fondo gris claro como placeholder, de tu captura */
+    color: #000000; /* Color de texto, de tu captura */
+    font-size: 16px; /* Tamaño de fuente, de tu captura */
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente, de tu captura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px; /* Padding interno, de tu captura */
+    box-sizing: border-box; /* Para incluir padding y border en width/height */
+    text-align: center;
+}
+
+/* Bloque vertical (el que se intercala con noticias) */
+.advertising-block-vertical {
+    width: 353.33px; /* Ancho exacto de tu última captura */
+    height: 350px; /* Alto exacto de tu última captura */
+    background-color: #D0D0D0; /* Fondo gris claro como placeholder, de tu captura */
+    color: #000000; /* Color de texto */
+    font-size: 16px; /* Ajusta si es necesario */
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding interno, de tu captura */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Media Queries para Dispositivos Móviles (ej. hasta 768px de ancho)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .advertising-block-large {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* La altura se ajusta automáticamente al contenido */
+        min-height: 80px; /* Un alto mínimo para que no se vea demasiado pequeño si no hay mucho texto */
+        font-size: 18px; /* Reducir el tamaño de la fuente para que quepa mejor */
+        padding: 15px 10px; /* Reducir padding */
+        margin: 10px auto; /* Reducir margen vertical */
+    }
+
+    .advertising-blocks-small {
+        justify-content: center; /* Centrar los bloques cuando se envuelven */
+        gap: 10px; /* Reducir el espacio entre ellos */
+    }
+
+    .advertising-block-small {
+        width: calc(50% - 15px); /* Dos bloques por fila con un pequeño espacio */
+        height: 90px; /* Reducir la altura */
+        font-size: 14px; /* Reducir tamaño de fuente */
+        padding: 8px 10px; /* Reducir padding */
+        /* OPCIONAL: Añade overflow: hidden; aquí si quieres cortar cualquier texto que exceda. */
+        overflow: hidden;
+    }
+
+    /* --- ¡INSERTA ESTE NUEVO BLOQUE AQUÍ! --- */
+    .advertising-block-small .typewriter-text {
+        display: block; /* Necesario para que min-height/height funcione en un span */
+        min-height: 45px; /* Altura medida para el texto completo en móvil */
+    }
+    /* --- FIN DEL BLOQUE A INSERTAR --- */
+
+
+    /* Para asegurar que no haya un tercer bloque si la pantalla es muy pequeña para 2 */
+    @media (max-width: 480px) {
+        .advertising-block-small {
+            width: 100%; /* Un bloque por fila en pantallas muy pequeñas */
+        }
+    }
+
+    .advertising-block-vertical {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: 250px; /* Ajustar altura para móvil */
+        font-size: 14px; /* Reducir tamaño de fuente */
+        padding: 15px; /* Ajustar padding */
+    }
 }

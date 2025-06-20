@@ -19,7 +19,6 @@ pagination:
     <div class="news-and-ads-grid">
         {% assign category_posts = site.posts | where_exp:"post","post.categories contains page.category_filter" | sort: "date" | reverse %}
         
-        {% comment %} Filtramos posts de la categoría 'Portada' de esta colección {% endcomment %}
         {% assign filtered_category_posts = "" | split: "" %}
         {% for post in category_posts %}
             {% unless post.categories contains 'Portada' %}
@@ -33,9 +32,11 @@ pagination:
             {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}{% assign is_ad = true %}{% endif %}
 
             {% if is_ad %}
-                <div class="advertising-block-vertical">
-                    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                </div>
+                <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                    <div class="advertising-block-vertical">
+                        <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                    </div>
+                </a>
             {% else %}
                 {% assign current_post = filtered_category_posts[current_post_index] %}
                 {% if current_post %}
@@ -61,7 +62,6 @@ pagination:
         {% endfor %}
     </div>
 
-    {% comment %} Paginación {% endcomment %}
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
         {% if paginator.previous_page %}

@@ -8,17 +8,17 @@ checking for whether -std=c99 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/json-2.12.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-aibg9f sitelibdir\=./.gem.20250602-24096-aibg9f clean
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-dyb0ly sitelibdir\=./.gem.20250617-23576-dyb0ly clean
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/json-2.12.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-aibg9f sitelibdir\=./.gem.20250602-24096-aibg9f
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-dyb0ly sitelibdir\=./.gem.20250617-23576-dyb0ly
 generating parser-x64-mingw-ucrt.def
 compiling parser.c
 linking shared-object json/ext/parser.so
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/json-2.12.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-aibg9f sitelibdir\=./.gem.20250602-24096-aibg9f install
-/usr/bin/install -c -m 0755 parser.so ./.gem.20250602-24096-aibg9f/json/ext
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-dyb0ly sitelibdir\=./.gem.20250617-23576-dyb0ly install
+/usr/bin/install -c -m 0755 parser.so ./.gem.20250617-23576-dyb0ly/json/ext
 
 current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/json-2.12.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20250602-24096-aibg9f sitelibdir\=./.gem.20250602-24096-aibg9f clean
+make DESTDIR\= sitearchdir\=./.gem.20250617-23576-dyb0ly sitelibdir\=./.gem.20250617-23576-dyb0ly clean
