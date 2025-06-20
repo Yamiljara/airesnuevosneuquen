@@ -4,7 +4,7 @@ title: "La referente del Frente y La Participación Neuquina, y concejal de Cutr
 antetitulo: "Respaldo Nacional."
 copete: Jesica Rioseco, concejal de Cutral Co y figura destacada del Frente y la Participación Neuquina, estuvo presente el pasado miércoles 18 de junio en Buenos Aires en la multitudinaria movilización que respaldó a la expresidenta Cristina Fernández de Kirchner, congregando a miles de manifestantes en Plaza de Mayo.
 date: 2025-06-20 14:00:00 -0300
-categories: [Politica]
+categories: [Política]
 tags: [jesica rioseco, cutral co, neuquen, cristina kirchner, marcha, frente y la participacion neuquina, politica neuquina]
 image: /assets/images/jesica-rioseco-marcha.jpg
 image_alt: "Jesica Rioseco en la marcha de apoyo a Cristina Kirchner."
