@@ -17,7 +17,6 @@ Guañacos, una pequeña localidad en el corazón del Norte Neuquino, vivió este
 La obra, que se extiende por 27 kilómetros desde Andacollo, fue ejecutada por la empresa provincial Hidenesa. Su concreción no solo significa el fin de décadas de dependencia de la leña y las garrafas para calefacción, sino que también representa una "justa caricia al alma" para los pobladores, tal como lo expresó el propio gobernador Figueroa. "Tenemos gas y estamos dispuestos a venderle al mundo, pero que sea primero para nuestra gente", reafirmó el mandatario, subrayando la prioridad de la gestión provincial en garantizar el suministro a los neuquinos.
 
 ![Vista de la localidad de Los Guañacos.](/assets/images/los-guañacos.jpg)
-*Vista de la localidad de Los Guañacos.*
 
 La llegada del gas a Guañacos se da en una fecha cargada de simbolismo, coincidiendo con el 70º aniversario de la provincialización de Neuquén. Este hecho no solo festeja un avance en infraestructura, sino que también es visto como un acto de reparación y justicia para una comunidad que, a pesar de la riqueza energética de la provincia, aún carecía de un servicio esencial.
 
