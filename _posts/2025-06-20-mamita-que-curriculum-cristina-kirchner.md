@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Mamita Qué Currículum: Cristina Kirchner Arremetió Sin Filtros Contra Patricia Bullrich y la Acusó de Querer Generar Caos."
+title: "Mamita Qué Currículum: Cristina Kirchner arremetió sin siltros contra Patricia Bullrich y la acusó de querer generar caos."
 antetitulo: "Cristina Kirchner contra Patricia Bullrrich."
 copete: La expresidenta Cristina Fernández de Kirchner lanzó una durísima crítica contra la ministra de Seguridad, Patricia Bullrich, a quien vinculó con "los peores gobiernos de Argentina" y acusó de querer "provocar caos y conflictos en la sociedad", tras la presencia de la Policía Federal en su domicilio.
 date: 2025-06-20 23:50:00 -0300
 categories: [Política]
 tags: [cristina kirchner, patricia bullrich, gobierno, politica argentina, lawfare, controversia]
-image: /assets/image/cristina-criticas-bulrrich.jpg
+image: /assets/images/cristina-criticas-bulrrich.jpg
 image_alt: "Cristina Kirchner y Patricia Bullrich en una imagen de conflicto político."
 image_caption: "Cristina Kirchener saludando a la militancia désde el balcón de su casa."
 author: "Redacción Aires Nuevos NQN"
