@@ -6,7 +6,7 @@ copete: La expresidenta Cristina Fernández de Kirchner lanzó una durísima cr�
 date: 2025-06-20 23:50:00 -0300
 categories: [Política]
 tags: [cristina kirchner, patricia bullrich, gobierno, politica argentina, lawfare, controversia]
-image: /assets/img/cristina-criticas-bulrrich.jpg
+image: /assets/image/cristina-criticas-bulrrich.jpg
 image_alt: "Cristina Kirchner y Patricia Bullrich en una imagen de conflicto político."
 image_caption: "Cristina Kirchener saludando a la militancia désde el balcón de su casa."
 author: "Redacción Aires Nuevos NQN"
