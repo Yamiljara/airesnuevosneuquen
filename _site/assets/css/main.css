@@ -2447,3 +2447,137 @@ img {
         padding: 15px; /* Ajustar padding */
     }
 }
+
+/* --- ENCABEZADO QUE SE ACHICA AL SCROLL: SOLUCIÓN FINAL --- */
+
+/* Estilos base del encabezado (asegura que sea fijo) */
+.site-header {
+    transition: all 0.3s ease-in-out; /* Transición suave para el cambio de tamaño */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: white; /* Color de fondo del encabezado. ¡Importante que tenga uno! */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para que destaque */
+}
+
+/* MUY IMPORTANTE: padding-top para el body para que el contenido no se oculte */
+body {
+    /* Este valor debe ser la altura INICIAL (más grande) de tu encabezado sin scroll.
+       AJUSTA ESTE VALOR si tu contenido se solapa o hay mucho espacio vacío arriba. */
+    padding-top: 200px; /* **AJUSTA ESTE VALOR** si es necesario, debe ser la altura completa de tu header sin scroll */
+}
+
+/* Estilos del encabezado cuando se hace scroll (la clase 'scrolled' es agregada por JS) */
+/* APLICAR SÓLO EN PANTALLAS GRANDES (Desktop) */
+@media (min-width: 992px) { 
+    .site-header.scrolled {
+        height: auto; /* Dejar que la altura se ajuste al contenido compactado */
+        padding-bottom: 0; /* Elimina padding extra abajo si lo tiene */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Mantiene la sombra */
+        /* El header general ahora es flex column para apilar la top-bar y el masthead+nav */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos internos (top-bar y masthead/nav) */
+    }
+
+    /* Ajustes al contenedor .container dentro del header cuando se hace scroll */
+    .site-header.scrolled .container {
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        max-width: none; /* Desactiva cualquier max-width que lo esté centrando */
+        padding: 0 20px; /* Un padding horizontal para los bordes del contenido. Ajusta si lo necesitas */
+        box-sizing: border-box; /* Incluye padding en el ancho */
+    }
+
+    /* La barra superior (.top-bar) al hacer scroll */
+    .site-header.scrolled .top-bar {
+        /* Aseguramos la distribución con flex */
+        display: flex; 
+        justify-content: space-between; /* ¡CLAVE! Fecha a la izquierda, Redes a la derecha */
+        align-items: center;
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 5px 0; /* Un padding vertical, el horizontal ya lo da el .container */
+        border-bottom: 1px solid #eee; /* Línea separadora */
+        box-sizing: border-box;
+    }
+
+    .site-header.scrolled .top-bar .edition-info,
+    .site-header.scrolled .top-bar .social-icons {
+        font-size: 0.7em; /* ¡ACHICA LA LETRA DE LA FECHA/HORA Y REDES SOCIALES! AJUSTA este valor */
+        white-space: nowrap; /* Evita que el texto se rompa */
+    }
+
+    .site-header.scrolled .top-bar .social-icons a {
+        font-size: inherit; /* Hereda el tamaño de .social-icons */
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Contenedor del Nombre y Slogan (.masthead) al hacer scroll */
+    .site-header.scrolled .masthead {
+        display: flex; /* Para que el nombre se alinee con el menú */
+        align-items: center; /* Centra verticalmente */
+        justify-content: flex-start; /* Nombre a la izquierda */
+        padding: 5px 0; /* Padding vertical, el horizontal ya lo da el .container */
+        margin: 0; /* Elimina márgenes si los tiene */
+        width: 100%; /* Ocupa todo el ancho de su contenedor (.container) */
+    }
+
+    .site-header.scrolled .site-title {
+        font-size: 1.3em; /* Tamaño del nombre, más chico. AJUSTA si es muy grande/chico */
+        margin: 0; /* Elimina márgenes */
+        white-space: nowrap; /* Evita que el nombre se rompa */
+        line-height: 1;
+        flex-shrink: 0; /* Evita que se encoja */
+    }
+
+    .site-header.scrolled .site-description {
+        display: none; /* Oculta el slogan */
+    }
+
+    /* El menú de navegación (.main-nav) al hacer scroll */
+    .site-header.scrolled .main-nav {
+        display: flex; /* Para que las secciones estén en línea */
+        align-items: center;
+        flex-grow: 1; /* Permite que ocupe el espacio restante al lado del nombre */
+        justify-content: flex-start; /* Alinea las secciones a la izquierda */
+        overflow-x: hidden; /* ¡CLAVE para eliminar la barra de scroll horizontal! */
+        padding: 0; /* Elimina padding excesivo */
+        margin-left: 15px; /* Espacio entre el nombre y el menú. AJUSTA */
+        width: 100%; /* Ocupa todo el ancho de su contenedor (.container) */
+    }
+
+    .site-header.scrolled .nav-list {
+        display: flex; /* Pone los elementos del menú en una fila */
+        flex-wrap: nowrap; /* Evita que los elementos salten de línea */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%; /* Asegura que la lista ocupe su contenedor */
+        justify-content: flex-start; /* Alinea los items del menú a la izquierda */
+    }
+
+    .site-header.scrolled .nav-item {
+        margin: 0 4px; /* Espacio entre cada sección. AJUSTA si las secciones se cortan */
+        white-space: nowrap; /* Evita que los nombres de las secciones se rompan */
+        flex-shrink: 1; /* Permite que los ítems del menú se compriman un poco si es necesario */
+        font-size: 0.7em; /* Tamaño de letra de las secciones. AJUSTA SI ES NECESARIO (más chico) */
+    }
+
+    .site-header.scrolled .nav-link {
+        font-size: inherit; /* Hereda de nav-item */
+        padding: 3px 5px; /* Padding de los enlaces. AJUSTA */
+    }
+
+    /* Asegura que el botón hamburguesa esté oculto en escritorio */
+    .hamburger-menu-toggle {
+        display: none;
+    }
+}
+
+/* Asegura que el padding-top del body se ajuste en móvil para que no haya doble padding. */
+/* NO SE TOCA NADA EN MÓVIL. */
+@media (max-width: 991px) {
+    body {
+        padding-top: 120px;

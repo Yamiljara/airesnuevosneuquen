@@ -175,3 +175,33 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(updateDateTime, 1000); // Actualiza cada segundo
     }
 });
+
+// Código para el encabezado que se achica al hacer scroll, SOLO EN ESCRITORIO
+document.addEventListener("DOMContentLoaded", function() {
+    const header = document.querySelector('.site-header'); // Selecciona tu encabezado
+    const scrollThreshold = 100; // Cuántos píxeles bajar antes de achicar el header
+    const desktopBreakpoint = 992; // El ancho mínimo para considerar "escritorio"
+
+    if (header) { // Asegúrate de que el encabezado existe antes de intentar manipularlo
+        window.addEventListener('scroll', () => {
+            // Solo aplica el efecto si el ancho de la ventana es mayor que el breakpoint de escritorio
+            if (window.innerWidth >= desktopBreakpoint) {
+                if (window.scrollY > scrollThreshold) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            } else {
+                // Si estamos en móvil/tablet, asegúrate de que la clase 'scrolled' se elimine
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Asegurarse de que si se redimensiona a móvil, el header vuelva a su estado normal
+        window.addEventListener('resize', () => {
+            if (window.innerWidth < desktopBreakpoint) {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
+});
