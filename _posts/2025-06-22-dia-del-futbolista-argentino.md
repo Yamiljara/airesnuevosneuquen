@@ -2,13 +2,13 @@
 layout: post
 title: "El día del futbolista argentino: Un homenaje nacional al legado de Maradona y la pasión de un pueblo."
 antetitulo: "La gesta que marcó una era."
-copete: Cada 22 de junio, el fútbol argentino se detiene para conmemorar el Día del Futbolista Argentino, una fecha que trasciende el mero recuerdo de un hito deportivo para convertirse en un emblema de la pasión y el talento que caracterizan a este deporte en el país. La elección de este día no es casual: rinde tributo a Diego Armando Maradona y a dos de sus goles más legendarios, anotados el 22 de junio de 1986 contra Inglaterra en el Mundial de México. Es un reconocimiento a la figura que, con su genialidad, "regó de gloria" el suelo futbolístico nacional.
+copete: "Cada 22 de junio, el fútbol argentino se detiene para conmemorar el Día del Futbolista Argentino, una fecha que trasciende el mero recuerdo de un hito deportivo para convertirse en un emblema de la pasión y el talento que caracterizan a este deporte en el país. La elección de este día no es casual: rinde tributo a Diego Armando Maradona y a dos de sus goles más legendarios, anotados el 22 de junio de 1986 contra Inglaterra en el Mundial de México. Es un reconocimiento a la figura que, con su genialidad, \"regó de gloria\" el suelo futbolístico nacional."
 date: 2025-06-22 11:45:00 -0300
 categories: [Deportes]
-tags: [día,futbolista,argentino,treinta y nueve,años]
-image: /assets/images/diego-maradona-mano-de-dios .jpg
+tags: [día,futbolista,argentino,maradona,gol,mundial,malvinas,afa]
+image: /assets/images/diego-maradona-mano-de-dios.jpg
 image_alt: "diego maradona."
-image_caption:"Diego Armando maradona, gol en partido contra la selección Inglesa."
+image_caption: "Diego Armando maradona, gol en partido contra la selección Inglesa."
 author: "Redacción Aires Nuevos NQN"
 ---
 
