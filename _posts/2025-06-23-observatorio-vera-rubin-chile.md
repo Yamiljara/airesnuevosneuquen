@@ -6,7 +6,7 @@ copete: "En lo alto del cerro Pachón, en el desierto de Atacama, Chile, el reci
 date: 2025-06-23 10:20:00 -0300
 categories: [Internacionales]
 tags: [observatorio, vera rubin, chile, astronomía, materia oscura, energía oscura, espacio, ciencia]
-image: /assets/images/observatorio-vera-rubin.jpg
+image: /assets/images/obseratorio-chile.jpg
 image_alt: "Observatorio Vera C. Rubin en el desierto de Atacama, Chile."
 image_caption: "Vista del Observatorio Vera C. Rubin en Chile, preparándose para su sondeo del cielo."
 author: "Redacción Aires Nuevos NQN"
