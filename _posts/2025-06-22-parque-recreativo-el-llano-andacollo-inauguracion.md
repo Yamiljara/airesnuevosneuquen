@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "El parque recreativo El Llano en Andacollo inauguró su temporada invernal con novedades."
-antetitulo: "Turismo de vieve en el norte neuquino."
+antetitulo: "Turismo de nieve en el norte neuquino."
 copete: "El Parque Recreativo El Llano, en la localidad de Andacollo (Norte Neuquino), abrió sus puertas este fin de semana para la temporada de invierno 2025, presentando importantes mejoras en infraestructura y servicios. Este espacio, único en la región del Alto Neuquén, busca consolidarse como un destino familiar clave para el disfrute de la nieve y el fomento del desarrollo local."
 date: 2025-06-22 22:51:00 -0300
 categories: [Regionales]
