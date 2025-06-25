@@ -2500,12 +2500,17 @@ body {
         padding: 5px 0; /* Un padding vertical, el horizontal ya lo da el .container */
         border-bottom: 1px solid #eee; /* Línea separadora */
         box-sizing: border-box;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si no hay espacio. */
+        min-height: 20px; /* Una altura mínima para evitar colapsos si se envuelve */
+        gap: 10px; /* **NUEVO: Añade un pequeño espacio entre elementos en la misma línea, si se envuelven, se comportan mejor** */
     }
 
     .site-header.scrolled .top-bar .edition-info,
     .site-header.scrolled .top-bar .social-icons {
-        font-size: 0.7em; /* ¡ACHICA LA LETRA DE LA FECHA/HORA Y REDES SOCIALES! AJUSTA este valor */
+        font-size: 1.0em; /* **CAMBIO CLAVE AQUÍ: ACHICADO AÚN MÁS LA LETRA** */
         white-space: nowrap; /* Evita que el texto se rompa */
+        flex-shrink: 1; /* Permite que los elementos se encojan */
+        min-width: 0;   /* Ayuda a flex-shrink a funcionar permitiendo encogerse más allá del contenido inicial */
     }
 
     .site-header.scrolled .top-bar .social-icons a {
@@ -2518,14 +2523,14 @@ body {
     .site-header.scrolled .masthead {
         display: flex; /* Para que el nombre se alinee con el menú */
         align-items: center; /* Centra verticalmente */
-        justify-content: flex-start; /* Nombre a la izquierda */
+        justify-content: center; /* Centra el logo/título */
         padding: 5px 0; /* Padding vertical, el horizontal ya lo da el .container */
         margin: 0; /* Elimina márgenes si los tiene */
         width: 100%; /* Ocupa todo el ancho de su contenedor (.container) */
     }
 
     .site-header.scrolled .site-title {
-        font-size: 1.3em; /* Tamaño del nombre, más chico. AJUSTA si es muy grande/chico */
+        font-size: 2.5em; /* Tamaño del nombre, más chico. AJUSTA si es muy grande/chico */
         margin: 0; /* Elimina márgenes */
         white-space: nowrap; /* Evita que el nombre se rompa */
         line-height: 1;
@@ -2541,10 +2546,10 @@ body {
         display: flex; /* Para que las secciones estén en línea */
         align-items: center;
         flex-grow: 1; /* Permite que ocupe el espacio restante al lado del nombre */
-        justify-content: flex-start; /* Alinea las secciones a la izquierda */
+        justify-content: center; /* Centra las secciones */
         overflow-x: hidden; /* ¡CLAVE para eliminar la barra de scroll horizontal! */
         padding: 0; /* Elimina padding excesivo */
-        margin-left: 15px; /* Espacio entre el nombre y el menú. AJUSTA */
+        margin-left: 0; /* Elimina este margen, ya que el contenido se centra ahora */
         width: 100%; /* Ocupa todo el ancho de su contenedor (.container) */
     }
 
@@ -2555,14 +2560,14 @@ body {
         padding: 0;
         list-style: none;
         width: 100%; /* Asegura que la lista ocupe su contenedor */
-        justify-content: flex-start; /* Alinea los items del menú a la izquierda */
+        justify-content: center; /* Centra los items del menú */
     }
 
     .site-header.scrolled .nav-item {
         margin: 0 4px; /* Espacio entre cada sección. AJUSTA si las secciones se cortan */
         white-space: nowrap; /* Evita que los nombres de las secciones se rompan */
         flex-shrink: 1; /* Permite que los ítems del menú se compriman un poco si es necesario */
-        font-size: 0.7em; /* Tamaño de letra de las secciones. AJUSTA SI ES NECESARIO (más chico) */
+        font-size: 0.8em; /* Tamaño de letra de las secciones. AJUSTA SI ES NECESARIO (más chico) */
     }
 
     .site-header.scrolled .nav-link {
@@ -2580,4 +2585,6 @@ body {
 /* NO SE TOCA NADA EN MÓVIL. */
 @media (max-width: 991px) {
     body {
-        padding-top: 120px;
+        padding-top: 120px; /* Asumiendo esta es la altura del header en móvil */
+    }
+}
