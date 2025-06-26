@@ -1,0 +1,23 @@
+---
+layout: post
+title: "La Masacre de Avellaneda: A 23 años, el legado de Santillán y Kosteki interpela la situación social y la protesta en Argentina."
+antetitulo: "Una herida abierta en la historia de la protesta social y la represión estatal."
+copete: "Se cumplen 23 años de la trágica Masacre de Avellaneda, ocurrida el 26 de junio de 2002, donde Darío Santillán y Maximiliano Kosteki fueron asesinados por la represión policial. Este fatídico episodio, que conmovió a la región Confluencia y a todo el país, es recordado hoy como un símbolo de la lucha social y de la brutalidad de la represión estatal, un tema que, según diversas voces, cobra nuevas aristas en el actual contexto nacional."
+date: 2025-06-26 12:00:00 -0300
+categories: [Nacionales] # Cambiado a "Nacionales" según tu solicitud
+tags: [Santillan, Kosteki, Masacre de Avellaneda, protesta social, represion, derechos humanos, Neuquén, Argentina]
+image: /assets/images/santillan-mtd-aniversario-2025.jpg # Asegúrate de que esta sea la ruta correcta a tu imagen
+image_alt: "Imagen de la Masacre de Avellaneda." # Descripción de la imagen para accesibilidad
+image_caption: "Mural en conmemoración de Darío Santillán y Maximiliano Kosteki." # Leyenda para la imagen
+author: "Redacción Aires Nuevos NQN" # Ajusta si el autor es diferente
+---
+
+El 26 de junio de 2002, en el Puente Pueyrredón, que conecta la ciudad de Avellaneda con la Capital Federal, la Argentina fue testigo de uno de los capítulos más dolorosos de su historia reciente. Darío Santillán y Maximiliano Kosteki, dos jóvenes militantes sociales, fueron asesinados por agentes de la Policía Bonaerense en el marco de una brutal represión a una protesta piquetera. La imagen de Darío intentando socorrer a Maxi, solo para ser ejecutado por la espalda, se convirtió en un ícono de la violencia institucional y la impunidad. El posteo que rememora el hecho hoy destaca que "no cayeron por error. No fue exceso. Fue una represión planificada, ejecutada por la Policía Bonaerense y avalada por un gobierno que, como tantos, prefirió reprimir antes que escuchar el grito de los pueblos que luchan."
+
+Este evento no fue un hecho aislado, sino la culminación de un período de profunda crisis económica y social que había golpeado duramente a la Argentina. El gobierno de turno, como se señala en el recordatorio, optó por la criminalización de la protesta ante las crecientes demandas populares por trabajo y alimentos. La masacre de Avellaneda no solo dejó un saldo de dos vidas perdidas, sino que también desnudó la fragilidad de las instituciones y la capacidad de ciertos sectores del Estado para ejercer violencia extrema contra los movimientos sociales.
+
+A 23 años de aquel día, el recuerdo de Santillán y Kosteki se mantiene vivo en la memoria colectiva de los movimientos sociales y organizaciones de derechos humanos. La consigna "Darío y Maxi, presentes" resuena en cada movilización y en cada acto de protesta, como un recordatorio de que "la lucha no se terceriza, se asume con el cuerpo y el", haciendo alusión a la militancia y el compromiso de los jóvenes asesinados.
+
+La relevancia de este aniversario se acentúa en el actual contexto socioeconómico argentino. Voces desde diversos frentes, como se leen en diferentes posteos en las redes sociales, establecen paralelismos con la situación actual: "Hoy, a 23 años, la historia se repite con otros rostros pero con la misma matriz: ajuste, entrega, criminalización de la protesta y represión a quienes se organizan. El gobierno de Javier Milei –como ayer el de Duhalde– responde con palos y gases a las demandas del pueblo. Congela salarios, ajusta a jubilados, niega medicamentos y alimentos, despide trabajadores, desfinancia lo público, y mientras lo hace, manda a las fuerzas de seguridad a reprimir y disciplinar."
+
+La Masacre de Avellaneda sigue siendo un hito fundamental para comprender la relación entre el Estado, la protesta social y los derechos humanos en Argentina. Para la provincia de Neuquén, cuyas regiones como la Confluencia o la Comarca Petrolera han sido históricamente escenarios de importantes movilizaciones sociales y reclamos populares, este aniversario invita a la reflexión sobre el valor de la organización y la importancia de defender el derecho a la protesta pacífica frente a cualquier intento de represión. El legado de Darío y Maxi, según sus compañeros, sigue vigente en "cada olla popular, en cada corte, en cada barrio que se organiza".
