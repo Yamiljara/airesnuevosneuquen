@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Alerta por temperaturas extremas."
-antetitulo: "La región norte neuquina se prepara para días gélidos con marcas de hasta 17 grados bajo cero."
+title: "La región norte neuquina se prepara para días gélidos con marcas de hasta 17 grados bajo cero."
+antetitulo: "Alerta por temperaturas extremas."
 copete: "La región norte de Neuquén se prepara para afrontar varios días con temperaturas extremas que descenderán muy por debajo del cero, alcanzando mínimas de hasta -17°C. En localidades como El Cholar y Guanacos, el pronóstico extendido indica heladas severas, especialmente durante las noches y madrugadas del fin de semana y principios de la próxima semana."
 date: 2025-06-28 13:16:24 -0300
 categories: [Sociedad] # Asegúrate de que esta categoría coincida con tu sección "Sociedad"
