@@ -12,7 +12,7 @@ image_caption: "El invierno se sentirá con fuerza en el norte neuquino." # Leye
 author: "Redacción Aires Nuevos NQN" # Ajusta si el autor es diferente
 ---
 
-La región norte de Neuquén se prepara para afrontar varios días con temperaturas extremas que descenderán muy por debajo del cero, alcanzando mínimas de hasta -17°C. En localidades como El Cholar y Guanacos, el pronóstico extendido indica heladas severas, especialmente durante las noches y madrugadas del fin de semana y principios de la próxima semana.
+La región norte de Neuquén se prepara para afrontar varios días con temperaturas extremas que descenderán muy por debajo del cero, alcanzando mínimas de hasta -17°C. En localidades como El Cholar y Los Guañacos, el pronóstico extendido indica heladas severas, especialmente durante las noches y madrugadas del fin de semana y principios de la próxima semana.
 
 El invierno se sentirá con toda su intensidad en la región norte de la provincia de Neuquén. Las proyecciones indican un período de frío extremo en estas zonas, con mínimas que exigirán máxima precaución a sus habitantes.
 
