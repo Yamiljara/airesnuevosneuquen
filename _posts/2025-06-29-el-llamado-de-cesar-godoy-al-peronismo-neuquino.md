@@ -4,7 +4,7 @@ title: "La experiencia y el liderazgo al servicio de la juventud: El llamado de 
 antetitulo: "El clima interno de cara a las próximas elecciones legislativas."
 copete: "En medio de las reuniones para definir el frente electoral de cara a octubre, el precandidato a diputado nacional, César Godoy, lanzó una dura autocrítica y advertencia al peronismo neuquino. El dirigente llamó a la apertura a las nuevas generaciones y alertó sobre el riesgo de perder bancas clave si no se escucha el clamor de la militancia."
 date: 2025-06-29 12:51:00 -0300
-categories: [Pólitica]
+categories: [Política]
 tags: [elecciones, neuquen, peronismo, cesar godoy, ramon rioseco, oscar parrilli, legislativas, politica]
 image: /assets/images/cesar-godoy-elecciones-2025.jpg # AQUI PODRÍA IR LA IMAGEN PRINCIPAL SI LA TIENES
 image_alt: "César Godoy, precandidato a diputado nacional del peronismo neuquino."
