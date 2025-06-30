@@ -6,7 +6,7 @@ copete: "El peronismo formoseño, bajo el liderazgo del gobernador Gildo Insfrá
 date: 2025-06-29 23:23:20 -0300
 categories: [Política]
 tags: [elecciones, formosa, gildo insfran, peronismo, cristina kirchner, francisco paoltroni, la libertad avanza, reforma constitucional]
-image: /assets/images/insfran-formosa-victoria.jpg # Idealmente 400px de ancho por 225px de alto (proporción 16:9)
+image: /assets/images/triunfo-del-peronismo-en-formosa-2025.jpg # Idealmente 400px de ancho por 225px de alto (proporción 16:9)
 image_alt: "Gildo Insfrán celebrando la victoria electoral en Formosa."
 image_caption: "El gobernador Gildo Insfrán saluda tras conocerse los resultados electorales en Formosa."
 author: "Redacción Aires Nuevos NQN" # Puedes cambiar esto si es otro autor
