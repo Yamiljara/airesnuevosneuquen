@@ -6,7 +6,7 @@ copete: "El gobernador de Santa Fe, Maximiliano Pullaro, celebró este domingo u
 date: 2025-06-29 23:08:48 -0300
 categories: [Política]
 tags: [elecciones, santa fe, maximiliano pullaro, peronismo, la libertad avanza, rosario, participación ciudadana]
-image: /assets/pullaro-elecciones-2025.jpg # Idealmente 400px de ancho por 225px de alto (proporción 16:9)
+image: /assets/images/pullaro-elecciones-2025.jpg # Idealmente 400px de ancho por 225px de alto (proporción 16:9)
 image_alt: "Maximiliano Pullaro celebrando la victoria en Santa Fe."
 image_caption: "Maximiliano Pullaro durante su discurso en el búnker electoral de Santa Fe."
 author: "Redacción Aires Nuevos NQN" # Puedes cambiar esto si es otro autor
