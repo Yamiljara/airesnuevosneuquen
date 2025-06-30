@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Maximiliano Pullaro se lleva la victoria en Santa Fe y reflexiona cobre la baja participación."
+title: "Maximiliano Pullaro se lleva la victoria en Santa Fe y reflexiona sobre la baja participación."
 antetitulo: "Amplia victoria del oficialismo provincial y alerta por la participación ciudadana."
 copete: "El gobernador de Santa Fe, Maximiliano Pullaro, celebró este domingo un 'amplio triunfo' de Unidos para Cambiar Santa Fe en las elecciones municipales y comunales, al tiempo que instó a la reflexión sobre la escasa concurrencia de votantes a las urnas."
 date: 2025-06-29 23:08:48 -0300
