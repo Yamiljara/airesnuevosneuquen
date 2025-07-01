@@ -21,7 +21,7 @@ La ciencia es contundente: el aumento de la temperatura media del planeta, provo
 En este contexto, la explotación de hidrocarburos, a menudo a través de técnicas como el fracking (fractura hidráulica), representa un factor significativo en la contribución a estas emisiones. Si bien genera recursos económicos, también intensifica la dependencia de combustibles fósiles, cuyo uso libera grandes cantidades de dióxido de carbono a la atmósfera, exacerbando el calentamiento global y sus consecuencias.
 
 ![Panel solar en Cutral Có, Neuquén, con paisaje de la Patagonia de fondo](/assets/images/parque-solar-cutra-co.jpg)
-*Imagen de apoyo: Parque solar en Cutral Có, un ejemplo de la apuesta de Neuquén por las energías renovables.*
+*Parque solar en Cutral Có, un ejemplo de la apuesta de Neuquén por las energías renovables.*
 
 ### La Respuesta de Neuquén: Apostando por las Energías Renovables
 
