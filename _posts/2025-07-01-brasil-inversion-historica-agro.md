@@ -17,7 +17,7 @@ El Plan Safra representa una apuesta contundente de Brasil por su potencia agrop
 Un pilar fundamental de esta iniciativa es el respaldo a la agricultura familiar y los medianos productores. Estos actores tendrán acceso a condiciones financieras inéditas, con tasas de interés que varían entre el 0.5% y el 4% anual, y plazos de pago flexibles. Esta estrategia busca democratizar el acceso al crédito, permitiendo que pequeños y medianos emprendedores rurales inviertan en tecnología, mejoren su productividad y contribuyan de manera más robusta al desarrollo económico del país.
 
 ![Agricultor familiar brasileño trabajando en su campo](/assets/images/plan-safra-imegen-segundaria..jpg)
-*Imagen de apoyo: Agricultor brasileño supervisando sus cultivos, beneficiario del Plan Safra.*
+
 
 Más allá de los réditos económicos, el Plan Safra refuerza el compromiso de Brasil con la sostenibilidad. El programa incentiva activamente prácticas agrícolas amigables con el medio ambiente y promueve la adopción de energías renovables en el sector. Este enfoque integral busca un crecimiento que sea productivo, pero también ecológicamente responsable y resiliente a largo plazo, generando empleo y prosperidad en toda la cadena de valor rural brasileña.
 
