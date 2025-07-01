@@ -4,7 +4,7 @@ title: "El Doble impacto del cambio climático en la provincia de Neuquén y la 
 antetitulo: "Neuquén y los efectos de la contaminación global."
 copete: "La provincia de Neuquén experimenta en carne propia la complejidad del cambio climático. Sus efectos se manifiestan con una dualidad impactante: mientras las recientes olas de frío polar han congelado la cordillera con temperaturas inusualmente bajas, la memoria de intensas olas de calor de temporadas pasadas subraya una realidad preocupante. Estos fenómenos extremos, tanto en un sentido como en el otro, son un claro síntoma de la alteración climática global, producto directo de la actividad humana y la contaminación."
 date: 2025-07-01 10:05:40 -0300
-categories: [Provinciales]
+categories: [Sociedad]
 tags: [Neuquén, cambio climático, contaminación, ola polar, ola de calor, fracking, energías renovables, Cutral Có, sostenibilidad]
 image: /assets/images/cambio-climatico-articulo-2025.jpg
 image_alt: "fenómenos climáticos extremos"
