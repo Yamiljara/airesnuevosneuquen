@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rincón de los Sauces, en el corazón de Vaca Muerta, cufre cortes y baja presión de gas en plena ola polar."
+title: "Rincón de los Sauces, en el corazón de Vaca Muerta, sufre cortes y baja presión de gas en plena ola polar."
 antetitulo: "Problemas en la cuenca."
 copete: "Rincón de los Sauces, localidad neurálgica en la explotación de Vaca Muerta, ha experimentado recientemente severos problemas en el suministro de gas, con cortes y baja presión que afectaron a varios de sus barrios en medio de la ola polar. La situación genera indignación y resalta la paradoja de la falta de un servicio esencial en una de las zonas productoras de hidrocarburos más importantes del país."
 date: 2025-06-30 21:12:08 -0300
