@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "La paradoja de Vaca Muerta."
-title: "Escándalo en Vaca Muerta: Concejales denuncian desidia política del gobierno provincial y local por falta de gas.."
+title: "Escándalo en Vaca Muerta: Concejales denuncian desidia política del gobierno provincial y local por falta de gas."
 author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-02 23:00:00 -0300
 categories: [Portada]
