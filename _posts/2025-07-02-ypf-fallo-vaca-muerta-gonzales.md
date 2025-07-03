@@ -1,0 +1,22 @@
+---
+layout: post
+antetitulo: "Controversia judicial por expropiación de la petrolera."
+title: "Alerta por Vaca Muerta: Ex-YPF acusa intento de 'apropiación' tras fallo que ordena a Argentina ceder acciones."
+author: "Redacción AIRESNUEVOSNQN"
+date: 2025-07-02 21:00:00 -0300
+categories: [Nacionales]
+image: "/assets/images/ypf-fallo-juducial-gonzales-vaca-muerta.jpg"
+image_alt: "Torre de perforación en Vaca Muerta con logo de YPF de fondo o balanza de la justicia sobre documentos."
+image_caption: "El futuro de YPF y Vaca Muerta en debate tras el reciente fallo de Nueva York."
+copete: "El ex-presidente de YPF, Pablo González, reaccionó contundentemente ante un fallo de una jueza de Nueva York que ordena al Estado argentino transferir el 51% de las acciones de YPF, en el marco de un multimillonario litigio. González denunció públicamente que esta decisión es una estrategia de las firmas denunciantes para 'quedarse' con la 'colosal formación de hidrocarburos no convencionales Vaca Muerta', una acusación que genera alarma a nivel nacional y en la provincia de Neuquén."
+---
+
+La sentencia emitida por un tribunal de Nueva York ha encendido las alarmas en el ámbito político y económico de Argentina. El fallo ordena al Estado Nacional transferir el 51% de las acciones de YPF, un intento de saldar el prolongado litigio que se originó tras la expropiación de la petrolera española Repsol en 2012, durante la presidencia de Cristina Fernández de Kirchner. Las empresas demandantes, Burford Capital y la canadiense Eton Park, argumentan que no se realizó una oferta pública de adquisición (OPA) al resto de los accionistas minoritarios al momento de la expropiación, una posición que Argentina ha rechazado, sosteniendo que la ley de nacionalización aprobada por el Congreso impedía dicha adquisición adicional.
+
+En este contexto, la voz del ex-presidente de YPF, Pablo González, resonó con fuerza. En declaraciones reproducidas por la agencia EFE y difundidas por medios como SWI swissinfo.ch, González denunció sin ambages que este fallo es parte de una maniobra para "quedarse" con Vaca Muerta. "Es un intento de apropiarse de la segunda reserva mundial de gas no convencional y la cuarta de petróleo", afirmó, subrayando la magnitud estratégica de esta formación que representa el futuro energético de Argentina. Su advertencia pone el foco en la vulnerabilidad de un recurso clave para el desarrollo nacional ante decisiones judiciales foráneas.
+
+YPF es una columna vertebral de la economía argentina. La compañía produce el 40% del petróleo y el 30% del gas nacional, y posee activos vitales en refinación, oleoductos y una extensa red de distribución en todo el país. Más allá de su envergadura, es el principal motor e impulsor del desarrollo en Vaca Muerta, la región que se proyecta como el futuro energético de la Argentina. Una eventual cesión de acciones a manos extranjeras, en estas condiciones, genera profunda incertidumbre sobre el control y la gestión de este recurso estratégico.
+
+La preocupación por el futuro de Vaca Muerta es particularmente palpable en la provincia de Neuquén, epicentro de la actividad no convencional. Representantes del gobierno provincial, como el Gobernador Rolando Figueroa y el Ministro de Energía, así como diputados nacionales neuquinos, son voces clave para entender el impacto de este fallo en la estabilidad de las inversiones y el desarrollo local. La posibilidad de que el fallo afecte la confianza de inversores extranjeros en la formación neuquina es un riesgo latente que podría ralentizar el crecimiento de la Comarca Petrolera y afectar los planes de exportación de energía que se impulsan desde la región Confluencia.
+
+Pablo González advirtió que la eventual entrega de esas acciones requeriría la aprobación del Parlamento argentino, lo que augura un intenso debate en el Congreso Nacional sobre un tema de soberanía energética y desarrollo estratégico para el país. Voces del sector petrolero, tanto de cámaras empresarias como de sindicatos neuquinos, ya se expresan sobre la necesidad de garantizar la estabilidad jurídica y el futuro de YPF y Vaca Muerta, conscientes de que lo que se dirime en tribunales internacionales impactará directamente en miles de puestos de trabajo y en el potencial económico de la Argentina.
