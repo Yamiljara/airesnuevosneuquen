@@ -3,7 +3,7 @@ layout: post
 antetitulo: "Inversión en bienestar comunitario."
 title: "Cutral Co: La firma de convenios clave impulsan el fortalecimiento del sistema de salud local."
 author: "Redacción AIRESNUEVOSNQN"
-date: 2025-07-04 08:35:00 -0300
+date: 2025-07-04 10:01:00 -0300
 categories: [Portada]
 featured_secondary: true
 image: "/assets/images/convenio-sistema-de-salud-cutral-co.jpg"
