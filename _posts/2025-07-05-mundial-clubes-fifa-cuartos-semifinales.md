@@ -36,4 +36,4 @@ Miércoles 9 de julio de 2025: Los vencedores de los partidos de hoy (PSG/Bayern
 **#MundialDeClubesFIFA2025 #FIFA #Fútbol #CuartosDeFinal #Semifinales #Fluminense #Chelsea #PSG #Bayern #RealMadrid #BorussiaDortmund #Deportes #EstadosUnidos #FútbolInternacional**
 
 ---
-*Esta nota fue elaborada a partir de fuentes verificadas (información actualizada proporcionada por el usuario) y documentación oficial. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
+*Esta nota fue elaborada a partir de fuentes verificadas y documentación oficial. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
