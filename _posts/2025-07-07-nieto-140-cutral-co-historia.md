@@ -12,7 +12,7 @@ image_caption: "El reencuentro con su identidad arroja luz sobre un doloroso cap
 copete: "La reciente recuperación del Nieto número 140 por Abuelas de Plaza de Mayo ha revelado un profundo y doloroso vínculo con Cutral Co. Su historia, que comienza con el secuestro de sus padres, Graciela Alicia Romero y Raúl Eugenio Metz, en la ciudad en 1976, es un testimonio vivo de las heridas de la última dictadura y un capítulo fundamental de la memoria local y provincial."
 ---
 
-La comunidad de Cutral Co, en la **Comarca Petrolera**, se ve conmovida por la historia del **Nieto número 140** recuperado por Abuelas de Plaza de Mayo, cuya identidad ha sido restituida con los apellidos **Metz Romero (o Romero Metz)**. Su conmovedora historia trae a la luz un capítulo fundamental y doloroso del pasado de nuestra ciudad, tejiendo un vínculo ineludible con la lucha por la memoria, la verdad y la justicia.
+La comunidad de Cutral Co, en la **Comarca Petrolera**, se ve conmovida por la historia del **Nieto número 140** recuperado por Abuelas de Plaza de Mayo, cuya identidad ha sido restituida con los apellidos **Metz Romero (o Romero Metz)**. Su conmovedora historia trae a la luz un capítulo fundamental y doloroso del pasado de la ciudad, tejiendo un vínculo ineludible con la lucha por la memoria, la verdad y la justicia.
 
 La historia de este Nieto se inicia trágicamente aquí. Sus padres, **Graciela Alicia Romero y Raúl Eugenio Metz**, ambos militantes, fueron brutalmente secuestrados el 10 de julio de 1976 en Cutral Co. En aquel entonces, Graciela se encontraba embarazada de cinco meses. Este hecho marcó el inicio de una búsqueda de décadas y de una herida profunda en la historia de la familia y de la localidad.
 
