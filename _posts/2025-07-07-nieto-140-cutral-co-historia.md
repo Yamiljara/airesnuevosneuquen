@@ -3,7 +3,7 @@ layout: post
 antetitulo: "Nieto 140 y un vínculo histórico."
 title: "Cutral Co y el Nieto 140: El secuestro de sus padres y su historia en la Comarca Petrolera."
 author: "Redacción AIRESNUEVOSNQN"
-date: 2025-07-07 14:59:28 -0300
+date: 2025-07-07 18:20:28 -0300
 categories: [Provinciales]
 featured: false
 image: "/assets/images/nieto-140-vinculo-con-cutral-co.jpg"
