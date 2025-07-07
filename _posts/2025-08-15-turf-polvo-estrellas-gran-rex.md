@@ -6,7 +6,7 @@ author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-07 18:20:27 -0300
 categories: [Cultura]
 featured: false # Para la sección Cultura / Otras Grillas
-image: "/assets/images/turf-polvo-estrellas-gran-rex.jpg" # Medida ideal para Otras Grillas: 400px de ancho por 225px de alto (proporción 16:9)
+image: "/assets/images/turf-presenta-polvo-de-estrellas.jpg" # Medida ideal para Otras Grillas: 400px de ancho por 225px de alto (proporción 16:9)
 image_alt: "La banda Turf en vivo, o arte de tapa de Polvo de Estrellas"
 image_caption: "Turf promete una noche inolvidable en el Gran Rex presentando su nuevo álbum colaborativo."
 copete: "La banda de Joaquín Levinton lanza su nuevo trabajo discográfico el 15 de agosto, con colaboraciones de Fito Páez, Lali Espósito, Milo J y Conociendo Rusia, prometiendo una noche inolvidable en el emblemático teatro porteño. Entradas ya a la venta."
