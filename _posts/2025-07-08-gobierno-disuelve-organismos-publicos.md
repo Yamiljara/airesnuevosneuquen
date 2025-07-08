@@ -6,10 +6,10 @@ author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-08 11:43:00 -0300 # Fecha de publicación (aprox. "Hace 20 horas" desde la consulta anterior)
 categories: [Portada]
 featured_secondary: true # Para destacarla como noticia secundaria en la portada
-image: "/assets/images/formador-de-formadores-principal.jpg" # Medida ideal para Portada (Secundarias): 400px de ancho por 300px de alto (proporción 4:3)
-image_alt: "Participantes y oradores en la capacitación 'Formar a los Formadores' en el Gimnasio Municipal de Cutral Co."
+image: "/assets/images/miley-recorte-de-organismos-publicos.jpg" # Medida ideal para Portada (Secundarias): 400px de ancho por 300px de alto (proporción 4:3)
+image_alt: "Imagen conceptual de una motosierra sobre un edificio estatal o gráfico de ajuste del gasto público."
 image_caption:
-copete: "La ciudad de Cutral Co, en un paso innovador para el desarrollo local, está implementando un ambicioso programa denominado 'Formar a los Formadores'. Se conoció que este fin de semana se llevó a cabo el exitoso segundo módulo de esta iniciativa, que busca potenciar las herramientas de quienes trabajan con niños, niñas y adolescentes, especialmente en el ámbito deportivo."
+copete: "En una medida que profundiza su política de reforma del Estado y ajuste del gasto, el Gobierno Nacional ha oficializado la disolución y profundos cambios en 21 organismos públicos. Esta acción, que el propio presidente ha simbolizado con la imagen de la 'motosierra', reestructura de manera significativa la administración pública bajo la premisa de combatir la corrupción y mejorar la eficiencia, generando diversas reacciones en todo el país."
 ---
 
 Buenos Aires es el escenario de una de las transformaciones más ambiciosas impulsadas por la actual administración. El Gobierno Nacional ha formalizado la disolución de un significativo número de entidades públicas, una medida central en su plan de reducción del gasto y redefinición del rol del Estado. Esta decisión, que abarca organismos de áreas sensibles, busca, según el Poder Ejecutivo, eliminar estructuras consideradas ineficientes o superfluas y combatir la corrupción, especialmente en el ámbito de la obra pública.
