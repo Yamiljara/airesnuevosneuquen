@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "Galardón a la comunicación regional."
-title: "Reconocimiento internacional: teleSUR recibe rrestigioso premio Aníbal Nazoa por sus 20 Años de trayectoria."
+title: "Reconocimiento internacional: teleSUR recibe prestigioso premio Aníbal Nazoa por sus 20 Años de trayectoria."
 author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-09 17:36:00 -0300 # Fecha y hora actualizadas
 categories: [Internacionales] # Categoría para esta sección
