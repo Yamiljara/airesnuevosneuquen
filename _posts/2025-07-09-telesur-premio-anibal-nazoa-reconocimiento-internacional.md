@@ -21,4 +21,4 @@ teleSUR, fundada el 24 de julio de 2005, celebra este año su vigésimo aniversa
 El reconocimiento representa un fuerte respaldo a la trayectoria de teleSUR y su compromiso con la verdad y la información desde una visión integral de los pueblos del Sur. Este premio no solo celebra su persistencia en el panorama mediático, sino también su relevancia como fuente de noticias y análisis para una audiencia que busca una voz alternativa en el ámbito internacional y regional.
 
 ---
-**Cláusula legal final:** Esta nota fue elaborada a partir de fuentes verificadas, entrevistas y documentación oficial. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.
+*Esta nota fue elaborada a partir de fuentes verificadas, entrevistas y documentación oficial. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
