@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "Justicia del Siglo XXI en Neuquén: Cómo la reforma del Código Procesal Civil agilizará trámites y acercará los juzgados al ciudadano."
+title: "Justicia del Siglo XXI en Neuquén: Cómo la reforma del código procesal civil agilizará trámites y acercará los juzgados al ciudadano."
 antetitulo: "Modernización judicial."
 copete: Neuquén se encamina hacia una reforma judicial sin precedentes, impulsada por el Gobernador Rolando Figueroa, que transformará el Código Procesal Civil y Comercial. Con un fuerte enfoque en la oralidad, la digitalización y la resolución colaborativa de conflictos, esta iniciativa busca una justicia más ágil, transparente y cercana a los ciudadanos en toda la provincia.
 date: 2025-07-08 21:12:23 -0300
 categories: [Provinciales]
 tags: [ReformaJudicial, CódigoProcesalCivil, Neuquén, JusticiaModerna, OralidadJudicial, Digitalización, ErnestoNovoa, RolandoFigueroa, LegislaturaNeuquen, AccesoALaJusticia, NoticiasNeuquen]
+image: /assets/images/reforma-código-penal-civil-neuquén.jpg  # <--- AQUÍ DEBES ESPECIFICAR LA RUTA Y EL NOMBRE DE TU IMAGEN
+image_alt: "Imagen de la reforma judicial en Neuquén" # <--- DESCRIPCIÓN ALT DE LA IMAGEN
+image_caption: "La justicia neuquina se moderniza para el siglo XXI." # <--- PIE DE FOTO DE LA IMAGEN
 author: "Redacción Aires Nuevos NQN"
 slug: reforma-judicial-neuquen-codigo-procesal-civil
 ---
@@ -43,4 +46,4 @@ Estas reuniones son fundamentales para incorporar la realidad local y asegurar q
 
 ---
 **Cláusula de resguardo legal:**
-Esta nota fue elaborada a partir de fuentes periodísticas y oficiales (MejorInformado, LM Neuquén, La Red Neuquén, FADECS - UNComa, Diario Río Negro, Cadena 1 Neuquén, NOVA Neuquén, Ministerio Público de la Defensa de Neuquén, Legislatura de Neuquén - Sitio oficial). AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.
+Esta nota fue elaborada a partir de fuentes periodísticas y oficiales (Ministerio Público de la Defensa de Neuquén, Legislatura de Neuquén - Sitio oficial). AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.
