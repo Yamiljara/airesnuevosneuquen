@@ -9,8 +9,7 @@ tags: [Milei, CrisisArgentina, AnalisisSociologico, Economia, Politica, Federali
 featured: true # ¡Clave para que sea la noticia principal de portada!
 image: "/assets/images/analisis-sociológico.jpg" # Ruta sugerida para la imagen principal (800px x 600px)
 image_alt: "Imagen conceptual de la crisis en Argentina con elementos económicos y sociales."
-image_caption: "El actual escenario político y económico argentino es a
-nalizado como una crisis estructural que pone en riesgo los pilares fundamentales del país."
+image_caption: "El actual escenario político y económico argentino es analizado como una crisis estructural que pone en riesgo los pilares fundamentales del país."
 copete: "En la Argentina de 2025, la situación ha trascendido el debate ideológico y las reformas superficiales. Lo que se discute ahora es la supervivencia misma de la República. La crisis actual no es solo económica o institucional, sino estructural, carcomiendo los tres pilares fundamentales del país: el federalismo, la legitimidad representativa y la funcionalidad básica del Estado."
 slug: el-experimento-milei-crisis-sociologica # Slug descriptivo y claro
 ---
