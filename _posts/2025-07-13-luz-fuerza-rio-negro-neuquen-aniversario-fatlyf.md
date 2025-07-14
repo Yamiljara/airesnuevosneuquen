@@ -28,7 +28,7 @@ El representante sindical contextualizó la situación actual, comparándola con
 
 En la actualidad, se destaca el "rol fundamental" que juegan las cooperativas en Neuquén, describiéndolas como "empresas que se desarrollan hoy en día y trabajan muy bien". El trabajo del sindicato se centra en "mantener la fuente de trabajo, mantener nuestro convenio y la calidad de servicio para todos los usuarios".
 
-### Desafíos y Oportunidades en Energías Limpias
+### Desafíos y Oportunidades en Energías Limpias:
 
 Respecto a las energías limpias, se mencionó el crecimiento de la energía eólica y solar en la región. Se hizo referencia a empresas trabajando en zonas como Conexa y Aricura, con afiliados ya involucrados en la generación eólica. Además, se indicó que "viene Cusco también con el tema del solar". El sindicato reconoce estos avances y la importancia de "estar al tanto de todo eso y trabajar y no quedar al margen porque es lo que se viene para el futuro".
 
