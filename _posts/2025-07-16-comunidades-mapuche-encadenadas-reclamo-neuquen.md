@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "Reclamo por derechos indígenas."
-title: "Sin respuestas del gobierno: Comunidades mapuche siguen encadenadas en la casa de gobierno y cuestionan el mensaje oficial del gobernador de la \"Paz Social\"."
+title: "Sin respuestas: Comunidades mapuche siguen encadenadas en la casa de gobierno y cuestionan el mensaje oficial del gobernador de la \"Paz Social\"."
 author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-16 11:15:00 -0300 # Ajusta la fecha y hora si es necesario
 categories: [Portada]
