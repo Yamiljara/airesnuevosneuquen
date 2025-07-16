@@ -899,7 +899,7 @@ img {
     font-size: 1.15em; /* Ligeramente más grande para mejor lectura */
     line-height: 1.8;
     color: #000000;
-    text-align: justify; /* Justificar el texto para un aspecto profesional y de columna de periódico */
+    text-align: left; /* CAMBIADO: De 'justify' a 'left' */
 }
 
 .post-body p {
