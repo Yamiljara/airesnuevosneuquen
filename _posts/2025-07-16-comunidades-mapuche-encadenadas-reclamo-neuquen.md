@@ -33,7 +33,7 @@ Según explicaron, en septiembre del año pasado, específicamente el día 17, e
 
 ### Dureza de la Medida y Falta de Diálogo
 
-Los referentes Mapuche indicaron que, tras haber intentado diversas reuniones que solo dilataron los plazos, se vieron obligados a recurrir a esta "maniobra extrema". Subrayaron la dureza de permanecer encadenados, soportando las bajas temperaturas que se registraron ayer y durante la noche. "No es bueno para nadie tener que llegar a esta situación", afirmó Nelson Cárdenas Piñén, criticando que el gobierno "ha oído sordo a nuestro reclamo", ya que ningún funcionario se ha acercado a dialogar o a dar explicaciones.
+Los referentes Mapuche indicaron que, tras haber intentado diversas reuniones que solo dilataron los plazos, se vieron obligados a recurrir a esta "maniobra extrema". Subrayaron la dureza de permanecer encadenados, soportando las bajas temperaturas que se registraron ayer y durante la noche. "No es bueno para nadie tener que llegar a esta situación", afirmó Nelson Cárdenas, criticando que el gobierno "ha oído sordo a nuestro reclamo", ya que ningún funcionario se ha acercado a dialogar o a dar explicaciones.
 
 El reclamo por las personerías jurídicas de algunas de estas comunidades data de hace "10 o 15 años". Los dirigentes Mapuche manifestaron su desconcierto sobre la razón por la cual el gobierno no las entrega, "cuando están todos los trámites cumplidos". Aseguraron que el Director de la Dirección de Personería Jurídica les ha confirmado que toda la documentación solicitada fue presentada y aprobada, sin objeciones para la entrega.
 
