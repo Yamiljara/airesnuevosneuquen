@@ -55,7 +55,7 @@ A nivel nacional, Godoy manifestó su fuerte cercanía con el gobernador de La R
 
 Concluyendo la entrevista, Godoy expresó su confianza en una pronta definición de su candidatura. "La semana que viene ya vamos a tener definición, hoy creo que están más convencidos ellos que yo que tengo que ser el candidato", y reiteró que seguirá "pidiendo hasta el último momento la interna". Su objetivo es claro: liderar un peronismo renovado que logre "resolver el problema real de la gente".
 
-Fuente: [programa "Enfocados" de Matías Cesari: https://vjpcn2025.wixsite.com/vjpcn2025/organización](https://vjpcn2025.wixsite.com/vjpcn2025/organización) 
+Fuente: [programa "Enfocados" de Matías Cesari: https://www.youtube.com/watch?v=f6jitr-PQdI](https://www.youtube.com/watch?v=f6jitr-PQdI) 
 
 ---
 *Esta nota periodística se basa en la entrevista realizada a César Godoy en el programa "Enfocados" del Licenciado Matías Cesari. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
