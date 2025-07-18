@@ -32,7 +32,7 @@ Paulo Ibarra apuntó directamente al intendente Diego Victoria, a quien denunci�
 
 <div class="video-responsive">
     <iframe width="659" height="369"
-            src="https://www.youtube.com/embed/iXSK8Q1A7k4" 
+            src="https://www.youtube.com/embed/9PKDLaCAVKE"
             title="Entrevista a Paulo Ibarra, referente de familias en asentamiento en la localidad de Aluminé."
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
