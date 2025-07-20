@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "URGENTE: tensión en la casa de Gobierno de Neuquén."
-title: "Gobierno Denuncia a Comunidades Mapuche por 'Coacción' en Casa de Gobierno de Neuquén"
+title: "Gobierno Denuncia a Comunidades Mapuche por 'Coacción' en Casa de Gobierno de Neuquén."
 author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-20 10:50:52 -0300 # Fecha y hora actuales, reflejando el "hoy" de la noticia
 categories: [Provinciales]
@@ -11,7 +11,7 @@ featured_secondary: false # Noticia para grilla (Últimas Noticias / Otras Grill
 image: "/assets/images/intimación-a-las-comunidades-mapuches.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px de ancho por 225px de alto - proporción 16:9)
 image_alt: "Miembros de comunidades Mapuche encadenados o manifestándose frente a la Casa de Gobierno de Neuquén."
 image_caption: "Comunidades Mapuche denuncian ser intimadas a desalojar la Casa de Gobierno en Neuquén."
-copete: "Neuquén Capital, 20 de julio de 2025 – El Poder Judicial ha iniciado un caso por 'coacción' y 'usurpación' contra comunidades Mapuche encadenadas en la Casa de Gobierno. La acción judicial intima a los manifestantes a retirarse bajo amenaza de uso de la fuerza pública, en el marco de una disputa histórica por las personerías jurídicas que, según los referentes, están pendientes hace años."
+copete: "Neuquén Capital, 20 de julio de 2025 – El Poder Judicial ha iniciado un caso por 'coacción' y 'usurpación' contra comunidades Mapuche encadenadas en la Casa de Gobierno. La acción judicial intima a los manifestantes a retirarse bajo apercibimiento de uso de la fuerza pública, en el marco de una disputa histórica por las personerías jurídicas que, según los referentes, están pendientes hace años."
 slug: gobierno-denuncia-mapuche-coaccion-neuquen
 ---
 
