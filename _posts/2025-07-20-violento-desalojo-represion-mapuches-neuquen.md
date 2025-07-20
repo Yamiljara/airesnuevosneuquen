@@ -11,7 +11,7 @@ featured_secondary: false # Noticia para grilla (Últimas Noticias / Otras Grill
 image: "/assets/images/represión-brutal-fuera-de-la-casa-de-gobierno.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px de ancho por 225px de alto - proporción 16:9)
 image_alt: "Imagen de un operativo policial o de una protesta Mapuche siendo desalojada violentamente."
 image_caption: "El violento desalojo en Casa de Gobierno dejó 22 detenidos, incluyendo un menor."
-copete: "Neuquén Capital, 20 de julio, 12:50 hs. – El gobierno de Rolando Figueroa llevó adelante esta mañana un brutal operativo policial de desalojo y represión contra las comunidades Mapuche que reclamaban pacíficamente sus personerías jurídicas frente a la Casa de Gobierno provincial. La acción policial, que incluyó detonaciones, resultó en la detención de 22 personas, entre ellas mujeres y un menor de 15 años."
+copete: "El gobierno provincial llevó adelante esta mañana un brutal operativo policial de desalojo y represión contra las comunidades Mapuche que reclamaban pacíficamente sus personerías jurídicas frente a la Casa de Gobierno provincial. La acción policial, que incluyó detonaciones, resultó en la detención de 22 personas, entre ellas mujeres y un menor de 15 años."
 slug: violento-desalojo-represion-mapuches-casa-gobierno-neuquen
 ---
 
