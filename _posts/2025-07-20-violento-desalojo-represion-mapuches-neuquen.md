@@ -76,4 +76,4 @@ Este violento desalojo y las detenciones marcan una escalada crítica en la tens
 
 
 ---
-*Esta nota fue elaborada en base a la información confirmada por diversas fuentes periodísticas,declaraciones de manifesatntes detenidos en el día de la fecha, 20 de julio de 2025, así como en el oficio "URGENTE" del Poder Judicial de Neuquén y en información previa obtenida de entrevistas con voceros de las comunidades Mapuche. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
+*Esta nota fue elaborada en base a la información confirmada por diversas fuentes periodísticas,declaraciones de manifestantes detenidos en el día de la fecha, 20 de julio de 2025, así como en el oficio "URGENTE" del Poder Judicial de Neuquén y en información previa obtenida de entrevistas con voceros de las comunidades Mapuche. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
