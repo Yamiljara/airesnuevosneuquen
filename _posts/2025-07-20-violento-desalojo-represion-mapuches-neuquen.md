@@ -17,7 +17,7 @@ slug: violento-desalojo-represion-mapuches-casa-gobierno-neuquen
 
 Neuquén Capital, hoy 20 de julio, 12:50 hs. — El gobierno provincial llevó adelante esta mañana un brutal operativo policial de desalojo y represión contra las comunidades Mapuche que se encontraban reclamando pacíficamente sus personerías jurídicas frente a la Casa de Gobierno provincial. La acción policial, que incluyó detonaciones y un fuerte despliegue, resultó en la detención de 22 personas.
 
-Esta violenta intervención se produce en el marco de una persistente disputa: mientras el gobierno provincial sostiene que las comunidades Mapuche no cumplen con todos los requisitos necesarios para la entrega de sus personerías jurídicas, los referentes Mapuche —como ha expresado el Logko Nelson Cárdenas en entrevistas, afirmando que su reclamo por personerías jurídicas "data de hace 10 o 15 años" y que el gobierno "ha oído sordo a nuestro reclamo", pese a que "tienen todos los trámites cumplidos" y la documentación en regla y aprobada, sin objeciones para su entrega.
+Esta violenta intervención se produce en el marco de una persistente disputa: mientras el gobierno provincial sostiene que las comunidades Mapuche no cumplen con todos los requisitos necesarios para la entrega de sus personerías jurídicas, los referentes Mapuche —como ha expresado el Logko Nelson Cárdenas en entrevistas, afirmando que su reclamo por personerías jurídicas "data de hace 10 o 15 años" y que el gobierno "hace oído sordo a nuestro reclamo", pese a que "tienen todos los trámites cumplidos" y la documentación en regla y aprobada, sin objeciones para su entrega.
 
 ### Listado de Detenidos y Contexto de la Represión
 
