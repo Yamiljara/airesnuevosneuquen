@@ -11,7 +11,7 @@ featured_secondary: false # Noticia para grilla (Últimas Noticias / Otras Grill
 image: "/assets/images/viaje-a-los-paisajes-invisibles.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px de ancho por 225px de alto - proporción 16:9)
 image_alt: "Portada del libro 'Viaje a los paisajes invisibles' o imagen de Julián Varsavsky."
 image_caption: "El nuevo libro de Julián Varsavsky desafía la concepción tradicional del viaje."
-copete: "En una comunicación exclusiva con nuestro medio, el escritor y Licenciado en Ciencias de la Comunicación, Julián Varsavsky, extendió una invitación especial para conocer su último trabajo literario: 'Viaje a los paisajes invisibles' de Antártida a Atacama. Esta obra redefine audazmente el concepto de exploración en la era digital, sumergiéndonos en un tipo de travesía que va más allá de los mapas, priorizando la mirada personal y la búsqueda de significado en lo que ya se encuentra a la vista."
+copete: "El escritor y Licenciado en Ciencias de la Comunicación, Julián Varsavsky, extendió una invitación especial para conocer su último trabajo literario: 'Viaje a los paisajes invisibles' de Antártida a Atacama."
 slug: julian-varsavsky-viaje-paisajes-invisibles-redefiniendo-aventura
 ---
 
