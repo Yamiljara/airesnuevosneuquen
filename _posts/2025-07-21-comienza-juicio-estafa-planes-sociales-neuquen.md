@@ -11,7 +11,7 @@ featured_secondary: false # Aseguramos que solo sea principal
 image: "/assets/images/comienzo-de-juicios-planes-sociales.jpg" # RUTA DE LA IMAGEN (800px x 600px, proporción 4:3)
 image_alt: "Imagen que represente la justicia y/o la investigación de corrupción en Neuquén."
 image_caption: "Comenzó en Neuquén el juicio por la multimillonaria estafa de los planes sociales."
-copete: "Neuquén Capital, 21 de julio – Hoy dio inicio el juicio por la 'megacausa' de los planes sociales, un fraude que supera los mil millones de pesos y que involucra a exfuncionarios y punteros políticos. La investigación desentrañó una compleja maniobra durante la gestión del exgobernador Omar Gutiérrez, con penas de prisión en juego y una demanda civil para recuperar los fondos sustraídos."
+copete: "Hoy dio inicio el juicio por la 'megacausa' de los planes sociales, un fraude que supera los mil millones de pesos y que involucra a exfuncionarios y punteros políticos. La investigación desentrañó una compleja maniobra durante la gestión del exgobernador Omar Gutiérrez, con penas de prisión en juego y una demanda civil para recuperar los fondos sustraídos."
 slug: comienza-juicio-estafa-planes-sociales-neuquen
 ---
 
