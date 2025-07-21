@@ -1,6 +1,6 @@
 ---
 layout: post
-antetitulo: "Programa de Financiamiento y Formación: Oportunidades Clave para el Desarrollo Joven."
+antetitulo: "Programa de Financiamiento y Formación."
 title: "Jóvenes neuquinos se reunirán en el Espacio DUAM para 'Proyectar Futuro' con apoyo provincial."
 author: "Redacción Aires Nuevos NQN"
 date: 2025-07-21 9:43:00 -0300 # Ajustado a la fecha y hora del evento real.
