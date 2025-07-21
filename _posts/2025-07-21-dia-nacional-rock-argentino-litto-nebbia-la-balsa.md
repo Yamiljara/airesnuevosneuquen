@@ -8,7 +8,7 @@ categories: [Cultura]
 tags: [DiaNacionalDelRockArgentino, RockNacional, LittoNebbia, LaBalsa, LosGatos, Tanguito, MusicaArgentina, CulturaArgentina, Aniversario, Pioneros]
 featured: false
 featured_secondary: false # Noticia para grilla (Últimas Noticias / Otras Grillas)
-image: "/assets/images/cultura/dia-rock-argentino-litto-nebbia-la-balsa.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px de ancho por 225px de alto - proporción 16:9)
+image: "/assets/images/efemerides-dia-del-rock-2025.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px de ancho por 225px de alto - proporción 16:9)
 image_alt: "Imagen de Litto Nebbia, Los Gatos, o una representación icónica del rock argentino."
 image_caption: "El 21 de julio se celebra la esencia del rock argentino y el legado de 'La Balsa'."
 copete: "El país conmemora el nacimiento de un género que marcó su identidad cultural, recordando a uno de sus pioneros, Litto Nebbia, y la canción 'La Balsa', que lo catapultó a la masividad en 1967 y se convirtió en el himno fundacional del rock nacional."
