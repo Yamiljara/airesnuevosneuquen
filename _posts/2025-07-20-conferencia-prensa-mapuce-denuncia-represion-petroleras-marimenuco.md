@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "Conferencia de Prensa Mapuce"
-title: "Conferencia de Prensa Mapuce: Denunciaron la brutal represión sufrida el día domingo, apuntaron al gobierno provincial y a los CEOs de las Petroleras e hicieron un llamado a la no perforación del Mari Menuco."
+title: "Conferencia de Prensa Mapuce: Denunciaron una brutal represión, apuntaron al gobierno provincial y a los CEOs de las Petroleras e hicieron un llamado a la no perforación del Mari Menuco."
 author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-21 12:00:00 -0300 # Fecha y hora de la conferencia de prensa (posterior al desalojo)
 categories: [Provinciales]
