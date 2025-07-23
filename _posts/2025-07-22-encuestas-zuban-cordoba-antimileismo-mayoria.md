@@ -3,7 +3,7 @@ layout: post
 antetitulo: "Las identidades electorales argentinas."
 title: "Encuestas de Zuban / Córdoba: El 'Antimileísmo' es mayoría, pero su voto no encuentra un cauce único."
 author: "Redacción AIRESNUEVOSNQN"
-date: 2025-07-22 10:00:00 -0300 # Fecha de la noticia
+date: 2025-07-23 08:00:00 -0300 # Fecha de la noticia
 categories: [Portada]
 tags: [Antimileismo, JavierMilei, ZubanCordoba, Encuestas, PoliticaArgentina, C5N, RobertoBercovich, Kirchneristas, Antikirchneristas, Peronistas, Antiperonistas, Voto, Elecciones, Gobernabilidad, Argentina]
 featured: true
