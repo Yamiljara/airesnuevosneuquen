@@ -14,7 +14,7 @@ copete: "Un grupo de aproximadamente 50 vecinos de Aluminé realiza hoy una olla
 slug: alumine-reclamo-habitacional-olla-popular
 ---
 
-Aluminé, 23 de julio de 2025 – En una jornada de intensa demanda, alrededor de 50 vecinos de Aluminé se congregaron esta mañana frente a las puertas de la Municipalidad y el Consejo Deliberante. La olla popular, símbolo de resistencia y de la profunda necesidad que atraviesan, tiene como principal objetivo visibilizar la problematica para las autoridades decreten la emergencia habitacional en la localidad, una medida que consideran indispensable ante la creciente falta de viviendas.
+Aluminé, 23 de julio de 2025 – En una jornada de intensa demanda, alrededor de 50 vecinos de Aluminé se congregaron esta mañana frente a las puertas de la Municipalidad y el Consejo Deliberante. La olla popular, símbolo de resistencia y de la profunda necesidad que atraviesan, tiene como principal objetivo visibilizar la problematica para que las autoridades decreten la emergencia habitacional en la localidad, una medida que consideran indispensable ante la creciente falta de viviendas.
 
 Según el referente consultado, la decisión de realizar esta medida se tomó ante lo que describen como un "cierre de puertas" y la falta de voluntad para negociar por parte de las administraciones municipal y provincial. "Tenemos propuestas nuevas, propuestas concretas para poder negociar esto y no se nos abren puertas ni acá ni en provincia", afirmó el vecino, quien también criticó la política de "gobiernos represivos, arrinconadores" que, según su visión, han optado por "judicializar esto y militarizar toda la zona".
 
