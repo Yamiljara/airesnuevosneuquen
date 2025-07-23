@@ -8,7 +8,7 @@ categories: [Portada]
 tags: [Antimileismo, JavierMilei, ZubanCordoba, Encuestas, PoliticaArgentina, C5N, RobertoBercovich, Kirchneristas, Antikirchneristas, Peronistas, Antiperonistas, Voto, Elecciones, Gobernabilidad, Argentina]
 featured: true
 featured_secondary: false # Aseguramos que solo sea principal
-image: "/assets/images/portada/antimileismo-zuban-cordoba-principal.jpg" # RUTA DE LA IMAGEN (800px x 600px, proporción 4:3)
+image: "/assets/images/mileistas-vs-antimemileistas.jpg" # RUTA DE LA IMAGEN (800px x 600px, proporción 4:3)
 image_alt: "Gráfico o ilustración representando datos de encuestas políticas o la polarización."
 image_caption: "Las encuestas de Zuban / Córdoba revelan que el 'antimileísmo' es la corriente más fuerte en Argentina."
 copete: "El periodista Roberto Bercovich, analizando los últimos datos de Zuban / Córdoba, destaca que el sentimiento 'antimileísmo' se consolida como la corriente más numerosa en Argentina, superando a otras posturas 'anti', lo que plantea un interrogante sobre su futura representación electoral."
