@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "Legislatura neuquina."
-title: "Bermúdez justifica la acción de la policía ante la represión a las comunidades Mapuches."
+title: "El Diputado Marcelo Bermúdez justifica la acción de la policía ante la represión a las comunidades Mapuches."
 author: "Redacción Aires Nuevos NQN"
 date: 2025-07-23 20:50:34 -0300 
 categories: [Provinciales]
