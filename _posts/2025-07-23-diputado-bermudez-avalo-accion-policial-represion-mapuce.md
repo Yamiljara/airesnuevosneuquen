@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "Legislatura neuquina."
-title: "Diputado Bermúdez avaló el accionar policial ante la brutal represión a las comunidades mapuce."
+title: "Bermúdez justifica la acción de la policía ante la represión a las comunidades Mapuches."
 author: "Redacción Aires Nuevos NQN"
 date: 2025-07-23 20:50:34 -0300 
 categories: [Provinciales]
@@ -11,7 +11,7 @@ featured_secondary: false
 image: "/assets/images/marcelo-bermudez-pro.jpg" 
 image_alt: "Diputado Marcelo Bermúdez hablando en la Legislatura de Neuquén."
 image_caption: "El diputado Marcelo Bermúdez defendió el accionar policial en la Legislatura neuquina."
-copete: "En la 14ª Sesión Ordinaria de la Legislatura de Neuquén, el diputado del PRO Marcelo Bermúdez manifestó su 'orgullo' por la Policía Provincial, defendiendo explícitamente su accionar durante la brutal represión contra las comunidades Mapuce el pasado domingo. Sus palabras se contraponen a las críticas recibidas a las fuerzas de seguridad y se enmarcan en un ataque a sectores 'kirchneristas'."
+copete: "En un discurso durante la 14ª Sesión Ordinaria de la Legislatura de Neuquén, el diputado Marcelo Bermúdez expresó su apoyo al accionar de la Policía Provincial, defendiendo la brutal represión contra las comunidades Mapuches ocurrida el pasado domingo. Sus declaraciones, que contrastan con las críticas a las fuerzas de seguridad, también apuntan contra sectores kirchneristas."
 slug: diputado-bermudez-avalo-accion-policial-represion-mapuce
 ---
 
@@ -44,4 +44,4 @@ Cabe destacar que esta no es la primera vez que el diputado Bermúdez se ve invo
 
 
 ---
-*Esta nota fue elaborada en base a las declaraciones del Diputado Marcelo Bermúdez (PRO) durante la 14ª Sesión Ordinaria de la Legislatura de la Provincia del Neuquén, celebrada el miércoles 23 de julio de 2025, y de información periodística pública sobre antecedentes de conflictos publicada medios provinciales el 20 de octubre de 2014. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público. Se aclara que la ortografía del término "Mapuce" se utiliza en esta nota por solicitud expresa del usuario, buscando respetar la fonética y escritura local de las comunidades, aunque la adaptación al español estándar suele ser "Mapuche".*
+*Esta nota fue elaborada en base a las declaraciones del Diputado Marcelo Bermúdez (PRO) durante la 14ª Sesión Ordinaria de la Legislatura de la Provincia del Neuquén, celebrada el miércoles 23 de julio de 2025, y de información periodística pública sobre antecedentes de conflictos publicada en medios provinciales el 20 de octubre de 2014. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
