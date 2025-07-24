@@ -29,11 +29,11 @@ La expectativa es que los estudiantes apliquen lo aprendido "del aula a la vida"
 
 El trayecto de Cuidados Gerontológicos en Colipilli forma a profesionales con perspectiva local.
 
-**Escucha acá las declaraciones de la Licenciada en Kinesiología y Fisioterapia María José Rodríguez :**
+**Escucha acá las declaraciones de la Licenciada en Kinesiología y Fisioterapia María José Rodríguez:**
 
 <div class="video-responsive">
     <iframe width="659" height="369"
-            src=""https://www.youtube.com/embed/k1VfUuH6M9o""
+            src="https://www.youtube.com/embed/k1VfUuH6M9o"
             title="Entrevista a María José Rodríguez , Licenciada en Kinesiología y Fisioterapia."
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -42,4 +42,5 @@ El trayecto de Cuidados Gerontológicos en Colipilli forma a profesionales con p
     </iframe>
 </div>
 
+---
 *Esta nota fue elaborada a partir de una entrevista realizada a la Lic. María José Rodríguez, docente del trayecto de cuidados gerontológicos de Colipilli, el 24 de julio de 2025. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
