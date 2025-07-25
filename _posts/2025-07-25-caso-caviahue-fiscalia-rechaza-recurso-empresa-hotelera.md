@@ -10,7 +10,7 @@ featured: false
 featured_secondary: false
 image: "/assets/images/grand-hotel-caviahue.jpg" 
 image_alt: "Símbolo de la justicia o un juzgado en Neuquén."
-image_caption: "la Fiscalía General de Neuquén consolidó el fallo a favor de un extrabajador de Caviahue."
+image_caption: "La Fiscalía General de Neuquén consolidó el fallo a favor de un extrabajador de Caviahue."
 copete: "En un giro significativo en el prolongado conflicto laboral que enfrenta a un extrabajador con una poderosa empresa hotelera en Caviahue, la Fiscalía General de la Provincia de Neuquén ha propuesto la inadmisibilidad del recurso extraordinario federal interpuesto por la compañía. Esta resolución del Ministerio Público Fiscal, con fecha 23 de julio de 2025, consolida la sentencia favorable al exempleado, quien sigue a la espera de que se cumplan los pagos ordenados por la Justicia."
 slug: caso-caviahue-fiscalia-rechaza-recurso-empresa-hotelera
 ---
