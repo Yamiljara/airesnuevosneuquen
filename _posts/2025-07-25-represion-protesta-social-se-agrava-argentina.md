@@ -28,4 +28,4 @@ El Poder Judicial también ha sido puesto bajo la lupa por el informe de la CPM,
 La intensificación del uso de la fuerza y la represión afecta de manera particular a sectores vulnerables de la sociedad, como adultos mayores y trabajadores informales, quienes son especialmente impactados por estas medidas.
 
 ---
-*Esta nota fue elaborada a partir de fuentes verificadas y documentación oficial sobre informeinforme especial de la Comisión Provincial por la Memoria (CPM). AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
+*Esta nota fue elaborada a partir de fuentes verificadas y documentación oficial sobre informe especial de la Comisión Provincial por la Memoria (CPM). AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
