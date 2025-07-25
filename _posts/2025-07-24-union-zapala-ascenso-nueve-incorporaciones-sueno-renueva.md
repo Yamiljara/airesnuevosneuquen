@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "Unión de Zapala: Experiencia y juventud por el ascenso."
-title: "Selección LIFUNE: Unión de Zapala va por el ascenso, nueve incorporaciones y un sueño que se renueva."
+title: "LIFUNE: Unión de Zapala va por el ascenso, nueve incorporaciones y un sueño que se renueva."
 author: "Redacción Aires Nuevos NQN"
 date: 2025-07-25 09:00:00 -0300 # Fecha de la noticia
 categories: [Portada, Deportes, Fútbol, Neuquén]
