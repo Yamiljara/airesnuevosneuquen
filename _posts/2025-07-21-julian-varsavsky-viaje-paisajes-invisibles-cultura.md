@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "Literatura y cultura."
-title: "Julián Varsavsky invita a explorar 'Viaje a los Paisajes Invisibles': Redefiniendo la Aventura en un Mundo Hiperconectado."
+title: "Julián Varsavsky invita a explorar 'Viaje a los Paisajes Invisibles': edefiniendo la aventura en un mundo hiperconectado."
 author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-21 15:00:00 -0300 # Ajusta la fecha y hora si es necesario (asumo una hora posterior a la recepción de la comunicación)
 categories: [Cultura]
