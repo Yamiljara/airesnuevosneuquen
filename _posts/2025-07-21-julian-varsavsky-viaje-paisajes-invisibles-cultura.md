@@ -8,7 +8,7 @@ categories: [Cultura]
 tags: [JulianVarsavsky, ViajeALosPaisajesInvisibles, Libro, Viajes, Exploracion, Romanticismo, Antartida, Atacama, Patagonia, CaboDeHornos, DuquesaDeAlbany, LiteraturaDeViajes, Percepcion, Escritor, Comunicacion]
 featured: false
 featured_secondary: false # Noticia para grilla (Últimas Noticias / Otras Grillas)
-image: "/assets/images/viaje-a-los-paisajes-invisibles.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px de ancho por 225px de alto - proporción 16:9)
+image: "/assets/images/un-viaje-a-los-paisajes-invisibles.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px de ancho por 225px de alto - proporción 16:9)
 image_alt: "Portada del libro 'Viaje a los paisajes invisibles' o imagen de Julián Varsavsky."
 image_caption: "El nuevo libro de Julián Varsavsky desafía la concepción tradicional del viaje."
 copete: "El escritor y Licenciado en Ciencias de la Comunicación, Julián Varsavsky, extendió una invitación especial para conocer su último trabajo literario: 'Viaje a los paisajes invisibles' de Antártida a Atacama."
