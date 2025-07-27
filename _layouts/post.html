@@ -6,7 +6,13 @@ layout: default
     <div class="post-article-wrapper">
 
         <p class="post-meta author-date-line">
-            <span class="post-author">Por Redacciones AiresNuevosNQN</span>
+            <span class="post-author">
+                {% if page.author %}
+                    Por {{ page.author }}
+                {% else %}
+                    Por Redacción AiresNuevosNQN
+                {% endif %}
+            </span>
             <span class="post-date">{{ page.date | date: "%d de %B de %Y" }}</span>
         </p>
 
