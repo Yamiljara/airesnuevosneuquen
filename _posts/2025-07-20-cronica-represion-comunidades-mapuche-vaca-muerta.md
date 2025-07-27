@@ -2,7 +2,7 @@
 layout: post
 antetitulo: "CRÓNICA."
 title: "“No les importó si había niños ni mujeres mayores”, relatos de la represión a comunidades mapuce de Vaca Muerta."
-author: "Melisa Cabrapan Duarte."
+author: "Melisa Cabrapán Duarte."
 date: 2025-07-26 18:28:26 -0300 # Fecha de publicación original del hecho
 categories: [Sociedad]
 tags: [Mapuche, Represion, VacaMuerta, DerechosIndigenas, RolandoFigueroa, Neuquen, ViolenciaPolicial, ComunidadMapuche, ConflictosTerritoriales]
@@ -100,4 +100,4 @@ Los policías que les pegaron a los y las mapuche fueron en su mayoría varones,
 El operativo de desalojo y la **feroz represión** ordenada por el gobernador de la Provincia de Neuquén Rolando Figueroa no resolvió el conflicto de fondo. El jueves, unas **10 mil personas** se movilizaron por el centro neuquino en apoyo a la Confederación Mapuche de la provincia. Mientras tanto, continúa la exigencia de respuesta por parte del gobierno.
 
 ---
-*Esta nota fue elaborada a partir de fuentes verificada y crónica elaborada por la Licenciada y doctora en antropología social Melisa Cabrapan Duarte para el periódico eldiarioar. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
+*Esta nota fue elaborada a partir de fuentes verificada y crónica elaborada por la Licenciada y doctora en antropología social Melisa Cabrapán Duarte para el periódico eldiarioar. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.*
