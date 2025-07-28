@@ -2333,6 +2333,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 15px; /* Padding interno, de tu captura */
     box-sizing: border-box; /* Para incluir padding y border en width/height */
     text-align: center;
 }
@@ -2348,6 +2349,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Padding interno, de tu captura */
     box-sizing: border-box;
     text-align: center;
 }
@@ -2391,6 +2393,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Padding interno, de tu captura */
     box-sizing: border-box;
     text-align: center;
 }
