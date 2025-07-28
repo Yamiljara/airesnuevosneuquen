@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "DEPORTES / CUTRAL CO."
-title: "Cutral Co fue sede de la segunda fecha del torneo provincial de natación."
+title: "Cutral Co fué sede de la segunda fecha del torneo provincial de natación."
 author: "Redacción AIRESNUEVOSNQN"
 date: 2025-07-28 00:12:00 -0300 # Fecha y hora actualizadas
 categories: [Portada, Deportes, CutralCo, Neuquén, Natacion] # Se añadió "Portada" a las categorías
