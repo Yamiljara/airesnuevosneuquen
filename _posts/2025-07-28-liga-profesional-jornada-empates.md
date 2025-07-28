@@ -8,7 +8,7 @@ categories: [Portada]
 tags: [LigaProfesional, FútbolArgentino, Clausura2025, ResultadosLPF, FútbolNacional, RiverPlate, BocaJuniors, Deportes, Argentina, Fecha3]
 featured: false
 featured_secondary: true # ¡CAMBIO CLAVE! Esto la convierte en noticia secundaria de portada
-image: "/assets/images/portada/liga-profesional-futbol-argentino.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px x 300px, proporción 4:3 para portada secundaria)
+image: "/assets/images/Boca-vs-Huracan.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px x 300px, proporción 4:3 para portada secundaria)
 image_alt: "Imagen de un partido de fútbol de la Liga Profesional Argentina, con jugadores en acción."
 image_caption: "La tercera fecha del Clausura 2025 de la Liga Profesional estuvo marcada por la paridad y los resultados ajustados."
 copete: "El fútbol de Primera División de Argentina, en su fase Clausura 2025 de la Liga Profesional, vivió un fin de semana (26 y 27 de julio) cargado de encuentros intensos y, curiosamente, con una notable prevalencia de empates y resultados ajustados."
