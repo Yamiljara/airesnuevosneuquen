@@ -42,7 +42,7 @@ Más allá del hecho particular, Marisol Ortega aprovechó la ocasión para expo
 
 La entrevista también derivó en otras problemáticas que afectan a la comunidad:
 
-* **Acceso al Agua Potable:** Ortega planteó la falta de respuestas del director Walter Rosaya sobre la calidad y el acceso al agua. "El agua es vital. No importa el partido político, no importa las religiones", sentenció, pidiendo dejar de lado las diferencias políticas para abordar este tema esencial.
+* **Acceso al Agua Potable:** Ortega planteó la falta de respuestas del director del hospital Walter Erdozain sobre la calidad del agua. "El agua es vital. No importa el partido político, no importa las religiones", sentenció, pidiendo dejar de lado las diferencias políticas para abordar este tema esencial.
 * **Problemática de la Droga y Salud Mental:** La referente del PRO se refirió a la situación de la droga en Rincón de los Sauces, que a menudo lleva a jóvenes a delinquir. En este sentido, destacó un caso reciente donde un joven con problemas de salud mental recibió ayuda coordinada desde el consejo, la emergencia, y el hospital de Neuquén, logrando su recuperación y reinserción.
 
 ### Llamado a la Colaboración y Compromiso Político
