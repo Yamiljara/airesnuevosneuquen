@@ -15,7 +15,7 @@ copete: "La fuerza política anunció su decisión de participar en las próxima
 slug: unidad-popular-neuquen-candidaturas-propias-legislativas
 ---
 
-Unidad Popular Neuquén ha anunciado formalmente su estrategia electoral de cara a los comicios del 27 de octubre, confirmando que presentará candidaturas propias para diputados y senadores nacionales. Según lo comunicado por la fuerza política, esta decisión busca llevar al Congreso la voz de la ciudadanía a través de "candidaturas genuinas".
+NEUQUÉN, 29 de Julio de 2025.-Unidad Popular Neuquén ha anunciado formalmente su estrategia electoral de cara a los comicios del 27 de octubre, confirmando que presentará candidaturas propias para diputados y senadores nacionales. Según lo comunicado por la fuerza política, esta decisión busca llevar al Congreso la voz de la ciudadanía a través de "candidaturas genuinas".
 
 La organización destacó que esta postura es el resultado de un camino de construcción política que se inició hace 12 años, basado en la participación, el debate y la militancia "sin limitaciones de ideas ni sellos". A lo largo de estos años, Unidad Popular ha formado parte de diversas experiencias electorales, integrando frentes con otras fuerzas. Sin embargo, en esta ocasión, el congreso provincial decidió enfocar sus esfuerzos en presentar candidatos propios con la finalidad de "poder llevar nuestra propuesta basada en las verdaderas demandas de cada vecina y cada vecino".
 
