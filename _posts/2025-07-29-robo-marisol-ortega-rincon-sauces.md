@@ -34,7 +34,7 @@ Si bien Marisol Ortega afirmó no haberse asustado debido a sus más de 20 años
 Más allá del hecho particular, Marisol Ortega aprovechó la ocasión para exponer la situación de seguridad en Rincón de los Sauces y realizar un contundente reclamo a las autoridades:
 
 * **Falta de Cámaras y Conectividad:** Ortega subrayó la carencia de cámaras de seguridad municipales y la falta de conectividad para las existentes. Aunque se menciona que hay cámaras en el centro, "no son suficientes" y su operatividad se ve limitada por la falta de conectividad, lo cual no depende del consejo.
-* **Sentimiento de "Orfandad" ante el Gobierno Provincial:** La referente manifestó sentirse "huérfana" en materia de seguridad por parte del gobierno del MPN, a pesar de reconocer el buen trabajo de instituciones como la policía, fiscalía y juzgados.
+* **Sentimiento de "Orfandad" ante el Gobierno Local:** La referente manifestó sentirse "huérfana" en materia de seguridad por parte del gobierno del MPN, a pesar de reconocer el buen trabajo de instituciones como la policía, fiscalía y juzgados.
 * **Participación Vecinal en Seguridad:** Hizo un llamado a valorar la opinión de los vecinos en las decisiones sobre seguridad, enfatizando la importancia de que sus inquietudes sean escuchadas. "Quiero una cámara. ¿Qué valor tenemos nosotros los vecinos a la hora de decidir en la seguridad de qué es lo mejor para nosotros?", cuestionó.
 * **Igualdad ante la Ley:** Ortega exigió que la justicia actúe con celeridad y sin distinciones. "No porque sea yo o Marisol Ortega se van a comunicar por voz... que sean para todos iguales. El que la hace la paga, yo soy una vecina más", afirmó.
 
