@@ -11,7 +11,7 @@ featured_secondary: false
 image: "/assets/images/se-lanzo-fuerza-patria-neuquen.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px de ancho por 225px de alto - proporción 16:9) [cite: 2025-06-07]
 image_alt: "Lanzamiento del frente Fuerza Patria en Neuquén."
 image_caption: "Darío Martínez, Ramón RioSeco, Oscar Parrilli y Silvia Sapag durante el lanzamiento de 'Fuerza Patria'."
-copete: "el frente político, que busca sumar diversas fuerzas, presentó su mesa política con Darío Martínez, Ramón RioSeco, Oscar Parrilli y Silvia Sapag como figuras destacadas, proponiendo un modelo centrado en la producción y el desarrollo."
+copete: "El frente político, que busca sumar diversas fuerzas, presentó su mesa política con Darío Martínez, Ramón RioSeco, Oscar Parrilli y Silvia Sapag como figuras destacadas, proponiendo un modelo centrado en la producción y el desarrollo."
 slug: se-lanzo-fuerza-patria-neuquen-frente-peronista-legislativas
 ---
 
