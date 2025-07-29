@@ -11,7 +11,7 @@ featured_secondary: true # ¡ESTE ES EL CAMBIO CLAVE para noticia secundaria de 
 image: "/assets/images/unidad-popular-neuquén-llavará-candidatos.jpg" # RUTA DE LA IMAGEN (SUGERENCIA: 400px x 300px - proporción 4:3 para portada secundaria) [cite: 2025-06-07]
 image_alt: "Referentes de Unidad Popular Neuquén en un evento político."
 image_caption: "Unidad Popular Neuquén se prepara para las elecciones de octubre con candidaturas propias."
-copete: "La flamante coalición, que busca sumar diversas fuerzas, presentó su mesa política con Darío Martínez, Ramón RioSeco, Oscar Parrilli y Silvia Sapag como figuras destacadas, proponiendo un modelo centrado en la producción y el desarrollo."
+copete: "La fuerza política anunció su decisión de participar en las próximas elecciones del 27 de octubre con candidatos genuinos, buscando llevar al Congreso una propuesta que priorice la salud, la educación y el desarrollo local, en contraposición a las políticas del gobierno nacional."
 slug: unidad-popular-neuquen-candidaturas-propias-legislativas
 ---
 
