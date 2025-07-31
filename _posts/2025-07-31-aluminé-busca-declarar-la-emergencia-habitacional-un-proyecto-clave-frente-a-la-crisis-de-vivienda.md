@@ -3,7 +3,7 @@ layout: post
 antetitulo: Iniciativa legislativa y desafíos comunitarios.
 title: "Aluminé Busca Declarar la Emergencia Habitacional: Un Proyecto Clave
   Frente a la Crisis de Vivienda."
-author: Redacción AIRESNUEVOSNQN
+author: Redacción Yamil Jara
 date: 2025-07-31 13:47:00 -03:00
 categories:
   - Regionales
