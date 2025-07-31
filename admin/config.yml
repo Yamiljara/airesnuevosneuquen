@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: main # O el nombre de tu rama principal (ej. master, si usas ese). Asegúrate que sea la rama que Netlify despliega.
+name: git-gateway
+branch: main # O el nombre de tu rama principal (ej. master, si usas ese). Asegúrate que sea la rama que Netlify despliega.
 
 # Configuración del sistema de autenticación
 auth_base: .netlify/identity # Ruta para Netlify Identity
