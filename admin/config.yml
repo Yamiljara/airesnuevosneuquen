@@ -11,7 +11,7 @@
  public_folder: "/assets/images" # Ruta pública para acceder a las imágenes en tu sitio (lo que pones en <img src="...">).
 
 # Colecciones de contenido (Tus tipos de noticias)
-collections:
+ collections:
   - name: "posts" # Nombre interno para esta colección (ej. "posts")
     label: "Noticias" # Etiqueta que verás en el panel de Decap CMS para esta colección
     folder: "_posts" # Carpeta donde se guardarán TODOS los archivos Markdown de noticias
