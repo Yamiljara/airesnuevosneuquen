@@ -28,11 +28,11 @@ collections:
       - {label: "Fecha de Publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", default: "{{cms_now | date 'YYYY-MM-DD HH:mm:ss Z'}}"} # Fecha y hora actual por defecto
       - {label: "Categorías", name: "categories", widget: "list", default: ["ÚltimasNoticias"], hint: "Ej: Portada, Regionales, Política, Sociedad. La primera se usará para la URL de categoría y la navegación."}
       - {label: "Tags", name: "tags", widget: "list", hint: "Palabras clave separadas por comas. Ej: Neuquén, Elecciones, Economía."}
-      - {label: "Noticia Principal de Portada", name: "featured", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como principal en la portada (imagen grande)."}
-      - {label: "Noticia Secundaria de Portada", name: "featured_secondary", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como secundaria en la portada (imagen mediana)."}
+      - {label: "Noticia Principal de Portada", name: "featured", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como principal en la portada (imagen grande)."} [cite: 2025-06-07]
+      - {label: "Noticia Secundaria de Portada", name: "featured_secondary", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como secundaria en la portada (imagen mediana)."} [cite: 2025-06-07]
       - {label: "Imagen", name: "image", widget: "image", required: true, hint: "La ruta se guardará relativa a /assets/images/. Sugerencia de tamaño: 800x600px (principal), 400x300px (secundaria), 400x225px (grillas)."} [cite: 2025-06-07]
       - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
       - {label: "Pie de Imagen", name: "image_caption", widget: "string", hint: "Breve descripción que aparecerá debajo de la imagen."}
       - {label: "Copete", name: "copete", widget: "text", required: true} # Campo para el resumen de la noticia
       - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
-      - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # <--- AQUÍ está el cambio a 'markdown'
+      - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # Este es el cambio a 'markdown'
