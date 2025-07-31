@@ -1,4 +1,3 @@
-# Configuración del Backend para Netlify Git Gateway
 backend:
   name: git-gateway
   branch: main # O el nombre de tu rama principal (ej. master, si usas ese). Asegúrate que sea la rama que Netlify despliega.
@@ -13,7 +12,7 @@ public_folder: "/assets/images" # Ruta pública para acceder a las imágenes en 
 
 # Colecciones de contenido (Tus tipos de noticias)
 collections:
-- name: "posts" # Nombre interno para esta colección (ej. "posts")
+  - name: "posts" # Nombre interno para esta colección (ej. "posts")
     label: "Noticias" # Etiqueta que verás en el panel de Decap CMS para esta colección
     folder: "_posts" # Carpeta donde se guardarán TODOS los archivos Markdown de noticias
     create: true # Permite crear nuevas entradas en esta colección
@@ -21,18 +20,18 @@ collections:
     editor:
       preview: false # Deshabilita la previsualización en vivo. Puede ser útil si tu CSS es complejo y la previsualización no se ve bien.
     fields: # Los campos que aparecerán en el formulario para cada noticia, coincidiendo con tu front matter
-- {label: "Layout", name: "layout", widget: "hidden", default: "post"} # Campo oculto, siempre será 'post'
-- {label: "Antetítulo", name: "antetitulo", widget: "string", required: true}
-- {label: "Título", name: "title", widget: "string", required: true}
-- {label: "Autor", name: "author", widget: "string", default: "Redacción AIRESNUEVOSNQN"} # Valor por defecto para el autor
-- {label: "Fecha de Publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", default: "{{cms_now | date 'YYYY-MM-DD HH:mm:ss Z'}}"} # Fecha y hora actual por defecto
-- {label: "Categorías", name: "categories", widget: "list", default: ["ÚltimasNoticias"], hint: "Ej: Portada, Regionales, Política, Sociedad. La primera se usará para la URL de categoría y la navegación."}
-- {label: "Tags", name: "tags", widget: "list", hint: "Palabras clave separadas por comas. Ej: Neuquén, Elecciones, Economía."}
-- {label: "Noticia Principal de Portada", name: "featured", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como principal en la portada (imagen grande)."} [cite: 2025-06-07]
-- {label: "Noticia Secundaria de Portada", name: "featured_secondary", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como secundaria en la portada (imagen mediana)."} [cite: 2025-06-07]
-- {label: "Imagen", name: "image", widget: "image", required: true, hint: "La ruta se guardará relativa a /assets/images/. Sugerencia de tamaño: 800x600px (principal), 400x300px (secundaria), 400x225px (grillas)."} [cite: 2025-06-07]
-- {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
-- {label: "Pie de Imagen", name: "image_caption", widget: "string", hint: "Breve descripción que aparecerá debajo de la imagen."}
-- {label: "Copete", name: "copete", widget: "text", required: true} # Campo para el resumen de la noticia
-- {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
-- {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # Se mantiene en 'markdown'
+          - {label: "Layout", name: "layout", widget: "hidden", default: "post"} # Campo oculto, siempre será 'post'
+          - {label: "Antetítulo", name: "antetitulo", widget: "string", required: true}
+          - {label: "Título", name: "title", widget: "string", required: true}
+          - {label: "Autor", name: "author", widget: "string", default: "Redacción AIRESNUEVOSNQN"} # Valor por defecto para el autor
+          - {label: "Fecha de Publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", default: "{{cms_now | date 'YYYY-MM-DD HH:mm:ss Z'}}"} # Fecha y hora actual por defecto
+          - {label: "Categorías", name: "categories", widget: "list", default: ["ÚltimasNoticias"], hint: "Ej: Portada, Regionales, Política, Sociedad. La primera se usará para la URL de categoría y la navegación."}
+          - {label: "Tags", name: "tags", widget: "list", hint: "Palabras clave separadas por comas. Ej: Neuquén, Elecciones, Economía."}
+          - {label: "Noticia Principal de Portada", name: "featured", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como principal en la portada (imagen grande)."} [cite: 2025-06-07]
+          - {label: "Noticia Secundaria de Portada", name: "featured_secondary", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como secundaria en la portada (imagen mediana)."} [cite: 2025-06-07]
+          - {label: "Imagen", name: "image", widget: "image", required: true, hint: "La ruta se guardará relativa a /assets/images/. Sugerencia de tamaño: 800x600px (principal), 400x300px (secundaria), 400x225px (grillas)."} [cite: 2025-06-07]
+          - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
+          - {label: "Pie de Imagen", name: "image_caption", widget: "string", hint: "Breve descripción que aparecerá debajo de la imagen."}
+          - {label: "Copete", name: "copete", widget: "text", required: true} # Campo para el resumen de la noticia
+          - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
+          - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # Se mantiene en 'markdown'
