@@ -3,12 +3,12 @@
   branch: main # O el nombre de tu rama principal (ej. master, si usas ese). Asegúrate que sea la rama que Netlify despliega.
 
 # Configuración del sistema de autenticación
-auth_base: .netlify/identity # Ruta para Netlify Identity
-display_url: https://airesnuevosnqn.com # URL de tu sitio. ¡Asegúrate que esta sea tu URL real!
+ auth_base: .netlify/identity # Ruta para Netlify Identity
+ display_url: https://airesnuevosnqn.com # URL de tu sitio. ¡Asegúrate que esta sea tu URL real!
 
 # Carpeta donde se subirán y gestionarán los archivos multimedia (imágenes, etc.)
-media_folder: "assets/images" # Ruta relativa a la raíz del proyecto. Todas las imágenes subidas irán a esta carpeta.
-public_folder: "/assets/images" # Ruta pública para acceder a las imágenes en tu sitio (lo que pones en <img src="...">).
+ media_folder: "assets/images" # Ruta relativa a la raíz del proyecto. Todas las imágenes subidas irán a esta carpeta.
+ public_folder: "/assets/images" # Ruta pública para acceder a las imágenes en tu sitio (lo que pones en <img src="...">).
 
 # Colecciones de contenido (Tus tipos de noticias)
 collections:
