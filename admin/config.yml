@@ -35,4 +35,4 @@ collections:
       - {label: "Pie de Imagen", name: "image_caption", widget: "string", hint: "Breve descripción que aparecerá debajo de la imagen."}
       - {label: "Copete", name: "copete", widget: "text", required: true} # Campo para el resumen de la noticia
       - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
-      - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # El editor principal para el contenido largo de la noticia
+      - {label: "Cuerpo de la Noticia", name: "body", widget: "wysiwyg", required: true} # ¡ESTE ES EL CAMBIO CLAVE!
