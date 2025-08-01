@@ -40,19 +40,16 @@ La organización de este evento de envergadura recae en un robusto Comité Organ
 
 ![Alberto T. Caselli, investigador del Instituto de Investigación en Paleobiología y Geología.](/assets/images/alberto-caselli.jpg "Alberto T. Caselli, investigador del Instituto de Investigación en Paleobiología y Geología (UNRN-CONICET) ")
 
-
-
 Sobre las oportunidades que genera para las comunidades locales, Caselli indicó que estos encuentros "promueven el turismo responsable, generan oportunidades de formación y empleo local, fortalecen la identidad territorial y potencian el desarrollo de emprendimientos comunitarios." Añadió que la inclusión de actores locales en talleres, recorridos y actividades abre la posibilidad de integrarlos de forma activa a las estrategias de geoturismo y conservación, y de poder interactuar con colegas que administran o trabajan en Geoparques de la UNESCO latinoamericanos.
-
-
 
 Respecto al futuro de los geoparques en Argentina, el especialista confirmó que "existen equipos de trabajo en distintas provincias elaborando propuestas para geoparques aspirantes a integrar la Red Mundial de Geoparques de UNESCO." La visión a futuro es que estos espacios "representan una oportunidad estratégica para el desarrollo sostenible, ya que integran ciencia, educación, turismo y cultura, y permiten conservar y valorizar el patrimonio geológico de manera participativa." 
 
 El evento está abierto a un público amplio: desde profesionales y estudiantes hasta personas interesadas en el turismo responsable, la naturaleza y la cultura local. Aunque la participación no es gratuita, se han establecido aranceles diferenciados accesibles, especialmente para estudiantes, residentes locales y participantes de universidades públicas. La inscripción se realiza a través del sitio oficial de la UNRN.
 
+Para más información, se puede contactar a través del correo electrónico: 
+***[encuentroggv@gmail.com](encuentroggv@gmail.com)***
 
 
-Para más información, se puede contactar a través del correo electrónico:
 
 \----------------------------------------------------------------------------------------------------------------------------
 
