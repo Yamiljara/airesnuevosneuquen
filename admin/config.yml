@@ -33,6 +33,11 @@ collections:
       - {label: "Imagen", name: "image", widget: "image", required: true, hint: "La ruta se guardará relativa a /assets/images/. Sugerencia de tamaño: 800x600px (principal), 400x300px (secundaria), 400x225px (grillas)."}
       - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
       - {label: "Pie de Imagen", name: "image_caption", widget: "string", hint: "Breve descripción que aparecerá debajo de la imagen."}
+      # >>> INICIO DE CAMPOS DE SEO Y REDES SOCIALES <<<
+      - {label: "SEO Título", name: "meta_title", widget: "string", required: false, hint: "Título específico para buscadores (máx. 60 caracteres). Si está vacío, se usa el título de la noticia."}
+      - {label: "SEO Descripción", name: "meta_description", widget: "text", required: false, hint: "Resumen para buscadores y redes sociales (máx. 160 caracteres)."}
+      - {label: "Imagen para Redes Sociales", name: "social_image", widget: "image", required: false, hint: "Una imagen optimizada para compartir en redes. Si está vacía, se usará la imagen principal de la noticia."}
+      # >>> FIN DE CAMPOS DE SEO Y REDES SOCIALES <<<
       - {label: "Copete", name: "copete", widget: "text", required: true} # Campo para el resumen de la noticia
       - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
       - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # ¡CAMBIADO A MARKDOWN!
