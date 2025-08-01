@@ -40,4 +40,6 @@ La ahora candidata buscará un escaño en la Cámara de Diputados de la Nación,
 La decisión de Ruiz de regresar a la contienda electoral se produce en un contexto político complejo para la provincia, donde diversas fuerzas se están reconfigurando de cara a octubre. Su candidatura no solo representa un desafío personal tras su destitución, sino que también introduce un nuevo elemento en el escenario electoral neuquino, donde su figura y los antecedentes de su salida de la Vice    gobernaciónn, sin duda, serán objeto de debate y análisis por parte de los votantes y el resto de los competidores.
 
 \------------------------------------------------------------------------------------------------------------------------------
+
+
 Esta nota periodística ha sido elaborada en base a la información pública de fuentes periodísticas provinciales sobre la candidatura de Gloria Ruiz. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.
