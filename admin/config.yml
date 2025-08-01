@@ -41,3 +41,17 @@ collections:
       - {label: "Copete", name: "copete", widget: "text", required: true} # Campo para el resumen de la noticia
       - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
       - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # ¡CAMBIADO A MARKDOWN!
+  # >>> INICIO DE COLECCIÓN 'PUBLICIDADES' <<<
+  - name: "ads"
+    label: "Publicidades"
+    folder: "_data/ads" # Donde se guardarán los archivos YAML de tus publicidades
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "ad"}
+      - {label: "Nombre del Anuncio", name: "title", widget: "string", required: true, hint: "Nombre interno para identificar el anuncio (ej. 'Banner Panaderia Central')."}
+      - {label: "Imagen del Anuncio", name: "image", widget: "image", required: true, hint: "Sube la imagen del banner. Sugerencia: 400x225px (proporción 16:9) o según donde vaya."}
+      - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
+      - {label: "URL de Destino", name: "url", widget: "string", required: true, hint: "La dirección web a la que el anuncio debe enlazar (ej. 'https://www.panaderiacentral.com')."}
+      - {label: "Fecha de Inicio (Opcional)", name: "start_date", widget: "datetime", required: false, hint: "Fecha a partir de la cual el anuncio debería mostrarse."}
+      - {label: "Fecha de Fin (Opcional)", name: "end_date", widget: "datetime", required: false, hint: "Fecha hasta la cual el anuncio debería mostrarse."}
+  # >>> FIN DE COLECCIÓN 'PUBLICIDADES' <<<
