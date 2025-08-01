@@ -6,7 +6,7 @@ title: Neuquén es sede del Segundo Encuentro Internacional de Geoturismo,
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-01 10:14:00 -03:00
 categories:
-  - Provinciales
+  - Portada
 tags:
   - geoturismo
   - encuentro
