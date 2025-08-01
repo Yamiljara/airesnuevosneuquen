@@ -4,11 +4,41 @@ title: Portada
 permalink: /
 ---
 
-<a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+{% assign current_date_str = site.time | date: "%Y-%m-%d %H:%M:%S %z" %}
+
+{% assign all_ads = site.data.ads %}
+
+{% assign get_ad_by_id = "" %}
+{% capture get_ad_by_id %}
+  {% for ad in all_ads %}
+    {% if ad.title == include.ad_id %}
+      {% assign ad_start_date = ad.start_date | default: "1900-01-01 00:00:00 -0300" %}
+      {% assign ad_end_date = ad.end_date | default: "2999-12-31 23:59:59 -0300" %}
+
+      {% if current_date_str >= ad_start_date and current_date_str <= ad_end_date %}
+        {{ ad | jsonify }}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_superior_grande" | strip %}
+{% assign found_ad_slot_1 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+{% if found_ad_slot_1 %}
+  <a href="{{ found_ad_slot_1.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+    <div class="advertising-block-large">
+      <img src="{{ found_ad_slot_1.image | relative_url }}" alt="{{ found_ad_slot_1.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+  </a>
+{% else %}
+  <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
     <div class="advertising-block-large">
         <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
     </div>
-</a>
+  </a>
+{% endif %}
 
 <section class="latest-news-section">
     <h2 class="section-title">Portada</h2>
@@ -117,32 +147,75 @@ permalink: /
     </div>
 </section>
 
-<a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+{% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_inferior_grande" | strip %}
+{% assign found_ad_slot_2 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+{% if found_ad_slot_2 %}
+  <a href="{{ found_ad_slot_2.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+    <div class="advertising-block-large">
+      <img src="{{ found_ad_slot_2.image | relative_url }}" alt="{{ found_ad_slot_2.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+  </a>
+{% else %}
+  <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
     <div class="advertising-block-large">
         <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
     </div>
-</a>
+  </a>
+{% endif %}
 
 <div class="advertising-blocks-small">
-    <div class="advertising-block-small" style="position: relative; width: 370px; height: 100px; overflow: hidden;">
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/1096465755?h=6fdbdd7443&amp;controls=0&amp;badge=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1&amp;autoplay=1&amp;muted=1" width="370" height="100" frameborder="0" allowfullscreen></iframe>
+    {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_small_vimeo" | strip %}
+    {% assign found_ad_slot_3 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
 
-        <a href="https://www.instagram.com/institutosolumne.parana?utm_source=qr&igsh=d2d2NGowNng5MDA2" target="_blank" rel="noopener noreferrer"
-           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;">
-        </a>
-    </div>
+    {% if found_ad_slot_3 %}
+      <a href="{{ found_ad_slot_3.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+        <div class="advertising-block-small">
+          <img src="{{ found_ad_slot_3.image | relative_url }}" alt="{{ found_ad_slot_3.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+      </a>
+    {% else %}
+      <div class="advertising-block-small" style="position: relative; width: 370px; height: 100px; overflow: hidden;">
+          <iframe title="vimeo-player" src="https://player.vimeo.com/video/1096465755?h=6fdbdd7443&amp;controls=0&amp;badge=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1&amp;autoplay=1&amp;muted=1" width="370" height="100" frameborder="0" allowfullscreen></iframe>
+          <a href="https://www.instagram.com/institutosolumne.parana?utm_source=qr&igsh=d2d2NGowNng5MDA2" target="_blank" rel="noopener noreferrer"
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;">
+          </a>
+      </div>
+    {% endif %}
 
-    <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+    {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_small_anuncio_corto" | strip %}
+    {% assign found_ad_slot_4 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+    {% if found_ad_slot_4 %}
+      <a href="{{ found_ad_slot_4.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+        <div class="advertising-block-small">
+          <img src="{{ found_ad_slot_4.image | relative_url }}" alt="{{ found_ad_slot_4.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+      </a>
+    {% else %}
+      <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
         <div class="advertising-block-small">
             <span class="typewriter-text">Otro anuncio corto.</span><span class="typewriter-cursor"></span>
         </div>
-    </a>
+      </a>
+    {% endif %}
 
-    <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+    {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_small_espacio_disponible" | strip %}
+    {% assign found_ad_slot_5 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+    {% if found_ad_slot_5 %}
+      <a href="{{ found_ad_slot_5.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+        <div class="advertising-block-small">
+          <img src="{{ found_ad_slot_5.image | relative_url }}" alt="{{ found_ad_slot_5.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+      </a>
+    {% else %}
+      <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
         <div class="advertising-block-small">
             <span class="typewriter-text">Espacio disponible.</span><span class="typewriter-cursor"></span>
         </div>
-    </a>
+      </a>
+    {% endif %}
 </div>
 
 <section class="latest-news-intercalated-section" id="ultimas-noticias">
@@ -165,47 +238,124 @@ permalink: /
             {% if is_ad %}
                 {% case i %}
                     {% when 2 %}
-                        <a href="https://www.cutralco.gob.ar/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-    <div class="advertising-block-vertical" style="width: 368px; height: 350px; overflow: hidden;">
-    <img src="/assets/images/publicidad-parque-solar-cco-354x350.gif" alt="Publicidad Municipalidad de Cutral Co - Parque Solar" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-    </div>
-</a>
-{% when 4 %}
-<a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-    <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-    </div>
-</a>
-{% when 6 %}
-<a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-    <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-    </div>
-</a>
-{% when 8 %}
-<a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-    <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-    </div>
-</a>
-{% when 10 %}
-<a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-    <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-    </div>
-</a>
-{% when 12 %}
-<a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-    <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-    </div>
-</a>
-{% else %}
-<a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-    <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-    <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-    </div>
-</a>
+                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_1_gif" | strip %}
+                        {% assign found_ad_slot_6 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+                        {% if found_ad_slot_6 %}
+                          <a href="{{ found_ad_slot_6.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                              <img src="{{ found_ad_slot_6.image | relative_url }}" alt="{{ found_ad_slot_6.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                          </a>
+                        {% else %}
+                          <a href="https://www.cutralco.gob.ar/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px; overflow: hidden;">
+                              <img src="/assets/images/publicidad-parque-solar-cco-354x350.gif" alt="Publicidad Municipalidad de Cutral Co - Parque Solar" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                          </a>
+                        {% endif %}
+                    {% when 4 %}
+                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_2" | strip %}
+                        {% assign found_ad_slot_7 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+                        {% if found_ad_slot_7 %}
+                          <a href="{{ found_ad_slot_7.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                              <img src="{{ found_ad_slot_7.image | relative_url }}" alt="{{ found_ad_slot_7.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                          </a>
+                        {% else %}
+                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                            </div>
+                          </a>
+                        {% endif %}
+                    {% when 6 %}
+                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_3" | strip %}
+                        {% assign found_ad_slot_8 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+                        {% if found_ad_slot_8 %}
+                          <a href="{{ found_ad_slot_8.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                              <img src="{{ found_ad_slot_8.image | relative_url }}" alt="{{ found_ad_slot_8.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                          </a>
+                        {% else %}
+                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                            </div>
+                          </a>
+                        {% endif %}
+                    {% when 8 %}
+                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_4" | strip %}
+                        {% assign found_ad_slot_9 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+                        {% if found_ad_slot_9 %}
+                          <a href="{{ found_ad_slot_9.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                              <img src="{{ found_ad_slot_9.image | relative_url }}" alt="{{ found_ad_slot_9.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                          </a>
+                        {% else %}
+                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                            </div>
+                          </a>
+                        {% endif %}
+                    {% when 10 %}
+                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_5" | strip %}
+                        {% assign found_ad_slot_10 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+                        {% if found_ad_slot_10 %}
+                          <a href="{{ found_ad_slot_10.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                              <img src="{{ found_ad_slot_10.image | relative_url }}" alt="{{ found_ad_slot_10.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                          </a>
+                        {% else %}
+                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                            </div>
+                          </a>
+                        {% endif %}
+                    {% when 12 %}
+                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_6" | strip %}
+                        {% assign found_ad_slot_11 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+                        {% if found_ad_slot_11 %}
+                          <a href="{{ found_ad_slot_11.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                              <img src="{{ found_ad_slot_11.image | relative_url }}" alt="{{ found_ad_slot_11.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                          </a>
+                        {% else %}
+                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                            </div>
+                          </a>
+                        {% endif %}
+                    {% else %}
+                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_default" | strip %}
+                        {% assign found_ad_slot_12 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+
+                        {% if found_ad_slot_12 %}
+                          <a href="{{ found_ad_slot_12.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                              <img src="{{ found_ad_slot_12.image | relative_url }}" alt="{{ found_ad_slot_12.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            </div>
+                          </a>
+                        {% else %}
+                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                            </div>
+                          </a>
+                        {% endif %}
                 {% endcase %}
             {% else %}
                 {% assign current_post = filtered_ultimas_noticias_posts[current_post_index] %}
