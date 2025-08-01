@@ -39,26 +39,26 @@ layout: default
             {{ content }}
         </div>
 
-        <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link-large">
-            <div class="advertising-block-large single-post-ad">
-                PUBLICITA AQUÍ 2996371067<br>
-                AIRESNUEVOSNQN@HOTMAIL.COM
-            </div>
-        </a>
-
-        <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link-large">
-            <div class="advertising-block-large single-post-ad">
-                PUBLICITA AQUÍ 2996371067<br>
-                AIRESNUEVOSNQN@HOTMAIL.COM
-            </div>
-        </a>
-
-        <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link-large">
-            <div class="advertising-block-large single-post-ad">
-                PUBLICITA AQUÍ 2996371067<br>
-                AIRESNUEVOSNQN@HOTMAIL.COM
-            </div>
-        </a>
+        {% assign slot_id = "publicidad_post_articulo_1" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
+        
+        {% assign slot_id = "publicidad_post_articulo_2" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
+        
+        {% assign slot_id = "publicidad_post_articulo_3" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
 
         <div class="related-news-section">
             <h3 class="section-subtitle">Noticias Relacionadas</h3>
