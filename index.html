@@ -4,27 +4,26 @@ title: Portada
 permalink: /
 ---
 
-{% assign current_date_str = site.time | date: "%Y-%m-%d %H:%M:%S %z" %}
+{% assign current_date = site.time %}
+{% assign current_date_unix = current_date | date: "%s" | plus: 0 %}
 
-{% assign all_ads = site.data.ads %}
+{% assign all_ads = site.data.ads.ads %}
 
-{% assign get_ad_by_id = "" %}
-{% capture get_ad_by_id %}
-  {% for ad in all_ads %}
-    {% if ad.title == include.ad_id %}
-      {% assign ad_start_date = ad.start_date | default: "1900-01-01 00:00:00 -0300" %}
-      {% assign ad_end_date = ad.end_date | default: "2999-12-31 23:59:59 -0300" %}
+{% comment %} Bloque de lógica para Publicidad Superior Grande {% endcomment %}
+{% assign ad_id_slot_1 = "publicidad_portada_superior_grande" %}
+{% assign found_ad_slot_1 = null %}
 
-      {% if current_date_str >= ad_start_date and current_date_str <= ad_end_date %}
-        {{ ad | jsonify }}
-        {% break %}
-      {% endif %}
+{% for ad in all_ads %}
+  {% if ad.title == ad_id_slot_1 %}
+    {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+    {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+    {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+      {% assign found_ad_slot_1 = ad %}
+      {% break %}
     {% endif %}
-  {% endfor %}
-{% endcapture %}
-
-{% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_superior_grande" | strip %}
-{% assign found_ad_slot_1 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+  {% endif %}
+{% endfor %}
 
 {% if found_ad_slot_1 %}
   <a href="{{ found_ad_slot_1.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
@@ -35,120 +34,133 @@ permalink: /
 {% else %}
   <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
     <div class="advertising-block-large">
-        <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
+      <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
     </div>
   </a>
 {% endif %}
 
 <section class="latest-news-section">
-    <h2 class="section-title">Portada</h2>
+  <h2 class="section-title">Portada</h2>
 </section>
 
 <section class="highlighted-section">
-    {% assign all_portada_posts = site.posts | where_exp:"post","post.categories contains 'Portada'" | sort: "date" | reverse %}
+  {% assign all_portada_posts = site.posts | where_exp:"post","post.categories contains 'Portada'" | sort: "date" | reverse %}
 
-    {% assign main_featured_article = null %}
-    {% assign temp_secondary_with_image = "" | split: "" %}
-    {% assign temp_no_image = "" | split: "" %}
-    {% assign used_posts_urls = "" | split: "" %}
+  {% assign main_featured_article = null %}
+  {% assign temp_secondary_with_image = "" | split: "" %}
+  {% assign temp_no_image = "" | split: "" %}
+  {% assign used_posts_urls = "" | split: "" %}
 
-    {% for post in all_portada_posts %}
-        {% if post.featured and main_featured_article == null %}
-            {% assign main_featured_article = post %}
-            {% assign used_posts_urls = used_posts_urls | push: post.url %}
-            {% break %}
-        {% endif %}
-    {% endfor %}
-    {% if main_featured_article == null %}
-        {% assign main_featured_article = all_portada_posts | first %}
-        {% assign used_posts_urls = used_posts_urls | push: main_featured_article.url %}
+  {% for post in all_portada_posts %}
+    {% if post.featured and main_featured_article == null %}
+      {% assign main_featured_article = post %}
+      {% assign used_posts_urls = used_posts_urls | push: post.url %}
+      {% break %}
     {% endif %}
+  {% endfor %}
+  {% if main_featured_article == null %}
+    {% assign main_featured_article = all_portada_posts | first %}
+    {% assign used_posts_urls = used_posts_urls | push: main_featured_article.url %}
+  {% endif %}
 
-    {% for post in all_portada_posts %}
-        {% unless used_posts_urls contains post.url %}
-            {% if post.featured_secondary and post.image and temp_secondary_with_image.size < 2 %}
-                {% assign temp_secondary_with_image = temp_secondary_with_image | push: post %}
-                {% assign used_posts_urls = used_posts_urls | push: post.url %}
-            {% endif %}
-        {% endunless %}
-    {% endfor %}
+  {% for post in all_portada_posts %}
+    {% unless used_posts_urls contains post.url %}
+      {% if post.featured_secondary and post.image and temp_secondary_with_image.size < 2 %}
+        {% assign temp_secondary_with_image = temp_secondary_with_image | push: post %}
+        {% assign used_posts_urls = used_posts_urls | push: post.url %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
 
-    {% for post in all_portada_posts %}
-        {% unless used_posts_urls contains post.url %}
-            {% if post.copete and temp_no_image.size < 3 %}
-                {% assign temp_no_image = temp_no_image | push: post %}
-                {% assign used_posts_urls = used_posts_urls | push: post.url %}
-            {% endif %}
-        {% endunless %}
-    {% endfor %}
+  {% for post in all_portada_posts %}
+    {% unless used_posts_urls contains post.url %}
+      {% if post.copete and temp_no_image.size < 3 %}
+        {% assign temp_no_image = temp_no_image | push: post %}
+        {% assign used_posts_urls = used_posts_urls | push: post.url %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
 
-    {% assign secondary_featured_articles_with_image = temp_secondary_with_image %}
-    {% assign no_image_articles_for_portada = temp_no_image %}
+  {% assign secondary_featured_articles_with_image = temp_secondary_with_image %}
+  {% assign no_image_articles_for_portada = temp_no_image %}
 
-    <div class="main-featured-article-wrapper">
-        {% if main_featured_article %}
-            <a href="{{ main_featured_article.url | relative_url }}" class="main-featured-article">
-                {% if main_featured_article.image %}<img src="{{ main_featured_article.image | relative_url }}" alt="{{ main_featured_article.image_alt | default: main_featured_article.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
-                <div class="article-info">
-                    <span class="category-tag">Portada</span>
-                    <h2>{{ main_featured_article.title }}</h2>
-                    <p>{{ main_featured_article.copete }}</p>
-                    <span class="article-date">{{ main_featured_article.date | date: "%d de %B de %Y" }}</span>
-                </div>
-            </a>
-        {% else %}
-            <a href="#" class="main-featured-article placeholder-card">
-                <img src="/assets/images/placeholder-news.jpg" alt="Noticia Principal Pendiente">
-                <div class="article-info"><span class="category-tag">Portada</span><h2>Noticia Principal Pendiente</h2><p>Contenido principal pendiente.</p><span class="article-date">Próximamente</span></div>
-            </a>
-        {% endif %}
-    </div>
-
-    <div class="secondary-featured-articles-grid-wrapper">
-        <div class="secondary-featured-articles-grid">
-            {% for post in secondary_featured_articles_with_image %}
-                <a href="{{ post.url | relative_url }}" class="small-article-card">
-                    {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
-                    <div class="article-content">
-                        <span class="category-tag">Portada</span>
-                        <h3>{{ post.title }}</h3>
-                        <span class="article-date">{{ post.date | date: "%d de %B de %Y" }}</span>
-                    </div>
-                </a>
-            {% endfor %}
-            {% assign filled_secondary = secondary_featured_articles_with_image.size %}
-            {% assign remaining_secondary = 2 | minus: filled_secondary %}
-            {% for i in (1..remaining_secondary) %}
-                <a href="#" class="small-article-card placeholder-card">
-                    <img src="/assets/images/placeholder-news.jpg" alt="Noticia Secundaria Pendiente">
-                    <div class="article-content"><span class="category-tag">Portada</span><h3>Noticia Secundaria Pendiente</h3><span class="article-date">Próximamente</span></div>
-                </a>
-            {% endfor %}
+  <div class="main-featured-article-wrapper">
+    {% if main_featured_article %}
+      <a href="{{ main_featured_article.url | relative_url }}" class="main-featured-article">
+        {% if main_featured_article.image %}<img src="{{ main_featured_article.image | relative_url }}" alt="{{ main_featured_article.image_alt | default: main_featured_article.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
+        <div class="article-info">
+          <span class="category-tag">Portada</span>
+          <h2>{{ main_featured_article.title }}</h2>
+          <p>{{ main_featured_article.copete }}</p>
+          <span class="article-date">{{ main_featured_article.date | date: "%d de %B de %Y" }}</span>
         </div>
-    </div>
+      </a>
+    {% else %}
+      <a href="#" class="main-featured-article placeholder-card">
+        <img src="/assets/images/placeholder-news.jpg" alt="Noticia Principal Pendiente">
+        <div class="article-info"><span class="category-tag">Portada</span><h2>Noticia Principal Pendiente</h2><p>Contenido principal pendiente.</p><span class="article-date">Próximamente</span></div>
+      </a>
+    {% endif %}
+  </div>
 
-    <div class="no-image-articles-grid-wrapper">
-        <div class="no-image-articles-grid">
-            {% for post in no_image_articles_for_portada %}
-                <a href="{{ post.url | relative_url }}" class="horizontal-news-card">
-                    <h3>{{ post.title }}</h3>
-                    <p>{{ post.copete }}</p>
-                </a>
-            {% endfor %}
-            {% assign filled_no_image = no_image_articles_for_portada.size %}
-            {% assign remaining_no_image = 3 | minus: filled_no_image %}
-            {% for i in (1..remaining_no_image) %}
-                <a href="#" class="horizontal-news-card placeholder-card">
-                    <h3>Noticia Sin Imagen Pendiente</h3>
-                    <p>Contenido pendiente.</p>
-                </a>
-            {% endfor %}
-        </div>
+  <div class="secondary-featured-articles-grid-wrapper">
+    <div class="secondary-featured-articles-grid">
+      {% for post in secondary_featured_articles_with_image %}
+        <a href="{{ post.url | relative_url }}" class="small-article-card">
+          {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
+          <div class="article-content">
+            <span class="category-tag">Portada</span>
+            <h3>{{ post.title }}</h3>
+            <span class="article-date">{{ post.date | date: "%d de %B de %Y" }}</span>
+          </div>
+        </a>
+      {% endfor %}
+      {% assign filled_secondary = secondary_featured_articles_with_image.size %}
+      {% assign remaining_secondary = 2 | minus: filled_secondary %}
+      {% for i in (1..remaining_secondary) %}
+        <a href="#" class="small-article-card placeholder-card">
+          <img src="/assets/images/placeholder-news.jpg" alt="Noticia Secundaria Pendiente">
+          <div class="article-content"><span class="category-tag">Portada</span><h3>Noticia Secundaria Pendiente</h3><span class="article-date">Próximamente</span></div>
+        </a>
+      {% endfor %}
     </div>
+  </div>
+
+  <div class="no-image-articles-grid-wrapper">
+    <div class="no-image-articles-grid">
+      {% for post in no_image_articles_for_portada %}
+        <a href="{{ post.url | relative_url }}" class="horizontal-news-card">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.copete }}</p>
+        </a>
+      {% endfor %}
+      {% assign filled_no_image = no_image_articles_for_portada.size %}
+      {% assign remaining_no_image = 3 | minus: filled_no_image %}
+      {% for i in (1..remaining_no_image) %}
+        <a href="#" class="horizontal-news-card placeholder-card">
+          <h3>Noticia Sin Imagen Pendiente</h3>
+          <p>Contenido pendiente.</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
-{% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_inferior_grande" | strip %}
-{% assign found_ad_slot_2 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+{% comment %} Bloque de lógica para Publicidad Inferior Grande {% endcomment %}
+{% assign ad_id_slot_2 = "publicidad_portada_inferior_grande" %}
+{% assign found_ad_slot_2 = null %}
+
+{% for ad in all_ads %}
+  {% if ad.title == ad_id_slot_2 %}
+    {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+    {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+    {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+      {% assign found_ad_slot_2 = ad %}
+      {% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
 {% if found_ad_slot_2 %}
   <a href="{{ found_ad_slot_2.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
@@ -159,226 +171,356 @@ permalink: /
 {% else %}
   <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
     <div class="advertising-block-large">
-        <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
+      <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
     </div>
   </a>
 {% endif %}
 
 <div class="advertising-blocks-small">
-    {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_small_vimeo" | strip %}
-    {% assign found_ad_slot_3 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+  {% comment %} Bloque de lógica para Publicidad Vimeo Small {% endcomment %}
+  {% assign ad_id_slot_3 = "publicidad_portada_small_vimeo" %}
+  {% assign found_ad_slot_3 = null %}
 
-    {% if found_ad_slot_3 %}
-      <a href="{{ found_ad_slot_3.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-        <div class="advertising-block-small">
-          <img src="{{ found_ad_slot_3.image | relative_url }}" alt="{{ found_ad_slot_3.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-        </div>
-      </a>
-    {% else %}
-      <div class="advertising-block-small" style="position: relative; width: 370px; height: 100px; overflow: hidden;">
-          <iframe title="vimeo-player" src="https://player.vimeo.com/video/1096465755?h=6fdbdd7443&amp;controls=0&amp;badge=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1&amp;autoplay=1&amp;muted=1" width="370" height="100" frameborder="0" allowfullscreen></iframe>
-          <a href="https://www.instagram.com/institutosolumne.parana?utm_source=qr&igsh=d2d2NGowNng5MDA2" target="_blank" rel="noopener noreferrer"
-             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;">
-          </a>
+  {% for ad in all_ads %}
+    {% if ad.title == ad_id_slot_3 %}
+      {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+      {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+      {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+        {% assign found_ad_slot_3 = ad %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if found_ad_slot_3 %}
+    <a href="{{ found_ad_slot_3.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+      <div class="advertising-block-small">
+        <img src="{{ found_ad_slot_3.image | relative_url }}" alt="{{ found_ad_slot_3.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
       </div>
+    </a>
+  {% else %}
+    <div class="advertising-block-small" style="position: relative; width: 370px; height: 100px; overflow: hidden;">
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/1096465755?h=6fdbdd7443&amp;controls=0&amp;badge=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1&amp;autoplay=1&amp;muted=1" width="370" height="100" frameborder="0" allowfullscreen></iframe>
+      <a href="https://www.instagram.com/institutosolumne.parana?utm_source=qr&igsh=d2d2NGowNng5MDA2" target="_blank" rel="noopener noreferrer"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;">
+      </a>
+    </div>
+  {% endif %}
+
+  {% comment %} Bloque de lógica para Publicidad Anuncio Corto {% endcomment %}
+  {% assign ad_id_slot_4 = "publicidad_portada_small_anuncio_corto" %}
+  {% assign found_ad_slot_4 = null %}
+
+  {% for ad in all_ads %}
+    {% if ad.title == ad_id_slot_4 %}
+      {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+      {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+      {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+        {% assign found_ad_slot_4 = ad %}
+        {% break %}
+      {% endif %}
     {% endif %}
+  {% endfor %}
 
-    {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_small_anuncio_corto" | strip %}
-    {% assign found_ad_slot_4 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+  {% if found_ad_slot_4 %}
+    <a href="{{ found_ad_slot_4.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+      <div class="advertising-block-small">
+        <img src="{{ found_ad_slot_4.image | relative_url }}" alt="{{ found_ad_slot_4.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+    </a>
+  {% else %}
+    <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+      <div class="advertising-block-small">
+        <span class="typewriter-text">Otro anuncio corto.</span><span class="typewriter-cursor"></span>
+      </div>
+    </a>
+  {% endif %}
 
-    {% if found_ad_slot_4 %}
-      <a href="{{ found_ad_slot_4.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-        <div class="advertising-block-small">
-          <img src="{{ found_ad_slot_4.image | relative_url }}" alt="{{ found_ad_slot_4.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-        </div>
-      </a>
-    {% else %}
-      <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-        <div class="advertising-block-small">
-            <span class="typewriter-text">Otro anuncio corto.</span><span class="typewriter-cursor"></span>
-        </div>
-      </a>
+  {% comment %} Bloque de lógica para Publicidad Espacio Disponible {% endcomment %}
+  {% assign ad_id_slot_5 = "publicidad_portada_small_espacio_disponible" %}
+  {% assign found_ad_slot_5 = null %}
+
+  {% for ad in all_ads %}
+    {% if ad.title == ad_id_slot_5 %}
+      {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+      {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+      {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+        {% assign found_ad_slot_5 = ad %}
+        {% break %}
+      {% endif %}
     {% endif %}
+  {% endfor %}
 
-    {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_portada_small_espacio_disponible" | strip %}
-    {% assign found_ad_slot_5 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
-
-    {% if found_ad_slot_5 %}
-      <a href="{{ found_ad_slot_5.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-        <div class="advertising-block-small">
-          <img src="{{ found_ad_slot_5.image | relative_url }}" alt="{{ found_ad_slot_5.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-        </div>
-      </a>
-    {% else %}
-      <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-        <div class="advertising-block-small">
-            <span class="typewriter-text">Espacio disponible.</span><span class="typewriter-cursor"></span>
-        </div>
-      </a>
-    {% endif %}
+  {% if found_ad_slot_5 %}
+    <a href="{{ found_ad_slot_5.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+      <div class="advertising-block-small">
+        <img src="{{ found_ad_slot_5.image | relative_url }}" alt="{{ found_ad_slot_5.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+    </a>
+  {% else %}
+    <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+      <div class="advertising-block-small">
+        <span class="typewriter-text">Espacio disponible.</span><span class="typewriter-cursor"></span>
+      </div>
+    </a>
+  {% endif %}
 </div>
 
 <section class="latest-news-intercalated-section" id="ultimas-noticias">
-    <h2 class="section-title">Últimas Noticias</h2>
-    <div class="news-and-ads-grid">
-        {% assign temp_all_posts = site.posts | sort: "date" | reverse %}
-        {% assign filtered_ultimas_noticias_posts = "" | split: "" %}
+  <h2 class="section-title">Últimas Noticias</h2>
+  <div class="news-and-ads-grid">
+    {% assign temp_all_posts = site.posts | sort: "date" | reverse %}
+    {% assign filtered_ultimas_noticias_posts = "" | split: "" %}
 
-        {% for post in temp_all_posts %}
-          {% unless post.categories contains 'Portada' %}
-            {% assign filtered_ultimas_noticias_posts = filtered_ultimas_noticias_posts | push: post %}
-          {% endunless %}
-        {% endfor %}
+    {% for post in temp_all_posts %}
+      {% unless post.categories contains 'Portada' %}
+        {% assign filtered_ultimas_noticias_posts = filtered_ultimas_noticias_posts | push: post %}
+      {% endunless %}
+    {% endfor %}
 
-        {% assign current_post_index = 0 %}
-        {% for i in (1..12) %}
-            {% assign is_ad = false %}
-            {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}{% assign is_ad = true %}{% endif %}
+    {% assign current_post_index = 0 %}
+    {% for i in (1..12) %}
+      {% assign is_ad = false %}
+      {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}{% assign is_ad = true %}{% endif %}
 
-            {% if is_ad %}
-                {% case i %}
-                    {% when 2 %}
-                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_1_gif" | strip %}
-                        {% assign found_ad_slot_6 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+      {% if is_ad %}
+        {% case i %}
+          {% when 2 %}
+            {% comment %} Bloque de lógica para Publicidad Vertical 1 {% endcomment %}
+            {% assign ad_id_slot_6 = "publicidad_ultimas_noticias_vertical_1_gif" %}
+            {% assign found_ad_slot_6 = null %}
 
-                        {% if found_ad_slot_6 %}
-                          <a href="{{ found_ad_slot_6.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                              <img src="{{ found_ad_slot_6.image | relative_url }}" alt="{{ found_ad_slot_6.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                            </div>
-                          </a>
-                        {% else %}
-                          <a href="https://www.cutralco.gob.ar/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px; overflow: hidden;">
-                              <img src="/assets/images/publicidad-parque-solar-cco-354x350.gif" alt="Publicidad Municipalidad de Cutral Co - Parque Solar" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                            </div>
-                          </a>
-                        {% endif %}
-                    {% when 4 %}
-                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_2" | strip %}
-                        {% assign found_ad_slot_7 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
+            {% for ad in all_ads %}
+              {% if ad.title == ad_id_slot_6 %}
+                {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+                {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
 
-                        {% if found_ad_slot_7 %}
-                          <a href="{{ found_ad_slot_7.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                              <img src="{{ found_ad_slot_7.image | relative_url }}" alt="{{ found_ad_slot_7.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                            </div>
-                          </a>
-                        {% else %}
-                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                            </div>
-                          </a>
-                        {% endif %}
-                    {% when 6 %}
-                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_3" | strip %}
-                        {% assign found_ad_slot_8 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
-
-                        {% if found_ad_slot_8 %}
-                          <a href="{{ found_ad_slot_8.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                              <img src="{{ found_ad_slot_8.image | relative_url }}" alt="{{ found_ad_slot_8.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                            </div>
-                          </a>
-                        {% else %}
-                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                            </div>
-                          </a>
-                        {% endif %}
-                    {% when 8 %}
-                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_4" | strip %}
-                        {% assign found_ad_slot_9 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
-
-                        {% if found_ad_slot_9 %}
-                          <a href="{{ found_ad_slot_9.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                              <img src="{{ found_ad_slot_9.image | relative_url }}" alt="{{ found_ad_slot_9.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                            </div>
-                          </a>
-                        {% else %}
-                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                            </div>
-                          </a>
-                        {% endif %}
-                    {% when 10 %}
-                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_5" | strip %}
-                        {% assign found_ad_slot_10 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
-
-                        {% if found_ad_slot_10 %}
-                          <a href="{{ found_ad_slot_10.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                              <img src="{{ found_ad_slot_10.image | relative_url }}" alt="{{ found_ad_slot_10.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                            </div>
-                          </a>
-                        {% else %}
-                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                            </div>
-                          </a>
-                        {% endif %}
-                    {% when 12 %}
-                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_6" | strip %}
-                        {% assign found_ad_slot_11 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
-
-                        {% if found_ad_slot_11 %}
-                          <a href="{{ found_ad_slot_11.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                              <img src="{{ found_ad_slot_11.image | relative_url }}" alt="{{ found_ad_slot_11.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                            </div>
-                          </a>
-                        {% else %}
-                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                            </div>
-                          </a>
-                        {% endif %}
-                    {% else %}
-                        {% assign ad_data_json = get_ad_by_id | assign: ad_id: "publicidad_ultimas_noticias_vertical_default" | strip %}
-                        {% assign found_ad_slot_12 = ad_data_json | where_exp: "item", "item != ''" | first | from_json %}
-
-                        {% if found_ad_slot_12 %}
-                          <a href="{{ found_ad_slot_12.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                              <img src="{{ found_ad_slot_12.image | relative_url }}" alt="{{ found_ad_slot_12.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                            </div>
-                          </a>
-                        {% else %}
-                          <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
-                            <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
-                            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
-                            </div>
-                          </a>
-                        {% endif %}
-                {% endcase %}
-            {% else %}
-                {% assign current_post = filtered_ultimas_noticias_posts[current_post_index] %}
-                {% if current_post %}
-                    <a href="{{ current_post.url | relative_url }}" class="latest-news-card">
-                        <div class="image-wrapper">
-                            {% if current_post.image %}<img src="{{ current_post.image | relative_url }}" alt="{{ current_post.image_alt | default: current_post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
-                        </div>
-                        <div class="article-content">
-                            <span class="category-tag">{% if current_post.categories %}{{ current_post.categories | first }}{% else %}Noticia{% endif %}</span>
-                            <h3>{{ current_post.title }}</h3>
-                            <p class="article-copete">{{ current_post.copete }}</p>
-                            <span class="article-date">{{ current_post.date | date: "%d de %B de %Y" }}</span>
-                        </div>
-                    </a>
-                    {% assign current_post_index = current_post_index | plus: 1 %}
-                {% else %}
-                    <a href="#" class="latest-news-card placeholder-card">
-                        <div class="image-wrapper"><img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente"></div>
-                        <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
-                    </a>
+                {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+                  {% assign found_ad_slot_6 = ad %}
+                  {% break %}
                 {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if found_ad_slot_6 %}
+              <a href="{{ found_ad_slot_6.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                  <img src="{{ found_ad_slot_6.image | relative_url }}" alt="{{ found_ad_slot_6.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+              </a>
+            {% else %}
+              <a href="https://www.cutralco.gob.ar/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px; overflow: hidden;">
+                  <img src="/assets/images/publicidad-parque-solar-cco-354x350.gif" alt="Publicidad Municipalidad de Cutral Co - Parque Solar" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+              </a>
             {% endif %}
-        {% endfor %}
+          {% when 4 %}
+            {% comment %} Bloque de lógica para Publicidad Vertical 2 {% endcomment %}
+            {% assign ad_id_slot_7 = "publicidad_ultimas_noticias_vertical_2" %}
+            {% assign found_ad_slot_7 = null %}
+
+            {% for ad in all_ads %}
+              {% if ad.title == ad_id_slot_7 %}
+                {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+                {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+                {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+                  {% assign found_ad_slot_7 = ad %}
+                  {% break %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if found_ad_slot_7 %}
+              <a href="{{ found_ad_slot_7.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                  <img src="{{ found_ad_slot_7.image | relative_url }}" alt="{{ found_ad_slot_7.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+              </a>
+            {% else %}
+              <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+              </a>
+            {% endif %}
+          {% when 6 %}
+            {% comment %} Bloque de lógica para Publicidad Vertical 3 {% endcomment %}
+            {% assign ad_id_slot_8 = "publicidad_ultimas_noticias_vertical_3" %}
+            {% assign found_ad_slot_8 = null %}
+
+            {% for ad in all_ads %}
+              {% if ad.title == ad_id_slot_8 %}
+                {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+                {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+                {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+                  {% assign found_ad_slot_8 = ad %}
+                  {% break %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if found_ad_slot_8 %}
+              <a href="{{ found_ad_slot_8.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                  <img src="{{ found_ad_slot_8.image | relative_url }}" alt="{{ found_ad_slot_8.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+              </a>
+            {% else %}
+              <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+              </a>
+            {% endif %}
+          {% when 8 %}
+            {% comment %} Bloque de lógica para Publicidad Vertical 4 {% endcomment %}
+            {% assign ad_id_slot_9 = "publicidad_ultimas_noticias_vertical_4" %}
+            {% assign found_ad_slot_9 = null %}
+
+            {% for ad in all_ads %}
+              {% if ad.title == ad_id_slot_9 %}
+                {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+                {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+                {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+                  {% assign found_ad_slot_9 = ad %}
+                  {% break %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if found_ad_slot_9 %}
+              <a href="{{ found_ad_slot_9.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                  <img src="{{ found_ad_slot_9.image | relative_url }}" alt="{{ found_ad_slot_9.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+              </a>
+            {% else %}
+              <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+              </a>
+            {% endif %}
+          {% when 10 %}
+            {% comment %} Bloque de lógica para Publicidad Vertical 5 {% endcomment %}
+            {% assign ad_id_slot_10 = "publicidad_ultimas_noticias_vertical_5" %}
+            {% assign found_ad_slot_10 = null %}
+
+            {% for ad in all_ads %}
+              {% if ad.title == ad_id_slot_10 %}
+                {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+                {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+                {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+                  {% assign found_ad_slot_10 = ad %}
+                  {% break %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if found_ad_slot_10 %}
+              <a href="{{ found_ad_slot_10.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                  <img src="{{ found_ad_slot_10.image | relative_url }}" alt="{{ found_ad_slot_10.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+              </a>
+            {% else %}
+              <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+              </a>
+            {% endif %}
+          {% when 12 %}
+            {% comment %} Bloque de lógica para Publicidad Vertical 6 {% endcomment %}
+            {% assign ad_id_slot_11 = "publicidad_ultimas_noticias_vertical_6" %}
+            {% assign found_ad_slot_11 = null %}
+
+            {% for ad in all_ads %}
+              {% if ad.title == ad_id_slot_11 %}
+                {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+                {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+                {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+                  {% assign found_ad_slot_11 = ad %}
+                  {% break %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if found_ad_slot_11 %}
+              <a href="{{ found_ad_slot_11.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                  <img src="{{ found_ad_slot_11.image | relative_url }}" alt="{{ found_ad_slot_11.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+              </a>
+            {% else %}
+              <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+              </a>
+            {% endif %}
+          {% else %}
+            {% comment %} Bloque de lógica para Publicidad Vertical Default (si hubiera uno para otros casos) {% endcomment %}
+            {% assign ad_id_slot_12 = "publicidad_ultimas_noticias_vertical_default" %}
+            {% assign found_ad_slot_12 = null %}
+
+            {% for ad in all_ads %}
+              {% if ad.title == ad_id_slot_12 %}
+                {% assign ad_start_date_obj = ad.start_date | default: "1900-01-01 00:00:00 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+                {% assign ad_end_date_obj = ad.end_date | default: "2999-12-31 23:59:59 -0300" | date: "%Y-%m-%d %H:%M:%S %z" | date: "%s" | plus: 0 %}
+
+                {% if current_date_unix >= ad_start_date_obj and current_date_unix <= ad_end_date_obj %}
+                  {% assign found_ad_slot_12 = ad %}
+                  {% break %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if found_ad_slot_12 %}
+              <a href="{{ found_ad_slot_12.url }}" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                  <img src="{{ found_ad_slot_12.image | relative_url }}" alt="{{ found_ad_slot_12.image_alt }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+              </a>
+            {% else %}
+              <a href="https://www.instagram.com/airesnuevosnqn/" target="_blank" rel="noopener noreferrer" class="advertising-block-link">
+                <div class="advertising-block-vertical" style="width: 368px; height: 350px;">
+                <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+                </div>
+              </a>
+            {% endif %}
+          {% endcase %}
+        {% else %}
+          {% assign current_post = filtered_ultimas_noticias_posts[current_post_index] %}
+          {% if current_post %}
+            <a href="{{ current_post.url | relative_url }}" class="latest-news-card">
+              <div class="image-wrapper">
+                {% if current_post.image %}<img src="{{ current_post.image | relative_url }}" alt="{{ current_post.image_alt | default: current_post.title }}">{% else %}<img src="/assets/images/placeholder-news.jpg" alt="Sin imagen">{% endif %}
+              </div>
+              <div class="article-content">
+                <span class="category-tag">{% if current_post.categories %}{{ current_post.categories | first }}{% else %}Noticia{% endif %}</span>
+                <h3>{{ current_post.title }}</h3>
+                <p class="article-copete">{{ current_post.copete }}</p>
+                <span class="article-date">{{ current_post.date | date: "%d de %B de %Y" }}</span>
+              </div>
+            </a>
+            {% assign current_post_index = current_post_index | plus: 1 %}
+          {% else %}
+            <a href="#" class="latest-news-card placeholder-card">
+              <div class="image-wrapper"><img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente"></div>
+              <div class="article-content"><span class="category-tag">Pendiente</span><h3>Noticia Pendiente</h3><p class="article-copete">Contenido pendiente.</p><span class="article-date">Próximamente</span></div>
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
     </div>
 </section>

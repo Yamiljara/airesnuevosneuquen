@@ -41,17 +41,26 @@ collections:
       - {label: "Copete", name: "copete", widget: "text", required: true} # Campo para el resumen de la noticia
       - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
       - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # ¡CAMBIADO A MARKDOWN!
-  # >>> INICIO DE COLECCIÓN 'PUBLICIDADES' <<<
+
+  # >>> INICIO DE COLECCIÓN 'PUBLICIDADES' (CORREGIDA) <<<
   - name: "ads"
     label: "Publicidades"
-    folder: "_data/ads" # Donde se guardarán los archivos YAML de tus publicidades
-    create: true
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "ad"}
-      - {label: "Nombre del Anuncio", name: "title", widget: "string", required: true, hint: "Nombre interno para identificar el anuncio (ej. 'Banner Panaderia Central')."}
-      - {label: "Imagen del Anuncio", name: "image", widget: "image", required: true, hint: "Sube la imagen del banner. Sugerencia: 400x225px (proporción 16:9) o según donde vaya."}
-      - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
-      - {label: "URL de Destino", name: "url", widget: "string", required: true, hint: "La dirección web a la que el anuncio debe enlazar (ej. 'https://www.panaderiacentral.com')."}
-      - {label: "Fecha de Inicio (Opcional)", name: "start_date", widget: "datetime", required: false, hint: "Fecha a partir de la cual el anuncio debería mostrarse."}
-      - {label: "Fecha de Fin (Opcional)", name: "end_date", widget: "datetime", required: false, hint: "Fecha hasta la cual el anuncio debería mostrarse."}
-  # >>> FIN DE COLECCIÓN 'PUBLICIDADES' <<<
+    files: # Importante: Cambiamos de 'folder' a 'files' para gestionar un solo archivo de datos
+      - file: "_data/ads.yml" # Ruta al archivo único donde se guardarán todas las publicidades
+        label: "Lista de Publicidades" # Etiqueta para este archivo en el CMS
+        name: "ads_data" # Nombre interno para este archivo (arbitrario, pero debe ser único aquí)
+        fields:
+          - label: "Publicidades Activas" # Etiqueta para el widget de lista que contendrá los anuncios
+            name: "ads" # Este 'name' DEBE coincidir con la clave principal en tu _data/ads.yml (ej: 'ads:')
+            widget: "list"
+            allow_add: true # Permite añadir nuevas publicidades a la lista
+            collapsible: true # Hace que los elementos de la lista sean colapsables
+            identifier_field: "title" # Usa el 'title' como identificador para cada elemento en la lista
+            fields:
+              - {label: "Título (ID único)", name: "title", widget: "string", required: true, hint: "Debe ser el ID único del espacio (ej: 'publicidad_portada_superior_grande')."}
+              - {label: "Imagen del Anuncio", name: "image", widget: "image", required: true, hint: "Sube la imagen/GIF del banner. Medidas recomendadas: 1200x300px (grande), 1000x300px (pequeña), 300x400px (vertical)."}
+              - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
+              - {label: "URL de Destino", name: "url", widget: "string", required: true, hint: "La dirección web a la que el anuncio debe enlazar (ej. 'https://www.panaderiacentral.com')."}
+              - {label: "Fecha de Inicio", name: "start_date", widget: "datetime", required: false, hint: "Fecha a partir de la cual el anuncio debería mostrarse."}
+              - {label: "Fecha de Fin", name: "end_date", widget: "datetime", required: false, hint: "Fecha hasta la cual el anuncio debería mostrarse."}
+  # >>> FIN DE COLECCIÓN 'PUBLICIDADES' (CORREGIDA) <<<
