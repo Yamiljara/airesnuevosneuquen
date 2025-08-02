@@ -2,7 +2,7 @@
 layout: post
 antetitulo: Justicia por Franco.
 title: "​A 2 meses del asesinato de Franco Ramírez: Loncopué marchó por justicia
-  y la familia pide cambio de carátula en el expediente de caso."
+  y la familia pide cambio de carátula en el expediente del caso."
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-02 08:55:00 -03:00
 categories:
