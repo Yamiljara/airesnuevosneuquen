@@ -1,11 +1,11 @@
 ---
 layout: post
-antetitulo: Deporte infantil
+antetitulo: Deporte infantil.
 title: Jornada de fútbol infantil en el norte neuquino, tiene como sede a Taquimilan.
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-02 16:21:00 -03:00
 categories:
-  - Deporte
+  - Deportes
 tags:
   - Jornada
   - futbol
