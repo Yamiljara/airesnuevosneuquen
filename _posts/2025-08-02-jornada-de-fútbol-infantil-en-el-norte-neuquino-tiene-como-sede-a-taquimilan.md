@@ -19,7 +19,7 @@ image_alt: Futbol infantil
 image_caption: Equipo de fútbol participante de la jornada.
 meta_title: Jornada de futbol infantil en el norte neuquino, tiene como sede a Taquimilan.
 meta_description: Jornada de futbol infantil en el norte neuquino, tiene como sede a Taquimilan.
-copete: Désde la mañana se lleva a delante un encuentro de futbol infantil en
+copete: Désde la mañana se lleva adelante un encuentro de futbol infantil en
   Taquilan. El encuentro convoca a niños de distintas categorias y como público
   a familias de la zona.
 slug: Jornada de futbol infantil en el norte neuquino, tiene como sede a Taquimilan.
