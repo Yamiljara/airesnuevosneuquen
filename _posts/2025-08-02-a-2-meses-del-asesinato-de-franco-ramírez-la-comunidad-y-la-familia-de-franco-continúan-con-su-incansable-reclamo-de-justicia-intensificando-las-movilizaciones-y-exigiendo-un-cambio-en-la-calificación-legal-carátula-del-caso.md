@@ -1,10 +1,8 @@
 ---
 layout: post
 antetitulo: " Justicia por Franco."
-title: A 2 meses del asesinato de Franco Ramírez:La comunidad y la familia de
-  Franco continúan con su incansable reclamo de justicia, intensificando las
-  movilizaciones y exigiendo un cambio en la calificación legal (carátula) del
-  caso.
+title: "A 2 meses del asesinato de Franco Ramírez: Loncopué marchó por justicia
+  y la familia pide cambio de carátula en el expediente del caso."
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-02 09:44:00 -03:00
 categories:
