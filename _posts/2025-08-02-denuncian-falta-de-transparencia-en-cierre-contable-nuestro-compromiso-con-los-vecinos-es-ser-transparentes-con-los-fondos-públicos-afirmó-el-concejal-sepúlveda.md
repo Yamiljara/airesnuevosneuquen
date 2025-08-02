@@ -14,15 +14,13 @@ image: /assets/images/bloque-unidad-popular-tribunal-de-cuentas.jpg
 image_alt: Concejo Deliberante bajo la lupa por el cierre contable.
 image_caption: Denuncian Falta de Transparencia en Cierre Contable
 meta_title: Denuncian Falta de Transparencia en Cierre Contable
-meta_description: Denuncian Falta de Transparencia en Cierre Contable
+meta_description: ""
 copete: Los concejales del bloque Unidad Popular de Rincón de los Sauces
   formalizaron una denuncia ante el Tribunal de Cuentas por presuntas
   inconsistencias en el cierre contable de 2024 y un inusual ingreso de $159
   millones desde el ISSN, impulsando la investigación y un llamado a la
   claridad.
-slug: 'Denuncian Falta de Transparencia en Cierre Contable: "Nuestro compromiso
-  con los vecinos es ser transparentes con los fondos públicos", afirmó el
-  concejal Sepúlveda.'
+slug: Denuncian Falta de Transparencia en Cierre Contable.
 ---
 ***Neuquén, 1 de agosto de 2025 - Por Redacción AiresNuevosNQN***
 
