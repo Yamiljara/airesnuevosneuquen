@@ -40,9 +40,11 @@ slug: Cristina Kirchner recibió a Ernesto Samper y Gabriela Rivadeneira en su
 
 ​Cristina Fernández de Kirchner expresó su agradecimiento por la visita y, especialmente, por la "solidaridad" de ambos líderes. Este tipo de reuniones subraya la vigencia de los lazos políticos entre los referentes del progresismo latinoamericano, en un contexto de redefiniciones políticas a nivel continental.
 
+![](/assets/images/screenshot_20250802_165724_x.jpg)
+
+![]()
+
 ​Ernesto Samper fue presidente de Colombia entre 1994 y 1998, y se desempeñó como Secretario General de UNASUR entre 2014 y 2017. Por su parte, Gabriela Rivadeneira fue presidenta de la Asamblea Nacional del Ecuador y una figura política destacada en el gobierno de Rafael Correa. Ambos son reconocidos por su trayectoria en la política progresista de América Latina.
-
-
 
 ​*Cláusula de resguardo legal:*
 
