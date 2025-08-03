@@ -27,12 +27,8 @@ copete: "El presidente Javier Milei firmó los vetos a dos proyectos de ley
   el Boletín Oficial del lunes, lo que traslada la definición al Congreso, donde
   la oposición necesitará una mayoría de dos tercios para insistir con la
   aprobación de las leyes."
-slug: "El presidente Javier Milei firmó los vetos a dos proyectos de ley
-  aprobados por el Congreso: uno que establecía un aumento jubilatorio y otro
-  que declaraba la emergencia en discapacidad. La decisión será oficializada en
-  el Boletín Oficial del lunes, lo que traslada la definición al Congreso, donde
-  la oposición necesitará una mayoría de dos tercios para insistir con la
-  aprobación de las leyes."
+slug: Milei Firmó los Veto a las Leyes de Aumento de Jubilaciones y Emergencia
+  en Discapacidad.
 ---
 ***Buenos Aires, 2 de agosto de 2025 –*** El presidente Javier Milei ha oficializado su rechazo a dos iniciativas legislativas clave, al firmar los vetos correspondientes. Con la publicación de la medida en el Boletín Oficial, el debate político regresará al Parlamento. Ahora, la oposición deberá buscar un apoyo de dos tercios de los votos en ambas cámaras para lograr insistir en la aprobación de las leyes y revocar la decisión presidencial.
 
