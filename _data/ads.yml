@@ -1,7 +1,14 @@
 ads:
-  - title: publicidad_portada_superior_grande
+  - title: publicidad_portada_superior_grande # Esta es tu publicidad existente en la portada
     image: /assets/images/publicidad-grande-premium-.gif
     image_alt: '"Publicidad animada de [AIRESNUEVOSNQN]"'
     url: https://www.facebook.com/profile.php?id=61577894803971
-    start_date: 2025-07-31T13:56:00.000-03:00
+    start_date: 2025-08-04T00:00:00.000-03:00 # Fecha de inicio actualizada a hoy
     end_date: 2025-12-31T13:56:00.000-03:00
+
+  - title: publicidad_pop_up_noticia # ESTA ES LA NUEVA PUBLICIDAD PARA EL POP-UP
+    image: /assets/images/PUBLICIDAD - SEGUIR EN REDES.gif # <--- Reemplaza con el nombre de tu nueva imagen de 1200x300px
+    image_alt: "Publicidad pop-up en noticias"
+    url: https://www.facebook.com/profile.php?id=61577894803971 # Misma URL de Facebook para todas las publicidades
+    start_date: 2025-08-04T00:00:00.000-03:00 # Fecha de inicio para la nueva publicidad (hoy)
+    end_date: 2026-08-04T23:59:59.000-03:00 # Fecha de fin (ejemplo, ajusta según necesites)

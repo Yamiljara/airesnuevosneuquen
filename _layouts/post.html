@@ -88,14 +88,16 @@ layout: default
 
     {% comment %} --- INICIO: Publicidad Pop-up --- {% endcomment %}
     {% comment %}
-      Obtener una publicidad de la colección 'ads'.
-      Puedes filtrar por 'title' si quieres una específica, o usar 'sample' para una aleatoria.
-      Por ahora, tomaremos la primera publicidad en la lista 'ads' para simplificar.
+      Obtener la publicidad específica del pop-up usando su 'title' (ID único).
     {% endcomment %}
-    {% assign pop_up_ad = site.data.ads.ads | first %} {% comment %} Accede a site.data.ads.ads que es la lista de publicidades {% endcomment %}
+    {% assign pop_up_ad = site.data.ads.ads | where: "title", "publicidad_pop_up_noticia" | first %}
 
     {% if pop_up_ad %}
-      {% include popup_ad.html ad_image=pop_up_ad.image ad_url=pop_up_ad.url ad_alt=pop_up_ad.image_alt %}
+      {% include popup_ad.html 
+        ad_image=pop_up_ad.image 
+        ad_url=pop_up_ad.url 
+        ad_alt=pop_up_ad.image_alt 
+      %}
     {% endif %}
     {% comment %} --- FIN: Publicidad Pop-up --- {% endcomment %}
 
@@ -103,29 +105,29 @@ layout: default
 </div> {% comment %} Cierre de .container main-content-wrapper single-post-page {% endcomment %}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var popupContainer = document.getElementById('popup-ad-container');
-    var closeButton = document.getElementById('popup-ad-close-button');
+    document.addEventListener('DOMContentLoaded', function() {
+      var popupContainer = document.getElementById('popup-ad-container');
+      var closeButton = document.getElementById('popup-ad-close-button');
 
-    // Solo procede si el contenedor y el botón existen (si se cargó la publicidad)
-    if (popupContainer && closeButton) {
-      // Función para mostrar el pop-up
-      function showPopupAd() {
-        popupContainer.classList.add('is-visible');
+      // Solo procede si el contenedor y el botón existen (si se cargó la publicidad)
+      if (popupContainer && closeButton) {
+        // Función para mostrar el pop-up
+        function showPopupAd() {
+          popupContainer.classList.add('is-visible');
+        }
+
+        // Función para cerrar el pop-up
+        function closePopupAd() {
+          popupContainer.classList.remove('is-visible');
+          // Opcional: Si quieres que el pop-up desaparezca completamente del DOM después de cerrar
+          // popupContainer.parentNode.removeChild(popupContainer);
+        }
+
+        // Configurar temporizador para mostrar después de 2 segundos
+        setTimeout(showPopupAd, 2000); // 2000 milisegundos = 2 segundos
+
+        // Asignar evento al botón de cerrar
+        closeButton.addEventListener('click', closePopupAd);
       }
-
-      // Función para cerrar el pop-up
-      function closePopupAd() {
-        popupContainer.classList.remove('is-visible');
-        // Opcional: Si quieres que el pop-up desaparezca completamente del DOM después de cerrar
-        // popupContainer.parentNode.removeChild(popupContainer);
-      }
-
-      // Configurar temporizador para mostrar después de 2 segundos
-      setTimeout(showPopupAd, 2000); // 2000 milisegundos = 2 segundos
-
-      // Asignar evento al botón de cerrar
-      closeButton.addEventListener('click', closePopupAd);
-    }
-  });
+    });
 </script>
