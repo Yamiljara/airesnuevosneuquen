@@ -3,88 +3,133 @@ layout: default
 ---
 
 <div class="container main-content-wrapper single-post-page">
-    <div class="post-article-wrapper">
+    <div class="post-article-wrapper">
 
-        <p class="post-meta author-date-line">
-            <span class="post-author">
-                {% if page.author %}
-                    Por {{ page.author }}
-                {% else %}
-                    Por Redacción AiresNuevosNQN
-                {% endif %}
-            </span>
-            <span class="post-date">{{ page.date | date: "%d de %B de %Y" }}</span>
-        </p>
+        <p class="post-meta author-date-line">
+            <span class="post-author">
+                {% if page.author %}
+                    Por {{ page.author }}
+                {% else %}
+                    Por Redacción AiresNuevosNQN
+                {% endif %}
+            </span>
+            <span class="post-date">{{ page.date | date: "%d de %B de %Y" }}</span>
+        </p>
 
-        {% if page.antetitulo %}
-        <h3 class="post-antetitulo">{{ page.antetitulo }}</h3>
-        {% endif %}
+        {% if page.antetitulo %}
+        <h3 class="post-antetitulo">{{ page.antetitulo }}</h3>
+        {% endif %}
 
-        <h1 class="post-title">{{ page.title }}</h1>
+        <h1 class="post-title">{{ page.title }}</h1>
 
-        {% if page.image %}
-        <div class="post-image-container">
-            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}"
-                class="post-featured-image">
-            {% if page.image_caption %}<span class="post-featured-image-caption">{{ page.image_caption }}</span>{% endif
-            %}
-        </div>
-        {% endif %}
+        {% if page.image %}
+        <div class="post-image-container">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}"
+                class="post-featured-image">
+            {% if page.image_caption %}<span class="post-featured-image-caption">{{ page.image_caption }}</span>{% endif
+            %}
+        </div>
+        {% endif %}
 
-        {% if page.copete %}
-        <p class="post-copete">{{ page.copete }}</p>
-        {% endif %}
+        {% if page.copete %}
+        <p class="post-copete">{{ page.copete }}</p>
+        {% endif %}
 
-        <div class="post-body">
-            {{ content }}
-        </div>
+        <div class="post-body">
+            {{ content }}
+        </div>
 
-        {% assign slot_id = "publicidad_post_articulo_1" %}
-        {% assign ad_class = "single-post-ad" %}
-        {% assign width = "800px" %}
-        {% assign height = "600px" %}
-        {% assign object_fit = "contain" %}
-        {% include ad_banner_large.html %}
-        
-        {% assign slot_id = "publicidad_post_articulo_2" %}
-        {% assign ad_class = "single-post-ad" %}
-        {% assign width = "800px" %}
-        {% assign height = "600px" %}
-        {% assign object_fit = "contain" %}
-        {% include ad_banner_large.html %}
-        
-        {% assign slot_id = "publicidad_post_articulo_3" %}
-        {% assign ad_class = "single-post-ad" %}
-        {% assign width = "800px" %}
-        {% assign height = "600px" %}
-        {% assign object_fit = "contain" %}
-        {% include ad_banner_large.html %}
+        {% assign slot_id = "publicidad_post_articulo_1" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
+        
+        {% assign slot_id = "publicidad_post_articulo_2" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
+        
+        {% assign slot_id = "publicidad_post_articulo_3" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
 
-        <div class="related-news-section">
-            <h3 class="section-subtitle">Noticias Relacionadas</h3>
-            {% assign current_post_categories = page.categories %}
+        <div class="related-news-section">
+            <h3 class="section-subtitle">Noticias Relacionadas</h3>
+            {% assign current_post_categories = page.categories %}
 
-            {% comment %}
-            Solo filtra por categoría si el post actual tiene al menos una categoría.
-            Esto previene el error 'no implicit conversion of nil into String'.
-            {% endcomment %}
-            {% assign filtered_posts = site.posts | where_exp:"post", "post.url != page.url" %}
-            {% if current_post_categories.size > 0 %}
-                {% assign related_posts = filtered_posts | where_exp:"post", "post.categories contains current_post_categories[0]" | sample: 3 %}
-            {% else %}
-                {% assign related_posts = filtered_posts | sample: 3 %}
-            {% endif %}
+            {% comment %}
+            Solo filtra por categoría si el post actual tiene al menos una categoría.
+            Esto previene el error 'no implicit conversion of nil into String'.
+            {% endcomment %}
+            {% assign filtered_posts = site.posts | where_exp:"post", "post.url != page.url" %}
+            {% if current_post_categories.size > 0 %}
+                {% assign related_posts = filtered_posts | where_exp:"post", "post.categories contains current_post_categories[0]" | sample: 3 %}
+            {% else %}
+                {% assign related_posts = filtered_posts | sample: 3 %}
+            {% endif %}
 
-            {% if related_posts.size > 0 %}
-            <ul class="related-posts-list">
-                {% for post in related_posts %}
-                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-            {% else %}
-            <p>No hay noticias relacionadas para mostrar en este momento.</p>
-            {% endif %}
-        </div>
+            {% if related_posts.size > 0 %}
+            <ul class="related-posts-list">
+                {% for post in related_posts %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No hay noticias relacionadas para mostrar en este momento.</p>
+            {% endif %}
+        </div>
 
-    </div>
-</div>
+    {# --- INICIO: Publicidad Pop-up --- #}
+    {% comment %}
+      Obtener una publicidad de la colección 'ads'.
+      Puedes filtrar por 'title' si quieres una específica, o usar 'sample' para una aleatoria.
+      Por ahora, tomaremos la primera publicidad en la lista 'ads' para simplificar.
+    {% endcomment %}
+    {% assign pop_up_ad = site.data.ads.ads | first %} {# Accede a site.data.ads.ads que es la lista de publicidades #}
+
+    {% if pop_up_ad %}
+      {% include popup_ad.html 
+        ad_image=pop_up_ad.image 
+        ad_url=pop_up_ad.url 
+        ad_alt=pop_up_ad.image_alt 
+      %}
+    {% endif %}
+    {# --- FIN: Publicidad Pop-up --- #}
+
+    </div> {# Cierre de .post-article-wrapper #}
+</div> {# Cierre de .container main-content-wrapper single-post-page #}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var popupContainer = document.getElementById('popup-ad-container');
+    var closeButton = document.getElementById('popup-ad-close-button');
+
+    // Solo procede si el contenedor y el botón existen (si se cargó la publicidad)
+    if (popupContainer && closeButton) {
+      // Función para mostrar el pop-up
+      function showPopupAd() {
+        popupContainer.classList.add('is-visible');
+      }
+
+      // Función para cerrar el pop-up
+      function closePopupAd() {
+        popupContainer.classList.remove('is-visible');
+        // Opcional: Si quieres que el pop-up desaparezca completamente del DOM después de cerrar
+        // popupContainer.parentNode.removeChild(popupContainer);
+      }
+
+      // Configurar temporizador para mostrar después de 2 segundos
+      setTimeout(showPopupAd, 2000); // 2000 milisegundos = 2 segundos
+
+      // Asignar evento al botón de cerrar
+      closeButton.addEventListener('click', closePopupAd);
+    }
+  });
+</script>

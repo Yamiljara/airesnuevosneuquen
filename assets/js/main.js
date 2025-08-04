@@ -205,3 +205,49 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// Código para el pop-up de publicidad en noticias individuales
+document.addEventListener('DOMContentLoaded', function() {
+    const popupContainer = document.getElementById('popup-ad-container');
+    const closeButton = document.getElementById('popup-ad-close-button');
+    const lastShownKey = 'lastPopupAdShown';
+    const displayInterval = 24 * 60 * 60 * 1000; // Muestra el pop-up cada 24 horas
+
+    function showPopup() {
+        if (popupContainer) {
+            // Primero asegura que está visible para la transición
+            popupContainer.style.display = 'flex'; 
+            // Pequeño retardo para asegurar que el navegador aplique 'display:flex'
+            // antes de aplicar la clase de transición.
+            setTimeout(() => {
+                popupContainer.classList.add('is-visible');
+            }, 10); 
+            localStorage.setItem(lastShownKey, Date.now());
+        }
+    }
+
+    function hidePopup() {
+        if (popupContainer) {
+            popupContainer.classList.remove('is-visible');
+            // Espera a que termine la transición de opacidad antes de ocultarlo completamente
+            popupContainer.addEventListener('transitionend', function handler() {
+                popupContainer.style.display = 'none';
+                // Elimina el event listener para que no se ejecute múltiples veces
+                popupContainer.removeEventListener('transitionend', handler);
+            });
+        }
+    }
+
+    if (popupContainer && closeButton) {
+        closeButton.addEventListener('click', hidePopup);
+
+        const lastShownTime = localStorage.getItem(lastShownKey);
+        const currentTime = Date.now();
+
+        // Muestra el pop-up si nunca se ha mostrado O si ha pasado más de 24 horas desde la última vez
+        if (!lastShownTime || (currentTime - lastShownTime > displayInterval)) {
+            // Aparecer a los 2 segundos de cargar la página (como lo solicitaste)
+            setTimeout(showPopup, 2000); // 2000 milisegundos = 2 segundos
+        }
+    }
+});
