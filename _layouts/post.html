@@ -3,190 +3,129 @@ layout: default
 ---
 
 <div class="container main-content-wrapper single-post-page">
-    <div class="post-article-wrapper">
+    <div class="post-article-wrapper">
 
-        <p class="post-meta author-date-line">
-            <span class="post-author">
-                {% if page.author %}
-                    Por {{ page.author }}
-                {% else %}
-                    Por Redacción AIRESNUEVOSNQN
-                {% endif %}
-            </span>
-            <span class="post-date">{{ page.date | date: "%d de %B de %Y" }}</span>
-        </p>
+        <p class="post-meta author-date-line">
+            <span class="post-author">
+                {% if page.author %}
+                    Por {{ page.author }}
+                {% else %}
+                    Por Redacción AIRESNUEVOSNQN
+                {% endif %}
+            </span>
+            <span class="post-date">{{ page.date | date: "%d de %B de %Y" }}</span>
+        </p>
 
-        {% if page.antetitulo %}
-        <h3 class="post-antetitulo">{{ page.antetitulo }}</h3>
-        {% endif %}
+        {% if page.antetitulo %}
+        <h3 class="post-antetitulo">{{ page.antetitulo }}</h3>
+        {% endif %}
 
-        <h1 class="post-title">{{ page.title }}</h1>
+        <h1 class="post-title">{{ page.title }}</h1>
 
-        {% if page.image %}
-        <div class="post-image-container">
-            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}"
-                class="post-featured-image">
-            {% if page.image_caption %}<span class="post-featured-image-caption">{{ page.image_caption }}</span>{% endif
-            %}
-        </div>
-        {% endif %}
+        {% if page.image %}
+        <div class="post-image-container">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}"
+                class="post-featured-image">
+            {% if page.image_caption %}<span class="post-featured-image-caption">{{ page.image_caption }}</span>{% endif
+            %}
+        </div>
+        {% endif %}
 
-        {% if page.copete %}
-        <p class="post-copete">{{ page.copete }}</p>
-        {% endif %}
+        {% if page.copete %}
+        <p class="post-copete">{{ page.copete }}</p>
+        {% endif %}
 
-        <div class="post-body">
-            {{ content }}
-        </div>
+        <div class="post-body">
+            {{ content }}
+        </div>
 
-        {% assign slot_id = "publicidad_post_articulo_1" %}
-        {% assign ad_class = "single-post-ad" %}
-        {% assign width = "800px" %}
-        {% assign height = "600px" %}
-        {% assign object_fit = "contain" %}
-        {% include ad_banner_large.html %}
-        
-        {% assign slot_id = "publicidad_post_articulo_2" %}
-        {% assign ad_class = "single-post-ad" %}
-        {% assign width = "800px" %}
-        {% assign height = "600px" %}
-        {% assign object_fit = "contain" %}
-        {% include ad_banner_large.html %}
-        
-        {% assign slot_id = "publicidad_post_articulo_3" %}
-        {% assign ad_class = "single-post-ad" %}
-        {% assign width = "800px" %}
-        {% assign height = "600px" %}
-        {% assign object_fit = "contain" %}
-        {% include ad_banner_large.html %}
+        {% assign slot_id = "publicidad_post_articulo_1" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
+        
+        {% assign slot_id = "publicidad_post_articulo_2" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
+        
+        {% assign slot_id = "publicidad_post_articulo_3" %}
+        {% assign ad_class = "single-post-ad" %}
+        {% assign width = "800px" %}
+        {% assign height = "600px" %}
+        {% assign object_fit = "contain" %}
+        {% include ad_banner_large.html %}
 
-        <div class="related-news-section">
-            <h3 class="section-subtitle">Noticias Relacionadas</h3>
-            {% assign current_post_categories = page.categories %}
+        <div class="related-news-section">
+            <h3 class="section-subtitle">Noticias Relacionadas</h3>
+            {% assign current_post_categories = page.categories %}
 
-            {% comment %}
-            Solo filtra por categoría si el post actual tiene al menos una categoría.
-            Esto previene el error 'no implicit conversion of nil into String'.
-            {% endcomment %}
-            {% assign filtered_posts = site.posts | where_exp:"post", "post.url != page.url" %}
-            {% if current_post_categories.size > 0 %}
-                {% assign related_posts = filtered_posts | where_exp:"post", "post.categories contains current_post_categories[0]" | sample: 3 %}
-            {% else %}
-                {% assign related_posts = filtered_posts | sample: 3 %}
-            {% endif %}
+            {% comment %}
+            Solo filtra por categoría si el post actual tiene al menos una categoría.
+            Esto previene el error 'no implicit conversion of nil into String'.
+            {% endcomment %}
+            {% assign filtered_posts = site.posts | where_exp:"post", "post.url != page.url" %}
+            {% if current_post_categories.size > 0 %}
+                {% assign related_posts = filtered_posts | where_exp:"post", "post.categories contains current_post_categories[0]" | sample: 3 %}
+            {% else %}
+                {% assign related_posts = filtered_posts | sample: 3 %}
+            {% endif %}
 
-            {% if related_posts.size > 0 %}
-            <ul class="related-posts-list">
-                {% for post in related_posts %}
-                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-            {% else %}
-            <p>No hay noticias relacionadas para mostrar en este momento.</p>
-            {% endif %}
-        </div>
+            {% if related_posts.size > 0 %}
+            <ul class="related-posts-list">
+                {% for post in related_posts %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No hay noticias relacionadas para mostrar en este momento.</p>
+            {% endif %}
+        </div>
 
-    {% comment %} --- INICIO: Publicidad Pop-up --- {% endcomment %}
-    {% comment %}
-      Obtener una publicidad de la colección 'ads'.
-      Puedes filtrar por 'title' si quieres una específica, o usar 'sample' para una aleatoria.
-      Por ahora, tomaremos la primera publicidad en la lista 'ads' para simplificar.
-    {% endcomment %}
-    {% assign pop_up_ad = site.data.ads.ads | first %} {% comment %} Accede a site.data.ads.ads que es la lista de publicidades {% endcomment %}
+    {% comment %} --- INICIO: Publicidad Pop-up --- {% endcomment %}
+    {% comment %}
+      Obtener una publicidad de la colección 'ads'.
+      Puedes filtrar por 'title' si quieres una específica, o usar 'sample' para una aleatoria.
+      Por ahora, tomaremos la primera publicidad en la lista 'ads' para simplificar.
+    {% endcomment %}
+    {% assign pop_up_ad = site.data.ads.ads | first %} {% comment %} Accede a site.data.ads.ads que es la lista de publicidades {% endcomment %}
 
-    {% if pop_up_ad %}
-      {% include popup_ad.html ad_image=pop_up_ad.image ad_url=pop_up_ad.url ad_alt=pop_up_ad.image_alt %}
-    {% endif %}
-    {% comment %} --- FIN: Publicidad Pop-up --- {% endcomment %}
+    {% if pop_up_ad %}
+      {% include popup_ad.html ad_image=pop_up_ad.image ad_url=pop_up_ad.url ad_alt=pop_up_ad.image_alt %}
+    {% endif %}
+    {% comment %} --- FIN: Publicidad Pop-up --- {% endcomment %}
 
-    </div> {% comment %} Cierre de .post-article-wrapper {% endcomment %}
+    </div> {% comment %} Cierre de .post-article-wrapper {% endcomment %}
 </div> {% comment %} Cierre de .container main-content-wrapper single-post-page {% endcomment %}
 
-<style>
-  /* --- Estilos para la línea de Autor y Fecha (post-meta) --- */
-  /* Aplicamos !important para asegurar que sobrescriban estilos preexistentes. */
-  .post-meta.author-date-line {
-    display: flex !important;           /* Usa flexbox para alinear elementos en la misma línea */
-    flex-wrap: wrap !important;         /* Permite que los elementos se envuelvan en pantallas pequeñas */
-    justify-content: flex-start !important; /* Alinea los elementos al inicio (izquierda) */
-    align-items: center !important;     /* Centra verticalmente si los elementos tienen alturas diferentes */
-    margin: 0 !important;               /* Elimina cualquier margen externo que pueda causar centrado o espacio */
-    padding: 0 0 15px 0 !important;     /* Padding inferior para separar del antetítulo/título. Ajusta si es mucho/poco. */
-    font-size: 0.9em !important;        /* Puedes ajustar el tamaño de la fuente si lo deseas */
-    color: #555 !important;             /* Color más suave para el texto si lo deseas */
-    line-height: 1.2 !important;        /* Ajusta la altura de línea */
-  }
-
-  .post-meta .post-author {
-    margin-right: 10px !important;     /* Espacio entre el autor y la fecha */
-    white-space: nowrap !important;    /* Evita que el texto del autor se rompa en varias líneas */
-  }
-
-  .post-meta .post-date {
-    white-space: nowrap !important;    /* Evita que la fecha se rompa en varias líneas */
-  }
-
-  /* --- Estilos para reducir espacios verticales en otras secciones si es necesario --- */
-  /* Ajusta los valores de margin-bottom según cómo quieras el espaciado entre secciones */
-  /* Usamos !important también aquí para forzar la aplicación */
-  
-  .post-antetitulo {
-      margin-bottom: 5px !important; /* Reduce el espacio después del antetítulo */
-      text-align: left !important; /* Asegura alineación a la izquierda */
-  }
-
-  .post-title {
-      margin-top: 10px !important;    /* Ajusta el espacio antes del título */
-      margin-bottom: 20px !important; /* Ajusta el espacio después del título */
-      text-align: left !important; /* Asegura alineación a la izquierda */
-  }
-
-  .post-image-container {
-      margin-bottom: 25px !important; /* Espacio después de la imagen destacada */
-  }
-
-  .post-copete {
-      margin-top: 20px !important;   /* Espacio antes del copete */
-      margin-bottom: 30px !important; /* Espacio después del copete. Podrías querer más espacio aquí. */
-      font-size: 1.15em !important;    /* Tamaño de fuente ligeramente más grande para el copete */
-      line-height: 1.6 !important;     /* Mejora la legibilidad del copete */
-      text-align: left !important; /* Asegura alineación a la izquierda */
-  }
-
-  .post-body {
-      margin-bottom: 40px !important; /* Espacio después del cuerpo principal de la noticia */
-      text-align: left !important; /* Asegura alineación a la izquierda en el contenido */
-  }
-
-  .related-news-section {
-      margin-top: 40px !important; /* Espacio antes de la sección de noticias relacionadas */
-  }
-</style>
-
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var popupContainer = document.getElementById('popup-ad-container');
-    var closeButton = document.getElementById('popup-ad-close-button');
+  document.addEventListener('DOMContentLoaded', function() {
+    var popupContainer = document.getElementById('popup-ad-container');
+    var closeButton = document.getElementById('popup-ad-close-button');
 
-    // Solo procede si el contenedor y el botón existen (si se cargó la publicidad)
-    if (popupContainer && closeButton) {
-      // Función para mostrar el pop-up
-      function showPopupAd() {
-        popupContainer.classList.add('is-visible');
-      }
+    // Solo procede si el contenedor y el botón existen (si se cargó la publicidad)
+    if (popupContainer && closeButton) {
+      // Función para mostrar el pop-up
+      function showPopupAd() {
+        popupContainer.classList.add('is-visible');
+      }
 
-      // Función para cerrar el pop-up
-      function closePopupAd() {
-        popupContainer.classList.remove('is-visible');
-        // Opcional: Si quieres que el pop-up desaparezca completamente del DOM después de cerrar
-        // popupContainer.parentNode.removeChild(popupContainer);
-      }
+      // Función para cerrar el pop-up
+      function closePopupAd() {
+        popupContainer.classList.remove('is-visible');
+        // Opcional: Si quieres que el pop-up desaparezca completamente del DOM después de cerrar
+        // popupContainer.parentNode.removeChild(popupContainer);
+      }
 
-      // Configurar temporizador para mostrar después de 2 segundos
-      setTimeout(showPopupAd, 2000); // 2000 milisegundos = 2 segundos
+      // Configurar temporizador para mostrar después de 2 segundos
+      setTimeout(showPopupAd, 2000); // 2000 milisegundos = 2 segundos
 
-      // Asignar evento al botón de cerrar
-      closeButton.addEventListener('click', closePopupAd);
-    }
-  });
+      // Asignar evento al botón de cerrar
+      closeButton.addEventListener('click', closePopupAd);
+    }
+  });
 </script>
