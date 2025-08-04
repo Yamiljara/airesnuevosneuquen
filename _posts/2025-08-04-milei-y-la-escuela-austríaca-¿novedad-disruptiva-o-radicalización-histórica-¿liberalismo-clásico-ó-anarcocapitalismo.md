@@ -6,7 +6,7 @@ title: "Milei y la Escuela Austríaca: ¿Novedad Disruptiva o Radicalización
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-03 23:44:00 -03:00
 categories:
-  - ÚltimasNoticias
+  - Política
 tags:
   - anarcocapitalismo
   - liberalismo
