@@ -2515,9 +2515,10 @@ img {
 }
 
 /* ==========================================================================
-   Media Queries para Dispositivos Móviles (ej. hasta 768px de ancho)
-   ========================================================================== */
+ Media Queries para Dispositivos Móviles (ej. hasta 768px de ancho)
+ ========================================================================== */
 @media (max-width: 768px) {
+    /* Estilos de Publicidad para Móviles */
     .advertising-block-large {
         width: 100%; /* Ocupa todo el ancho disponible */
         height: auto; /* La altura se ajusta automáticamente al contenido */
@@ -2537,19 +2538,15 @@ img {
         height: 90px; /* Reducir la altura */
         font-size: 14px; /* Reducir tamaño de fuente */
         padding: 8px 10px; /* Reducir padding */
-        /* OPCIONAL: Añade overflow: hidden; aquí si quieres cortar cualquier texto que exceda. */
-        overflow: hidden;
+        overflow: hidden; /* Corta cualquier texto que exceda */
     }
 
-    /* --- ¡INSERTA ESTE NUEVO BLOQUE AQUÍ! --- */
     .advertising-block-small .typewriter-text {
         display: block; /* Necesario para que min-height/height funcione en un span */
         min-height: 45px; /* Altura medida para el texto completo en móvil */
     }
-    /* --- FIN DEL BLOQUE A INSERTAR --- */
 
-
-    /* Para asegurar que no haya un tercer bloque si la pantalla es muy pequeña para 2 */
+    /* Media Query ANIDADA para bloques pequeños en pantallas MUY pequeñas */
     @media (max-width: 480px) {
         .advertising-block-small {
             width: 100%; /* Un bloque por fila en pantallas muy pequeñas */
@@ -2562,7 +2559,74 @@ img {
         font-size: 14px; /* Reducir tamaño de fuente */
         padding: 15px; /* Ajustar padding */
     }
-}
+
+    /* ==========================================================================
+     Página de Noticia Individual (Post Layout) - AJUSTES PARA MÓVILES (DENTRO DE LA MEDIA QUERY PRINCIPAL)
+     ========================================================================== */
+    .single-post-page {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        padding-top: 20px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .single-post-page .post-article-wrapper {
+        padding: 20px !important; /* Reduce el padding general para móviles */
+    }
+
+    .single-post-page .post-meta.author-date-line {
+        padding-bottom: 10px !important;
+        flex-wrap: wrap !important; /* Permite que el autor y la fecha se envuelvan si el espacio es muy pequeño */
+    }
+
+    .single-post-page .post-meta .post-author {
+        margin-right: 5px !important; /* Reduce un poco más el espacio entre autor y fecha en móvil */
+    }
+
+    .single-post-page .post-antetitulo {
+        font-size: 0.9em !important;
+        margin-bottom: 5px !important; /* Mantener pequeño */
+    }
+
+    .single-post-page .post-title {
+        font-size: 2em !important; /* Ajusta el tamaño del título para móvil */
+        margin-bottom: 15px !important;
+    }
+
+    .single-post-page .post-copete {
+        font-size: 1.05em !important;
+        margin-top: 15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .single-post-page .post-body {
+        font-size: 1em !important;
+        line-height: 1.6 !important;
+    }
+
+    .single-post-page .post-body p {
+        margin-bottom: 1em !important;
+    }
+
+    /* Ajustes para subtítulos en móvil */
+    .single-post-page .post-body h1 { font-size: 1.8em !important; }
+    .single-post-page .post-body h2 { font-size: 1.6em !important; }
+    .single-post-page .post-body h3 { font-size: 1.4em !important; }
+    .single-post-page .post-body h4 { font-size: 1.2em !important; }
+
+    /* Publicidad en móvil - asegurar que se adapte */
+    /* Asegúrate de que .advertising-block-large.single-post-ad esté usando los mismos estilos que los de arriba */
+    /* para evitar duplicación, pero si necesitas especificidad, este bloque es para eso. */
+    /* Dejo los que tenías, pero el .advertising-block-large general de arriba debería ser suficiente */
+    .single-post-page .advertising-block-large.single-post-ad {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+        min-height: 100px !important;
+        font-size: 1.2em !important;
+        padding: 15px !important;
+    }
+} /* <--- ¡CIERRE DE LA MEDIA QUERY PRINCIPAL @media (max-width: 768px) ! */
+
 
 /* --- ENCABEZADO QUE SE ACHICA AL SCROLL: SOLUCIÓN FINAL --- */
 
@@ -2587,7 +2651,7 @@ body {
 
 /* Estilos del encabezado cuando se hace scroll (la clase 'scrolled' es agregada por JS) */
 /* APLICAR SÓLO EN PANTALLAS GRANDES (Desktop) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .site-header.scrolled {
         height: auto; /* Dejar que la altura se ajuste al contenido compactado */
         padding-bottom: 0; /* Elimina padding extra abajo si lo tiene */
@@ -2609,7 +2673,7 @@ body {
     /* La barra superior (.top-bar) al hacer scroll */
     .site-header.scrolled .top-bar {
         /* Aseguramos la distribución con flex */
-        display: flex; 
+        display: flex;
         justify-content: space-between; /* ¡CLAVE! Fecha a la izquierda, Redes a la derecha */
         align-items: center;
         width: 100%; /* Ocupa todo el ancho */
@@ -2626,7 +2690,7 @@ body {
         font-size: 1.0em; /* **CAMBIO CLAVE AQUÍ: ACHICADO AÚN MÁS LA LETRA** */
         white-space: nowrap; /* Evita que el texto se rompa */
         flex-shrink: 1; /* Permite que los elementos se encojan */
-        min-width: 0;   /* Ayuda a flex-shrink a funcionar permitiendo encogerse más allá del contenido inicial */
+        min-width: 0;   /* Ayuda a flex-shrink a funcionar permitiendo encogerse más allá del contenido inicial */
     }
 
     .site-header.scrolled .top-bar .social-icons a {
