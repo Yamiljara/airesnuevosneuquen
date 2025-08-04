@@ -777,185 +777,301 @@ img {
 }
 
 /* ==========================================================================
-   Página de Noticia Individual (Post Layout) - ESTILOS PROFESIONALES Y ALINEACIÓN
-   ========================================================================== */
+ Página de Noticia Individual (Post Layout) - ESTILOS PROFESIONALES Y ALINEACIÓN
+ ========================================================================== */
 
+/* Contenedor principal de la página del post */
 .single-post-page {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
+    padding-left: 15px !important; /* Añadido para dar un respiro a los bordes de la pantalla en móvil/menos ancho */
+    padding-right: 15px !important; /* Añadido para dar un respiro a los bordes de la pantalla en móvil/menos ancho */
 }
 
-.post-article-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: var(--light-gray); /* Fondo del color de la página */
-    padding: 40px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
-    border-radius: 8px;
+.single-post-page .post-article-wrapper { /* Selector ajustado para mayor especificidad */
+    max-width: 800px !important; /* Usamos !important */
+    margin: 0 auto !important; /* Usamos !important */
+    background-color: var(--light-gray) !important; /* Usamos !important */
+    padding: 40px !important; /* <<< ESTE ES EL PADDING CLAVE PARA AJUSTAR LOS LATERALES. */
+                              /* Si quieres mover todo el contenido más a la izquierda, puedes REDUCIR este valor, */
+                              /* por ejemplo: padding: 30px !important; */
+                              /* O para solo el izquierdo: padding: 40px 40px 40px 20px !important; (top right bottom left) */
+    box-shadow: 0 0 20px rgba(0,0,0,0.05) !important; /* Usamos !important */
+    border-radius: 8px !important; /* Usamos !important */
 }
 
 /* Encabezado del Post (Contiene imagen destacada, antetítulo, título, copete) */
-.post-header {
-    margin-bottom: 30px;
-    text-align: left;
+.single-post-page .post-header { /* Selector ajustado */
+    margin-bottom: 30px !important;
+    text-align: left !important; /* Asegura alineación a la izquierda */
 }
 
 /* Antetítulo */
-.post-antetitulo {
-    font-family: var(--font-sans-serif);
-    font-size: 0.95em;
-    color: var(--black); /* Cambiado a negro */
-    margin-bottom: 15px; /* Aumentado el margen inferior */
-    text-transform: none; /* ELIMINADO text-transform: uppercase; */
-    font-weight: 600;
-    text-align: left;
-    letter-spacing: 0.05em;
+.single-post-page .post-antetitulo { /* Selector ajustado */
+    font-family: var(--font-sans-serif) !important;
+    font-size: 0.95em !important;
+    color: var(--black) !important;
+    margin-bottom: 5px !important; /* Ajustado para reducir espacio y acercar al título */
+    text-transform: none !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    letter-spacing: 0.05em !important;
 }
 
 /* Título de la Noticia */
-.post-title {
-    font-family: var(--font-serif);
-    font-size: 2.8em;
-    color: var(--dark-blue);
-    margin-bottom: 15px;
-    line-height: 1.15;
-    text-align: left;
-    font-weight: 700;
+.single-post-page .post-title { /* Selector ajustado */
+    font-family: var(--font-serif) !important;
+    font-size: 2.8em !important;
+    color: var(--dark-blue) !important;
+    margin-top: 10px !important; /* Pequeño espacio desde antetítulo */
+    margin-bottom: 20px !important; /* Ajustado para un mejor espaciado */
+    line-height: 1.15 !important;
+    text-align: left !important;
+    font-weight: 700 !important;
 }
 
 /* Contenedor para imagen y pie de foto para asegurar el flujo */
-.post-image-container {
-    margin: 30px auto 0 auto; /* Ajusta este margen si es necesario */
-    width: 100%;
-    display: block; /* Asegura que ocupe su propio bloque */
+.single-post-page .post-image-container { /* Selector ajustado */
+    margin: 25px auto !important; /* Ajustado para espaciado consistente, auto para centrar */
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important; /* Centra la imagen dentro de su contenedor */
 }
 
 /* Imagen Destacada del Post (la que viene de 'page.image') */
-.post-featured-image {
-    width: 100%;
-    max-height: 500px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.single-post-page .post-featured-image { /* Selector ajustado */
+    width: 100% !important;
+    max-height: 500px !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    display: block !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+    margin: 0 auto !important; /* Centrar la imagen si es más pequeña que el 100% */
 }
 
 /* Pie de Foto (Caption) de la Imagen Destacada */
-.post-featured-image-caption { /* Renombrada para evitar conflictos con elementos figcaption directos */
-    font-family: var(--font-sans-serif);
-    font-size: 0.75em;
-    color: #555;
-    text-align: left;
-    margin-top: 10px; /* Separación de la imagen */
-    margin-bottom: 20px; /* Espacio antes del copete para desktop */
-    line-height: 1.4;
-    font-style: italic;
-    width: 100%;
-    display: block; /* Asegura que sea un bloque independiente */
+.single-post-page .post-featured-image-caption { /* Selector ajustado */
+    font-family: var(--font-sans-serif) !important;
+    font-size: 0.75em !important;
+    color: #555 !important;
+    text-align: center !important; /* Centra el pie de foto */
+    margin-top: 10px !important;
+    margin-bottom: 0px !important; /* Ajustado para eliminar espacio extra */
+    line-height: 1.4 !important;
+    font-style: italic !important;
+    width: 100% !important;
+    display: block !important;
 }
 
 /* Copete (Bajada de la Noticia) */
-.post-copete {
-    font-family: var(--font-sans-serif); /* CAMBIADO: Usar la misma fuente que el cuerpo de la noticia */
-    font-size: 0.95em;
-    color: var(--black); /* MANTENIDO: El color original negro */
-    margin-top: 15px; /* Margen para desktop, se ajustará en móvil */
-    margin-bottom: 25px; /* Mantener un margen inferior generoso */
-    font-weight: 400; /* MANTENIDO: Sigue siendo 'normal' (no negrita) */
-    line-height: 1.5;
-    text-align: left;
-    font-style: italic; /* MANTENIDO: Sigue en cursiva */
+.single-post-page .post-copete { /* Selector ajustado */
+    font-family: var(--font-sans-serif) !important;
+    font-size: 1.15em !important; /* Ligeramente más grande para mejor lectura */
+    color: var(--black) !important;
+    margin-top: 20px !important; /* Espacio antes del copete */
+    margin-bottom: 30px !important; /* Espacio después del copete */
+    font-weight: 400 !important;
+    line-height: 1.6 !important; /* Ajustado para mejor legibilidad */
+    text-align: left !important;
+    font-style: italic !important;
 }
 
-/* Autor y Fecha de Publicación */
-.post-meta.author-date-line {
-    font-family: var(--font-sans-serif);
-    font-size: 0.9em;
-    color: #100000;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--light-gray);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+/* Autor y Fecha de Publicación - Este es el que quieres ajustar más a la izquierda */
+.single-post-page .post-meta.author-date-line { /* Selector ajustado para máxima especificidad */
+    font-family: var(--font-sans-serif) !important;
+    font-size: 0.9em !important;
+    color: #555 !important; /* Sugiero un gris más suave */
+    margin: 0 !important; /* Elimina márgenes externos para control total */
+    padding: 0 0 15px 0 !important; /* Top, Right, Bottom, Left. El primer '0' es el padding-left. */
+                                  /* Si quieres moverlo más a la izquierda *dentro de su propio padding*, puedes probar */
+                                  /* a poner un valor pequeño y luego un margen negativo, pero es más complejo. */
+    border-bottom: none !important; /* Elimina el borde inferior si no lo deseas */
+    display: flex !important;
+    justify-content: flex-start !important; /* IMP: Alinea los elementos al inicio (izquierda) */
+    align-items: center !important;
+    flex-wrap: nowrap !important; /* IMP: Mantiene autor y fecha en una sola línea */
+    line-height: 1.2 !important;
+    text-align: left !important; /* Doble seguridad para alineación */
 }
 
-.post-author {
-    font-weight: 600;
-    margin-right: 15px;
-    color: var(--dark-blue);
+.single-post-page .post-author { /* Selector ajustado */
+    font-weight: 600 !important;
+    margin-right: 10px !important; /* Ajustado para menor espacio entre autor y fecha */
+    color: var(--dark-blue) !important;
+    white-space: nowrap !important; /* Evita que el texto del autor se rompa */
 }
 
-.post-date {
-    font-style: normal;
+.single-post-page .post-date { /* Selector ajustado */
+    font-style: normal !important;
+    white-space: nowrap !important; /* Evita que la fecha se rompa */
 }
 
 /* Cuerpo Principal del Contenido del Post */
-.post-body {
-    font-family: var(--font-body);
-    font-size: 1.15em; /* Ligeramente más grande para mejor lectura */
-    line-height: 1.8;
-    color: #000000;
-    text-align: left; /* CAMBIADO: De 'justify' a 'left' */
+.single-post-page .post-body { /* Selector ajustado */
+    font-family: var(--font-body) !important;
+    font-size: 1.05em !important; /* Ajustado para ser coherente con el copete y mejor lectura */
+    line-height: 1.7 !important; /* Ajustado para mejor legibilidad */
+    color: #000000 !important;
+    text-align: left !important; /* Asegura alineación a la izquierda */
+    margin-bottom: 40px !important; /* Espacio después del cuerpo principal */
 }
 
-.post-body p {
-    margin-bottom: 1.5em;
+.single-post-page .post-body p { /* Selector ajustado */
+    margin-bottom: 1.2em !important; /* Espacio entre párrafos dentro del cuerpo del post */
 }
 
-/* Estilos para subtítulos dentro del post (h2, h3, h4) */
-.post-body h1,
-.post-body h2,
-.post-body h3,
-.post-body h4,
-.post-body h5,
-.post-body h6 {
-    font-family: var(--font-serif);
-    color: var(--dark-blue);
-    margin-top: 1.8em;
-    margin-bottom: 0.8em;
-    text-align: left;
-    line-height: 1.3;
-    font-weight: bold;
+/* Estilos para subtítulos dentro del post (h1, h2, h3, h4, h5, h6) */
+.single-post-page .post-body h1, /* Selectores ajustados */
+.single-post-page .post-body h2,
+.single-post-page .post-body h3,
+.single-post-page .post-body h4,
+.single-post-page .post-body h5,
+.single-post-page .post-body h6 {
+    font-family: var(--font-serif) !important;
+    color: var(--dark-blue) !important;
+    margin-top: 1.8em !important;
+    margin-bottom: 0.8em !important;
+    text-align: left !important;
+    line-height: 1.3 !important;
+    font-weight: bold !important;
 }
-.post-body h1 { font-size: 2em; }
-.post-body h2 { font-size: 1.8em; }
-.post-body h3 { font-size: 1.5em; }
-.post-body h4 { font-size: 1.3em; }
+.single-post-page .post-body h1 { font-size: 2em !important; }
+.single-post-page .post-body h2 { font-size: 1.8em !important; }
+.single-post-page .post-body h3 { font-size: 1.5em !important; }
+.single-post-page .post-body h4 { font-size: 1.3em !important; }
 
 /* Estilos para listas dentro del post */
-.post-body ul,
-.post-body ol {
-    margin-left: 25px;
-    margin-bottom: 1.5em;
-    padding-left: 0;
+.single-post-page .post-body ul, /* Selectores ajustados */
+.single-post-page .post-body ol {
+    margin-left: 25px !important;
+    margin-bottom: 1.5em !important;
+    padding-left: 0 !important;
+    text-align: left !important; /* Asegura alineación a la izquierda */
 }
 
-.post-body li {
-    margin-bottom: 0.5em;
+.single-post-page .post-body li { /* Selector ajustado */
+    margin-bottom: 0.5em !important;
+    text-align: left !important; /* Asegura alineación a la izquierda */
 }
 
 /* Estilos de texto básicos (strong, em, blockquote) */
-.post-body strong {
-    font-weight: bold;
+.single-post-page .post-body strong { /* Selector ajustado */
+    font-weight: bold !important;
 }
 
-.post-body em {
-    font-style: italic;
+.single-post-page .post-body em { /* Selector ajustado */
+    font-style: italic !important;
 }
 
-.post-body blockquote {
-    border-left: 4px solid var(--primary-red); /* Usar variable */
-    padding-left: 20px;
-    margin: 1.5em 0;
-    font-style: italic;
-    color: #555;
-    background-color: #fcfcfc;
-    padding: 15px 20px;
-    border-radius: 4px;
+.single-post-page .post-body blockquote { /* Selector ajustado */
+    border-left: 4px solid var(--primary-red) !important;
+    padding-left: 20px !important;
+    margin: 1.5em 0 !important;
+    font-style: italic !important;
+    color: #555 !important;
+    background-color: #fcfcfc !important;
+    padding: 15px 20px !important;
+    border-radius: 4px !important;
+    text-align: left !important; /* Asegura alineación a la izquierda */
+}
+
+/* Imágenes y Videos dentro del post (desde Markdown) */
+.single-post-page .post-body img, /* Selectores ajustados */
+.single-post-page .post-body iframe,
+.single-post-page .post-body video {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 25px auto !important; /* Centra las imágenes y videos dentro del post */
+    border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+.single-post-page .post-body a { /* Selector ajustado */
+    color: #000000 !important;
+    text-decoration: underline !important;
+}
+.single-post-page .post-body a:hover { /* Selector ajustado */
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+/* Publicidad grande intercalada en el post - UNIFORMIDAD DE ESTILO */
+/* MANTENER ESTOS TAL CUAL LOS TENES, YA QUE FUERON OPTIMIZADOS PARA LA PUBLICIDAD */
+.single-post-page .advertising-block-large.single-post-ad {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    text-align: center !important;
+    background-color: var(--ad-background-gray) !important;
+    color: var(--ad-text-color) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 130px !important;
+    padding: 25px 20px !important;
+    font-size: 1.5em !important;
+    box-sizing: border-box !important;
+    border: 1px dashed var(--medium-gray) !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+}
+
+.single-post-page .advertising-block-large.single-post-ad .typewriter-text {
+    white-space: normal !important;
+    word-break: break-word !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+/* Sección de Noticias Relacionadas */
+/* MANTENER ESTOS TAL CUAL LOS TENES, YA QUE FUERON OPTIMIZADOS PARA LA PUBLICIDAD */
+.single-post-page .related-news-section {
+    margin-top: 60px !important;
+    padding-top: 30px !important;
+    border-top: 1px solid var(--light-gray) !important;
+}
+
+.single-post-page .related-news-section .section-subtitle {
+    font-family: var(--font-serif) !important;
+    font-size: 1.8em !important;
+    color: var(--dark-blue) !important;
+    margin-bottom: 25px !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+.single-post-page .related-posts-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left !important;
+}
+
+.single-post-page .related-posts-list li {
+    margin-bottom: 12px !important;
+    text-align: left !important;
+}
+
+.single-post-page .related-posts-list li a {
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-size: 1.1em !important;
+    display: block !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px dashed #f0f0f0 !important;
+    text-align: left !important;
+}
+
+.single-post-page .related-posts-list li:last-child a {
+    border-bottom: none !important;
+}
+
+.single-post-page .related-posts-list li a:hover {
+    color: #000000 !important;
+    text-decoration: none !important;
 }
 
 /* Imágenes y Videos dentro del post (desde Markdown) */
