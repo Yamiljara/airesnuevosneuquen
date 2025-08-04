@@ -10,7 +10,7 @@ layout: default
                 {% if page.author %}
                     Por {{ page.author }}
                 {% else %}
-                    Por Redacción AiresNuevosNQN
+                    Por Redacción AIRESNUEVOSNQN
                 {% endif %}
             </span>
             <span class="post-date">{{ page.date | date: "%d de %B de %Y" }}</span>
@@ -104,55 +104,62 @@ layout: default
 
 <style>
   /* --- Estilos para la línea de Autor y Fecha (post-meta) --- */
+  /* Aplicamos !important para asegurar que sobrescriban estilos preexistentes. */
   .post-meta.author-date-line {
-    display: flex;          /* Usa flexbox para alinear elementos en la misma línea */
-    justify-content: flex-start; /* Alinea los elementos al inicio (izquierda) */
-    align-items: center;    /* Centra verticalmente si los elementos tienen alturas diferentes */
-    margin: 0;              /* Elimina cualquier margen externo que pueda causar centrado o espacio */
-    padding: 0 0 15px 0;    /* Padding inferior para separar del antetítulo/título. Ajusta si es mucho/poco. */
-    flex-wrap: wrap;        /* Permite que los elementos se envuelvan si la pantalla es muy pequeña */
-    font-size: 0.9em;       /* Puedes ajustar el tamaño de la fuente si lo deseas */
-    color: #555;            /* Color más suave para el texto si lo deseas */
+    display: flex !important;           /* Usa flexbox para alinear elementos en la misma línea */
+    flex-wrap: wrap !important;         /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: flex-start !important; /* Alinea los elementos al inicio (izquierda) */
+    align-items: center !important;     /* Centra verticalmente si los elementos tienen alturas diferentes */
+    margin: 0 !important;               /* Elimina cualquier margen externo que pueda causar centrado o espacio */
+    padding: 0 0 15px 0 !important;     /* Padding inferior para separar del antetítulo/título. Ajusta si es mucho/poco. */
+    font-size: 0.9em !important;        /* Puedes ajustar el tamaño de la fuente si lo deseas */
+    color: #555 !important;             /* Color más suave para el texto si lo deseas */
+    line-height: 1.2 !important;        /* Ajusta la altura de línea */
   }
 
   .post-meta .post-author {
-    margin-right: 10px;     /* Espacio entre el autor y la fecha */
-    white-space: nowrap;    /* Evita que el texto del autor se rompa en varias líneas */
+    margin-right: 10px !important;     /* Espacio entre el autor y la fecha */
+    white-space: nowrap !important;    /* Evita que el texto del autor se rompa en varias líneas */
   }
 
   .post-meta .post-date {
-    white-space: nowrap;    /* Evita que la fecha se rompa en varias líneas */
+    white-space: nowrap !important;    /* Evita que la fecha se rompa en varias líneas */
   }
 
-  /* --- Estilos para reducir espacios verticales si es necesario --- */
+  /* --- Estilos para reducir espacios verticales en otras secciones si es necesario --- */
   /* Ajusta los valores de margin-bottom según cómo quieras el espaciado entre secciones */
+  /* Usamos !important también aquí para forzar la aplicación */
   
   .post-antetitulo {
-      margin-bottom: 5px; /* Reduce el espacio después del antetítulo */
+      margin-bottom: 5px !important; /* Reduce el espacio después del antetítulo */
+      text-align: left !important; /* Asegura alineación a la izquierda */
   }
 
   .post-title {
-      margin-top: 10px;    /* Ajusta el espacio antes del título */
-      margin-bottom: 20px; /* Ajusta el espacio después del título */
+      margin-top: 10px !important;    /* Ajusta el espacio antes del título */
+      margin-bottom: 20px !important; /* Ajusta el espacio después del título */
+      text-align: left !important; /* Asegura alineación a la izquierda */
   }
 
   .post-image-container {
-      margin-bottom: 25px; /* Espacio después de la imagen destacada */
+      margin-bottom: 25px !important; /* Espacio después de la imagen destacada */
   }
 
   .post-copete {
-      margin-top: 20px;   /* Espacio antes del copete */
-      margin-bottom: 30px; /* Espacio después del copete. Podrías querer más espacio aquí. */
-      font-size: 1.15em;    /* Tamaño de fuente ligeramente más grande para el copete */
-      line-height: 1.6;     /* Mejora la legibilidad del copete */
+      margin-top: 20px !important;   /* Espacio antes del copete */
+      margin-bottom: 30px !important; /* Espacio después del copete. Podrías querer más espacio aquí. */
+      font-size: 1.15em !important;    /* Tamaño de fuente ligeramente más grande para el copete */
+      line-height: 1.6 !important;     /* Mejora la legibilidad del copete */
+      text-align: left !important; /* Asegura alineación a la izquierda */
   }
 
   .post-body {
-      margin-bottom: 40px; /* Espacio después del cuerpo principal de la noticia */
+      margin-bottom: 40px !important; /* Espacio después del cuerpo principal de la noticia */
+      text-align: left !important; /* Asegura alineación a la izquierda en el contenido */
   }
 
   .related-news-section {
-      margin-top: 40px; /* Espacio antes de la sección de noticias relacionadas */
+      margin-top: 40px !important; /* Espacio antes de la sección de noticias relacionadas */
   }
 </style>
 
