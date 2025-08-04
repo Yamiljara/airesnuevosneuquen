@@ -95,11 +95,7 @@ layout: default
     {% assign pop_up_ad = site.data.ads.ads | first %} {% comment %} Accede a site.data.ads.ads que es la lista de publicidades {% endcomment %}
 
     {% if pop_up_ad %}
-      {% include popup_ad.html 
-        ad_image=pop_up_ad.image 
-        ad_url=pop_up_ad.url 
-        ad_alt=pop_up_ad.image_alt 
-      %}
+      {% include popup_ad.html ad_image=pop_up_ad.image ad_url=pop_up_ad.url ad_alt=pop_up_ad.image_alt %}
     {% endif %}
     {% comment %} --- FIN: Publicidad Pop-up --- {% endcomment %}
 
