@@ -86,13 +86,13 @@ layout: default
             {% endif %}
         </div>
 
-    {# --- INICIO: Publicidad Pop-up --- #}
+    {% comment %} --- INICIO: Publicidad Pop-up --- {% endcomment %}
     {% comment %}
       Obtener una publicidad de la colección 'ads'.
       Puedes filtrar por 'title' si quieres una específica, o usar 'sample' para una aleatoria.
       Por ahora, tomaremos la primera publicidad en la lista 'ads' para simplificar.
     {% endcomment %}
-    {% assign pop_up_ad = site.data.ads.ads | first %} {# Accede a site.data.ads.ads que es la lista de publicidades #}
+    {% assign pop_up_ad = site.data.ads.ads | first %} {% comment %} Accede a site.data.ads.ads que es la lista de publicidades {% endcomment %}
 
     {% if pop_up_ad %}
       {% include popup_ad.html 
@@ -101,10 +101,10 @@ layout: default
         ad_alt=pop_up_ad.image_alt 
       %}
     {% endif %}
-    {# --- FIN: Publicidad Pop-up --- #}
+    {% comment %} --- FIN: Publicidad Pop-up --- {% endcomment %}
 
-    </div> {# Cierre de .post-article-wrapper #}
-</div> {# Cierre de .container main-content-wrapper single-post-page #}
+    </div> {% comment %} Cierre de .post-article-wrapper {% endcomment %}
+</div> {% comment %} Cierre de .container main-content-wrapper single-post-page {% endcomment %}
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
