@@ -2561,63 +2561,121 @@ img {
     }
 
     /* ==========================================================================
-     Página de Noticia Individual (Post Layout) - AJUSTES PARA MÓVILES (DENTRO DE LA MEDIA QUERY PRINCIPAL)
+     Página de Noticia Individual (Post Layout) - AJUSTES PARA MÓVILES (MÁS ANCHO)
      ========================================================================== */
     .single-post-page {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding-left: 0 !important; /* Mínimo padding a los lados, casi borde a borde */
+        padding-right: 0 !important; /* Mínimo padding a los lados, casi borde a borde */
         padding-top: 20px !important;
         padding-bottom: 30px !important;
     }
 
     .single-post-page .post-article-wrapper {
-        padding: 20px !important; /* Reduce el padding general para móviles */
+        padding: 0 5px !important; /* Padding interno muy reducido, 0 arriba/abajo, 5px a los lados */
+                                    /* Si quieres CERO a los lados, cambia a padding: 0 !important; */
+        background-color: transparent !important; /* Elimina el fondo para que no se vea un "recuadro" */
+        box-shadow: none !important; /* Elimina la sombra */
+        border-radius: 0 !important; /* Elimina bordes redondeados */
+        max-width: 100% !important; /* Asegura que no haya un max-width que lo restrinja */
     }
 
     .single-post-page .post-meta.author-date-line {
         padding-bottom: 10px !important;
-        flex-wrap: wrap !important; /* Permite que el autor y la fecha se envuelvan si el espacio es muy pequeño */
+        flex-wrap: wrap !important;
+        margin-left: 5px !important; /* Ajusta este margen para que no se pegue al borde */
+        margin-right: 5px !important;
     }
 
     .single-post-page .post-meta .post-author {
-        margin-right: 5px !important; /* Reduce un poco más el espacio entre autor y fecha en móvil */
+        margin-right: 5px !important;
     }
 
     .single-post-page .post-antetitulo {
         font-size: 0.9em !important;
-        margin-bottom: 5px !important; /* Mantener pequeño */
+        margin-bottom: 5px !important;
+        margin-left: 5px !important; /* Ajusta este margen para que no se pegue al borde */
+        margin-right: 5px !important;
     }
 
     .single-post-page .post-title {
-        font-size: 2em !important; /* Ajusta el tamaño del título para móvil */
+        font-size: 2em !important;
         margin-bottom: 15px !important;
+        margin-left: 5px !important; /* Ajusta este margen para que no se pegue al borde */
+        margin-right: 5px !important;
+    }
+    
+    .single-post-page .post-image-container {
+        margin: 20px 0 !important; /* Ajusta el margen superior e inferior y lo pone a cero a los lados */
+        padding: 0 !important; /* Elimina cualquier padding que pueda tener */
+    }
+
+    .single-post-page .post-featured-image {
+        border-radius: 0 !important; /* Elimina los bordes redondeados para que se extienda más */
+        box-shadow: none !important; /* Elimina la sombra para un look de borde a borde */
+    }
+
+    .single-post-page .post-featured-image-caption {
+        margin-left: 5px !important; /* Ajusta este margen para que no se pegue al borde */
+        margin-right: 5px !important;
     }
 
     .single-post-page .post-copete {
         font-size: 1.05em !important;
         margin-top: 15px !important;
         margin-bottom: 20px !important;
+        margin-left: 5px !important; /* Ajusta este margen para que no se pegue al borde */
+        margin-right: 5px !important;
     }
 
     .single-post-page .post-body {
         font-size: 1em !important;
         line-height: 1.6 !important;
+        padding-left: 5px !important; /* Añadido padding para el texto del body */
+        padding-right: 5px !important; /* Añadido padding para el texto del body */
     }
 
     .single-post-page .post-body p {
         margin-bottom: 1em !important;
     }
+    
+    .single-post-page .post-body ul,
+    .single-post-page .post-body ol {
+        margin-left: 20px !important; /* Ajusta sangría de listas */
+        margin-right: 5px !important; /* Para que las listas no se peguen al borde derecho */
+    }
+
 
     /* Ajustes para subtítulos en móvil */
+    .single-post-page .post-body h1,
+    .single-post-page .post-body h2,
+    .single-post-page .post-body h3,
+    .single-post-page .post-body h4,
+    .single-post-page .post-body h5,
+    .single-post-page .post-body h6 {
+        margin-left: 5px !important; /* Ajusta este margen para que no se pegue al borde */
+        margin-right: 5px !important;
+    }
     .single-post-page .post-body h1 { font-size: 1.8em !important; }
     .single-post-page .post-body h2 { font-size: 1.6em !important; }
     .single-post-page .post-body h3 { font-size: 1.4em !important; }
     .single-post-page .post-body h4 { font-size: 1.2em !important; }
 
+    /* Estilos de texto básicos (strong, em, blockquote) */
+    .single-post-page .post-body blockquote {
+        margin-left: 5px !important; /* Ajusta este margen para que no se pegue al borde */
+        margin-right: 5px !important;
+    }
+
+    /* Imágenes y Videos dentro del post (desde Markdown) */
+    .single-post-page .post-body img,
+    .single-post-page .post-body iframe,
+    .single-post-page .post-body video {
+        border-radius: 0 !important; /* Elimina bordes redondeados */
+        box-shadow: none !important; /* Elimina sombra */
+        margin: 20px 0 !important; /* Asegura que no haya márgenes laterales */
+    }
+
     /* Publicidad en móvil - asegurar que se adapte */
-    /* Asegúrate de que .advertising-block-large.single-post-ad esté usando los mismos estilos que los de arriba */
-    /* para evitar duplicación, pero si necesitas especificidad, este bloque es para eso. */
-    /* Dejo los que tenías, pero el .advertising-block-large general de arriba debería ser suficiente */
     .single-post-page .advertising-block-large.single-post-ad {
         margin-top: 30px !important;
         margin-bottom: 30px !important;
@@ -2625,6 +2683,21 @@ img {
         font-size: 1.2em !important;
         padding: 15px !important;
     }
+
+    .single-post-page .related-news-section {
+        margin-top: 40px !important;
+        padding-top: 20px !important;
+        padding-left: 5px !important; /* Ajusta este margen para que no se pegue al borde */
+        padding-right: 5px !important;
+    }
+
+    .single-post-page .related-news-section .section-subtitle,
+    .single-post-page .related-posts-list li,
+    .single-post-page .related-posts-list li a {
+        padding-left: 5px !important; /* Asegura que el contenido se alinee con el resto del post */
+        padding-right: 5px !important;
+    }
+
 } /* <--- ¡CIERRE DE LA MEDIA QUERY PRINCIPAL @media (max-width: 768px) ! */
 
 
