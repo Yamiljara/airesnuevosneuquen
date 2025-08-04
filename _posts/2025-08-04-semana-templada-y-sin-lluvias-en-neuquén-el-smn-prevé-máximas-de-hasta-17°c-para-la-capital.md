@@ -13,7 +13,7 @@ tags:
   - pronostico
   - smn
 featured: false
-featured_secondary: false
+featured_secondary: true
 image: /assets/images/el-pronostico-del-tiempo-para-ciudad-de-neuquen-rgs7klowo5hp5nalb77mxxsqym.jpg
 image_alt: Clima tiempo neuquén
 image_caption: Semana templada y fría.
