@@ -27,10 +27,7 @@ social_image: /assets/images/justicia-por-franco-imagen-simbolica.jpg
 copete: La comunidad y la familia de Franco continúan con su incansable reclamo
   de justicia, intensificando las movilizaciones y exigiendo un cambio en la
   calificación legal (carátula) del caso.
-slug: A 2 meses del asesinato de Franco Ramírez:La comunidad y la familia de
-  Franco continúan con su incansable reclamo de justicia, intensificando las
-  movilizaciones y exigiendo un cambio en la calificación legal (carátula) del
-  caso.
+slug: "a-dos-meses-asesinato-franco-ramirez "
 ---
 ***Loncopué, Neuquén –*** Ayer, 1 de agosto de 2025, se cumplieron dos meses del trágico asesinato de Franco Ramírez en la localidad de Loncopué. La comunidad y la familia de Franco continúan con su incansable reclamo de justicia, intensificando las movilizaciones y exigiendo un cambio en la calificación legal (carátula) del caso.
 
