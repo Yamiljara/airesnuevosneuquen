@@ -5,11 +5,17 @@ ads:
     url: https://www.facebook.com/profile.php?id=61577894803971
     start_date: 2025-08-04T00:00:00.000-03:00
     end_date: 2025-12-31T13:56:00.000-03:00
-
   - title: publicidad_pop_up_noticia
     image_desktop: /assets/images/PUBLICIDAD - SEGUIR EN REDES.gif
     image_mobile: /assets/images/PUBLICIDAD - SEGUIR EN REDES-VERTICAL.gif
-    image_alt: "Publicidad pop-up en noticias"
+    image_alt: Publicidad pop-up en noticias
     url: https://www.facebook.com/profile.php?id=61577894803971
     start_date: 2025-08-04T00:00:00.000-03:00
     end_date: 2026-08-04T23:59:59.000-03:00
+  - title: publicidad_pop_up_noticia
+    image_desktop: /assets/images/publicidad-seguir-en-redes.gif
+    image_mobile: /assets/images/publicidad-encuesta-.gif
+    image_alt: Anuncio publicitario para seguir a AIRESNUEVOSNQN en redes sociales
+    url: https://forms.gle/wNJFQNxXsD5BLpDa6
+    start_date: 2025-08-05T11:05:00.000-03:00
+    end_date: 2025-10-12T11:05:00.000-03:00
