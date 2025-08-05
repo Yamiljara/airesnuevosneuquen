@@ -8,7 +8,7 @@ ads:
 
   - title: publicidad_pop_up_noticia
     image_desktop: /assets/images/PUBLICIDAD - SEGUIR EN REDES.gif
-    image_mobile: /assets/images/PUBLICIDAD - SEGUIR EN REDES-VERTICAL.gif # <--- Reemplaza esta ruta por la de tu nueva imagen vertical
+    image_mobile: /assets/images/PUBLICIDAD - SEGUIR EN REDES-VERTICAL.gif
     image_alt: "Publicidad pop-up en noticias"
     url: https://www.facebook.com/profile.php?id=61577894803971
     start_date: 2025-08-04T00:00:00.000-03:00
