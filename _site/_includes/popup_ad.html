@@ -1,0 +1,111 @@
+<div id="popup-ad-container" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; display: flex; justify-content: center; align-items: center;">
+    <div class="popup-ad-content" style="background: white; padding: 20px; border-radius: 8px; position: relative; max-width: 90%; max-height: 90%; overflow: auto;">
+        <button id="popup-ad-close-button" class="popup-close-btn">&times;</button>
+        
+        {% if include.ad_image and include.ad_url %}
+        <a href="{{ include.ad_url }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ include.ad_image | relative_url }}" alt="{{ include.ad_alt }}" style="max-width: 100%; height: auto; display: block;">
+        </a>
+        {% else %}
+            <p>No se pudo cargar la publicidad pop-up. Asegúrate de que tenga una imagen y una URL.</p>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+    /* Estilos CSS para el pop-up */
+    #popup-ad-container {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        justify-content: center;
+        align-items: center; /* Centrado vertical y horizontal por defecto */
+    }
+
+    #popup-ad-container.is-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .popup-ad-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-ad-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .popup-close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 30px;
+        color: #333;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .popup-close-btn:hover {
+        background: #e0e0e0;
+        color: #000;
+    }
+
+    /* --- ESTILOS ESPECÍFICOS PARA PANTALLAS MÁS PEQUEÑAS --- */
+    @media (max-width: 767px) {
+        #popup-ad-container {
+            align-items: center; /* Centra el pop-up verticalmente */
+        }
+
+        .popup-ad-content {
+            width: 95%; /* Ocupa casi todo el ancho */
+            max-height: 95%; /* Ocupa casi toda la altura */
+            height: auto;
+            padding: 10px; /* Padding más pequeño para aprovechar el espacio */
+        }
+
+        .popup-ad-content img {
+            width: auto; /* Ancho automático para que ocupe todo el espacio vertical */
+            max-width: 100%;
+            max-height: 85vh; /* Se ajusta a un máximo de 85% de la altura de la pantalla */
+            object-fit: contain; /* Mantiene la proporción de la imagen */
+        }
+
+        .popup-close-btn {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            top: 5px;
+            right: 5px;
+        }
+    }
+</style>
