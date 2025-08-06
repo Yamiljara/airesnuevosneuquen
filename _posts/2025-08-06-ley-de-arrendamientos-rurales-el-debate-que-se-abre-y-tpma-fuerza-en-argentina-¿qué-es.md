@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: Debate económico.
-title: "Ley de arrendamientos Rurales: el debate que se abre y tpma fuerza en
+title: "Ley de arrendamientos Rurales: el debate que se abre y toma fuerza en
   Argentina. ¿Qué es?"
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-06 14:16:00 -03:00
