@@ -1,0 +1,111 @@
+<div id="popup-ad-container" class="ad-popup-container" style="display: none;">
+    <div class="ad-popup-content">
+        <button id="popup-ad-close-button" class="ad-popup-close-btn">&times;</button>
+        {% assign ad = site.data.ads.ads | where: 'title', 'publicidad_pop_up_noticia' | first %}
+
+        {% if ad %}
+            <a href="{{ ad.url }}" target="_blank" rel="noopener noreferrer">
+                {% if ad.image_desktop %}
+                    <img class="ad-image ad-image-desktop" src="{{ ad.image_desktop | relative_url }}" alt="{{ ad.image_alt }}">
+                {% endif %}
+                {% if ad.image_mobile %}
+                    <img class="ad-image ad-image-mobile" src="{{ ad.image_mobile | relative_url }}" alt="{{ ad.image_alt }}">
+                {% endif %}
+            </a>
+        {% else %}
+            <p>No se pudo cargar la publicidad pop-up. Verifica la configuración en _data/ads.yml.</p>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+/* Estilos para el contenedor del pop-up */
+.ad-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido del pop-up */
+.ad-popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+/* Botón de cierre */
+.ad-popup-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Estilos para la imagen, se aplican a ambas por defecto */
+.ad-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ocultar la imagen de móvil por defecto */
+.ad-image-mobile {
+    display: none;
+}
+
+/* Ocultar la imagen de escritorio por defecto */
+.ad-image-desktop {
+    display: block;
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .ad-image-desktop {
+        display: none;
+    }
+    .ad-image-mobile {
+        display: block;
+    }
+    .ad-popup-content {
+        max-width: 98%; 
+        min-height: 50vh; 
+        padding: 0; /* Nuevo: Elimina el padding en móviles */
+    }
+}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const popup = document.getElementById("popup-ad-container");
+        const closeBtn = document.getElementById("popup-ad-close-button");
+
+        // Muestra el pop-up después de 2 segundos (2000 milisegundos)
+        setTimeout(() => {
+            popup.style.display = "flex";
+        }, 2000);
+
+        // Oculta el pop-up al hacer clic en el botón de cerrar
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+    });
+</script>
