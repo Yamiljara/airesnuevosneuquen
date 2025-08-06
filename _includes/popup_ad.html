@@ -61,9 +61,20 @@
     cursor: pointer;
 }
 
+/* Estilos para la imagen, se aplican a ambas por defecto */
+.ad-image {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Ocultar la imagen de móvil por defecto */
 .ad-image-mobile {
     display: none;
+}
+
+/* Ocultar la imagen de escritorio por defecto */
+.ad-image-desktop {
+    display: block;
 }
 
 /* Media query para pantallas pequeñas (móviles) */
@@ -73,6 +84,9 @@
     }
     .ad-image-mobile {
         display: block;
+    }
+    .ad-popup-content {
+        padding: 10px;
     }
 }
 </style>
