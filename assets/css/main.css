@@ -2849,17 +2849,16 @@ AJUSTE FINAL: Pop-up en móviles
 ==========================================================================
 */
 @media (max-width: 768px) {
-    .ad-popup-content {
-        width: 95% !important; /* Aumenta el ancho del contenedor */
-        max-width: 95% !important;
-        padding: 5px !important;
-        box-sizing: border-box !important;
-    }
-
-    .ad-popup-content .ad-image {
-        width: 100% !important; /* La imagen ocupa todo el ancho del contenedor */
-        height: auto !important; /* Mantiene la proporción de la imagen */
-        max-height: 80vh !important; /* Limita la altura para que no ocupe toda la pantalla */
-        object-fit: contain !important; /* Asegura que la imagen completa se muestre */
-    }
+    .ad-popup-content {
+        width: 95% !important;
+        max-width: 95% !important;
+        height: auto !important; /* IMPORTANTE: El alto del contenedor se ajusta a la imagen */
+        padding: 5px !important;
+        box-sizing: border-box !important;
+    }
+    .ad-popup-content .ad-image {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 80vh !important;
+    }
 }
