@@ -1,6 +1,6 @@
 ---
 layout: post
-antetitulo: ANÁLISIS ECONÓMICO / RECAUDACIÓN ANUAL.
+antetitulo: ANÁLISIS ECONÓMICO / RECAUDACIÓN.
 title: "Petróleo y turismo: las dos grandes fuentes de ingresos que marcan la
   economía de Neuquén a mitad de año."
 author: Redacción AIRESNUEVOSNQN
