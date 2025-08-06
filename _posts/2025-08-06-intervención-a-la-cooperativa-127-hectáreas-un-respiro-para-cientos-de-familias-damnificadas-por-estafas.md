@@ -27,7 +27,7 @@ copete: Con el testimonio de vecinos que denuncian años de pagos sin recibir
   busca transparentar la situación y proteger los derechos de los afectados.
 slug: Intervención a la Cooperativa 127 Hectáreas
 ---
-***NEUQUÉN –*** La Legislatura neuquina se convirtió hoy en el escenario de un emotivo reclamo de justicia. Con una e exposición de vecinos damnificados que contaron sus historias de estafa y desamparo, los diputados aprobaron por mayoría el proyecto de resolución para solicitar la intervención de la Cooperativa 127 Hectáreas. La iniciativa, impulsada por el diputado César Gass, había recibido previamente despacho por unanimidad en la Comisión de Desarrollo Humano y Social.
+***NEUQUÉN –*** La Legislatura neuquina se convirtió hoy en el escenario de un emotivo reclamo de justicia. Con una  exposición de vecinos damnificados que contaron sus historias de estafa y desamparo, los diputados aprobaron por mayoría el proyecto de resolución para solicitar la intervención de la Cooperativa 127 Hectáreas. La iniciativa, impulsada por el diputado César Gass, había recibido previamente despacho por unanimidad en la Comisión de Desarrollo Humano y Social.
 
 ​Durante el debate, varios de los afectados se hicieron presentes para compartir sus testimonios y ponerle un rostro humano a la problemática. Marisel Salazar, Víctor Guerrero, Marta Sánchez y Alejandra Parra, entre otros, detallaron ante los legisladores el calvario que atraviesan, un drama que se extiende por años sin una solución a la vista.
 
@@ -46,8 +46,6 @@ El abogado Mariano Mansilla, representante legal de las víctimas, explicó a lo
 ​Finalmente, Gass aludió a una frase del Fiscal Strasera que resonó en el recinto: “a las estafas con viviendas, con gente vulnerable, con gente a la que no se le ha tenido respeto, gente a la que se la ha jodido, a todo eso NUNCA MAS”.  
 
 ​La medida representa una esperanza concreta para cientos de familias neuquinas que aún esperan respuestas. Ahora, el proyecto será elevado a la Dirección Provincial de Personas Jurídicas para que el Poder Ejecutivo designe un interventor y se avance con el proceso de normalización de la cooperativa.
-
-
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
