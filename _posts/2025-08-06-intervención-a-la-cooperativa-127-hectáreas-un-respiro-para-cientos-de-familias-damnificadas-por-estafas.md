@@ -6,7 +6,7 @@ title: "Intervención a la Cooperativa 127 Hectáreas: Un Respiro para Cientos d
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-06 16:44:00 -03:00
 categories:
-  - Portada.
+  - Portada
 tags:
   - Legislatura
   - neuquen
