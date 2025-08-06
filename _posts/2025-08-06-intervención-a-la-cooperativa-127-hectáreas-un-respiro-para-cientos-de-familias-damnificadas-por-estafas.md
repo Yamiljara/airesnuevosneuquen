@@ -1,8 +1,8 @@
 ---
 layout: post
 antetitulo: Legislatura Neuquina.
-title: "Intervención a la Cooperativa 127 Hectáreas: Un Respiro para Cientos de
-  Familias Damnificadas por Estafas."
+title: "Intervención a la Cooperativa 127 Hectáreas: Un respiro para las
+  familias damnificadas por estafas."
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-06 16:44:00 -03:00
 categories:
