@@ -8,7 +8,7 @@ ads:
 
   - title: publicidad_pop_up_noticia
     image_desktop: /assets/images/PUBLICIDAD - SEGUIR EN REDES.gif
-    image_mobile: /assets/images/PUBLICIDAD ENCUESTA .gif
+    image_mobile: /assets/images/ENCUESTA PUBLICIDAD.gif
     image_alt: "Anuncio de encuesta y seguimiento en redes sociales"
     url: https://forms.gle/rSCLCV9hAoN2iFgB6
     start_date: 2025-08-04T00:00:00.000-03:00
