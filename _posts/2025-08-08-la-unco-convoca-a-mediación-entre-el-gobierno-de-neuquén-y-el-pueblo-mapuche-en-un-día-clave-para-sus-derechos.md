@@ -51,3 +51,5 @@ slug: "conflicto-mapuche-neuquen-mediacion-unco "
 ​El Pueblo Mapuche reafirma su compromiso con la resolución de conflictos a través del diálogo político, pero subraya que este debe basarse en la verdad y en el cumplimiento de los derechos que la Constitución les garantiza.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Esta nota se ha elaborado en base a información obtenida en comunicado oficial de la Confederación Mapuche de Neuquén. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.
