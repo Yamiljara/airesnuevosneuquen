@@ -18,7 +18,7 @@ featured: true
 featured_secondary: false
 image: /assets/images/cesar-godoy-candidato-a-diputado-2025.jpg
 image_alt: César Godoy en una entrevista de AiresNuevosNQN.
-image_caption: Cesar Godoy dirigente de Peronista.
+image_caption: Cesar Godoy dirigente Peronista.
 meta_title: cesar-godoy-candidato-diputado-peronismo-neuquen
 meta_description: César Godoy, el posible candidato a diputado nacional del
   peronismo, habla de su origen gremial y experiencia política en una entrevista
