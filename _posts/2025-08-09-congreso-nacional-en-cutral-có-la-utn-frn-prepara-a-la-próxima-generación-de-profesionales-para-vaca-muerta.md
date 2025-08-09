@@ -31,7 +31,7 @@ copete: La Facultad Regional Neuquén de la UTN celebra su 40° aniversario con 
   estudiantes, empresas e instituciones.
 slug: congreso-utn-vaca-muerta-energia-futuro-profesionales
 ---
-***NEUQUÉN, 8 de agosto de 2025. –*** La Universidad Tecnológica Nacional (UTN) Facultad Regional Neuquén (FRN) será anfitriona del Primer Congreso Nacional “Próxima Generación UTN: Energía y Futuro en Vaca Muerta”. El evento, que se realizará los días 13 y 14 de agosto en el Centro Cultural de Cutral Co, reunirá a más de 400 estudiantes de diversas sedes de la UTN para debatir y vincularse con el futuro de la industria energética. La iniciativa, que se enmarca en la celebración del 40º aniversario de la FRN, busca tender puentes entre el ámbito académico y el sector productivo de Vaca Muerta, pieza clave en el desarrollo económico regional y nacional.
+***CUTRAL CO, 8 de agosto de 2025. –*** La Universidad Tecnológica Nacional (UTN) Facultad Regional Neuquén (FRN) será anfitriona del Primer Congreso Nacional “Próxima Generación UTN: Energía y Futuro en Vaca Muerta”. El evento, que se realizará los días 13 y 14 de agosto en el Centro Cultural de Cutral Co, reunirá a más de 400 estudiantes de diversas sedes de la UTN para debatir y vincularse con el futuro de la industria energética. La iniciativa, que se enmarca en la celebración del 40º aniversario de la FRN, busca tender puentes entre el ámbito académico y el sector productivo de Vaca Muerta, pieza clave en el desarrollo económico regional y nacional.
 
 ***Vaca Muerta y la educación: un vínculo estratégico***
 
