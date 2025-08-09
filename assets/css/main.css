@@ -1829,17 +1829,17 @@ img {
 
 /* Menú desplegable lateral */
 .mobile-nav-menu {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 280px;
-    height: 100%;
-    background-color: var(--white);
-    padding: 20px;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-out;
-    z-index: 2001;
-    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: -100vw; /* <-- Cambia de -300px a -100vw */
+    width: 100vw;
+    height: 100%;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-out;
+    z-index: 2001;
+    overflow-y: auto;
 }
 
 .mobile-nav-overlay.open .mobile-nav-menu {
