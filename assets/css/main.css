@@ -1827,23 +1827,42 @@ img {
     opacity: 1;
 }
 
-/* Menú desplegable lateral */
-.mobile-nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100vw; /* <-- Cambia de -300px a -100vw */
-    width: 100vw;
-    height: 100%;
-    background-color: var(--white);
-    padding: 20px;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-out;
-    z-index: 2001;
-    overflow-y: auto;
+/* --- ESTILOS PARA MENÚ HAMBURGUESA Y NAVEGACIÓN MÓVIL --- */
+
+/* Contenedor del menú completo (incluye el fondo oscuro) */
+.mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Utiliza un fondo oscuro con transparencia para que se vea bien */
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 2000;
+    display: none; /* Oculto por defecto */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.mobile-nav-overlay.open .mobile-nav-menu {
-    right: 0;
+.mobile-nav-overlay.open {
+    display: block; /* Muestra el overlay */
+    opacity: 1;
+}
+
+/* El menú principal (la caja blanca con los enlaces) */
+.mobile-nav-menu {
+    position: absolute; /* Para que se posicione dentro del overlay */
+    top: 50%; /* Lo centra verticalmente */
+    left: 50%; /* Lo centra horizontalmente */
+    transform: translate(-50%, -50%); /* Lo ajusta al centro exacto */
+    width: 90%; /* Ancho del 90% para que no toque los bordes */
+    max-width: 400px; /* Ancho máximo para pantallas grandes */
+    background-color: var(--white); /* El fondo del menú es blanco */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 2001;
+    overflow-y: auto;
 }
 
 /* Botón de cerrar menú */
@@ -1919,10 +1938,8 @@ img {
     .hamburger-menu-toggle .bar {
         margin: 4px 0;
     }
-
-    .mobile-nav-menu {
-        width: 250px;
-    }
+    
+    /* Nota: Se eliminó el ajuste de ancho para el menú, ya que ahora es dinámico */
 }
 
 /* Estilos para la nueva sección de noticias horizontales (Título y Copete) */
