@@ -1893,7 +1893,7 @@ img {
     display: flex;
     align-items: center;
     margin-top: 0; /* Se elimina el margen superior, ya que el padding-top lo maneja */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .mobile-search-input {
