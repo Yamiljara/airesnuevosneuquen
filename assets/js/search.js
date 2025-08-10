@@ -11,7 +11,7 @@
     let documents;
 
     function loadSearchIndex() {
-        fetch('{{ site.baseurl }}/search-index.json')
+       fetch('/search-index.json')
             .then(response => response.json())
             .then(data => {
                 documents = data;
