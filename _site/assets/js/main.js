@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
             hamburgerToggle.classList.add('active');
             mobileNavOverlay.classList.add('open');
             mobileNavMenu.classList.add('open');
-            // Opcional: Desactivar scroll del body cuando el menú está abierto
             document.body.style.overflow = 'hidden';
         }
     }
@@ -23,17 +22,16 @@ document.addEventListener('DOMContentLoaded', function() {
             hamburgerToggle.classList.remove('active');
             mobileNavOverlay.classList.remove('open');
             mobileNavMenu.classList.remove('open');
-            // Opcional: Reactivar scroll del body
             document.body.style.overflow = '';
         }
     }
 
-    // Event Listener para abrir el menú al hacer clic en el botón hamburguesa
+    // Event Listener para abrir el menú
     if (hamburgerToggle) {
         hamburgerToggle.addEventListener('click', openMobileMenu);
     }
 
-    // Event Listener para cerrar el menú al hacer clic en el botón de cerrar (X)
+    // Event Listener para cerrar el menú
     if (closeMenuBtn) {
         closeMenuBtn.addEventListener('click', closeMobileMenu);
     }
@@ -52,13 +50,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cerrar el menú si se redimensiona a desktop
     window.addEventListener('resize', function() {
-        if (window.innerWidth > 992) { // Usa el mismo breakpoint que tu CSS para desktop
+        if (window.innerWidth > 992) {
             closeMobileMenu();
         }
     });
+
+    // Código para la funcionalidad del buscador en el menú móvil
+    const mobileSearchForm = document.getElementById('mobile-search-form');
+
+    if (mobileSearchForm) {
+        mobileSearchForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío tradicional del formulario
+            const searchInput = document.getElementById('search-input-mobile');
+            const searchQuery = searchInput.value;
+
+            if (searchQuery.trim() !== '') {
+                window.location.href = `/search/?q=${encodeURIComponent(searchQuery)}`;
+            }
+        });
+    }
 });
 
-// Código para el efecto de máquina de escribir continuo en publicidades
+// Código para el efecto de máquina de escribir
 document.addEventListener('DOMContentLoaded', function() {
     const typewriterTexts = document.querySelectorAll('.typewriter-text');
     const adText = "PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM";
@@ -66,15 +79,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function typeWriterEffect(element, text, i, callback) {
         if (i < text.length) {
-            // Manejo de <br> para saltos de línea
             if (text.substring(i, i + 4) === "<br>") {
                 element.innerHTML += "<br>";
-                i += 4; // Saltar los caracteres de <br>
+                i += 4;
             } else {
                 element.innerHTML += text.charAt(i);
                 i++;
             }
-            timeouts.push(setTimeout(() => typeWriterEffect(element, text, i, callback), 50)); // Velocidad de tipeo
+            timeouts.push(setTimeout(() => typeWriterEffect(element, text, i, callback), 50));
         } else {
             callback();
         }
@@ -82,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function eraseEffect(element, callback) {
         let textContent = element.innerHTML;
-        // Quitar la clase del cursor si existe antes de borrar
         const cursor = element.querySelector('.typewriter-cursor');
         if (cursor) {
             cursor.remove();
@@ -91,18 +102,15 @@ document.addEventListener('DOMContentLoaded', function() {
         let i = textContent.length;
         function erase() {
             if (i >= 0) {
-                // Asegurarse de no borrar la etiqueta <br> si está al inicio o en el medio
                 if (textContent.substring(i - 4, i) === "<br>") {
-                    i -= 4; // Retroceder 4 para saltar el <br>
-                } else if (textContent.substring(i-1,i) === ">" && textContent.substring(i-4,i) !== "<br>") {
-                    // Esta lógica es para asegurar que no se borren tags a medias, podría ser más robusta
-                    // Por simplicidad, si encontramos un '>' que no es de <br>, vamos a retroceder hasta encontrar '<'
+                    i -= 4;
+                } else if (textContent.substring(i - 1, i) === ">" && textContent.substring(i - 4, i) !== "<br>") {
                     let temp_i = i;
-                    while(temp_i > 0 && textContent.charAt(temp_i-1) !== '<') {
+                    while (temp_i > 0 && textContent.charAt(temp_i - 1) !== '<') {
                         temp_i--;
                     }
-                    if (temp_i > 0 && textContent.charAt(temp_i-1) === '<') {
-                        i = temp_i -1; // Retroceder hasta antes del '<'
+                    if (temp_i > 0 && textContent.charAt(temp_i - 1) === '<') {
+                        i = temp_i - 1;
                     } else {
                         i--;
                     }
@@ -110,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     i--;
                 }
                 element.innerHTML = textContent.substring(0, i);
-                timeouts.push(setTimeout(erase, 25)); // Velocidad de borrado
+                timeouts.push(setTimeout(erase, 25));
             } else {
                 callback();
             }
@@ -119,37 +127,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function startTypingLoop(element) {
-        element.innerHTML = ''; // Limpiar contenido inicial
+        element.innerHTML = '';
         typeWriterEffect(element, adText, 0, () => {
-            // Añadir el cursor al final de la escritura (para que se vea como si esperara)
             element.innerHTML += '<span class="typewriter-cursor">|</span>';
-            timeouts.push(setTimeout(() => { // Pequeña pausa antes de borrar
+            timeouts.push(setTimeout(() => {
                 eraseEffect(element, () => {
-                    timeouts.push(setTimeout(() => startTypingLoop(element), 1000)); // Pausa antes de volver a escribir
+                    timeouts.push(setTimeout(() => startTypingLoop(element), 1000));
                 });
-            }, 2000)); // Pausa completa antes de borrar
+            }, 2000));
         });
     }
 
-    // MODIFICACIÓN CLAVE: Iterar sobre todos los elementos '.typewriter-text'
-    // Pero solo aplicar el efecto de máquina de escribir si NO están dentro de un '.advertising-block-small'
     typewriterTexts.forEach(element => {
-        // 'closest()' busca el ancestro más cercano con la clase especificada.
-        // Si element.closest('.advertising-block-small') devuelve null, significa que no está dentro de uno.
         if (element.closest('.advertising-block-small')) {
-            // Si el elemento '.typewriter-text' está dentro de '.advertising-block-small',
-            // establecemos el texto completo de inmediato y sin animación.
             element.innerHTML = adText;
-            // Opcional: Asegúrate de que el cursor CSS no se muestre en estos bloques.
-            // Esto se hace con CSS: .advertising-block-small .typewriter-cursor { display: none; }
         } else {
-            // Si el elemento '.typewriter-text' NO está dentro de '.advertising-block-small',
-            // se aplica el efecto normal de máquina de escribir.
             startTypingLoop(element);
         }
     });
 
-    // Limpiar timeouts al salir de la página
     window.addEventListener('beforeunload', () => {
         timeouts.forEach(timeout => clearTimeout(timeout));
     });
@@ -163,28 +159,25 @@ document.addEventListener('DOMContentLoaded', function() {
         const now = new Date();
         const optionsDate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         const optionsTime = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
-
         const dateString = now.toLocaleDateString('es-ES', optionsDate);
         const timeString = now.toLocaleTimeString('es-ES', optionsTime);
-
         datetimeSpan.textContent = `Edición: ${dateString.charAt(0).toUpperCase() + dateString.slice(1)} Hora ${timeString}`;
     }
 
     if (datetimeSpan) {
-        updateDateTime(); // Actualiza al cargar la página
-        setInterval(updateDateTime, 1000); // Actualiza cada segundo
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
     }
 });
 
-// Código para el encabezado que se achica al hacer scroll, SOLO EN ESCRITORIO
+// Código para el encabezado que se achica al hacer scroll
 document.addEventListener("DOMContentLoaded", function() {
-    const header = document.querySelector('.site-header'); // Selecciona tu encabezado
-    const scrollThreshold = 100; // Cuántos píxeles bajar antes de achicar el header
-    const desktopBreakpoint = 992; // El ancho mínimo para considerar "escritorio"
+    const header = document.querySelector('.site-header');
+    const scrollThreshold = 100;
+    const desktopBreakpoint = 992;
 
-    if (header) { // Asegúrate de que el encabezado existe antes de intentar manipularlo
+    if (header) {
         window.addEventListener('scroll', () => {
-            // Solo aplica el efecto si el ancho de la ventana es mayor que el breakpoint de escritorio
             if (window.innerWidth >= desktopBreakpoint) {
                 if (window.scrollY > scrollThreshold) {
                     header.classList.add('scrolled');
@@ -192,12 +185,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     header.classList.remove('scrolled');
                 }
             } else {
-                // Si estamos en móvil/tablet, asegúrate de que la clase 'scrolled' se elimine
                 header.classList.remove('scrolled');
             }
         });
 
-        // Asegurarse de que si se redimensiona a móvil, el header vuelva a su estado normal
         window.addEventListener('resize', () => {
             if (window.innerWidth < desktopBreakpoint) {
                 header.classList.remove('scrolled');
@@ -211,17 +202,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const popupContainer = document.getElementById('popup-ad-container');
     const closeButton = document.getElementById('popup-ad-close-button');
     const lastShownKey = 'lastPopupAdShown';
-    const displayInterval = 24 * 60 * 60 * 1000; // Muestra el pop-up cada 24 horas
+    const displayInterval = 24 * 60 * 60 * 1000;
 
     function showPopup() {
         if (popupContainer) {
-            // Primero asegura que está visible para la transición
-            popupContainer.style.display = 'flex'; 
-            // Pequeño retardo para asegurar que el navegador aplique 'display:flex'
-            // antes de aplicar la clase de transición.
+            popupContainer.style.display = 'flex';
             setTimeout(() => {
                 popupContainer.classList.add('is-visible');
-            }, 10); 
+            }, 10);
             localStorage.setItem(lastShownKey, Date.now());
         }
     }
@@ -229,10 +217,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function hidePopup() {
         if (popupContainer) {
             popupContainer.classList.remove('is-visible');
-            // Espera a que termine la transición de opacidad antes de ocultarlo completamente
             popupContainer.addEventListener('transitionend', function handler() {
                 popupContainer.style.display = 'none';
-                // Elimina el event listener para que no se ejecute múltiples veces
                 popupContainer.removeEventListener('transitionend', handler);
             });
         }
@@ -244,35 +230,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const lastShownTime = localStorage.getItem(lastShownKey);
         const currentTime = Date.now();
 
-        // Muestra el pop-up si nunca se ha mostrado O si ha pasado más de 24 horas desde la última vez
         if (!lastShownTime || (currentTime - lastShownTime > displayInterval)) {
-            // Aparecer a los 2 segundos de cargar la página (como lo solicitaste)
-            setTimeout(showPopup, 2000); // 2000 milisegundos = 2 segundos
+            setTimeout(showPopup, 2000);
         }
-    }
-});
-
-// Código para la funcionalidad del buscador en el menú móvil
-document.addEventListener("DOMContentLoaded", function() {
-    const mobileSearchInput = document.getElementById('search-input-mobile');
-    const mobileSearchButton = document.querySelector('.mobile-search-button');
-
-    if (mobileSearchInput && mobileSearchButton) {
-        function performSearch() {
-            const query = mobileSearchInput.value.trim();
-            if (query) {
-                // Esta es la URL a la que se redirigirá al usuario con la búsqueda.
-                // La parte `q=${encodeURIComponent(query)}` añade el término de búsqueda a la URL.
-                window.location.href = `/search/?q=${encodeURIComponent(query)}`;
-            }
-        }
-
-        mobileSearchInput.addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                performSearch();
-            }
-        });
-
-        mobileSearchButton.addEventListener('click', performSearch);
     }
 });

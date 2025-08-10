@@ -1,0 +1,15 @@
+---
+---
+[
+{% for post in site.posts %}
+  {
+    "id": "{{ post.url | slugify }}",
+    "title": "{{ post.title | escape }}",
+    "content": "{{ post.content | strip_html | strip_newlines | escape }}",
+    "url": "{{ site.baseurl }}{{ post.url }}",
+    "author": "{{ post.author | escape }}",
+    "date": "{{ post.date | date: "%Y-%m-%d" }}",
+    "category": "{{ post.category | escape }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

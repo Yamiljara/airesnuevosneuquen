@@ -8,15 +8,16 @@ permalink: /search/
   <div class="row">
     <div class="col-lg-8 offset-lg-2">
       <h1 class="text-center">Resultados de Búsqueda</h1>
-      <form id="search-form" class="mb-4">
+      <form id="search-form" class="mb-4" action="{{ site.baseurl }}/search/" method="get">
         <div class="input-group">
-          <input type="text" id="search-query" class="form-control" placeholder="Buscar...">
+          <input type="text" id="search-query" name="q" class="form-control" placeholder="Buscar..." autocomplete="off">
           <button type="submit" class="btn btn-primary">Buscar</button>
         </div>
       </form>
 
       <div id="search-results">
-        </div>
+        <p class="text-center mt-5 text-muted">Ingresa un término de búsqueda para ver los resultados.</p>
+      </div>
       <div id="no-results" style="display:none;" class="text-center mt-5">
         <p>No se encontraron resultados para tu búsqueda.</p>
       </div>
