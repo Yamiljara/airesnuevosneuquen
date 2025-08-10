@@ -1883,7 +1883,7 @@ img {
     color: var(--dark-blue);
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 40px; /* Aquí se modificó el valor */
     right: 15px;
     z-index: 2002;
     padding: 5px;
