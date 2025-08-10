@@ -52,5 +52,5 @@ La charla contó con una gran convocatoria, reafirmando el interés del público
 * Horarios: Martes a viernes de 9:30 a 20:00 hs. Sábados, domingos y feriados de 16:00 a 20:00 hs.
 * Visitas guiadas: Martes a viernes a las 12:00 hs. Martes a domingos a las 18:00 hs.
 
-\-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\-----------------------------------------------------------------------------------------------------------------------------------
 Esta nota se ha elaborado en base a información obtenida en comunicación con el Profesor Nicolás Padin. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.
