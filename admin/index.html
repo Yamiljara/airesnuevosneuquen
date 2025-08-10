@@ -9,7 +9,6 @@
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/cms.js"></script>
   <script src="https://unpkg.com/@decapcms/widget-wysiwyg@^3.0.0/dist/decap-cms-widget-wysiwyg.js"></script>
-
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   <script>
@@ -19,6 +18,36 @@
           window.netlifyIdentity.on("login", () => {
             document.location.href = "/admin/";
           });
+        }
+      });
+    }
+  </script>
+
+  <!-- Script para evitar que Decap CMS se rompa al pegar -->
+  <script>
+    if (window.CMS) {
+      // Pegar como texto plano
+      document.addEventListener('paste', function (e) {
+        if (e.clipboardData && e.target.closest('.CodeMirror')) {
+          const text = e.clipboardData.getData('text/plain');
+          if (text) {
+            e.preventDefault();
+            const cm = e.target.closest('.CodeMirror').CodeMirror;
+            cm.replaceSelection(text);
+          }
+        }
+      });
+
+      // Limpiar HTML antes de guardar
+      CMS.registerEventListener({
+        name: 'preSave',
+        handler: ({ entry }) => {
+          let body = entry.getIn(['data', 'body']);
+          if (body) {
+            body = body.replace(/<\/?[^>]+(>|$)/g, "");
+            return entry.setIn(['data', 'body'], body);
+          }
+          return entry;
         }
       });
     }
