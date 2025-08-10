@@ -1837,7 +1837,7 @@ img {
     width: 100%;
     height: 100%;
     /* Utiliza un fondo oscuro con transparencia para que se vea bien */
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 2000;
     display: none; /* Oculto por defecto */
     opacity: 0;
@@ -1887,6 +1887,37 @@ img {
     right: 15px;
     z-index: 2002;
     padding: 5px;
+}
+
+/* --- ESTILOS PARA EL BUSCADOR (NUEVO) --- */
+.mobile-search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mobile-search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.mobile-search-input:focus {
+    outline: none;
+    border-color: var(--primary-red);
+}
+
+.mobile-search-button {
+    background-color: var(--primary-red);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
 }
 
 /* Lista de navegación móvil */
