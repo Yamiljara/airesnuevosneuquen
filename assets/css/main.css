@@ -1851,21 +1851,20 @@ img {
 
 /* El menú principal (la caja blanca con los enlaces) */
 .mobile-nav-menu {
-    position: fixed; /* Se usa fixed para que ocupe todo el viewport */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Ancho del 100% de la pantalla */
-    height: 100vh; /* Alto del 100% de la pantalla */
-    background-color: var(--white); /* El fondo del menú es blanco */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
     padding: 20px;
+    padding-top: 60px; /* Este valor crea el espacio en la parte superior */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 0; /* Se eliminan los bordes redondeados para que cubra toda la pantalla */
+    border-radius: 0;
     z-index: 2001;
     overflow-y: auto;
-    /* Estas propiedades ocultan el menú por defecto con una transición */
     visibility: hidden;
     opacity: 0;
-    /* Se puede cambiar el 0.3s para ajustar la velocidad de la animación */
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -1883,7 +1882,7 @@ img {
     color: var(--dark-blue);
     cursor: pointer;
     position: absolute;
-    top: 10px; /* Se mantiene en la esquina superior */
+    top: 10px; /* Se mantiene en la parte superior del padding */
     right: 15px;
     z-index: 2002;
     padding: 5px;
@@ -1893,8 +1892,7 @@ img {
 .mobile-search-box {
     display: flex;
     align-items: center;
-    /* Se reduce el margen superior para que no ocupe tanto espacio */
-    margin-top: 25px; 
+    margin-top: 0; /* Se elimina el margen superior, ya que el padding-top lo maneja */
     margin-bottom: 20px;
 }
 
