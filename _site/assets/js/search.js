@@ -11,7 +11,7 @@
     let documents;
 
     function loadSearchIndex() {
-        fetch('{{ site.baseurl }}/search-index.json')
+        fetch('/search-index.json')
             .then(response => response.json())
             .then(data => {
                 documents = data;
@@ -81,7 +81,7 @@
                 window.location.href = `/search/?q=${encodeURIComponent(query)}`;
             }
         });
-        loadSearchIndex(); // Iniciar la carga del índice al entrar en la página de búsqueda
+        loadSearchIndex();
     }
 
     if (mobileSearchForm) {
