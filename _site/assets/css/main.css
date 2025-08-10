@@ -2915,3 +2915,17 @@ AJUSTE FINAL: Pop-up en móviles
         max-height: 80vh !important;
     }
 }
+
+/* --- SOLUCIÓN DEFINITIVA PARA EL BUSCADOR MÓVIL --- */
+/*
+ * Esto anula cualquier estilo que pueda estar deshabilitando
+ * el buscador y lo hace funcional cuando el menú está abierto.
+ */
+.mobile-nav-overlay.open .mobile-search-box * {
+    pointer-events: auto !important;
+}
+
+.mobile-nav-overlay.open .mobile-search-input,
+.mobile-nav-overlay.open .mobile-search-button {
+    pointer-events: auto !important;
+}
