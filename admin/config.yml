@@ -1,48 +1,42 @@
 # Configuración del Backend para Netlify Git Gateway
 backend:
   name: git-gateway
-  branch: main # O el nombre de tu rama principal (ej. master, si usas ese). Asegúrate que sea la rama que Netlify despliega.
+  branch: main
 
-# Configuración del sistema de autenticación
-auth_base: .netlify/identity # Ruta para Netlify Identity
-display_url: https://airesnuevosnqn.com # URL de tu sitio. ¡Asegúrate que esta sea tu URL real!
+auth_base: .netlify/identity
+display_url: https://airesnuevosnqn.com
 
-# Carpeta donde se subirán y gestionarán los archivos multimedia (imágenes, etc.)
-media_folder: "assets/images" # Ruta relativa a la raíz del proyecto. Todas las imágenes subidas irán a esta carpeta.
-public_folder: "/assets/images" # Ruta pública para acceder a las imágenes en tu sitio (lo que pones en <img src="...">).
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
-# Colecciones de contenido (Tus tipos de noticias)
 collections:
-  - name: "posts" # Nombre interno para esta colección (ej. "posts")
-    label: "Noticias" # Etiqueta que verás en el panel de Decap CMS para esta colección
-    folder: "_posts" # Carpeta donde se guardarán TODOS los archivos Markdown de noticias
-    create: true # Permite crear nuevas entradas en esta colección
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Formato de nombre de archivo (ej. 2025-07-30-mi-noticia.md)
+  - name: "posts"
+    label: "Noticias"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
-      preview: false # Deshabilita la previsualización en vivo. Puede ser útil si tu CSS es complejo y la previsualización no se ve bien.
-    fields: # Los campos que aparecerán en el formulario para cada noticia, coincidiendo con tu front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"} # Campo oculto, siempre será 'post'
+      preview: false
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Antetítulo", name: "antetitulo", widget: "string", required: true}
       - {label: "Título", name: "title", widget: "string", required: true}
-      - {label: "Autor", name: "author", widget: "string", default: "Redacción AIRESNUEVOSNQN"} # Valor por defecto para el autor
-      - {label: "Fecha de Publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", default: "{{cms_now | date 'YYYY-MM-DD HH:mm:ss Z'}}"} # Fecha y hora actual por defecto
-      - {label: "Categorías", name: "categories", widget: "list", default: ["ÚltimasNoticias"], hint: "Ej: Portada, Regionales, Política, Sociedad. La primera se usará para la URL de categoría y la navegación."}
-      - {label: "Tags", name: "tags", widget: "list", hint: "Palabras clave separadas por comas. Ej: Neuquén, Elecciones, Economía."}
-      - {label: "Noticia Principal de Portada", name: "featured", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como principal en la portada (imagen grande)."}
-      - {label: "Noticia Secundaria de Portada", name: "featured_secondary", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como secundaria en la portada (imagen mediana)."}
-      - {label: "Imagen", name: "image", widget: "image", required: true, hint: "La ruta se guardará relativa a /assets/images/. Sugerencia de tamaño: 800x600px (principal), 400x300px (secundaria), 400x225px (grillas)."}
-      - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
-      - {label: "Pie de Imagen", name: "image_caption", widget: "string", hint: "Breve descripción que aparecerá debajo de la imagen."}
-      # >>> INICIO DE CAMPOS DE SEO Y REDES SOCIALES <<<
-      - {label: "SEO Título", name: "meta_title", widget: "string", required: false, hint: "Título específico para buscadores (máx. 60 caracteres). Si está vacío, se usa el título de la noticia."}
-      - {label: "SEO Descripción", name: "meta_description", widget: "text", required: false, hint: "Resumen para buscadores y redes sociales (máx. 160 caracteres)."}
-      - {label: "Imagen para Redes Sociales", name: "social_image", widget: "image", required: false, hint: "Una imagen optimizada para compartir en redes. Si está vacía, se usará la imagen principal de la noticia."}
-      # >>> FIN DE CAMPOS DE SEO Y REDES SOCIALES <<<
-      - {label: "Copete", name: "copete", widget: "text", required: true} # Campo para el resumen de la noticia
-      - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
-      - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true} # ¡CAMBIADO A MARKDOWN!
+      - {label: "Autor", name: "author", widget: "string", default: "Redacción AIRESNUEVOSNQN"}
+      - {label: "Fecha de Publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", default: "{{cms_now | date 'YYYY-MM-DD HH:mm:ss Z'}}"}
+      - {label: "Categorías", name: "categories", widget: "list", default: ["ÚltimasNoticias"], hint: "Ej: Portada, Regionales, Política, Sociedad."}
+      - {label: "Tags", name: "tags", widget: "list", hint: "Palabras clave separadas por comas."}
+      - {label: "Noticia Principal de Portada", name: "featured", widget: "boolean", default: false}
+      - {label: "Noticia Secundaria de Portada", name: "featured_secondary", widget: "boolean", default: false}
+      - {label: "Imagen", name: "image", widget: "image", required: true}
+      - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true}
+      - {label: "Pie de Imagen", name: "image_caption", widget: "string"}
+      - {label: "SEO Título", name: "meta_title", widget: "string", required: false}
+      - {label: "SEO Descripción", name: "meta_description", widget: "text", required: false}
+      - {label: "Imagen para Redes Sociales", name: "social_image", widget: "image", required: false}
+      - {label: "Copete", name: "copete", widget: "text", required: true}
+      - {label: "Slug (URL amigable)", name: "slug", widget: "string"}
+      - {label: "Cuerpo de la Noticia", name: "body", widget: "markdown", required: true}
 
-# >>> INICIO DE COLECCIÓN 'PUBLICIDADES' (CORREGIDA) <<<
   - name: "ads"
     label: "Publicidades"
     files:
@@ -57,11 +51,10 @@ collections:
             collapsible: true
             identifier_field: "title"
             fields:
-              - {label: "Título (ID único)", name: "title", widget: "string", required: true, hint: "Debe ser el ID único del espacio (ej: 'publicidad_portada_superior_grande')."}
-              - {label: "Imagen (Desktop)", name: "image_desktop", widget: "image", required: false, hint: "La imagen para pantallas grandes."}
-              - {label: "Imagen (Mobile)", name: "image_mobile", widget: "image", required: false, hint: "La imagen para móviles (vertical)."}
-              - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
-              - {label: "URL de Destino", name: "url", widget: "string", required: true, hint: "La dirección web a la que el anuncio debe enlazar."}
-              - {label: "Fecha de Inicio", name: "start_date", widget: "datetime", required: false, hint: "Fecha a partir de la cual el anuncio debería mostrarse."}
-              - {label: "Fecha de Fin", name: "end_date", widget: "datetime", required: false, hint: "Fecha hasta la cual el anuncio debería mostrarse."}
-# >>> FIN DE COLECCIÓN 'PUBLICIDADES' (CORREGIDA) <<<
+              - {label: "Título (ID único)", name: "title", widget: "string", required: true}
+              - {label: "Imagen (Desktop)", name: "image_desktop", widget: "image", required: false}
+              - {label: "Imagen (Mobile)", name: "image_mobile", widget: "image", required: false}
+              - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true}
+              - {label: "URL de Destino", name: "url", widget: "string", required: true}
+              - {label: "Fecha de Inicio", name: "start_date", widget: "datetime", required: false}
+              - {label: "Fecha de Fin", name: "end_date", widget: "datetime", required: false}
