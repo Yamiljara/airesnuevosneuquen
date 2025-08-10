@@ -37,7 +37,7 @@ collections:
       - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
       - label: "Cuerpo de la Noticia"
         name: "body"
-        widget: "markdown"    # <-- Cambio aquí
+        widget: "markdown"    # <--- Cambio acá para evitar error WYSIWYG
         required: true
 
   - name: "ads"
