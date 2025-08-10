@@ -1858,7 +1858,7 @@ img {
     height: 100vh;
     background-color: var(--white);
     padding: 20px;
-    padding-top: 60px; /* Este valor crea el espacio en la parte superior */
+    padding-top: 45px; /* Este valor crea el espacio en la parte superior */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0;
     z-index: 2001;
