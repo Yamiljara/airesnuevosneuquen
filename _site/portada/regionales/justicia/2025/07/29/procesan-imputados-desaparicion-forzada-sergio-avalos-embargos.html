@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -321,11 +328,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/11/patagonia-del-vino-neuquen-capital-2025.html">Comienza hoy: Patagonia del vino, dos jornadas para disfrutar lo mejor del enoturismo regional en Neuquén Capital.</a></li>
+                    <li><a href="/portada/2025/06/14/river-gallardo-critica.html">La fuerte crítica de Gallardo a River tras el empate en Libertadores.</a></li>
                     
-                    <li><a href="/portada/2025/07/27/confederacion-mapuche-cuestionamiento-aliados-figueroa-v2.html">Confederación Mapuche de Neuquén y su cuestionamiento a los aliados del nuevo partido de Figueroa, a los que se los considera 'compañeros'.</a></li>
+                    <li><a href="/portada/2025/07/04/lula-visita-cristina-kirchner-domicilio.html">El presidente Lula visitó en su casa a la ex presidenta Cristina Kirchner: solidaridad histórica en un encuentro de alto impacto.</a></li>
                     
-                    <li><a href="/portada/2025/07/01/mapuches-denuncian-discriminacion-diario-funcionario.html">Mujeres de la Confederación Mapuche denuncian a medio local y a funcionario Nacional.</a></li>
+                    <li><a href="/portada/2025/08/03/La-Paradoja-de-Vaca-Muerta-Despidos-masivos-en-pleno-R%C3%A9cord-de-Producci%C3%B3n/html"> La paradoja de Vaca Muerta: Despidos masivos en pleno récord de producción.</a></li>
                     
                 </ul>
                 

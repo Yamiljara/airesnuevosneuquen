@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -289,11 +296,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/22/corte-gas-rincon-sauces-hidenesa-ypf-bentia.html">Corte de Gas en Rincón de los Sauces: HIDENESA deslinda responsabilidades y apunta a falta de inversión de YPF y Bentia Energy.</a></li>
+                    <li><a href="/portada/2025/07/13/dolar-riesgo-pais-economia-consumo.html">El dólar cerró la semana con subas en todas sus cotizaciones y el riesgo país cae a 692 puntos, mientras persiste la preocupación por el consumo y la morosidad.</a></li>
                     
-                    <li><a href="/portada/2025/07/04/inauguraci%C3%B3n-record-cepem-los-catutos.html">Los Catutos: Figueroa inauguró el nuevo CPEM 104 con una inversión de $700 millones.</a></li>
+                    <li><a href="/portada/2025/07/30/cutral-co-formar-formadores-genero-frustracion.html">Cutral Co: 'Formar a los Formadores' Profundiza en género y gestión de frustraciones en el deporte infantil.</a></li>
                     
-                    <li><a href="/portada/2025/07/23/marcha-neuquen-apoyo-pueblo-mapuce.html">La sociedad neuquina marcha en apoyo al pueblo Mapuce: Convocatoria masiva para exigir justicia y el cumplimiento de derechos.</a></li>
+                    <li><a href="/portada/2025/07/08/gobierno-disuelve-organismos-publicos.html">Gobierno oficializa la disolución de 21 organismos públicos en el marco de su política de 'motosierra' y ajuste del gasto.</a></li>
                     
                 </ul>
                 

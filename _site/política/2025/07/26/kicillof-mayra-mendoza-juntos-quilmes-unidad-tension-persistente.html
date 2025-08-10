@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -293,11 +300,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/pol%C3%ADtica/2025/07/22/reeleccion-marcelo-rucci-petroleros-privados.html">Reelección Sin Oposición: Con Lista Única, Marcelo Rucci Continuará al Frente de Petroleros Privados.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/07/20/cesar-godoy-repudia-desalojo-mapuches-neuquen.html">Sin diálogo, a ningún lado: César Godoy repudia el desalojo de comunidades mapuches en Neuquén.</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/06/29/el-llamado-de-cesar-godoy-al-peronismo-neuquino.html">La experiencia y el liderazgo al servicio de la juventud: El llamado de César Godoy a los dirigentes de peso en el peronismo Neuquino, como estrategia para conquistar Octubre.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/07/14/elecciones-nacionales-2025-neuquen-lista-figueroa.html">La 'Neuquinidad' oficializó sus candidatos: Julieta Corroza y Carina Maureira encabezan las listas al congreso.</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/07/28/se-lanzo-fuerza-patria-neuquen-frente-peronista-legislativas.html">Se lanzó en Neuquén el frente electoral Fuerza Patria, y aún no define candidatos.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/06/20/jesica-rioseco-marcha-cristina-kirchner-provinciales.html">La referente del Frente y La Participación Neuquina, y concejal de Cutral Co, Jesica Rioseco se sumó a la masiva marcha en apoyo a Cristina Kirchner.</a></li>
                     
                 </ul>
                 

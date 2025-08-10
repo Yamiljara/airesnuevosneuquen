@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -291,9 +298,9 @@
                     
                     <li><a href="/nacionales/2025/06/16/el-dia-que-la-aviacion-naval-bombardeo-la-plaza-de-mayo.html">El día que la aviación naval bombardeó la Plaza de Mayo y marcó a fuego la historia argentina.</a></li>
                     
-                    <li><a href="/nacionales/2025/06/15/cristina-kirchner-causa-vialidad-nacionales.html">La Corte Suprema confirma condena a Cristina Kirchner en Causa Vialidad</a></li>
+                    <li><a href="/nacionales/2025/07/25/represion-protesta-social-se-agrava-argentina.html">La represión a la protesta social se agrava en Argentina: más heridos y detenidos en el primer semestre de 2025 que en todo 2024.</a></li>
                     
-                    <li><a href="/nacionales/2025/07/03/dia-del-locutor-argentino-2025.html">¡Feliz Día del Locutor! La Argentina celebra a quienes dan vida a la palabra.</a></li>
+                    <li><a href="/nacionales/2025/07/16/cristina-kirchner-lanzara-microprograma-cristina-de-radio.html">Confirmado: Cristina Kirchner Lanzará su Propio Microprograma Radial y Audiovisual "Cristina de Radio".</a></li>
                     
                 </ul>
                 

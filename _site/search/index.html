@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -117,7 +124,7 @@
   <div class="row">
     <div class="col-lg-8 offset-lg-2">
       <h1 class="text-center">Resultados de Búsqueda</h1>
-      <form id="search-form" class="mb-4" action="/search/" method="get">
+     <form id="search-form" class="mb-4" action="/search/" method="get">
         <div class="input-group">
           <input type="text" id="search-query" name="q" class="form-control" placeholder="Buscar..." autocomplete="off">
           <button type="submit" class="btn btn-primary">Buscar</button>

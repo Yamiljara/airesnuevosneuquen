@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -287,11 +294,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/02/elon-musk-milei.html">Elon musk reconoce autocrítica sobre su relación con Javier Milei en medio de disputa con Donald Trump.</a></li>
+                    <li><a href="/portada/2025/07/04/lula-visita-cristina-kirchner-domicilio.html">El presidente Lula visitó en su casa a la ex presidenta Cristina Kirchner: solidaridad histórica en un encuentro de alto impacto.</a></li>
                     
-                    <li><a href="/portada/2025/07/11/neuquen-marcha-masiva-verdad-justicia-alison-calfunao.html">La comunidad de Neuquén se movilizó por Alison Calfunao y exige Verdad y Justicia.</a></li>
+                    <li><a href="/portada/2025/07/08/mundial-clubes-fifa-semifinales.html">Semifinales del mundial de clubes FIFA 2025: Duelos decisivos con horario Argentino y los cuatro gigantes en busca de la final.</a></li>
                     
-                    <li><a href="/portada/2025/07/22/victor-hugo-morales-critica-clarin-mapuches-neuquen.html">Víctor Hugo Morales volvió a la TV y lanzó duras acusaciones contra el Grupo Clarín por su cobertura sobre las comunidades Mapuche en Neuquén.</a></li>
+                    <li><a href="/portada/2025/07/28/humanos-superan-ia-olimpiada-matematicas.html">Humanos Superaron a la Inteligencia Artificial en la Principal Competencia Mundial de Matemáticas.</a></li>
                     
                 </ul>
                 

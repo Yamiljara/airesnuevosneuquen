@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -288,11 +295,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/regionales/rinc%C3%B3ndelossauces/justicia/seguridad/2025/07/29/robo-marisol-ortega-rincon-sauces-seguridad-justicia.html">Referente del PRO en Rincón de los Sauces, sufrió un robo en su domicilio y reclamo más seguridad y justicia.</a></li>
+                    <li><a href="/portada/2025/08/01/Neuqu%C3%A9n-es-sede-del-segundo-encuentro-internacional-de-Geoturismo,-Geoparques-y-Volcanes-en-la-singular-regi%C3%B3n-de-Caviahue-Copahue/html">Neuquén es sede del Segundo Encuentro Internacional de Geoturismo, Geoparques y Volcanes en la singular región de Caviahue-Copahue.</a></li>
                     
-                    <li><a href="/portada/2025/07/26/rioseco-confirmo-artistas-nacionales-tremn-tahuen-grilla.html">Rioseco confirmó la participación de artistas nacionales en el Tremn Tahuen: Soledad, Lázaro Caballero y Galleguillo encabezan la grilla.</a></li>
+                    <li><a href="/portada/2025/07/05/ampliacion-gasoducto-patagonico.html">Gasoducto Patagónico: Acuerdo histórico para llevar gas a 12.000 hogares.</a></li>
                     
-                    <li><a href="/portada/2025/07/16/comunidades-mapuche-encadenadas-reclamo-neuquen.html">Sin respuestas: Comunidades mapuche siguen encadenadas en la casa de gobierno y cuestionan el mensaje oficial del gobernador de la "Paz Social".</a></li>
+                    <li><a href="/portada/2025/08/05/La-UNCo-inaugur%C3%B3-su-nueva-sede-en-el-Alto-Neuqu%C3%A9n-con-una-oferta-acad%C3%A9mica-vinculada-a-la-regi%C3%B3n/html">La UNCo inauguró su nueva sede en el Alto Neuquén con una oferta académica vinculada a la región.</a></li>
                     
                 </ul>
                 

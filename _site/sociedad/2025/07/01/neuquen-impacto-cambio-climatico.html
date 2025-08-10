@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -297,11 +304,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/sociedad/2025/07/17/congreso-federal-prevencion-adicciones-san-martin-de-los-andes.html">San Martín de los Andes será sede de un encuentro nacional contra los consumos problemáticos.</a></li>
+                    <li><a href="/sociedad/2025/07/26/represion-comunidades-mapuche-vaca-muerta-cronica.html">“No les importó si había niños ni mujeres mayores”, relatos de la represión a comunidades mapuce de Vaca Muerta.</a></li>
                     
-                    <li><a href="/sociedad/2025/07/29/suspension-clases-eatm-neuquen-falta-calefaccion.html">Continúa la suspensión de clases en la EATM - Escuela de Auxiliares Técnicos de la Medicina de Neuquén, sumando cuatro días sin calefacción.</a></li>
+                    <li><a href="/sociedad/2025/07/23/alumine-reclamo-habitacional-olla-popular.html">Aluminé: Vecinos exigen a la Municipalidad declarar la emergencia habitacional y sostienen su reclamo con una olla popular frente al edificio municipal.</a></li>
                     
-                    <li><a href="/sociedad/2025/07/28/medidas-legales-contra-clinica-san-lucas-caso-alison-jofre.html">Ante la falta de respuesta a la familia de Alison, impulsan nuevas medidas legales contra Clínica San Lucas.</a></li>
+                    <li><a href="/sociedad/2025/07/26/mariano-mansilla-avances-causas-alison-calfunao-estafa-cooperativa-127-hectareas.html">Mariano Mansilla detalla avances en causas claves: el caso Alison Calfunao y la estafa de Cooperativa 127 Hectáreas.</a></li>
                     
                 </ul>
                 

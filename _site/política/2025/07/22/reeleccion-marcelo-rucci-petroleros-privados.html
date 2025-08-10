@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -285,11 +292,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/pol%C3%ADtica/2025/06/15/cesar-godoy-peronismo-neuquino.html">César Godoy se consolida como figura ascendente en el peronismo neuquino</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/06/15/polemica-juliana-santillan-indec.html">Polémica de la diputada Santillán por cifras de pobreza</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/07/20/cesar-godoy-repudia-desalojo-mapuches-neuquen.html">Sin diálogo, a ningún lado: César Godoy repudia el desalojo de comunidades mapuches en Neuquén.</a></li>
+                    <li><a href="/nacionales/econom%C3%ADa/pol%C3%ADtica/agro/2025/07/26/milei-anuncio-reduccion-retenciones-carne-soja-granos.html">Milei anunció la 'reducción' de las retenciones a la carne, soja y otros granos.</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/08/03/Milei-y-la-Escuela-Austr%C3%ADaca-Novedad-Disruptiva-o-Radicalizaci%C3%B3n-Hist%C3%B3rica.html">Milei y la Escuela Austríaca: ¿Novedad Disruptiva o Radicalización Histórica? ¿Liberalismo clásico ó Anarcocapitalismo?</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/07/18/la-neuquinidad-lista-unica-candidatos-figueroa.html">Lista única de 'La Neuquinidad' para octubre: Rolando Figueroa confirma que no habrá internas.</a></li>
                     
                 </ul>
                 

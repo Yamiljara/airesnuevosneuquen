@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -302,11 +309,11 @@ Esta nota fue elaborada a partir de fuentes verificadas analisis públicos de ec
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/03/aguada-san-roque-audiencias-explosion-escuela.html">Aguada San Roque: Continúan audiencias por explosión en Escuela 144 y reclamo de justicia.</a></li>
+                    <li><a href="/portada/2025/07/08/causa-vialidad-cristina-kirchner-domiciliaria.html">Causa Vialidad: Fiscal retira pedido para que Cristina Kirchner vaya a cárcel común y consolida domiciliaria.</a></li>
                     
-                    <li><a href="/portada/2025/07/28/humanos-superan-ia-olimpiada-matematicas.html">Humanos Superaron a la Inteligencia Artificial en la Principal Competencia Mundial de Matemáticas.</a></li>
+                    <li><a href="/portada/2025/07/02/elon-musk-milei.html">Elon musk reconoce autocrítica sobre su relación con Javier Milei en medio de disputa con Donald Trump.</a></li>
                     
-                    <li><a href="/portada/2025/07/18/alumine-asentamiento-40-dias-cerco-policial-abusos.html">Aluminé: Un asentamiento espontáneo cumple más de 40 días bajo cerco policial y denuncias de abuso de autoridad.</a></li>
+                    <li><a href="/portada/2025/07/14/luz-fuerza-rio-negro-neuquen-aniversario-fatlyf.html">Día del trabajador de la energía eléctrica y 77º aniversario de la FATLyF: Luz y Fuerza de Río Negro y Neuquén Defiende Puestos y Convenio.</a></li>
                     
                 </ul>
                 

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -318,11 +325,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/08/06/Intervenci%C3%B3n-a-la-Cooperativa-127-Hect%C3%A1reas.html">Intervención a la Cooperativa 127 Hectáreas: Un respiro para las familias damnificadas por estafas.</a></li>
+                    <li><a href="/portada/2025/08/05/La-UNCo-inaugur%C3%B3-su-nueva-sede-en-el-Alto-Neuqu%C3%A9n-con-una-oferta-acad%C3%A9mica-vinculada-a-la-regi%C3%B3n/html">La UNCo inauguró su nueva sede en el Alto Neuquén con una oferta académica vinculada a la región.</a></li>
                     
-                    <li><a href="/portada/2025/06/10/ramon-rioseco-corte-suprema.html">No cayó un fallo, cayó un velo: Rioseco apuntó duramente contra la corte suprema por la confirmación de la condena a Cristina Kirchner</a></li>
+                    <li><a href="/portada/2025/07/21/jovenes-neuquinos-proyectar-futuro-espacio-duam.html">Jóvenes neuquinos se reunirán en el Espacio DUAM para 'Proyectar Futuro' con apoyo provincial.</a></li>
                     
-                    <li><a href="/portada/2025/07/02/mundial-clubes-fifa-2025-cuartos.html">Mundial de Clubes FIFA 2025: Batacazos y cruces confirmados de cuartos de final tras el avance de borussia dortmund.</a></li>
+                    <li><a href="/portada/2025/07/04/lula-visita-cristina-kirchner-domicilio.html">El presidente Lula visitó en su casa a la ex presidenta Cristina Kirchner: solidaridad histórica en un encuentro de alto impacto.</a></li>
                     
                 </ul>
                 

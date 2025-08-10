@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -289,11 +296,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/31/temporal-aisla-norte-neuquino-sin-luz-agua-e-internet-fuertes-vientos-nieve.html">Temporal aísla al norte neuquino: Sin Luz, agua e internet por fuertes vientos y nieve.</a></li>
+                    <li><a href="/portada/2025/07/23/encuestas-zuban-cordoba-antimileismo-mayoria.html">Encuestas de Zuban / Córdoba: El 'Antimileísmo' es mayoría, pero su voto no encuentra un cauce único.</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/portada/2025/07/29/unidad-popular-neuquen-candidaturas-propias-legislativas.html">Unidad Popular Neuquén confirma que irá a la elección de octubre con candidatos genuinos para diputados y senadores nacionales.</a></li>
+                    <li><a href="/portada/2025/07/13/dolar-riesgo-pais-economia-consumo.html">El dólar cerró la semana con subas en todas sus cotizaciones y el riesgo país cae a 692 puntos, mientras persiste la preocupación por el consumo y la morosidad.</a></li>
                     
-                    <li><a href="/portada/2025/08/02/a-dos-meses-asesinato-franco-ramirez.html">A 2 meses del asesinato de Franco Ramírez: Loncopué marchó por justicia y la familia pide cambio de carátula en el expediente del caso.</a></li>
+                    <li><a href="/portada/2025/07/16/comunidades-mapuche-encadenadas-reclamo-neuquen.html">Sin respuestas: Comunidades mapuche siguen encadenadas en la casa de gobierno y cuestionan el mensaje oficial del gobernador de la "Paz Social".</a></li>
                     
                 </ul>
                 

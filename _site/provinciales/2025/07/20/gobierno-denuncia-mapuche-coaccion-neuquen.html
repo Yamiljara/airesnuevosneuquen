@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -293,11 +300,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/provinciales/2025/07/11/neuquen-figueroa-solicita-renuncia-gutierrez-ypf.html">Rolando Figueroa solicitó la renuncia 'inmediata' de Omar Gutiérrez al directorio de YPF</a></li>
-                    
                     <li><a href="/provinciales/2025/07/13/figueroa-aniversario-zapala-neuquinidad-obra-publica.html">Figueroa encabezó el 112º aniversario de Zapala con un fuerte mensaje a favor de la "Neuquinidad" y la abra pública.</a></li>
                     
-                    <li><a href="/provinciales/2025/07/23/diputado-bermudez-avalo-accion-policial-represion-mapuce.html">El Diputado Marcelo Bermúdez justifica la acción de la policía ante la represión a las comunidades Mapuches.</a></li>
+                    <li><a href="/provinciales/2025/07/11/neuquen-figueroa-solicita-renuncia-gutierrez-ypf.html">Rolando Figueroa solicitó la renuncia 'inmediata' de Omar Gutiérrez al directorio de YPF</a></li>
+                    
+                    <li><a href="/provinciales/2025/06/21/obra-gas-gua%C3%B1acos-alto-neuquen.html">Guañacos celebró la llegada del gas natural, una obra clave para la equidad territorial.</a></li>
                     
                 </ul>
                 

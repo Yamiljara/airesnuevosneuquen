@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -294,11 +301,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/27/referentes-up-neuquen-visitaron-asentamiento-31-mayo-productores-alumine.html">Referentes de UP Neuquén visitaron el asentamiento '31 de Mayo' y se reunieron con productores de Aluminé.</a></li>
+                    <li><a href="/portada/2025/07/22/corte-gas-rincon-sauces-hidenesa-ypf-bentia.html">Corte de Gas en Rincón de los Sauces: HIDENESA deslinda responsabilidades y apunta a falta de inversión de YPF y Bentia Energy.</a></li>
                     
-                    <li><a href="/portada/2025/08/02/Denuncian-Falta-de-Transparencia-en-Cierre-Contable/html">Denuncian Falta de Transparencia en Cierre Contable: "Nuestro compromiso con los vecinos es ser transparentes con los fondos públicos", afirmó el concejal Sepúlveda.</a></li>
+                    <li><a href="/portada/2025/07/26/camioneros-levanto-paro-vaca-muerta-conciliacion-obligatoria.html">Camioneros levantó el paro en Vaca Muerta tras extensión de la conciliación obligatoria.</a></li>
                     
-                    <li><a href="/portada/2025/07/24/formacion-cuidados-gerontologicos-colipilli.html">La Formación en cuidados Gerontológicos avanza con enfoque intercultural y validez nacional en Colipilli.</a></li>
+                    <li><a href="/portada/2025/07/28/liga-profesional-jornada-empates-clausura-2025.html">Liga Profesional: Jornada de Empates y Marcadores Ajustados este Fin de Semana.</a></li>
                     
                 </ul>
                 

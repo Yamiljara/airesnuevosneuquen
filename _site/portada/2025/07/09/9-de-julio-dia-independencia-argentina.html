@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -287,11 +294,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/27/funcionario-rincon-sauces-se-presento-justicia-investigado-lesiones.html">Funcionario de Rincón de los Sauces se presentó ante la justicia tras ser investigado por lesiones.</a></li>
+                    <li><a href="/portada/2025/07/23/marcha-neuquen-apoyo-pueblo-mapuce.html">La sociedad neuquina marcha en apoyo al pueblo Mapuce: Convocatoria masiva para exigir justicia y el cumplimiento de derechos.</a></li>
                     
-                    <li><a href="/portada/2025/07/15/chapelco-acuerdo-laboral-continuidad-trabajadores.html">Chapelco: Acuerdo clave garantiza la continuidad laboral de 200 trabajadores y sus derechos.</a></li>
+                    <li><a href="/portada/2025/08/07/Nuevas-Egresadas-de-la-Tecnicatura-en-Gastronom%C3%ADa-en-Loncopu%C3%A9.html">Loncopué tiene nuevas egresadas de la Tecnicatura en Gastronomía.</a></li>
                     
-                    <li><a href="/portada/2025/06/14/river-gallardo-critica.html">La fuerte crítica de Gallardo a River tras el empate en Libertadores.</a></li>
+                    <li><a href="/portada/2025/07/12/el-experimento-milei-crisis-sociologica.html">El Experimento Milei: La Profundización de la crisis más allá de lo económico. Un Análisis Sociológico.</a></li>
                     
                 </ul>
                 

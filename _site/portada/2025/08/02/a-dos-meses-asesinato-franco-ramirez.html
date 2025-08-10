@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -308,11 +315,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/03/mapuche-reclamo-personeria-juridica-neuquen.html">Comunidades mapuches reclamaron en casa de gobierno de Neuquén por personería jurídica.</a></li>
+                    <li><a href="/portada/2025/08/08/cesar-godoy-candidato-diputado-peronismo-neuquen.html">Fuerte rumor en Neuquén: César Godoy, el candidato a diputado nacional del peronismo.</a></li>
                     
-                    <li><a href="/portada/2025/08/06/Ley-de-arrendamientos-Rurales-que-es.html">Ley de arrendamientos Rurales: el debate que se abre y toma fuerza en Argentina. ¿Qué es?</a></li>
+                    <li><a href="/portada/2025/07/26/eva-peron-siete-decadas-fallecimiento-legado-evita-sigue-marcando-politica-argentina.html">Eva Perón: a siete décadas de su paso a la inmortalidad, el legado de Evita sigue marcando la política argentina.</a></li>
                     
-                    <li><a href="/portada/2025/07/25/alerta-roja-neuquen-nevadas-frio-extremo.html">Alerta Roja en Neuquén: la provincia se prepara para un fin de semana de nevadas y mucho frío.</a></li>
+                    <li><a href="/portada/2025/08/01/Hoy-es-el-D%C3%ADa-de-la-Pachamama-Rituales-y-gratitud-a-la-Madre-Tierra,-con-la-tradicional-ca%C3%B1a-con-ruda/html">Hoy es el Día de la Pachamama: Rituales y gratitud a la Madre Tierra, con la tradicional caña con ruda. </a></li>
                     
                 </ul>
                 

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -294,11 +301,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/12/el-experimento-milei-crisis-sociologica.html">El Experimento Milei: La Profundización de la crisis más allá de lo económico. Un Análisis Sociológico.</a></li>
+                    <li><a href="/portada/2025/07/10/final-mundial-clubes-psg-chelsea.html">¡Definida la Final del Mundial de Clubes 2025! PSG y Chelsea se enfrentarán en Nueva Jersey el 13 de Julio.</a></li>
                     
-                    <li><a href="/portada/2025/07/23/cutral-co-modulo-3-formar-formadores-deporte-infantil.html">Cutral Co: Comenzará el Módulo 3 de 'Formar a los Formadores', clave para el deporte infantil y comunitario.</a></li>
+                    <li><a href="/portada/2025/07/03/discapacidad-inclusion-villa-la-angostura.html">Autoridades articulan trabajo por los derechos de Personas con Discapacidad en Villa La Angostura.</a></li>
                     
-                    <li><a href="/portada/2025/07/30/municipales-el-huecu-reclamo-salarial.html">Empleados municipales de El Huecú, respaldados por el sindicato de ATE, exigen mejoras salariales.</a></li>
+                    <li><a href="/portada/2025/08/01/Neuqu%C3%A9n-es-sede-del-segundo-encuentro-internacional-de-Geoturismo,-Geoparques-y-Volcanes-en-la-singular-regi%C3%B3n-de-Caviahue-Copahue/html">Neuquén es sede del Segundo Encuentro Internacional de Geoturismo, Geoparques y Volcanes en la singular región de Caviahue-Copahue.</a></li>
                     
                 </ul>
                 

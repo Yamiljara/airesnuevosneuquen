@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -327,11 +334,11 @@ La narrativa heroica de la “libertad” se desmorona entre inflación reprimid
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/13/bodega-agua-de-fuego-cutral-co-patagonia-del-vino.html">Bodega de Cutral Co, Agua de Fuego participó en "Patagonia del Vino": Un ejemplo de diversificación productiva en la comarca petrolera.</a></li>
+                    <li><a href="/portada/2025/07/25/alerta-roja-neuquen-nevadas-frio-extremo.html">Alerta Roja en Neuquén: la provincia se prepara para un fin de semana de nevadas y mucho frío.</a></li>
                     
-                    <li><a href="/portada/2025/07/03/aguada-san-roque-audiencias-explosion-escuela.html">Aguada San Roque: Continúan audiencias por explosión en Escuela 144 y reclamo de justicia.</a></li>
+                    <li><a href="/portada/2025/07/11/neuquen-marcha-masiva-verdad-justicia-alison-calfunao.html">La comunidad de Neuquén se movilizó por Alison Calfunao y exige Verdad y Justicia.</a></li>
                     
-                    <li><a href="/portada/2025/07/31/temporal-aisla-norte-neuquino-sin-luz-agua-e-internet-fuertes-vientos-nieve.html">Temporal aísla al norte neuquino: Sin Luz, agua e internet por fuertes vientos y nieve.</a></li>
+                    <li><a href="/portada/2025/07/24/formacion-cuidados-gerontologicos-colipilli.html">La Formación en cuidados Gerontológicos avanza con enfoque intercultural y validez nacional en Colipilli.</a></li>
                     
                 </ul>
                 

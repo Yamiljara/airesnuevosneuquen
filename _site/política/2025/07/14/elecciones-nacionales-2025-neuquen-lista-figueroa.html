@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -307,9 +314,9 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/pol%C3%ADtica/2025/07/03/laura-sarabia-renuncia-cancilleria-colombia-(2).html">La Ex Canciller de Colombia Laura Sarabia se aparta del cargo por diferencias con decisiones gubernamentales.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/08/06/La-C%C3%A1mara-de-Diputados-aprob%C3%B3-la-ley-de-emergencia-pedi%C3%A1trica.html">La Cámara de Diputados aprobó la ley de emergencia pediátrica en medio de protestas y represión en las calles.</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/06/29/el-llamado-de-cesar-godoy-al-peronismo-neuquino.html">La experiencia y el liderazgo al servicio de la juventud: El llamado de César Godoy a los dirigentes de peso en el peronismo Neuquino, como estrategia para conquistar Octubre.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/07/20/cesar-godoy-repudia-desalojo-mapuches-neuquen.html">Sin diálogo, a ningún lado: César Godoy repudia el desalojo de comunidades mapuches en Neuquén.</a></li>
                     
                     <li><a href="/pol%C3%ADtica/portada/2025/07/29/unidad-popular-neuquen-candidaturas-propias-legislativas.html">Unidad Popular Neuquén confirma que irá a la elección de octubre con candidatos genuinos para diputados y senadores nacionales.</a></li>
                     

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -290,11 +297,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/08/causa-vialidad-cristina-kirchner-domiciliaria.html">Causa Vialidad: Fiscal retira pedido para que Cristina Kirchner vaya a cárcel común y consolida domiciliaria.</a></li>
+                    <li><a href="/portada/2025/07/02/elon-musk-milei.html">Elon musk reconoce autocrítica sobre su relación con Javier Milei en medio de disputa con Donald Trump.</a></li>
                     
-                    <li><a href="/portada/2025/07/11/patagonia-del-vino-neuquen-capital-2025.html">Comienza hoy: Patagonia del vino, dos jornadas para disfrutar lo mejor del enoturismo regional en Neuquén Capital.</a></li>
+                    <li><a href="/portada/2025/07/11/neuquen-marcha-masiva-verdad-justicia-alison-calfunao.html">La comunidad de Neuquén se movilizó por Alison Calfunao y exige Verdad y Justicia.</a></li>
                     
-                    <li><a href="/portada/2025/06/14/river-gallardo-critica.html">La fuerte crítica de Gallardo a River tras el empate en Libertadores.</a></li>
+                    <li><a href="/portada/2025/07/27/confederacion-mapuche-cuestionamiento-aliados-figueroa-v2.html">Confederación Mapuche de Neuquén y su cuestionamiento a los aliados del nuevo partido de Figueroa, a los que se los considera 'compañeros'.</a></li>
                     
                 </ul>
                 

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -298,11 +305,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/08/05/La-UNCo-inaugur%C3%B3-su-nueva-sede-en-el-Alto-Neuqu%C3%A9n-con-una-oferta-acad%C3%A9mica-vinculada-a-la-regi%C3%B3n/html">La UNCo inauguró su nueva sede en el Alto Neuquén con una oferta académica vinculada a la región.</a></li>
+                    <li><a href="/portada/2025/07/27/funcionario-rincon-sauces-se-presento-justicia-investigado-lesiones.html">Funcionario de Rincón de los Sauces se presentó ante la justicia tras ser investigado por lesiones.</a></li>
                     
-                    <li><a href="/portada/2025/07/26/eva-peron-siete-decadas-fallecimiento-legado-evita-sigue-marcando-politica-argentina.html">Eva Perón: a siete décadas de su paso a la inmortalidad, el legado de Evita sigue marcando la política argentina.</a></li>
+                    <li><a href="/portada/2025/07/11/neuquen-marcha-masiva-verdad-justicia-alison-calfunao.html">La comunidad de Neuquén se movilizó por Alison Calfunao y exige Verdad y Justicia.</a></li>
                     
-                    <li><a href="/portada/2025/07/26/camioneros-levanto-paro-vaca-muerta-conciliacion-obligatoria.html">Camioneros levantó el paro en Vaca Muerta tras extensión de la conciliación obligatoria.</a></li>
+                    <li><a href="/portada/2025/07/22/corte-gas-rincon-sauces-hidenesa-ypf-bentia.html">Corte de Gas en Rincón de los Sauces: HIDENESA deslinda responsabilidades y apunta a falta de inversión de YPF y Bentia Energy.</a></li>
                     
                 </ul>
                 

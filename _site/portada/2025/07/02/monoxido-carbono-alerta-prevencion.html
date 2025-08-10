@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -322,11 +329,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/14/pacto-climatico-provincias-argentinas-cordoba.html">Provincias argentinas sellaron compromiso ambiental en Córdoba, desafiando el negacionismo nacional y priorizando el financiamiento climático.</a></li>
+                    <li><a href="/portada/2025/07/01/principios-valores-peronismo-neuquino.html">La mirada de Grabiel Robles del partido Principios y Valores y un llamado a la 'Causa del Pueblo'.</a></li>
                     
-                    <li><a href="/portada/2025/07/14/luz-fuerza-rio-negro-neuquen-aniversario-fatlyf.html">Día del trabajador de la energía eléctrica y 77º aniversario de la FATLyF: Luz y Fuerza de Río Negro y Neuquén Defiende Puestos y Convenio.</a></li>
+                    <li><a href="/portada/2025/08/01/Hoy-es-el-D%C3%ADa-de-la-Pachamama-Rituales-y-gratitud-a-la-Madre-Tierra,-con-la-tradicional-ca%C3%B1a-con-ruda/html">Hoy es el Día de la Pachamama: Rituales y gratitud a la Madre Tierra, con la tradicional caña con ruda. </a></li>
                     
-                    <li><a href="/portada/2025/08/09/lucha-mapuche-defensa-ambiente-contaminacion-neuquen.html">"La lucha del pueblo mapuche se centra en la protección del medio ambiente y la vida ante la contaminación", dijo el logko Nelson Cárdenas.</a></li>
+                    <li><a href="/portada/2025/08/03/Entregaron-diez-nuevas-viviendas-a-familias-en-Las-Ovejas.html">Entregaron diez nuevas viviendas a familias en Las Ovejas</a></li>
                     
                 </ul>
                 

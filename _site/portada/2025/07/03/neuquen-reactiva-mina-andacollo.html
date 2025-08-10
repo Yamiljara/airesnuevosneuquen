@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -286,11 +293,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/15/unco-53-aniversario-educacion-patagonia.html">La Universidad Nacional del Comahue celebra su 53º aniversario como pilar de la educación pública y regional en la patagonia</a></li>
+                    <li><a href="/portada/2025/07/03/mapuche-reclamo-personeria-juridica-neuquen.html">Comunidades mapuches reclamaron en casa de gobierno de Neuquén por personería jurídica.</a></li>
                     
-                    <li><a href="/portada/2025/08/09/lucha-mapuche-defensa-ambiente-contaminacion-neuquen.html">"La lucha del pueblo mapuche se centra en la protección del medio ambiente y la vida ante la contaminación", dijo el logko Nelson Cárdenas.</a></li>
+                    <li><a href="/portada/2025/07/10/reclamo-impuesto-de-los-combustibles.html">La pulseada por el ICL escala: Gobernadores redoblan la presión en el Senado para coparticipar más del Impuesto a los Combustibles.</a></li>
                     
-                    <li><a href="/portada/2025/07/07/formar-formadores-cutral-co.html">Cutral Co forma a sus formadores: La ciudad avanza en un inédito programa de capacitación para fortalecer el trabajo con las infancias.</a></li>
+                    <li><a href="/portada/2025/08/06/Petr%C3%B3leo-y-turismo-las-dos-grandes-fuentes-de-ingresos-que-marcan-la-econom%C3%ADa.html">Petróleo y turismo: las dos grandes fuentes de ingresos que marcan la economía de Neuquén a mitad de año.</a></li>
                     
                 </ul>
                 

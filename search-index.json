@@ -1,5 +1,8 @@
 ---
+layout: null
+permalink: /search-index.json
 ---
+
 [
 {% for post in site.posts %}
   {

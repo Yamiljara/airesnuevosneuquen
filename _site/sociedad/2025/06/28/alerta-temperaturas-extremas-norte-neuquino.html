@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -286,11 +293,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/sociedad/2025/07/01/neuquen-impacto-cambio-climatico.html">El Doble impacto del cambio climático en la provincia de Neuquén y la ruta hacia la sostenibilidad.</a></li>
+                    <li><a href="/sociedad/2025/08/02/Dolor-en-el-pueblo-mapuche-tras-el-fallecimiento-de-Faustino-Molina/html">Dolor en el pueblo mapuche tras el fallecimiento de Faustino Molina.</a></li>
                     
-                    <li><a href="/sociedad/2025/07/17/congreso-federal-prevencion-adicciones-san-martin-de-los-andes.html">San Martín de los Andes será sede de un encuentro nacional contra los consumos problemáticos.</a></li>
+                    <li><a href="/sociedad/2025/07/26/mariano-mansilla-avances-causas-alison-calfunao-estafa-cooperativa-127-hectareas.html">Mariano Mansilla detalla avances en causas claves: el caso Alison Calfunao y la estafa de Cooperativa 127 Hectáreas.</a></li>
                     
-                    <li><a href="/sociedad/2025/06/25/cutral-co-plaza-huincul-dia-dignidad.html">Cutral Co y Plaza Huincul conmemoran el Día de la Dignidad: El grito de un pueblo que cambió la historia.</a></li>
+                    <li><a href="/sociedad/2025/06/15/doble-protesta-argentina-sociedad.html">Argentina se prepara para un miércoles de doble protesta</a></li>
                     
                 </ul>
                 

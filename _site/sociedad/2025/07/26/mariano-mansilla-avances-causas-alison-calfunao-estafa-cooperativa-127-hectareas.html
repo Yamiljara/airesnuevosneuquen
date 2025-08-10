@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -305,11 +312,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/sociedad/2025/06/19/justicia-en-loncopue-clamor-popular.html">Continúa el clamor en Loncopue: Familia de Franco Ramírez convoca a una nueva marcha por justicia este domingo.</a></li>
+                    <li><a href="/sociedad/2025/06/25/cutral-co-plaza-huincul-dia-dignidad.html">Cutral Co y Plaza Huincul conmemoran el Día de la Dignidad: El grito de un pueblo que cambió la historia.</a></li>
+                    
+                    <li><a href="/sociedad/2025/07/18/adpra-derechos-dignos-personas-discapacidad.html">ADPRA se manifiesta por un trato digno y el respeto de los derechos de las personas con discapacidad.</a></li>
                     
                     <li><a href="/sociedad/2025/07/02/mapuche-jones-huala-libertad.html">Comunidades Mapuche de Buenos Aires exigen libertad para Facundo Jones Huala; ratifican su prisión preventiva.</a></li>
-                    
-                    <li><a href="/sociedad/2025/08/02/Dolor-en-el-pueblo-mapuche-tras-el-fallecimiento-de-Faustino-Molina/html">Dolor en el pueblo mapuche tras el fallecimiento de Faustino Molina.</a></li>
                     
                 </ul>
                 

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -288,11 +295,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/21/jovenes-neuquinos-proyectar-futuro-espacio-duam.html">Jóvenes neuquinos se reunirán en el Espacio DUAM para 'Proyectar Futuro' con apoyo provincial.</a></li>
+                    <li><a href="/portada/2025/07/05/mundial-clubes-fifa-cuartos-semifinales.html">Mundial de Clubes FIFA 2025: ¡Cuartos de final en llamas y semifinales confirmadas rumbo a la gran final!</a></li>
                     
-                    <li><a href="/portada/2025/07/30/cutral-co-formar-formadores-genero-frustracion.html">Cutral Co: 'Formar a los Formadores' Profundiza en género y gestión de frustraciones en el deporte infantil.</a></li>
+                    <li><a href="/portada/2025/07/15/unco-53-aniversario-educacion-patagonia.html">La Universidad Nacional del Comahue celebra su 53º aniversario como pilar de la educación pública y regional en la patagonia</a></li>
                     
-                    <li><a href="/portada/2025/08/02/Luis-Caputo-Inform%C3%B3-un-Patrimonio-de-Casi-$12-Mil-Millones.html">Luis Caputo Informó un Patrimonio de Casi $12 Mil Millones y Declaró una Casa en Villa La Angostura.</a></li>
+                    <li><a href="/portada/2025/06/14/river-gallardo-critica.html">La fuerte crítica de Gallardo a River tras el empate en Libertadores.</a></li>
                     
                 </ul>
                 

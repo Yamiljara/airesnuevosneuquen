@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -288,9 +295,9 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/cultura/2025/07/03/joaco-martinez-la-voz-argentina.html">¡Orgullo Neuquino! Joaco Martínez emociona a 'La Voz Argentina' y a Soledad Pastorutti</a></li>
+                    <li><a href="/cultura/2025/07/21/julian-varsavsky-viaje-paisajes-invisibles-redefiniendo-aventura.html">Julián Varsavsky invita a explorar 'Viaje a los Paisajes Invisibles': Redefiniendo la aventura en un mundo hiperconectado.</a></li>
                     
-                    <li><a href="/cultura/2025/07/09/puel-kona-weway-concierto-neuquen-arrimadero.html">Noche Histórica en Neuquén: Puel Kona y Weway unen fuerzas en el teatro El Arrimadero.</a></li>
+                    <li><a href="/cultura/2025/07/25/cutral-co-municipios-vecinos-firman-convenio-tremn-tahuen-2025.html">Cutral Co y municipios vecinos firman convenio para un Tremn Tahuen 2025 ampliado.</a></li>
                     
                     <li><a href="/cultura/2025/06/27/corea-del-sur-ola-cultural.html">Corea del Sur: La Imparable Ola Cultural que Conquista el Mundo.</a></li>
                     

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -320,9 +327,9 @@
                     
                     <li><a href="/portada/regionales/justicia/2025/07/29/procesan-imputados-desaparicion-forzada-sergio-avalos-embargos.html">A 22 años procesan a 20 imputados por la desaparición forzada de Sergio Ávalos y ordenan embargos por más de $800 millones.</a></li>
                     
-                    <li><a href="/portada/2025/07/23/encuestas-zuban-cordoba-antimileismo-mayoria.html">Encuestas de Zuban / Córdoba: El 'Antimileísmo' es mayoría, pero su voto no encuentra un cauce único.</a></li>
+                    <li><a href="/portada/2025/07/03/neuquen-reactiva-mina-andacollo.html">Neuquén busca destrabar la mina de Oro de Andacollo para una nueva licitación.</a></li>
                     
-                    <li><a href="/portada/2025/06/12/clase-abierta-guagliardo-unco.html">Clase abierta sobre planeamiento ambiental con Emanuel Guagliardo en la UNCo</a></li>
+                    <li><a href="/portada/2025/08/06/Petr%C3%B3leo-y-turismo-las-dos-grandes-fuentes-de-ingresos-que-marcan-la-econom%C3%ADa.html">Petróleo y turismo: las dos grandes fuentes de ingresos que marcan la economía de Neuquén a mitad de año.</a></li>
                     
                 </ul>
                 

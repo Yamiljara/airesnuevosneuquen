@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -289,11 +296,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/08/03/El-Servicio-Meteorol%C3%B3gico-Nacional-anticipa-un-comienzo-de-semana-con-ma%C3%B1anas-fr%C3%ADas-y-tardes-m%C3%A1s-c%C3%A1lidas.-El-martes-ser%C3%A1-el-d%C3%ADa-m%C3%A1s-agradable,-con-cielo-despejado-y-sin-precipitaciones-previstas/html">Semana templada y sin lluvias en Neuquén: El SMN prevé máximas de hasta 17°C para la capital.</a></li>
+                    <li><a href="/portada/2025/08/07/Feria-del-Libro-de-Cutral-Co.html">La Feria del Libro de Cutral Co arranca con Eduardo Sacheri y su libro sobre Malvinas.</a></li>
                     
-                    <li><a href="/portada/2025/07/04/anelo-bypass-rutas-7-17-vaca-muerta.html">Añelo: El Bypass en rutas 7 y 17 avanza al 57% y agiliza Vaca Muerta.</a></li>
+                    <li><a href="/portada/2025/08/05/Crece-el-saldo-de-siniestros-y-accidentes-en-la-Ruta-7/html">Crece el saldo de siniestros y accidentes en la Ruta 7: Piden medidas urgentes para la crisis vial en Vaca Muerta. </a></li>
                     
-                    <li><a href="/portada/regionales/rinc%C3%B3ndelossauces/justicia/seguridad/2025/07/29/robo-marisol-ortega-rincon-sauces-seguridad-justicia.html">Referente del PRO en Rincón de los Sauces, sufrió un robo en su domicilio y reclamo más seguridad y justicia.</a></li>
+                    <li><a href="/portada/2025/08/07/Miles-de-fieles-celebran-a-San-Cayetano.html">Miles de fieles celebran a San Cayetano en todo el país.</a></li>
                     
                 </ul>
                 

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -284,11 +291,11 @@ La publicación generó repercusión en redes sociales y reavivó el debate sobr
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/pol%C3%ADtica/2025/06/29/maximiliano-pullaro-santa-fe.html">Maximiliano Pullaro se lleva la victoria en Santa Fe y reflexiona sobre la baja participación.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/07/28/se-lanzo-fuerza-patria-neuquen-frente-peronista-legislativas.html">Se lanzó en Neuquén el frente electoral Fuerza Patria, y aún no define candidatos.</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/07/21/unidad-popular-neuquen-condena-desalojo-mapuches.html">Unidad Popular Neuquén condena 'brutal y desmedido operativo policial' y exige al gobernador cumplir acuerdos.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/06/20/mamita-que-curriculum-cristina-kirchner.html">Mamita Qué Currículum: Cristina Kirchner arremetió sin filtros contra Patricia Bullrich y la acusó de querer generar caos.</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/08/02/Cristina-Kirchner-recibi%C3%B3-a-Ernesto-Samper-y-Gabriela-Rivadeneira-en-su-domicilio/html">Cristina Kirchner recibió a Ernesto Samper y Gabriela Rivadeneira en su domicilio.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/07/14/la-libertad-avanza-partido-provincial-neuquen.html">Reconocimiento Oficial: La Libertad Avanza es ya Partido provincial en Neuquén con símbolos propios.</a></li>
                     
                 </ul>
                 

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -292,11 +299,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/23/encuestas-zuban-cordoba-antimileismo-mayoria.html">Encuestas de Zuban / Córdoba: El 'Antimileísmo' es mayoría, pero su voto no encuentra un cauce único.</a></li>
+                    <li><a href="/portada/2025/08/05/Crece-el-saldo-de-siniestros-y-accidentes-en-la-Ruta-7/html">Crece el saldo de siniestros y accidentes en la Ruta 7: Piden medidas urgentes para la crisis vial en Vaca Muerta. </a></li>
                     
-                    <li><a href="/portada/2025/07/14/pacto-climatico-provincias-argentinas-cordoba.html">Provincias argentinas sellaron compromiso ambiental en Córdoba, desafiando el negacionismo nacional y priorizando el financiamiento climático.</a></li>
+                    <li><a href="/portada/2025/07/11/patagonia-del-vino-neuquen-capital-2025.html">Comienza hoy: Patagonia del vino, dos jornadas para disfrutar lo mejor del enoturismo regional en Neuquén Capital.</a></li>
                     
-                    <li><a href="/portada/2025/07/31/temporal-aisla-norte-neuquino-sin-luz-agua-e-internet-fuertes-vientos-nieve.html">Temporal aísla al norte neuquino: Sin Luz, agua e internet por fuertes vientos y nieve.</a></li>
+                    <li><a href="/portada/2025/07/26/camioneros-levanto-paro-vaca-muerta-conciliacion-obligatoria.html">Camioneros levantó el paro en Vaca Muerta tras extensión de la conciliación obligatoria.</a></li>
                     
                 </ul>
                 

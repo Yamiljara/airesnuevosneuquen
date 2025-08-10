@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -284,11 +291,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/04/cutral-co-salud-convenios-neuquen.html">Cutral Co: La firma de convenios clave impulsan el fortalecimiento del sistema de salud local.</a></li>
+                    <li><a href="/portada/2025/07/04/lula-visita-cristina-kirchner-domicilio.html">El presidente Lula visitó en su casa a la ex presidenta Cristina Kirchner: solidaridad histórica en un encuentro de alto impacto.</a></li>
                     
-                    <li><a href="/portada/2025/07/21/jovenes-neuquinos-proyectar-futuro-espacio-duam.html">Jóvenes neuquinos se reunirán en el Espacio DUAM para 'Proyectar Futuro' con apoyo provincial.</a></li>
+                    <li><a href="/portada/2025/07/19/vialidad-nacional-disolucion-justicia-suspende.html">Vialidad Nacional: El gobierno de Milei disuelve el organismo y la Justicia suspende la medida, generando incertidumbre sobre la infraestructura del país.</a></li>
                     
-                    <li><a href="/portada/2025/08/08/conflicto-mapuche-neuquen-mediacion-unco.html">La UNCo convoca a mediación entre el Gobierno de Neuquén y el Pueblo Mapuche en un día clave para sus derechos.</a></li>
+                    <li><a href="/portada/2025/06/14/festival-audiovisual.html">Neuquén se prepara para el Festival Audiovisual (FAN) 2025</a></li>
                     
                 </ul>
                 

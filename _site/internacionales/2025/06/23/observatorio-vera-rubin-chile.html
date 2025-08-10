@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -284,11 +291,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/internacionales/2025/07/09/telesur-premio-anibal-nazoa-reconocimiento-internacional.html">Reconocimiento internacional: teleSUR recibe prestigioso premio Aníbal Nazoa por sus 20 Años de trayectoria.</a></li>
+                    <li><a href="/internacionales/2025/07/16/chile-construye-telescopio-mas-grande-historia-elt.html">Latinoamérica lidera la astronomía mundial: Chile construye el telescopio más grande de la historia.</a></li>
+                    
+                    <li><a href="/internacionales/2025/07/04/doble-explosion-estrella-astronomia.html">Raro Evento Estelar: Científicos observan la 'Doble Detonación' de una estrella.</a></li>
                     
                     <li><a href="/internacionales/2025/07/30/brasil-inaugura-planta-gas-natural-america-latina.html">Brasil inauguró la mayor planta de energía a gas natural de América Latina.</a></li>
-                    
-                    <li><a href="/internacionales/2025/06/21/vacuna-vih-salud-fda.html">Salud Global: Una Inyección Semestral Ofrece Nueva Esperanza Contra el VIH.</a></li>
                     
                 </ul>
                 

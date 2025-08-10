@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -305,11 +312,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/21/jovenes-neuquinos-proyectar-futuro-espacio-duam.html">Jóvenes neuquinos se reunirán en el Espacio DUAM para 'Proyectar Futuro' con apoyo provincial.</a></li>
+                    <li><a href="/portada/2025/07/28/humanos-superan-ia-olimpiada-matematicas.html">Humanos Superaron a la Inteligencia Artificial en la Principal Competencia Mundial de Matemáticas.</a></li>
                     
-                    <li><a href="/portada/deportes/f%C3%BAtbol/neuqu%C3%A9n/2025/07/25/union-zapala-ascenso-nueve-incorporaciones-sueno-renueva.html">LIFUNE: Unión de Zapala va por el ascenso, nueve incorporaciones y un sueño que se renueva.</a></li>
+                    <li><a href="/portada/2025/07/13/dolar-riesgo-pais-economia-consumo.html">El dólar cerró la semana con subas en todas sus cotizaciones y el riesgo país cae a 692 puntos, mientras persiste la preocupación por el consumo y la morosidad.</a></li>
                     
-                    <li><a href="/portada/2025/08/03/Entregaron-diez-nuevas-viviendas-a-familias-en-Las-Ovejas.html">Entregaron diez nuevas viviendas a familias en Las Ovejas</a></li>
+                    <li><a href="/portada/2025/06/14/river-gallardo-critica.html">La fuerte crítica de Gallardo a River tras el empate en Libertadores.</a></li>
                     
                 </ul>
                 

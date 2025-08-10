@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -295,11 +302,11 @@ La propia Victoria Villarruel no ha dudado en responder a las críticas, utiliza
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/08/05/La-UNCo-inaugur%C3%B3-su-nueva-sede-en-el-Alto-Neuqu%C3%A9n-con-una-oferta-acad%C3%A9mica-vinculada-a-la-regi%C3%B3n/html">La UNCo inauguró su nueva sede en el Alto Neuquén con una oferta académica vinculada a la región.</a></li>
+                    <li><a href="/portada/2025/07/31/temporal-aisla-norte-neuquino-sin-luz-agua-e-internet-fuertes-vientos-nieve.html">Temporal aísla al norte neuquino: Sin Luz, agua e internet por fuertes vientos y nieve.</a></li>
                     
-                    <li><a href="/portada/2025/06/14/ruta-39-grietas.html">Preocupación por el estado de la Ruta 39 a un mes de su inauguración.</a></li>
+                    <li><a href="/portada/2025/07/25/alerta-roja-neuquen-nevadas-frio-extremo.html">Alerta Roja en Neuquén: la provincia se prepara para un fin de semana de nevadas y mucho frío.</a></li>
                     
-                    <li><a href="/portada/2025/07/27/referentes-up-neuquen-visitaron-asentamiento-31-mayo-productores-alumine.html">Referentes de UP Neuquén visitaron el asentamiento '31 de Mayo' y se reunieron con productores de Aluminé.</a></li>
+                    <li><a href="/pol%C3%ADtica/portada/2025/07/29/unidad-popular-neuquen-candidaturas-propias-legislativas.html">Unidad Popular Neuquén confirma que irá a la elección de octubre con candidatos genuinos para diputados y senadores nacionales.</a></li>
                     
                 </ul>
                 

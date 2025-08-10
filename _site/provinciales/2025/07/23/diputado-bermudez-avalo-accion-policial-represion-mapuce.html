@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -300,11 +307,11 @@
                 
                 <ul class="related-posts-list">
                     
+                    <li><a href="/provinciales/2025/07/08/reforma-judicial-neuquen-codigo-procesal-civil.html">Justicia del Siglo XXI en Neuquén: Cómo la reforma del código procesal civil agilizará trámites y acercará los juzgados al ciudadano.</a></li>
+                    
+                    <li><a href="/provinciales/2025/06/30/neuquen-fortalecimiento-comisiones-fomento.html">Neuquén impulsa el fortalecimiento de Comisiones de Fomento con una jornada clave de capacitación.</a></li>
+                    
                     <li><a href="/provinciales/2025/07/13/figueroa-aniversario-zapala-neuquinidad-obra-publica.html">Figueroa encabezó el 112º aniversario de Zapala con un fuerte mensaje a favor de la "Neuquinidad" y la abra pública.</a></li>
-                    
-                    <li><a href="/provinciales/2025/07/11/neuquen-audiometrias-portatiles-salud-rural.html">Salud para todos en Neuquén: Audiometrías portátiles acercarán diagnósticos auditivos a parajes y zonas rurales.</a></li>
-                    
-                    <li><a href="/provinciales/2025/07/24/marcha-masiva-neuquen-desalojo-mapuce-justicia.html">La sociedad neuquina marchó masivamente: grito de justicia tras desalojo mapuce y reclamo por derechos históricos.</a></li>
                     
                 </ul>
                 

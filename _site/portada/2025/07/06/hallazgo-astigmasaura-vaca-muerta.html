@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -316,11 +323,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/03/aguada-san-roque-audiencias-explosion-escuela.html">Aguada San Roque: Continúan audiencias por explosión en Escuela 144 y reclamo de justicia.</a></li>
+                    <li><a href="/portada/2025/06/14/ruta-39-grietas.html">Preocupación por el estado de la Ruta 39 a un mes de su inauguración.</a></li>
                     
-                    <li><a href="/portada/2025/07/09/9-de-julio-dia-independencia-argentina.html">La Patria se celebra hoy: A 209 años de la declaración de la Independencia en Tucumán.</a></li>
+                    <li><a href="/portada/2025/08/03/Entregaron-diez-nuevas-viviendas-a-familias-en-Las-Ovejas.html">Entregaron diez nuevas viviendas a familias en Las Ovejas</a></li>
                     
-                    <li><a href="/portada/2025/07/14/pacto-climatico-provincias-argentinas-cordoba.html">Provincias argentinas sellaron compromiso ambiental en Córdoba, desafiando el negacionismo nacional y priorizando el financiamiento climático.</a></li>
+                    <li><a href="/portada/2025/07/02/elon-musk-milei.html">Elon musk reconoce autocrítica sobre su relación con Javier Milei en medio de disputa con Donald Trump.</a></li>
                     
                 </ul>
                 

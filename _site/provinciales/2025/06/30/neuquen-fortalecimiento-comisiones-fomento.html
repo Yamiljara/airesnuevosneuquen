@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -286,11 +293,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/provinciales/2025/06/28/chapelco-apertura.html">Chapelco ya tiene fecha de apertura: el centro de esquí más importante de Neuquén inicia su temporada el 4 de julio.</a></li>
+                    <li><a href="/provinciales/2025/07/06/vialidad-nacional-asamblea-neuquen.html">Vialidad Nacional: Asamblea en Neuquén Capital votó corte de pasos y toma de distrito ante posible disolución de la Dirección Nacional de Vialidad.</a></li>
                     
-                    <li><a href="/provinciales/2025/06/16/rioseco-reunion-nacional-intendentes.html">El intendente Ramón Rioseco participó de una reunión nacional de intendentes en respaldo a Cristina Kirchner</a></li>
+                    <li><a href="/provinciales/2025/07/24/marcha-masiva-neuquen-desalojo-mapuce-justicia.html">La sociedad neuquina marchó masivamente: grito de justicia tras desalojo mapuce y reclamo por derechos históricos.</a></li>
                     
-                    <li><a href="/provinciales/2025/07/23/diputado-bermudez-avalo-accion-policial-represion-mapuce.html">El Diputado Marcelo Bermúdez justifica la acción de la policía ante la represión a las comunidades Mapuches.</a></li>
+                    <li><a href="/provinciales/2025/07/20/gobierno-denuncia-mapuche-coaccion-neuquen.html">Gobierno Denuncia a Comunidades Mapuche por 'Coacción' en Casa de Gobierno de Neuquén.</a></li>
                     
                 </ul>
                 

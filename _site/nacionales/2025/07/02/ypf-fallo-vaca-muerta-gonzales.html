@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -286,11 +293,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/nacionales/2025/07/07/nieto-140-abuelas-carlotto.html">Abuelas de Plaza de Mayo anuncia el hallazgo del Nieto 140.</a></li>
-                    
-                    <li><a href="/nacionales/econom%C3%ADa/pol%C3%ADtica/agro/2025/07/26/milei-anuncio-reduccion-retenciones-carne-soja-granos.html">Milei anunció la 'reducción' de las retenciones a la carne, soja y otros granos.</a></li>
-                    
                     <li><a href="/nacionales/2025/07/17/grieta-politica-argentina-debate-hermeneutica-gadamer.html">La 'Grieta Política Argentina' a Debate: Estudiante de comunicación propone la hermenéutica de Gadamer para el diálogo.</a></li>
+                    
+                    <li><a href="/nacionales/2025/06/15/lawfare-persiste-america-latina-nacionales.html">De Lula a Cristina Kirchner el "Lawfare" persiste en la política y justicia de América Latina</a></li>
+                    
+                    <li><a href="/nacionales/2025/07/07/nieto-140-abuelas-carlotto.html">Abuelas de Plaza de Mayo anuncia el hallazgo del Nieto 140.</a></li>
                     
                 </ul>
                 

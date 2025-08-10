@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -288,11 +295,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/08/09/lucha-mapuche-defensa-ambiente-contaminacion-neuquen.html">"La lucha del pueblo mapuche se centra en la protección del medio ambiente y la vida ante la contaminación", dijo el logko Nelson Cárdenas.</a></li>
+                    <li><a href="/portada/2025/07/05/ampliacion-gasoducto-patagonico.html">Gasoducto Patagónico: Acuerdo histórico para llevar gas a 12.000 hogares.</a></li>
                     
-                    <li><a href="/portada/2025/07/02/mundial-clubes-fifa-2025-cuartos.html">Mundial de Clubes FIFA 2025: Batacazos y cruces confirmados de cuartos de final tras el avance de borussia dortmund.</a></li>
+                    <li><a href="/portada/2025/08/05/Crece-el-saldo-de-siniestros-y-accidentes-en-la-Ruta-7/html">Crece el saldo de siniestros y accidentes en la Ruta 7: Piden medidas urgentes para la crisis vial en Vaca Muerta. </a></li>
                     
-                    <li><a href="/portada/2025/07/28/humanos-superan-ia-olimpiada-matematicas.html">Humanos Superaron a la Inteligencia Artificial en la Principal Competencia Mundial de Matemáticas.</a></li>
+                    <li><a href="/portada/2025/07/26/rioseco-confirmo-artistas-nacionales-tremn-tahuen-grilla.html">Rioseco confirmó la participación de artistas nacionales en el Tremn Tahuen: Soledad, Lázaro Caballero y Galleguillo encabezan la grilla.</a></li>
                     
                 </ul>
                 

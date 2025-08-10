@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -304,11 +311,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/30/cutral-co-formar-formadores-genero-frustracion.html">Cutral Co: 'Formar a los Formadores' Profundiza en género y gestión de frustraciones en el deporte infantil.</a></li>
+                    <li><a href="/portada/2025/07/05/ampliacion-gasoducto-patagonico.html">Gasoducto Patagónico: Acuerdo histórico para llevar gas a 12.000 hogares.</a></li>
                     
-                    <li><a href="/portada/2025/07/22/corte-gas-rincon-sauces-hidenesa-ypf-bentia.html">Corte de Gas en Rincón de los Sauces: HIDENESA deslinda responsabilidades y apunta a falta de inversión de YPF y Bentia Energy.</a></li>
+                    <li><a href="/portada/2025/07/22/victor-hugo-morales-critica-clarin-mapuches-neuquen.html">Víctor Hugo Morales volvió a la TV y lanzó duras acusaciones contra el Grupo Clarín por su cobertura sobre las comunidades Mapuche en Neuquén.</a></li>
                     
-                    <li><a href="/portada/2025/07/16/cesar-godoy-calienta-interna-peronista-neuquen.html">César Godoy calienta la interna Peronista: dijo que "El 'Neuquinizate' de Figueroa es solo un eslogan y lo comparó con el gobierno de Milei"</a></li>
+                    <li><a href="/portada/2025/07/10/hotel-termas-nueva-licitaci%C3%B3n-2025.html">Neuquén Busca concesionar el histórico hotel Termas de Copahue: Ofertas se Abren el 25 de Agosto.</a></li>
                     
                 </ul>
                 

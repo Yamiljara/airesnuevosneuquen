@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -297,11 +304,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/08/07/Feria-del-Libro-de-Cutral-Co.html">La Feria del Libro de Cutral Co arranca con Eduardo Sacheri y su libro sobre Malvinas.</a></li>
+                    <li><a href="/portada/2025/07/01/mapuches-denuncian-discriminacion-diario-funcionario.html">Mujeres de la Confederación Mapuche denuncian a medio local y a funcionario Nacional.</a></li>
                     
-                    <li><a href="/portada/2025/07/27/referentes-up-neuquen-visitaron-asentamiento-31-mayo-productores-alumine.html">Referentes de UP Neuquén visitaron el asentamiento '31 de Mayo' y se reunieron con productores de Aluminé.</a></li>
+                    <li><a href="/portada/2025/07/23/cutral-co-modulo-3-formar-formadores-deporte-infantil.html">Cutral Co: Comenzará el Módulo 3 de 'Formar a los Formadores', clave para el deporte infantil y comunitario.</a></li>
                     
-                    <li><a href="/portada/2025/07/23/encuestas-zuban-cordoba-antimileismo-mayoria.html">Encuestas de Zuban / Córdoba: El 'Antimileísmo' es mayoría, pero su voto no encuentra un cauce único.</a></li>
+                    <li><a href="/portada/2025/07/19/vialidad-nacional-disolucion-justicia-suspende.html">Vialidad Nacional: El gobierno de Milei disuelve el organismo y la Justicia suspende la medida, generando incertidumbre sobre la infraestructura del país.</a></li>
                     
                 </ul>
                 

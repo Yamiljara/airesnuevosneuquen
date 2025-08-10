@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -301,11 +308,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/01/principios-valores-peronismo-neuquino.html">La mirada de Grabiel Robles del partido Principios y Valores y un llamado a la 'Causa del Pueblo'.</a></li>
+                    <li><a href="/portada/2025/08/03/Entregaron-diez-nuevas-viviendas-a-familias-en-Las-Ovejas.html">Entregaron diez nuevas viviendas a familias en Las Ovejas</a></li>
                     
-                    <li><a href="/portada/2025/07/02/monoxido-carbono-alerta-prevencion.html">Monóxido de Carbono: El Asesino Invisible. Tragedias recientes alertan sobre la urgencia de prevenir para proteger vidas.</a></li>
+                    <li><a href="/portada/2025/07/18/atentado-amia-31-anos-dolor-memoria-justicia.html">Atentado a la AMIA (1994): dolor, memoria y clamor de Justicia a 31 años de la masacre.</a></li>
                     
-                    <li><a href="/portada/2025/07/10/final-mundial-clubes-psg-chelsea.html">¡Definida la Final del Mundial de Clubes 2025! PSG y Chelsea se enfrentarán en Nueva Jersey el 13 de Julio.</a></li>
+                    <li><a href="/portada/2025/07/08/causa-vialidad-cristina-kirchner-domiciliaria.html">Causa Vialidad: Fiscal retira pedido para que Cristina Kirchner vaya a cárcel común y consolida domiciliaria.</a></li>
                     
                 </ul>
                 

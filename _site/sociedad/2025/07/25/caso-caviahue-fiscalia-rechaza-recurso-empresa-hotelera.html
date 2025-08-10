@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -293,9 +300,9 @@
                     
                     <li><a href="/sociedad/2025/07/13/desaparicion-luciana-munoz-neuquen-aniversario.html">A un año de su desaparición: Neuquén exigió la aparición con vida de Luciana Muñoz.</a></li>
                     
-                    <li><a href="/sociedad/2025/07/17/congreso-federal-prevencion-adicciones-san-martin-de-los-andes.html">San Martín de los Andes será sede de un encuentro nacional contra los consumos problemáticos.</a></li>
+                    <li><a href="/sociedad/2025/07/18/adpra-derechos-dignos-personas-discapacidad.html">ADPRA se manifiesta por un trato digno y el respeto de los derechos de las personas con discapacidad.</a></li>
                     
-                    <li><a href="/sociedad/2025/07/26/mariano-mansilla-avances-causas-alison-calfunao-estafa-cooperativa-127-hectareas.html">Mariano Mansilla detalla avances en causas claves: el caso Alison Calfunao y la estafa de Cooperativa 127 Hectáreas.</a></li>
+                    <li><a href="/sociedad/2025/07/17/congreso-federal-prevencion-adicciones-san-martin-de-los-andes.html">San Martín de los Andes será sede de un encuentro nacional contra los consumos problemáticos.</a></li>
                     
                 </ul>
                 

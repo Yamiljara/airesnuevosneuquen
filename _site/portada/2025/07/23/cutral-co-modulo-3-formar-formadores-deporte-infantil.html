@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -291,11 +298,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/19/licitacion-hotel-termas-copahue-nuevo-canon.html">Licitación del Hotel Termas de Copahue: Nuevo canon para asegurar ingresos y reinversión provincial.</a></li>
+                    <li><a href="/portada/2025/07/08/mundial-clubes-fifa-semifinales.html">Semifinales del mundial de clubes FIFA 2025: Duelos decisivos con horario Argentino y los cuatro gigantes en busca de la final.</a></li>
                     
-                    <li><a href="/portada/2025/07/16/comunidades-mapuche-encadenadas-reclamo-neuquen.html">Sin respuestas: Comunidades mapuche siguen encadenadas en la casa de gobierno y cuestionan el mensaje oficial del gobernador de la "Paz Social".</a></li>
+                    <li><a href="/portada/2025/07/10/final-mundial-clubes-psg-chelsea.html">¡Definida la Final del Mundial de Clubes 2025! PSG y Chelsea se enfrentarán en Nueva Jersey el 13 de Julio.</a></li>
                     
-                    <li><a href="/portada/2025/07/16/cesar-godoy-calienta-interna-peronista-neuquen.html">César Godoy calienta la interna Peronista: dijo que "El 'Neuquinizate' de Figueroa es solo un eslogan y lo comparó con el gobierno de Milei"</a></li>
+                    <li><a href="/portada/2025/07/15/unco-53-aniversario-educacion-patagonia.html">La Universidad Nacional del Comahue celebra su 53º aniversario como pilar de la educación pública y regional en la patagonia</a></li>
                     
                 </ul>
                 

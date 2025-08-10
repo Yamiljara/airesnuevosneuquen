@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -297,11 +304,11 @@ La situación en Vaca Muerta ha captado la atención de diversos organismos y tr
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/08/08/conflicto-mapuche-neuquen-mediacion-unco.html">La UNCo convoca a mediación entre el Gobierno de Neuquén y el Pueblo Mapuche en un día clave para sus derechos.</a></li>
+                    <li><a href="/portada/2025/07/03/neuquen-reactiva-mina-andacollo.html">Neuquén busca destrabar la mina de Oro de Andacollo para una nueva licitación.</a></li>
                     
-                    <li><a href="/portada/2025/07/02/mundial-clubes-fifa-2025-cuartos.html">Mundial de Clubes FIFA 2025: Batacazos y cruces confirmados de cuartos de final tras el avance de borussia dortmund.</a></li>
+                    <li><a href="/portada/2025/07/30/municipales-el-huecu-reclamo-salarial.html">Empleados municipales de El Huecú, respaldados por el sindicato de ATE, exigen mejoras salariales.</a></li>
                     
-                    <li><a href="/portada/2025/07/26/camioneros-levanto-paro-vaca-muerta-conciliacion-obligatoria.html">Camioneros levantó el paro en Vaca Muerta tras extensión de la conciliación obligatoria.</a></li>
+                    <li><a href="/portada/2025/07/15/pobreza-indec-costo-vida-argentina.html">La dura realidad económica: Un hogar necesita $1.128.398,01 para no ser pobre, mientras 4 de Cada 10 Argentinos lo son.</a></li>
                     
                 </ul>
                 

@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -304,11 +311,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/deportes/f%C3%BAtbol/neuqu%C3%A9n/2025/07/25/union-zapala-ascenso-nueve-incorporaciones-sueno-renueva.html">LIFUNE: Unión de Zapala va por el ascenso, nueve incorporaciones y un sueño que se renueva.</a></li>
+                    <li><a href="/portada/2025/07/25/estado-retira-infraestructura-electrica-venta-enarsa.html">El Estado se retira de la infraestructura eléctrica: sigue el remate de Milei con la venta de las acciones de Enarsa.</a></li>
                     
-                    <li><a href="/portada/2025/07/18/atentado-amia-31-anos-dolor-memoria-justicia.html">Atentado a la AMIA (1994): dolor, memoria y clamor de Justicia a 31 años de la masacre.</a></li>
+                    <li><a href="/portada/2025/08/08/conflicto-mapuche-neuquen-mediacion-unco.html">La UNCo convoca a mediación entre el Gobierno de Neuquén y el Pueblo Mapuche en un día clave para sus derechos.</a></li>
                     
-                    <li><a href="/portada/2025/08/07/Feria-del-Libro-de-Cutral-Co.html">La Feria del Libro de Cutral Co arranca con Eduardo Sacheri y su libro sobre Malvinas.</a></li>
+                    <li><a href="/portada/2025/07/26/eva-peron-siete-decadas-fallecimiento-legado-evita-sigue-marcando-politica-argentina.html">Eva Perón: a siete décadas de su paso a la inmortalidad, el legado de Evita sigue marcando la política argentina.</a></li>
                     
                 </ul>
                 

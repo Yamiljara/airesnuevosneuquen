@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -286,11 +293,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/provinciales/2025/06/21/obra-gas-gua%C3%B1acos-alto-neuquen.html">Guañacos celebró la llegada del gas natural, una obra clave para la equidad territorial.</a></li>
+                    <li><a href="/provinciales/2025/06/28/chapelco-apertura.html">Chapelco ya tiene fecha de apertura: el centro de esquí más importante de Neuquén inicia su temporada el 4 de julio.</a></li>
                     
                     <li><a href="/provinciales/2025/08/08/congreso-utn-vaca-muerta-energia-futuro-profesionales.html">Congreso Nacional en Cutral Có: La UTN FRN prepara a la próxima generación de profesionales para Vaca Muerta.</a></li>
                     
-                    <li><a href="/provinciales/2025/07/23/diputado-bermudez-avalo-accion-policial-represion-mapuce.html">El Diputado Marcelo Bermúdez justifica la acción de la policía ante la represión a las comunidades Mapuches.</a></li>
+                    <li><a href="/provinciales/2025/07/11/neuquen-audiometrias-portatiles-salud-rural.html">Salud para todos en Neuquén: Audiometrías portátiles acercarán diagnósticos auditivos a parajes y zonas rurales.</a></li>
                     
                 </ul>
                 

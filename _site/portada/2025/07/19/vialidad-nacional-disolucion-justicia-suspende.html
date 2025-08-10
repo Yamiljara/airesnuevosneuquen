@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -289,11 +296,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/08/causa-vialidad-cristina-kirchner-domiciliaria.html">Causa Vialidad: Fiscal retira pedido para que Cristina Kirchner vaya a cárcel común y consolida domiciliaria.</a></li>
+                    <li><a href="/portada/2025/07/03/discapacidad-inclusion-villa-la-angostura.html">Autoridades articulan trabajo por los derechos de Personas con Discapacidad en Villa La Angostura.</a></li>
                     
-                    <li><a href="/portada/2025/08/02/Denuncian-Falta-de-Transparencia-en-Cierre-Contable/html">Denuncian Falta de Transparencia en Cierre Contable: "Nuestro compromiso con los vecinos es ser transparentes con los fondos públicos", afirmó el concejal Sepúlveda.</a></li>
+                    <li><a href="/portada/2025/07/08/mundial-clubes-fifa-semifinales.html">Semifinales del mundial de clubes FIFA 2025: Duelos decisivos con horario Argentino y los cuatro gigantes en busca de la final.</a></li>
                     
-                    <li><a href="/portada/2025/07/10/reclamo-impuesto-de-los-combustibles.html">La pulseada por el ICL escala: Gobernadores redoblan la presión en el Senado para coparticipar más del Impuesto a los Combustibles.</a></li>
+                    <li><a href="/portada/2025/07/02/rincon-sauces-sin-gas-vaca-muerta.html">Escándalo en Vaca Muerta: Concejales denuncian desidia política del gobierno provincial y local por falta de gas.</a></li>
                     
                 </ul>
                 

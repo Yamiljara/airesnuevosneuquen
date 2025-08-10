@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -292,11 +299,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/08/05/La-provincia-y-el-pa%C3%ADs-despiden-con-dolor-a-Lol%C3%ADn-Rigoni.html">La provincia y el país despiden con dolor a Lolín Rigoni, la última madre de Plaza de Mayo en Neuquén.</a></li>
+                    <li><a href="/portada/2025/08/07/Miles-de-fieles-celebran-a-San-Cayetano.html">Miles de fieles celebran a San Cayetano en todo el país.</a></li>
+                    
+                    <li><a href="/portada/2025/07/03/neuquen-reactiva-mina-andacollo.html">Neuquén busca destrabar la mina de Oro de Andacollo para una nueva licitación.</a></li>
                     
                     <li><a href="/portada/2025/07/10/reclamo-impuesto-de-los-combustibles.html">La pulseada por el ICL escala: Gobernadores redoblan la presión en el Senado para coparticipar más del Impuesto a los Combustibles.</a></li>
-                    
-                    <li><a href="/portada/2025/07/06/hallazgo-astigmasaura-vaca-muerta.html">¡Hallazgo en Vaca Muerta! El paleontólogo Flavio Bellardini nos revela cómo fue el hallazgo del Astigmasaura genuflexa, un dinosaurio clave de la Patagonia.</a></li>
                     
                 </ul>
                 

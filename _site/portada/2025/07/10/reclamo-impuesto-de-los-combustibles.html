@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -290,11 +297,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/05/ampliacion-gasoducto-patagonico.html">Gasoducto Patagónico: Acuerdo histórico para llevar gas a 12.000 hogares.</a></li>
+                    <li><a href="/portada/2025/08/07/Miles-de-fieles-celebran-a-San-Cayetano.html">Miles de fieles celebran a San Cayetano en todo el país.</a></li>
                     
-                    <li><a href="/portada/2025/07/13/bodega-agua-de-fuego-cutral-co-patagonia-del-vino.html">Bodega de Cutral Co, Agua de Fuego participó en "Patagonia del Vino": Un ejemplo de diversificación productiva en la comarca petrolera.</a></li>
+                    <li><a href="/portada/2025/07/30/cutral-co-formar-formadores-genero-frustracion.html">Cutral Co: 'Formar a los Formadores' Profundiza en género y gestión de frustraciones en el deporte infantil.</a></li>
                     
-                    <li><a href="/portada/2025/07/02/bauer-reflexion-sociedad-humana.html">Bauer: 'Cuando esto se derrumbe, ¿quién va a hacer una propuesta para una sociedad más humana?'</a></li>
+                    <li><a href="/portada/2025/07/28/humanos-superan-ia-olimpiada-matematicas.html">Humanos Superaron a la Inteligencia Artificial en la Principal Competencia Mundial de Matemáticas.</a></li>
                     
                 </ul>
                 

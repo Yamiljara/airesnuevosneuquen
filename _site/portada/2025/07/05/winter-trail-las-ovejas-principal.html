@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -292,11 +299,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/01/principios-valores-peronismo-neuquino.html">La mirada de Grabiel Robles del partido Principios y Valores y un llamado a la 'Causa del Pueblo'.</a></li>
+                    <li><a href="/portada/2025/07/25/alerta-roja-neuquen-nevadas-frio-extremo.html">Alerta Roja en Neuquén: la provincia se prepara para un fin de semana de nevadas y mucho frío.</a></li>
                     
-                    <li><a href="/portada/2025/07/09/9-de-julio-dia-independencia-argentina.html">La Patria se celebra hoy: A 209 años de la declaración de la Independencia en Tucumán.</a></li>
+                    <li><a href="/portada/2025/08/05/La-provincia-y-el-pa%C3%ADs-despiden-con-dolor-a-Lol%C3%ADn-Rigoni.html">La provincia y el país despiden con dolor a Lolín Rigoni, la última madre de Plaza de Mayo en Neuquén.</a></li>
                     
-                    <li><a href="/portada/2025/07/28/humanos-superan-ia-olimpiada-matematicas.html">Humanos Superaron a la Inteligencia Artificial en la Principal Competencia Mundial de Matemáticas.</a></li>
+                    <li><a href="/portada/2025/07/08/causa-vialidad-cristina-kirchner-domiciliaria.html">Causa Vialidad: Fiscal retira pedido para que Cristina Kirchner vaya a cárcel común y consolida domiciliaria.</a></li>
                     
                 </ul>
                 

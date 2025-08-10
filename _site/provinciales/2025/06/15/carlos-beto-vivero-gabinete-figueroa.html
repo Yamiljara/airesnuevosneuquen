@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -288,11 +295,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/provinciales/2025/07/11/neuquen-figueroa-solicita-renuncia-gutierrez-ypf.html">Rolando Figueroa solicitó la renuncia 'inmediata' de Omar Gutiérrez al directorio de YPF</a></li>
+                    <li><a href="/provinciales/2025/06/28/chapelco-apertura.html">Chapelco ya tiene fecha de apertura: el centro de esquí más importante de Neuquén inicia su temporada el 4 de julio.</a></li>
                     
-                    <li><a href="/provinciales/2025/07/02/neuquen-banco-mundial-bid-infraestructura-turismo.html">El Banco Mundial y el BID respaldan proyectos claves de Neuquén para infraestructura y turismo en el interior.</a></li>
+                    <li><a href="/provinciales/2025/07/07/nieto-140-cutral-co-historia.html">Cutral Co y el Nieto 140: El secuestro de sus padres y su historia en la Comarca Petrolera.</a></li>
                     
-                    <li><a href="/provinciales/2025/07/11/neuquen-audiometrias-portatiles-salud-rural.html">Salud para todos en Neuquén: Audiometrías portátiles acercarán diagnósticos auditivos a parajes y zonas rurales.</a></li>
+                    <li><a href="/provinciales/2025/07/21/conferencia-prensa-mapuce-denuncian-represion-petroleras-marimenuco.html">Conferencia de Prensa Mapuce: Denunciaron una brutal represión, apuntaron al gobierno provincial y a los CEOs de las Petroleras e hicieron un llamado a la no perforación del Mari Menuco.</a></li>
                     
                 </ul>
                 

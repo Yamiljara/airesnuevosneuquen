@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -289,11 +296,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/pol%C3%ADtica/2025/06/20/mamita-que-curriculum-cristina-kirchner.html">Mamita Qué Currículum: Cristina Kirchner arremetió sin filtros contra Patricia Bullrich y la acusó de querer generar caos.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/05/31/guillermo-moreno-dolar-mayorista.html">Guillermo Moreno advierte por la suba del dólar mayorista</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/08/02/Cristina-Kirchner-recibi%C3%B3-a-Ernesto-Samper-y-Gabriela-Rivadeneira-en-su-domicilio/html">Cristina Kirchner recibió a Ernesto Samper y Gabriela Rivadeneira en su domicilio.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/08/06/La-C%C3%A1mara-de-Diputados-aprob%C3%B3-la-ley-de-emergencia-pedi%C3%A1trica.html">La Cámara de Diputados aprobó la ley de emergencia pediátrica en medio de protestas y represión en las calles.</a></li>
                     
-                    <li><a href="/pol%C3%ADtica/2025/06/29/maximiliano-pullaro-santa-fe.html">Maximiliano Pullaro se lleva la victoria en Santa Fe y reflexiona sobre la baja participación.</a></li>
+                    <li><a href="/pol%C3%ADtica/2025/07/18/la-neuquinidad-lista-unica-candidatos-figueroa.html">Lista única de 'La Neuquinidad' para octubre: Rolando Figueroa confirma que no habrá internas.</a></li>
                     
                 </ul>
                 

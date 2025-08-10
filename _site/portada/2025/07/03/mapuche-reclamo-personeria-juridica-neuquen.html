@@ -88,10 +88,17 @@
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-menu">
         <button class="close-menu-btn" aria-label="Cerrar menú de navegación">×</button>
-
-       <form id="mobile-search-form" class="mobile-search-box">
-    <input type="text" class="mobile-search-input" id="search-input-mobile" placeholder="Buscar...">
-    <button type="submit" class="mobile-search-button">
+        
+<form id="mobile-search-form" class="mobile-search-box" action="/buscar.php" method="GET" onclick="event.stopPropagation();">
+    <input 
+        type="text" 
+        class="mobile-search-input" 
+        id="search-input-mobile" 
+        name="q" 
+        placeholder="Buscar..." 
+        required 
+        onclick="event.stopPropagation();">
+    <button type="submit" class="mobile-search-button" onclick="event.stopPropagation();">
         <i class="fas fa-search"></i>
     </button>
 </form>
@@ -288,11 +295,11 @@
                 
                 <ul class="related-posts-list">
                     
-                    <li><a href="/portada/2025/07/04/lula-visita-cristina-kirchner-domicilio.html">El presidente Lula visitó en su casa a la ex presidenta Cristina Kirchner: solidaridad histórica en un encuentro de alto impacto.</a></li>
+                    <li><a href="/portada/2025/08/07/Miles-de-fieles-celebran-a-San-Cayetano.html">Miles de fieles celebran a San Cayetano en todo el país.</a></li>
                     
-                    <li><a href="/portada/2025/06/14/festival-audiovisual.html">Neuquén se prepara para el Festival Audiovisual (FAN) 2025</a></li>
+                    <li><a href="/portada/2025/08/03/El-Servicio-Meteorol%C3%B3gico-Nacional-anticipa-un-comienzo-de-semana-con-ma%C3%B1anas-fr%C3%ADas-y-tardes-m%C3%A1s-c%C3%A1lidas.-El-martes-ser%C3%A1-el-d%C3%ADa-m%C3%A1s-agradable,-con-cielo-despejado-y-sin-precipitaciones-previstas/html">Semana templada y sin lluvias en Neuquén: El SMN prevé máximas de hasta 17°C para la capital.</a></li>
                     
-                    <li><a href="/portada/2025/07/03/aguada-san-roque-audiencias-explosion-escuela.html">Aguada San Roque: Continúan audiencias por explosión en Escuela 144 y reclamo de justicia.</a></li>
+                    <li><a href="/portada/2025/07/31/temporal-aisla-norte-neuquino-sin-luz-agua-e-internet-fuertes-vientos-nieve.html">Temporal aísla al norte neuquino: Sin Luz, agua e internet por fuertes vientos y nieve.</a></li>
                     
                 </ul>
                 
