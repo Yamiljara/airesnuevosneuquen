@@ -1883,7 +1883,7 @@ img {
     cursor: pointer;
     position: absolute;
     top: 1px; 
-    right: 15px;
+     left: 15px;
     z-index: 2002;
     padding: 5px;
 }
