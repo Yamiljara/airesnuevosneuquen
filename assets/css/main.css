@@ -1882,7 +1882,7 @@ img {
     color: var(--dark-blue);
     cursor: pointer;
     position: absolute;
-    top: 2px; /* Reducimos a 5px para que suba y no toque la lupa */
+    top: 1px; 
     right: 15px;
     z-index: 2002;
     padding: 5px;
