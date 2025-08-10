@@ -1858,7 +1858,7 @@ img {
     height: 100vh;
     background-color: var(--white);
     padding: 20px;
-    padding-top: 45px; /* Este valor crea el espacio en la parte superior */
+    padding-top: 40px; /* Reducimos a 40px para subir todo el menú */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0;
     z-index: 2001;
@@ -1882,7 +1882,7 @@ img {
     color: var(--dark-blue);
     cursor: pointer;
     position: absolute;
-    top: 10px; /* Se mantiene en la parte superior del padding */
+    top: 5px; /* Reducimos a 5px para que suba y no toque la lupa */
     right: 15px;
     z-index: 2002;
     padding: 5px;
