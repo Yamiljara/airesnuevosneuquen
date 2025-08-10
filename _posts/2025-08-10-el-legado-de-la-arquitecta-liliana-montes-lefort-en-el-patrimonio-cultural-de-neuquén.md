@@ -19,8 +19,9 @@ featured: true
 featured_secondary: false
 image: /assets/images/charla-mnba-nicolas-padín.jpg
 image_alt: Museo Nacional de Bellas Artes (MNBA) de Neuquén
-image_caption: Profesor Nicolás Padin en charla realizada en el Museo Nacional
-  de Bellas Artes (MNBA) de Neuquén.
+image_caption: investigador de la subsecretaria de Cultura de la provincia de
+  Neuquén Prof. Nicolás Padin en charla realizada en el Museo Nacional de Bellas
+  Artes (MNBA) de Neuquén.
 meta_title: El legado de Liliana Montes Lefort en el patrimonio de Neuquén.
 meta_description: La charla en el MNBA de Neuquén destacó el rol de Liliana
   Montes Lefort, la artista y arquitecta clave en la recuperación del patrimonio
@@ -31,15 +32,15 @@ copete: El Museo Nacional de Bellas Artes de Neuquén fue sede de una charla
   infraestructura ferroviaria de la ciudad.
 slug: liliana-montes-lefort-arquitecta-artista-patrimonio-neuquen
 ---
-***NEUQUÉN, 9 de agosto de 2025. –*** El pasado viernes, el Museo Nacional de Bellas Artes (MNBA) de Neuquén se vistió de gala para la charla "Entre el plano y el bastidor: el rol de Liliana Montes Lefort en la defensa del patrimonio histórico de Neuquén". La conferencia, a cargo del profesor Nicolás Padin, inauguró el ciclo de encuentros semanales en el marco de la muestra retrospectiva "Los mundos de Liliana", destacando la figura de una de las artistas y arquitectas más representativas de la provincia y su lucha por la preservación de la memoria urbana.
+***NEUQUÉN, 9 de agosto de 2025. –*** El pasado viernes, el Museo Nacional de Bellas Artes (MNBA) de Neuquén se vistió de gala para la charla "Entre el plano y el bastidor: el rol de Liliana Montes Lefort en la defensa del patrimonio histórico de Neuquén". La conferencia, a cargo del investigador de la subsecretaria de Cultura de la provincia de Neuquén p rofesor Nicolás Padin, inauguró el ciclo de encuentros semanales en el marco de la muestra retrospectiva "Los mundos de Liliana", destacando la figura de una de las artistas y arquitectas más representativas de la provincia y su lucha por la preservación de la memoria urbana.
 
 ***El arte y la arquitectura al servicio del patrimonio***
 
-Nicolás Padin, quien se desempeña como Delegado por Neuquén ante la Comisión Nacional de Monumentos, se centró en la forma en que Montes Lefort utilizó sus dos grandes pasiones para impulsar una agenda en común en favor de la preservación del patrimonio local. Según el expositor, la obra de la arquitecta es un claro ejemplo de cómo "ambos enfoques se retroalimentan en un diálogo constante, configurando una propuesta singular que conjuga técnica, poética y preservación ciudadana del patrimonio cultural". Esta visión multidisciplinaria fue clave para convencer a la ciudadanía sobre la importancia de proteger los edificios históricos de un futuro incierto.
+Nicolás Padin, quien se desempeña como Delegado por Neuquén ante la Comisión Nacional de Monumentos, se centró en la forma en que Montes Lefort utilizó sus dos grandes pasiones para impulsar una agenda en común en favor de la preservación del patrimonio local. Según el expositor, la obra de la arquitecta es un claro ejemplo de cómo "ambos enfoques se retroalimentan en un diálogo constante, configurando una propuesta singular que conjuga técnica, poética y preservación ciudadana del patrimonio cultural". Esta visión multidisciplinaria fue clave para convencer a la ciudadanía sobre la importancia de proteger los edificios históricos de un futuro incierto.e 
 
 ***El legado que transformó a Neuquén***
 
-Durante la charla, el profesor Padin enfatizó el papel crucial de Montes Lefort en las décadas del 80 y 90, un periodo que describió como una "eclosión" para la temática del patrimonio en Neuquén. Fue en ese momento cuando, ante el "avance vertiginoso de un proceso de transformación urbana que pretendía hacer tabula rasa con el pasado", Montes Lefort lideró un movimiento ciudadano que logró preservar una parte vital de la historia de la ciudad.
+Durante la charla, el investigador de la subsecretaria de Cultura de la provincia de NeuquénNicolas     Padin enfatizó el papel crucial de Montes Lefort en las décadas del 80 y 90, un periodo que describió como una "eclosión" para la temática del patrimonio en Neuquén. Fue en ese momento cuando, ante el "avance vertiginoso de un proceso de transformación urbana que pretendía hacer tabula rasa con el pasado", Montes Lefort lideró un movimiento ciudadano que logró preservar una parte vital de la historia de la ciudad.
 
 ![](/assets/images/nicolas-padin-charla-mnba.jpg)
 
@@ -53,6 +54,5 @@ La charla contó con una gran convocatoria, reafirmando el interés del público
 * Visitas guiadas: Martes a viernes a las 12:00 hs. Martes a domingos a las 18:00 hs.
 
 \-------------------------------------------------------------------------------------------------------------------------------------
-
 
 Esta nota se ha elaborado en base a información obtenida en comunicación con el Profesor Nicolás Padin. AiresNuevosNQN se ampara en la Constitución Nacional, la Ley 26.032 y tratados internacionales que garantizan la libertad de prensa y el derecho a informar sobre asuntos de interés público.
