@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /assets/search_data.json
+---
+{%- assign documents = site.posts | concat: site.pages | where_exp:"item", "item.search_exclude != true" -%}
+[
+  {%- for doc in documents -%}
+    {%- if forloop.last -%}
+      {%- assign comma = null -%}
+    {%- else -%}
+      {%- assign comma = "," -%}
+    {%- endif -%}
+    {
+      "id": {{ forloop.index }},
+      "title": {{ doc.title | jsonify }},
+      "url": {{ doc.url | jsonify }},
+      "date": {{ doc.date | date: "%Y-%m-%d" | jsonify }},
+      "content": {{ doc.content | strip_html | strip_newlines | truncate: 500, "" | jsonify }}
+    }
+  {{- comma -}}
+{%- endfor -%}
+]
