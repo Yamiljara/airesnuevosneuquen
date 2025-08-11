@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: main # Cambia si usas otra rama principal
+  name: git-gateway
+  branch: main
 
 auth_base: .netlify/identity
 display_url: https://airesnuevosnqn.com
@@ -9,55 +9,56 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "posts"
-    label: "Noticias"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Antetítulo", name: "antetitulo", widget: "string", required: true}
-      - {label: "Título", name: "title", widget: "string", required: true}
-      - {label: "Autor", name: "author", widget: "string", default: "Redacción AIRESNUEVOSNQN"}
-      - {label: "Fecha de Publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", default: "{{cms_now | date 'YYYY-MM-DD HH:mm:ss Z'}}"}
-      - {label: "Categorías", name: "categories", widget: "list", default: ["ÚltimasNoticias"], hint: "Ej: Portada, Regionales, Política, Sociedad. La primera se usará para la URL de categoría y la navegación."}
-      - {label: "Tags", name: "tags", widget: "list", hint: "Palabras clave separadas por comas. Ej: Neuquén, Elecciones, Economía."}
-      - {label: "Noticia Principal de Portada", name: "featured", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como principal en la portada (imagen grande)."}
-      - {label: "Noticia Secundaria de Portada", name: "featured_secondary", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como secundaria en la portada (imagen mediana)."}
-      - {label: "Imagen", name: "image", widget: "image", required: true, hint: "La ruta se guardará relativa a /assets/images/. Sugerencia de tamaño: 800x600px (principal), 400x300px (secundaria), 400x225px (grillas)."}
-      - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
-      - {label: "Pie de Imagen", name: "image_caption", widget: "string", hint: "Breve descripción que aparecerá debajo de la imagen."}
-      # SEO y Redes Sociales
-      - {label: "SEO Título", name: "meta_title", widget: "string", required: false, hint: "Título específico para buscadores (máx. 60 caracteres). Si está vacío, se usa el título de la noticia."}
-      - {label: "SEO Descripción", name: "meta_description", widget: "text", required: false, hint: "Resumen para buscadores y redes sociales (máx. 160 caracteres)."}
-      - {label: "Imagen para Redes Sociales", name: "social_image", widget: "image", required: false, hint: "Una imagen optimizada para compartir en redes. Si está vacía, se usará la imagen principal de la noticia."}
-      - {label: "Copete", name: "copete", widget: "text", required: true}
-      - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
-      - label: "Cuerpo de la Noticia"
-        name: "body"
-        widget: "markdown"    # <--- Cambio acá para evitar error WYSIWYG
-        required: true
+  - name: "posts"
+    label: "Noticias"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: 'slug' # <-- ¡Añade esta línea aquí!
+    editor:
+      preview: false
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Antetítulo", name: "antetitulo", widget: "string", required: true}
+      - {label: "Título", name: "title", widget: "string", required: true}
+      - {label: "Autor", name: "author", widget: "string", default: "Redacción AIRESNUEVOSNQN"}
+      - {label: "Fecha de Publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", default: "{{cms_now | date 'YYYY-MM-DD HH:mm:ss Z'}}"}
+      - {label: "Categorías", name: "categories", widget: "list", default: ["ÚltimasNoticias"], hint: "Ej: Portada, Regionales, Política, Sociedad. La primera se usará para la URL de categoría y la navegación."}
+      - {label: "Tags", name: "tags", widget: "list", hint: "Palabras clave separadas por comas. Ej: Neuquén, Elecciones, Economía."}
+      - {label: "Noticia Principal de Portada", name: "featured", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como principal en la portada (imagen grande)."}
+      - {label: "Noticia Secundaria de Portada", name: "featured_secondary", widget: "boolean", default: false, hint: "Marcar si esta noticia debe aparecer como secundaria en la portada (imagen mediana)."}
+      - {label: "Imagen", name: "image", widget: "image", required: true, hint: "La ruta se guardará relativa a /assets/images/. Sugerencia de tamaño: 800x600px (principal), 400x300px (secundaria), 400x225px (grillas)."}
+      - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
+      - {label: "Pie de Imagen", name: "image_caption", widget: "string", hint: "Breve descripción que aparecerá debajo de la imagen."}
+      # SEO y Redes Sociales
+      - {label: "SEO Título", name: "meta_title", widget: "string", required: false, hint: "Título específico para buscadores (máx. 60 caracteres). Si está vacío, se usa el título de la noticia."}
+      - {label: "SEO Descripción", name: "meta_description", widget: "text", required: false, hint: "Resumen para buscadores y redes sociales (máx. 160 caracteres)."}
+      - {label: "Imagen para Redes Sociales", name: "social_image", widget: "image", required: false, hint: "Una imagen optimizada para compartir en redes. Si está vacía, se usará la imagen principal de la noticia."}
+      - {label: "Copete", name: "copete", widget: "text", required: true}
+      - {label: "Slug (URL amigable)", name: "slug", widget: "string", hint: "Se autocompleta con el título, pero puedes modificarlo para una URL más limpia."}
+      - label: "Cuerpo de la Noticia"
+        name: "body"
+        widget: "markdown"
+        required: true
 
-  - name: "ads"
-    label: "Publicidades"
-    files:
-      - file: "_data/ads.yml"
-        label: "Lista de Publicidades"
-        name: "ads_data"
-        fields:
-          - label: "Publicidades Activas"
-            name: "ads"
-            widget: "list"
-            allow_add: true
-            collapsible: true
-            identifier_field: "title"
-            fields:
-              - {label: "Título (ID único)", name: "title", widget: "string", required: true, hint: "Debe ser el ID único del espacio (ej: 'publicidad_portada_superior_grande')."}
-              - {label: "Imagen (Desktop)", name: "image_desktop", widget: "image", required: false, hint: "La imagen para pantallas grandes."}
-              - {label: "Imagen (Mobile)", name: "image_mobile", widget: "image", required: false, hint: "La imagen para móviles (vertical)."}
-              - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
-              - {label: "URL de Destino", name: "url", widget: "string", required: true, hint: "La dirección web a la que el anuncio debe enlazar."}
-              - {label: "Fecha de Inicio", name: "start_date", widget: "datetime", required: false, hint: "Fecha a partir de la cual el anuncio debería mostrarse."}
-              - {label: "Fecha de Fin", name: "end_date", widget: "datetime", required: false, hint: "Fecha hasta la cual el anuncio debería mostrarse."}
+  - name: "ads"
+    label: "Publicidades"
+    files:
+      - file: "_data/ads.yml"
+        label: "Lista de Publicidades"
+        name: "ads_data"
+        fields:
+          - label: "Publicidades Activas"
+            name: "ads"
+            widget: "list"
+            allow_add: true
+            collapsible: true
+            identifier_field: "title"
+            fields:
+              - {label: "Título (ID único)", name: "title", widget: "string", required: true, hint: "Debe ser el ID único del espacio (ej: 'publicidad_portada_superior_grande')."}
+              - {label: "Imagen (Desktop)", name: "image_desktop", widget: "image", required: false, hint: "La imagen para pantallas grandes."}
+              - {label: "Imagen (Mobile)", name: "image_mobile", widget: "image", required: false, hint: "La imagen para móviles (vertical)."}
+              - {label: "Texto Alternativo Imagen", name: "image_alt", widget: "string", required: true, hint: "Texto descriptivo para la imagen (SEO y accesibilidad)."}
+              - {label: "URL de Destino", name: "url", widget: "string", required: true, hint: "La dirección web a la que el anuncio debe enlazar."}
+              - {label: "Fecha de Inicio", name: "start_date", widget: "datetime", required: false, hint: "Fecha a partir de la cual el anuncio debería mostrarse."}
+              - {label: "Fecha de Fin", name: "end_date", widget: "datetime", required: false, hint: "Fecha hasta la cual el anuncio debería mostrarse."}
