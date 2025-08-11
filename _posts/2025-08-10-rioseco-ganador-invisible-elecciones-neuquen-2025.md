@@ -9,7 +9,7 @@ featured: false
 image: "/assets/images/Ramón-Rioseco-ganador-invible-de-octubre.jpg"
 image_alt: "Retrato de Ramón Rioseco en un evento político."
 image_caption: "Ramón Rioseco, intendente de Cutral - Co."
-copete: "En un escenario electoral polarizado, el exintendente de Cutral Co, Ramón Rioseco, se fortalece como un actor clave al evitar el desgaste de la contienda de 2025 y consolidar su base política para la elección a gobernador de 2027."
+copete: "En un escenario electoral polarizado, el intendente de Cutral Co, Ramón Rioseco, se fortalece como un actor clave al evitar el desgaste de la contienda de 2025 y consolidar su base política para la elección a gobernador de 2027."
 ---
 
 NEUQUÉN, 10 de agosto de 2025. – En menos de 80 días, Neuquén vivirá unas elecciones legislativas nacionales donde los focos mediáticos parecen centrarse en dos polos: **La Neuquinidad de Rolando Figueroa** y **La Libertad Avanza**, dividida entre la lista oficial de Nadia Márquez–Pablo Cervi y el armado disidente de Carlos Eguia. La narrativa dominante, como la planteada por el periodista Alejandro López, Rolando Figueroa, La Neuquinidad y la pelea por los votos propios y ajenos, editorial de La Mañana de Neuquén, 10 de agosto de 2025, ubica a estos dos espacios como protagonistas indiscutidos de la disputa.
