@@ -1,7 +1,7 @@
 ---
 layout: post
 antetitulo: "ANÁLISIS POLÍTICO / ELECCIONES 2025"
-title: "Rioseco, el ganador invisible de octubre: cómo se fortalece sin arriesgar la base"
+title: "Rioseco, el ganador invisible de octubre: cómo se fortalece sin arriesgar la base."
 author: "Redacciones airesnuevosNQN"
 date: 2025-08-10 22:00:00 -0300
 categories: [Política]
