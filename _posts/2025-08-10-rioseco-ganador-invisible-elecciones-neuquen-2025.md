@@ -4,11 +4,11 @@ antetitulo: "ANÁLISIS POLÍTICO / ELECCIONES 2025"
 title: "Rioseco, el ganador invisible de octubre: cómo se fortalece sin arriesgar la base"
 author: "Redacciones airesnuevosNQN"
 date: 2025-08-10 22:00:00 -0300
-categories: [Politica]
+categories: [Política]
 featured: false
 image: "/assets/images/Ramón-Rioseco-ganador-invible-de-octubre.jpg"
 image_alt: "Retrato de Ramón Rioseco en un evento político."
-image_caption: "Ramón Rioseco, en el centro de las negociaciones de cara a 2027."
+image_caption: "Ramón Rioseco, intendente de Cutral - Co."
 copete: "En un escenario electoral polarizado, el exintendente de Cutral Co, Ramón Rioseco, se fortalece como un actor clave al evitar el desgaste de la contienda de 2025 y consolidar su base política para la elección a gobernador de 2027."
 ---
 
