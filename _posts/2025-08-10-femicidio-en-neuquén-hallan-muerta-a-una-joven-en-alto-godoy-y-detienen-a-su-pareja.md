@@ -1,8 +1,8 @@
 ---
 layout: post
-antetitulo: ALTO GODOY.
+antetitulo: ALTO GODOY
 title: "Femicidio en Neuquén: hallan muerta a una joven en Alto Godoy y detienen
-  a su pareja."
+  a su pareja"
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-10 14:54:00 -03:00
 categories:
