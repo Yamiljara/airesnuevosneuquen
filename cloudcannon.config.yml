@@ -8,6 +8,8 @@ collections_config:
     name: Pages
     icon: wysiwyg
     disable_url: false
+    description: ''
+    _enabled_editors:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -322,6 +324,21 @@ collections_config:
     disable_add: true
     disable_add_folder: true
     disable_file_actions: true
+_inputs:
+  portada_tipo:
+    type: select
+    options:
+      allow_create:
+      allow_empty: true
+      values:
+        - principal
+        -
+      value_key:
+      preview:
+      picker_preview:
+      view:
+      picker_view: text
+    cascade: true
 _snippets_imports:
   jekyll: true
 timezone: America/Buenos_Aires
