@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ' Comunidades mapuches denunciarán a los responsables de la represión del 20 de julio.'
-antetitulo: NEGOCIACIÓN Y DERECHOS HUMANOS
+antetitulo: NEGOCIACIÓN Y DERECHOS HUMANOS.
 copete: >-
   Tras un balance positivo de la reunión con el gobierno provincial para avanzar
   en el trámite de personería jurídica, los referentes anunciaron que mañana
@@ -14,7 +14,7 @@ image: /uploads/reunion-comunidades-unco-gobierno.jpg
 image_alt: Reunión de comunidades mapuches con el gobierno provincial.
 image_caption: Reunión de comunidades mapuches con el gobierno.
 ---
-**NEUQUÉN, 13 de agosto de 2025. –** En una nueva instancia de negociación con el gobierno provincial, las comunidades mapuches de Neuquén lograron importantes avances en su reclamo por el reconocimiento de la personería jurídica. Sin embargo, el encuentro, que tuvo lugar este lunes, no detiene la acción legal que los referentes llevarán adelante: mañana se formalizará una denuncia contra todos los involucrados en el violento desalojo ocurrido el pasado 20 de julio.
+**NEUQUÉN, 12 de agosto de 2025. –** En una nueva instancia de negociación con el gobierno provincial, las comunidades mapuches de Neuquén lograron importantes avances en su reclamo por el reconocimiento de la personería jurídica. Sin embargo, el encuentro, que tuvo lugar este lunes, no detiene la acción legal que los referentes llevarán adelante: mañana se formalizará una denuncia contra todos los involucrados en el violento desalojo ocurrido el pasado 20 de julio.
 
 El balance de la reunión, en palabras de un referente, fue “bueno” ya que, a pesar de las tensiones, se logró reanudar el diálogo después del estancamiento provocado por la represión.
 
