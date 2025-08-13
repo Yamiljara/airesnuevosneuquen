@@ -149,6 +149,165 @@ collections_config:
           values: >-
             collections.vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts[*].tags
         cascade: true
+   _schema: _schema
+paths:
+  uploads: uploads
+  static: ''
+
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+    disable_url: false
+    description: ''
+    _enabled_editors:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  drafts:
+    path: _drafts
+    name: Drafts
+    icon: event
+    disable_url: false
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: collections.posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: collections.posts[*].tags
+        cascade: true
+    create:
+      path: ''
+      publish_to: posts
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  posts:
+    path: _posts
+    name: Posts
+    icon: event_available
+    disable_url: false
+    description: ''
+    _enabled_editors:
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: collections.posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: collections.posts[*].tags
+        cascade: true
+      portada_tipo:
+        type: select
+        options:
+          allow_create: false
+          allow_empty: true
+          values:
+            - "principal"
+            - "secundaria"
+        label: Tipo de Portada
+        cascade: true
+      meta_title:
+        type: text
+        label: Título SEO
+      meta_description:
+        type: textarea
+        label: Descripción SEO
+      slug:
+        type: text
+        label: URL Amigable
+      tags:
+        type: tags
+        label: Etiquetas
+    _structures:
+      featured:
+        style: select
+        id_key:
+        values:
+    add_options:
+      - name: Add Post
+      - name: Add Draft
+        collection: drafts
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      news_post:
+        path:
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name:
+        icon: notes
+        preview:
+        _editables:
+          text:
+            allow_custom_markup: true
+            remove_custom_markup: false
+            bold:
+            copyformatting:
+            italic:
+            link:
+            paths:
+            redo:
+            removeformat:
+            strike:
+            subscript:
+            superscript:
+            underline:
+            undo:
+        _enabled_editors:
+        _inputs:
+        _select_data:
+        _structures:
+          featured:
+            style: select
+            id_key:
+            values:
+        create:
+        new_preview_url:
+  vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_drafts:
+    path: vendor/bundle/ruby/3.4.0/gems/jekyll-paginate-1.1.0/spec/source/_drafts
+    name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Paginate 1 1 0 Spec Source Drafts
+    icon: airline_seat_recline_extra
+    disable_url: false
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts[*].tags
+        cascade: true
     create:
       path: ''
       publish_to: vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts

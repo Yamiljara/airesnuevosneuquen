@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administración AIRESNUEVOSNQN</title>
+  <link href="/admin/admin.css" rel="stylesheet"> 
+</head>
+<body>
+    <script src="https://unpkg.com/decap-cms@3/dist/decap-cms.js"></script>
+  <script src="https://unpkg.com/@decapcms/widget-wysiwyg@3/dist/decap-cms-widget-wysiwyg.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
+    <script>
+    if (window.CMS) {
+      // Pegar como texto plano
+      document.addEventListener('paste', function (e) {
+        if (e.clipboardData && e.target.closest('.CodeMirror')) {
+          const text = e.clipboardData.getData('text/plain');
+          if (text) {
+            e.preventDefault();
+            const cm = e.target.closest('.CodeMirror').CodeMirror;
+            cm.replaceSelection(text);
+          }
+        }
+      });
+
+      // Limpiar HTML antes de guardar
+      CMS.registerEventListener({
+        name: 'preSave',
+        handler: ({ entry }) => {
+          let body = entry.getIn(['data', 'body']);
+          if (body) {
+            body = body.replace(/<\/?[^>]+(>|$)/g, "");
+            return entry.setIn(['data', 'body'], body);
+          }
+          return entry;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
