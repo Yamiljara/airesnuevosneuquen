@@ -1,0 +1,284 @@
+_schema: _schema
+paths:
+  uploads: uploads
+  static: ''
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  drafts:
+    path: _drafts
+    name: Drafts
+    icon: event
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: collections.posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: collections.posts[*].tags
+        cascade: true
+    create:
+      path: ''
+      publish_to: posts
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  posts:
+    path: _posts
+    name: Posts
+    icon: event_available
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: collections.posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: collections.posts[*].tags
+        cascade: true
+    add_options:
+      - name: Add Post
+      - name: Add Draft
+        collection: drafts
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_drafts:
+    path: vendor/bundle/ruby/3.4.0/gems/jekyll-paginate-1.1.0/spec/source/_drafts
+    name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Paginate 1 1 0 Spec Source Drafts
+    icon: airline_seat_recline_extra
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts[*].tags
+        cascade: true
+    create:
+      path: ''
+      publish_to: vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts:
+    path: vendor/bundle/ruby/3.4.0/gems/jekyll-paginate-1.1.0/spec/source/_posts
+    name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Paginate 1 1 0 Spec Source Posts
+    icon: indeterminate_check_box
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_posts[*].tags
+        cascade: true
+    add_options:
+      - name: Add Post
+      - name: Add Draft
+        collection: vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_drafts
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  vendor_bundle_ruby_3_4_0_gems_jekyll_redirect_from_0_16_0_spec_fixtures_drafts:
+    path: >-
+      vendor/bundle/ruby/3.4.0/gems/jekyll-redirect-from-0.16.0/spec/fixtures/_drafts
+    name: >-
+      Vendor Bundle Ruby 3 4 0 Gems Jekyll Redirect From 0 16 0 Spec Fixtures
+      Drafts
+    icon: airline_seat_legroom_extra
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_redirect_from_0_16_0_spec_fixtures_posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_redirect_from_0_16_0_spec_fixtures_posts[*].tags
+        cascade: true
+    create:
+      path: ''
+      publish_to: >-
+        vendor_bundle_ruby_3_4_0_gems_jekyll_redirect_from_0_16_0_spec_fixtures_posts
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  vendor_bundle_ruby_3_4_0_gems_jekyll_redirect_from_0_16_0_spec_fixtures_posts:
+    path: >-
+      vendor/bundle/ruby/3.4.0/gems/jekyll-redirect-from-0.16.0/spec/fixtures/_posts
+    name: >-
+      Vendor Bundle Ruby 3 4 0 Gems Jekyll Redirect From 0 16 0 Spec Fixtures
+      Posts
+    icon: windshield_defrost_front
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_redirect_from_0_16_0_spec_fixtures_posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_redirect_from_0_16_0_spec_fixtures_posts[*].tags
+        cascade: true
+    add_options:
+      - name: Add Post
+      - name: Add Draft
+        collection: >-
+          vendor_bundle_ruby_3_4_0_gems_jekyll_redirect_from_0_16_0_spec_fixtures_drafts
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  vendor_bundle_ruby_3_4_0_gems_jekyll_sitemap_1_4_0_spec_fixtures_drafts:
+    path: vendor/bundle/ruby/3.4.0/gems/jekyll-sitemap-1.4.0/spec/fixtures/_drafts
+    name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Sitemap 1 4 0 Spec Fixtures Drafts
+    icon: airline_seat_recline_extra
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_sitemap_1_4_0_spec_fixtures_posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_sitemap_1_4_0_spec_fixtures_posts[*].tags
+        cascade: true
+    create:
+      path: ''
+      publish_to: vendor_bundle_ruby_3_4_0_gems_jekyll_sitemap_1_4_0_spec_fixtures_posts
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  vendor_bundle_ruby_3_4_0_gems_jekyll_sitemap_1_4_0_spec_fixtures_posts:
+    path: vendor/bundle/ruby/3.4.0/gems/jekyll-sitemap-1.4.0/spec/fixtures/_posts
+    name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Sitemap 1 4 0 Spec Fixtures Posts
+    icon: airline_seat_recline_extra
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_sitemap_1_4_0_spec_fixtures_posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values: >-
+            collections.vendor_bundle_ruby_3_4_0_gems_jekyll_sitemap_1_4_0_spec_fixtures_posts[*].tags
+        cascade: true
+    add_options:
+      - name: Add Post
+      - name: Add Draft
+        collection: >-
+          vendor_bundle_ruby_3_4_0_gems_jekyll_sitemap_1_4_0_spec_fixtures_drafts
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  data:
+    path: _data
+    name: Data
+    icon: data_usage
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+_snippets_imports:
+  jekyll: true
+timezone: America/Buenos_Aires
+markdown:
+  engine: kramdown
+  options:
+    xhtml: false
+    breaks: false
+    linkify: false
+    typographer: false
+    spaced_lists: false
+    sentence_per_line: false
+    gfm: false
+    code_block_fences: '```'
+    escape_snippets_in_code_blocks: false
+    treat_indentation_as_code: true
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    attributes: true
+    attribute_elements:
+      inline: right
+      block: below
+      tr: none
+      td: none
+      li: right-of-prefix
