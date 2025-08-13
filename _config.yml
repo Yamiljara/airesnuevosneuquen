@@ -56,3 +56,29 @@ exclude:
 # Archivos de inclusión (si tienes custom includes)
 include:
   - _includes
+
+  # CloudCannon configuration
+collections_config:
+  posts:
+    _editor_name: "Noticias"
+    path: "_posts"
+    name: "Noticias"
+    fields:
+      - name: "portada_tipo"
+        label: "Tipo de Portada"
+        type: "select"
+        options:
+          - "principal"
+          - "secundaria"
+      - name: "meta_title"
+        label: "Título SEO"
+        type: "text"
+      - name: "meta_description"
+        label: "Descripción SEO"
+        type: "textarea"
+      - name: "slug"
+        label: "URL Amigable"
+        type: "text"
+      - name: "tags"
+        label: "Etiquetas"
+        type: "tags"
