@@ -7,6 +7,7 @@ collections_config:
     path: ''
     name: Pages
     icon: wysiwyg
+    disable_url: false
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -14,6 +15,7 @@ collections_config:
     path: _drafts
     name: Drafts
     icon: event
+    disable_url: false
     _inputs:
       categories:
         type: multiselect
@@ -39,6 +41,9 @@ collections_config:
     path: _posts
     name: Posts
     icon: event_available
+    disable_url: false
+    description: ''
+    _enabled_editors:
     _inputs:
       categories:
         type: multiselect
@@ -54,6 +59,26 @@ collections_config:
           empty_type: array
           values: collections.posts[*].tags
         cascade: true
+      portada_tipo:
+        type: select
+        options:
+          allow_create: true
+          allow_empty: true
+          values:
+            - principal
+            - secundaria
+          value_key:
+          preview:
+          picker_preview:
+          view:
+          picker_view:
+        label: Tipo de Portada
+        cascade: true
+    _structures:
+      featured:
+        style: select
+        id_key:
+        values:
     add_options:
       - name: Add Post
       - name: Add Draft
@@ -64,10 +89,47 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      news_post:
+        path:
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name:
+        icon: notes
+        preview:
+        _editables:
+          text:
+            allow_custom_markup: true
+            remove_custom_markup: false
+            bold:
+            copyformatting:
+            italic:
+            link:
+            paths:
+            redo:
+            removeformat:
+            strike:
+            subscript:
+            superscript:
+            underline:
+            undo:
+        _enabled_editors:
+        _inputs:
+        _select_data:
+        _structures:
+          featured:
+            style: select
+            id_key:
+            values:
+        create:
+        new_preview_url:
   vendor_bundle_ruby_3_4_0_gems_jekyll_paginate_1_1_0_spec_source_drafts:
     path: vendor/bundle/ruby/3.4.0/gems/jekyll-paginate-1.1.0/spec/source/_drafts
     name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Paginate 1 1 0 Spec Source Drafts
     icon: airline_seat_recline_extra
+    disable_url: false
     _inputs:
       categories:
         type: multiselect
@@ -95,6 +157,7 @@ collections_config:
     path: vendor/bundle/ruby/3.4.0/gems/jekyll-paginate-1.1.0/spec/source/_posts
     name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Paginate 1 1 0 Spec Source Posts
     icon: indeterminate_check_box
+    disable_url: false
     _inputs:
       categories:
         type: multiselect
@@ -129,6 +192,7 @@ collections_config:
       Vendor Bundle Ruby 3 4 0 Gems Jekyll Redirect From 0 16 0 Spec Fixtures
       Drafts
     icon: airline_seat_legroom_extra
+    disable_url: false
     _inputs:
       categories:
         type: multiselect
@@ -160,6 +224,7 @@ collections_config:
       Vendor Bundle Ruby 3 4 0 Gems Jekyll Redirect From 0 16 0 Spec Fixtures
       Posts
     icon: windshield_defrost_front
+    disable_url: false
     _inputs:
       categories:
         type: multiselect
@@ -192,6 +257,7 @@ collections_config:
     path: vendor/bundle/ruby/3.4.0/gems/jekyll-sitemap-1.4.0/spec/fixtures/_drafts
     name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Sitemap 1 4 0 Spec Fixtures Drafts
     icon: airline_seat_recline_extra
+    disable_url: false
     _inputs:
       categories:
         type: multiselect
@@ -219,6 +285,7 @@ collections_config:
     path: vendor/bundle/ruby/3.4.0/gems/jekyll-sitemap-1.4.0/spec/fixtures/_posts
     name: Vendor Bundle Ruby 3 4 0 Gems Jekyll Sitemap 1 4 0 Spec Fixtures Posts
     icon: airline_seat_recline_extra
+    disable_url: false
     _inputs:
       categories:
         type: multiselect
@@ -251,6 +318,7 @@ collections_config:
     path: _data
     name: Data
     icon: data_usage
+    disable_url: false
     disable_add: true
     disable_add_folder: true
     disable_file_actions: true
