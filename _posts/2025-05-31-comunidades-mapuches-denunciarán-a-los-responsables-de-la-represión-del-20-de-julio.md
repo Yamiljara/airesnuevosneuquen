@@ -7,7 +7,7 @@ copete: >-
   en el trámite de personería jurídica, los referentes anunciaron que mañana
   formalizarán una denuncia contra autoridades y efectivos policiales que
   participaron en el operativo.
-date: 2025-05-31T23:30:00-03:00
+date: 2025-08-12T23:30:00-03:00
 categories:
   - Provinciales
 image: /uploads/reunion-comunidades-unco-gobierno.jpg
