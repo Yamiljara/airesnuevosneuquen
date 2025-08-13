@@ -12,7 +12,7 @@ copete: >-
   valora su sistema de investigación y rechaza su desmantelamiento.
 date: 2025-08-13T08:30:00-03:00
 categories:
-  - PORTADA NOTICIA PRINCIPAL
+  - Nacionales
 image: /uploads/conicet-transmiciones-del-fondo-del-mar.jpg
 image_alt:
 image_caption: 'imágenes difundidas por el CONICET. '
