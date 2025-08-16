@@ -21,7 +21,7 @@ featured: false
 featured_secondary: true
 image: /assets/images/el-secretario-finanzas-recursos-y-proteccion-ciudadana-las-municipalidad-neuquen-fernando-schpoliansky.jpeg
 image_alt: Fernando Schpoliansky contador.
-image_caption: ernando Schpoliansky contador.
+image_caption: Fernando Schpoliansky contador.
 meta_title: Fernando Schpoliansky presentará su libro "Economía paso a paso" en
   la Feria del Libro.
 meta_description: El secretario de Finanzas de Neuquén, Fernando Schpoliansky,
