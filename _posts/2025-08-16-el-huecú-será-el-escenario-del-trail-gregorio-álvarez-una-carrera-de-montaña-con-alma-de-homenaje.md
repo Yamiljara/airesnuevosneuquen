@@ -6,7 +6,7 @@ title: El Huecú será el Escenario del Trail Gregorio Álvarez, una Carrera de
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-16 09:13:00 -03:00
 categories:
-  - Portada.
+  - Portada
 tags:
   - Trail Running
   - Gregorio Álvarez
