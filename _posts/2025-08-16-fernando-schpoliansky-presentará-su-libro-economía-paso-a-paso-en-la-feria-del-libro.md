@@ -6,7 +6,7 @@ title: Fernando Schpoliansky presentará su libro "Economía paso a paso" en la
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-15 23:00:00 -03:00
 categories:
-  - Portada.
+  - Portada
 tags:
   - Fernando Schpoliansky
   - Economía
