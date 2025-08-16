@@ -2,7 +2,7 @@
 layout: post
 antetitulo: ACTUALIDAD / LITERATURA.
 title: Fernando Schpoliansky presentará su libro "Economía paso a paso" en la
-  Feria del Libro.
+  Feria del Libro de Neuquén.
 author: Redacción AIRESNUEVOSNQN
 date: 2025-08-15 23:00:00 -03:00
 categories:
